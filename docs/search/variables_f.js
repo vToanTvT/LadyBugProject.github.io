@@ -1,17 +1,12 @@
 var searchData=
 [
-  ['scale_5ffactor_0',['scale_factor',['../struct_s___meas___type_def.html#a55252e2b62e5c26b481d4ef9e8d6755d',1,'S_Meas_TypeDef']]],
-  ['size_1',['size',['../structuart__transfer__t.html#aaba88b24a21a6c70c895c0d55f4a69a0',1,'uart_transfer_t']]],
-  ['state_2',['State',['../struct_s___e_v_s_e__t.html#aaf5934d22991740670c840286811426d',1,'S_EVSE_t']]],
-  ['state_3',['state',['../struct_s___comp___type_def.html#a0b57aa10271a66f3dc936bba1d2f3830',1,'S_Comp_TypeDef::state'],['../struct_s___g_p_i_o___pin___type_def.html#a0b57aa10271a66f3dc936bba1d2f3830',1,'S_GPIO_Pin_TypeDef::state']]],
-  ['state_5fautorecovery_5fcounter_4',['state_autorecovery_counter',['../struct_s___e_v_s_e___counter__t.html#ae12c073b6fc4669cff5c6e9adfc76cfb',1,'S_EVSE_Counter_t']]],
-  ['state_5fcharging_5fcounter_5',['state_charging_counter',['../struct_s___e_v_s_e___counter__t.html#a17ec81a7cf5b2a28c7011e8f704b17c5',1,'S_EVSE_Counter_t']]],
-  ['state_5fcontrol_6',['state_control',['../struct_s___p_i___type_def.html#a276267e17d2a1c2eab601d3835ced719',1,'S_PI_TypeDef']]],
-  ['state_5ffault_5fcounter_7',['state_fault_counter',['../struct_s___e_v_s_e___counter__t.html#af5bf297929c29861056930cc34cc4595',1,'S_EVSE_Counter_t']]],
-  ['state_5ffullycharged_5fcounter_8',['state_fullycharged_counter',['../struct_s___e_v_s_e___counter__t.html#a82e4b20b051990589df4a11a8f3f0611',1,'S_EVSE_Counter_t']]],
-  ['state_5fhandshake_5fcounter_9',['state_handshake_counter',['../struct_s___e_v_s_e___counter__t.html#ac8b8c625e5d58ed25ace710149fbc598',1,'S_EVSE_Counter_t']]],
-  ['state_5fidle_5fcounter_10',['state_idle_counter',['../struct_s___e_v_s_e___counter__t.html#a02aee36035331678c8b64c0e8bfa1686',1,'S_EVSE_Counter_t']]],
-  ['state_5fshutdown_5fcounter_11',['state_shutdown_counter',['../struct_s___e_v_s_e___counter__t.html#aa37f99f54afc673a4592182b17828635',1,'S_EVSE_Counter_t']]],
-  ['state_5fsoftstart_5fcounter_12',['state_softstart_counter',['../struct_s___e_v_s_e___counter__t.html#a6d1d583c8b9fb11b3101cb5dc78cebcc',1,'S_EVSE_Counter_t']]],
-  ['status_5fpwm_13',['status_pwm',['../struct_s___pwm___config___type_def.html#ab5553246ed59452ca8f7745f040b21c2',1,'S_Pwm_Config_TypeDef']]]
+  ['raw_0',['raw',['../group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaaab9e52896184c8414c3629de1ba3880',1,'S_Meas_TypeDef']]],
+  ['ref_5fval_1',['ref_val',['../group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga4fb34d638bf57573d11ffbee8792ff6e',1,'S_PI_TypeDef']]],
+  ['ref_5fval_5ftmp_2',['ref_val_tmp',['../group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2fb8dd055a78064d8033e08a8047a379',1,'S_PI_TypeDef']]],
+  ['refval_3',['RefVal',['../group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga9783cc2bde5aeb9196bcfa68507f9c06',1,'MultiResonant_TypeDef']]],
+  ['refvaltmp_4',['RefValTmp',['../group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga0a726c2233bed5daf6957c066df3a3fa',1,'MultiResonant_TypeDef']]],
+  ['request_5fhigh_5ftemp_5',['request_high_temp',['../group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga0bd23f557562b62db3421f6d79641289',1,'S_FAN']]],
+  ['request_5fhigh_5fvoltage_6',['request_high_voltage',['../group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga09ad34144e86c2ed9ac2061318320f10',1,'S_FAN']]],
+  ['resonantsum_7',['ResonantSum',['../group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gad8f60689773b9660ea0df47e25cc186f',1,'MultiResonant_TypeDef']]],
+  ['rxbuffer_8',['RXBuffer',['../group___d_r_v___u_a_r_t.html#gae0b7efc302437c5e5dfa56da42d27f6e',1,'RXBuffer:&#160;drv_uart_core.c'],['../group___d_r_v___u_a_r_t.html#gae0b7efc302437c5e5dfa56da42d27f6e',1,'RXBuffer:&#160;drv_uart_core.c']]]
 ];

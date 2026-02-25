@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: ADC Driver Module</title>
+<title>LadyBug Firmware Documentation: ADC Driver</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -89,127 +96,81 @@ $(function(){initNavTree('group___d_r_v___a_d_c.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">ADC Driver Module <div class="ingroups"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html">Driver Layer</a></div></div></div>
+  <div class="headertitle"><div class="title">ADC Driver <div class="ingroups"><a class="el" href="group___d_r_i_v_e_r___l_a_y_e_r.html">Driver Layer</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of ADC driver core functions.  
+<p>ADC driver for hardware interfacing and data acquisition.  
 <a href="#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for ADC Driver Module:</div>
+Collaboration diagram for ADC Driver:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___a_d_c.png" border="0" usemap="#agroup______d__r__v______a__d__c" loading="lazy" alt=""/></div>
 <map name="agroup______d__r__v______a__d__c" id="agroup______d__r__v______a__d__c">
-<area shape="rect" href="group___d_r_i_v_e_r___l_a_y_e_r.html" title="Low&#45;level hardware drivers (ADC, GPIO, PWM, UART...)." alt="" coords="5,5,98,32"/>
-<area shape="rect" title="Implementation of ADC driver core functions." alt="" coords="146,5,281,32"/>
+<area shape="rect" href="group___d_r_i_v_e_r___l_a_y_e_r.html" title="Hardware abstraction and low&#45;level peripheral drivers." alt="" coords="5,5,98,32"/>
+<area shape="rect" title="ADC driver for hardware interfacing and data acquisition." alt="" coords="146,5,235,32"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:S_5FAdc_5FData_5FTypeDef" id="r_S_5FAdc_5FData_5FTypeDef"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include necessary header files.  <a href="struct_s___adc___data___type_def.html#details">More...</a><br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gadffac13c9ed303087df5376912f2f6bf" id="r_gadffac13c9ed303087df5376912f2f6bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gadffac13c9ed303087df5376912f2f6bf">K_ADC_TIMEOUT_MS_</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="memdesc:gadffac13c9ed303087df5376912f2f6bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local constant definitions.  <br /></td></tr>
-<tr class="memitem:ga06df8b827269d26565943e7898a12dbc" id="r_ga06df8b827269d26565943e7898a12dbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga06df8b827269d26565943e7898a12dbc">K_ADC_MAX_RETRIES_</a>&#160;&#160;&#160;3</td></tr>
-<tr class="memitem:gaab3ae09012311e80ab56555d2f667213" id="r_gaab3ae09012311e80ab56555d2f667213"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaab3ae09012311e80ab56555d2f667213">K_ADC_CHANNELS_</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public macro definitions.  <a href="struct_s___adc___data___type_def.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gab85cb16e003e34435b1bba7bfecbb5b9" id="r_gab85cb16e003e34435b1bba7bfecbb5b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a> (<a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</td></tr>
-<tr class="memdesc:gab85cb16e003e34435b1bba7bfecbb5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the ADC hardware and data structure.  <br /></td></tr>
+<tr class="memdesc:gab85cb16e003e34435b1bba7bfecbb5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize ADC module.  <br /></td></tr>
 <tr class="memitem:gad85cb208269700f968f1441beb35bf8a" id="r_gad85cb208269700f968f1441beb35bf8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a> (<a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</td></tr>
-<tr class="memdesc:gad85cb208269700f968f1441beb35bf8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts ADC conversion sequence in DMA mode.  <br /></td></tr>
+<tr class="memdesc:gad85cb208269700f968f1441beb35bf8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start ADC conversion using DMA mode.  <br /></td></tr>
 <tr class="memitem:ga5bff6d15fc0bf77d4b07f54700f4c434" id="r_ga5bff6d15fc0bf77d4b07f54700f4c434"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a> (<a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</td></tr>
-<tr class="memdesc:ga5bff6d15fc0bf77d4b07f54700f4c434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves and processes ADC conversion results.  <br /></td></tr>
+<tr class="memdesc:ga5bff6d15fc0bf77d4b07f54700f4c434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and process ADC conversion results.  <br /></td></tr>
 <tr class="memitem:ga16393acb40aae65ca9e14eb2444f55c5" id="r_ga16393acb40aae65ca9e14eb2444f55c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a> (<a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</td></tr>
-<tr class="memdesc:ga16393acb40aae65ca9e14eb2444f55c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs ADC calibration sequence.  <br /></td></tr>
+<tr class="memdesc:ga16393acb40aae65ca9e14eb2444f55c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform ADC calibration.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ga22b804736f5648d52f639b2647d4ed13" id="r_ga22b804736f5648d52f639b2647d4ed13"><td class="memItemLeft" align="right" valign="top">ADC_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga22b804736f5648d52f639b2647d4ed13">hadc1</a></td></tr>
+<tr class="memdesc:ga22b804736f5648d52f639b2647d4ed13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extern global variables for ADC module.  <br /></td></tr>
 <tr class="memitem:ga26caa0d775f89d63143e0f475564a166" id="r_ga26caa0d775f89d63143e0f475564a166"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga26caa0d775f89d63143e0f475564a166">g_adc_data_</a></td></tr>
+<tr class="memdesc:ga26caa0d775f89d63143e0f475564a166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include public and private headers.  <br /></td></tr>
+<tr class="memitem:gaf0d2ffa00bdaf3b3b36ecb283f8a5b55" id="r_gaf0d2ffa00bdaf3b3b36ecb283f8a5b55"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a> [6]</td></tr>
+<tr class="memitem:ga6e4486ef0554e48702f9095253afcc72" id="r_ga6e4486ef0554e48702f9095253afcc72"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6e4486ef0554e48702f9095253afcc72">ADC_vac</a></td></tr>
+<tr class="memitem:ga7cf0add5681cddfb5760a8076fb9cbce" id="r_ga7cf0add5681cddfb5760a8076fb9cbce"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7cf0add5681cddfb5760a8076fb9cbce">ADC_thermal_pfc</a></td></tr>
+<tr class="memitem:gacc3f3f60ba83b8809b768dc85180b71c" id="r_gacc3f3f60ba83b8809b768dc85180b71c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacc3f3f60ba83b8809b768dc85180b71c">ADC_thermal_llc</a></td></tr>
+<tr class="memitem:ga5f46e99a879143174e4d1f013ad9d34c" id="r_ga5f46e99a879143174e4d1f013ad9d34c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga5f46e99a879143174e4d1f013ad9d34c">ADC_current_bat</a></td></tr>
+<tr class="memitem:ga0f44518e6b76a378568af6bbc365bb2a" id="r_ga0f44518e6b76a378568af6bbc365bb2a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0f44518e6b76a378568af6bbc365bb2a">ADC_voltage_bat</a></td></tr>
+<tr class="memitem:ga942b5893c1e875c5f1a0b7350f16c7b5" id="r_ga942b5893c1e875c5f1a0b7350f16c7b5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga942b5893c1e875c5f1a0b7350f16c7b5">ADC_voltage_out</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
+ADC Configuration</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p>Include required header files.</p>
+<p>Public constant definitions for ADC module. </p>
+</td></tr>
+<tr class="memitem:ga6da6732b91372cf0e9585a30f607484a" id="r_ga6da6732b91372cf0e9585a30f607484a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6da6732b91372cf0e9585a30f607484a">hadc</a>&#160;&#160;&#160;<a class="el" href="#ga22b804736f5648d52f639b2647d4ed13">hadc1</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<p>Implementation of ADC driver core functions. </p>
-<p>Public APIs and definitions for ADC driver.</p>
-<p>This file implements the initialization and processing functions for ADC:</p><ul>
-<li>Hardware initialization and configuration</li>
-<li>DMA-based sampling sequence</li>
-<li>Data conversion and buffer management</li>
-<li>Calibration and error handling</li>
-</ul>
-<p>Example usage: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> adc_data;</div>
-<div class="line"><a class="code hl_function" href="#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a>(&amp;adc_data);</div>
-<div class="line"><a class="code hl_function" href="#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a>(&amp;adc_data);</div>
-<div class="line"><span class="keywordflow">if</span> (<a class="code hl_function" href="#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a>(&amp;adc_data) == 0) {</div>
-<div class="line">    <span class="keywordtype">float</span> vbat = adc_data.<a class="code hl_variable" href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">ADC_voltage_bat</a> * SCALING_FACTOR;</div>
-<div class="line">}</div>
-<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga5bff6d15fc0bf77d4b07f54700f4c434"><div class="ttname"><a href="#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a></div><div class="ttdeci">int adc_get_result_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Retrieves and processes ADC conversion results.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:162</div></div>
-<div class="ttc" id="agroup___d_r_v___a_d_c_html_gab85cb16e003e34435b1bba7bfecbb5b9"><div class="ttname"><a href="#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a></div><div class="ttdeci">int adc_init_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Initializes the ADC hardware and data structure.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:103</div></div>
-<div class="ttc" id="agroup___d_r_v___a_d_c_html_gad85cb208269700f968f1441beb35bf8a"><div class="ttname"><a href="#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a></div><div class="ttdeci">int adc_start_conversion_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Starts ADC conversion sequence in DMA mode.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:137</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html"><div class="ttname"><a href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a></div><div class="ttdoc">Include necessary header files.</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:47</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a0f44518e6b76a378568af6bbc365bb2a"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">S_Adc_Data_TypeDef::ADC_voltage_bat</a></div><div class="ttdeci">uint16_t ADC_voltage_bat</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:52</div></div>
-</div><!-- fragment --><dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17 </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>EVSELab</dd></dl>
-<p>This module provides:</p><ul>
-<li>ADC initialization and configuration</li>
-<li>Multi-channel ADC sampling</li>
-<li>Battery voltage and current measurement</li>
-<li>Temperature monitoring for PFC and LLC</li>
-<li>AC voltage measurement</li>
-</ul>
+<p>ADC driver for hardware interfacing and data acquisition. </p>
+<p>This file implements the initialization and main process logic of the ADC Driver module. It provides the core functions for ADC operation, calibration, DMA-based conversion control, and data retrieval for multiple measurement channels including VAC, thermal sensors, battery measurements, and output voltage monitoring.</p>
 <dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17 </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>EVSELab </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>May 30, 2025 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>EVSELab Co. Jsc.</dd></dl>
+<p>This module provides functions for ADC initialization, calibration, conversion control, and result retrieval. It manages DMA-based ADC operations for multiple channels including VAC, thermal sensors, battery current, battery voltage, and output voltage measurements.</p>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>May 30, 2025 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>EVSELab Co. Jsc. </dd></dl>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
-<a id="gaab3ae09012311e80ab56555d2f667213" name="gaab3ae09012311e80ab56555d2f667213"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaab3ae09012311e80ab56555d2f667213">&#9670;&#160;</a></span>K_ADC_CHANNELS_</h2>
+<a id="ga6da6732b91372cf0e9585a30f607484a" name="ga6da6732b91372cf0e9585a30f607484a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6da6732b91372cf0e9585a30f607484a">&#9670;&#160;</a></span>hadc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define K_ADC_CHANNELS_&#160;&#160;&#160;6</td>
+          <td class="memname">#define hadc&#160;&#160;&#160;<a class="el" href="#ga22b804736f5648d52f639b2647d4ed13">hadc1</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Number of ADC channels used </p>
-
-</div>
-</div>
-<a id="ga06df8b827269d26565943e7898a12dbc" name="ga06df8b827269d26565943e7898a12dbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga06df8b827269d26565943e7898a12dbc">&#9670;&#160;</a></span>K_ADC_MAX_RETRIES_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define K_ADC_MAX_RETRIES_&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Maximum number of conversion retries </p>
-
-</div>
-</div>
-<a id="gadffac13c9ed303087df5376912f2f6bf" name="gadffac13c9ed303087df5376912f2f6bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadffac13c9ed303087df5376912f2f6bf">&#9670;&#160;</a></span>K_ADC_TIMEOUT_MS_</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define K_ADC_TIMEOUT_MS_&#160;&#160;&#160;1000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Local constant definitions. </p>
-<p>ADC operation timeout [ms] </p>
 
 </div>
 </div>
@@ -229,51 +190,49 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Performs ADC calibration sequence. </p>
-<p>Calibrates the ADC channels.</p>
+<p>Perform ADC calibration. </p>
+<p>Executes ADC calibration routine to improve measurement accuracy by compensating for offset and gain errors.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pADC</td><td>Pointer to ADC data structure </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pADC</td><td>Pointer to <a class="el" href="struct_s___adc___data___type_def.html" title="Public macro definitions.">S_Adc_Data_TypeDef</a> structure (reserved for future use).</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Success <br  />
- </td></tr>
-    <tr><td class="paramname">-1</td><td>Invalid parameters <br  />
- </td></tr>
-    <tr><td class="paramname">-2</td><td>Calibration hardware error</td></tr>
+    <tr><td class="paramname">SUCCESS</td><td>Calibration completed successfully. </td></tr>
+    <tr><td class="paramname">ERROR</td><td>Invalid parameter (NULL pointer) or HAL error.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Should be called during init or after temperature change.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is automatically called during <a class="el" href="#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initialize ADC module.">adc_init_()</a>. It can be called separately if recalibration is needed. Checks for null pointer and HAL status.</dd></dl>
+<p>Executes ADC calibration routine to improve measurement accuracy by compensating for offset and gain errors. The calibration process is specific to the STM32G0 ADC peripheral and should be performed before starting conversions or when ambient conditions change significantly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pADC</td><td>Pointer to ADC data structure </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pADC</td><td>Pointer to <a class="el" href="struct_s___adc___data___type_def.html" title="Public macro definitions.">S_Adc_Data_TypeDef</a> structure (reserved for future use, currently not used by implementation).</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Success </td></tr>
-    <tr><td class="paramname">-1</td><td>Calibration error </td></tr>
+    <tr><td class="paramname">SUCCESS</td><td>Calibration completed successfully. </td></tr>
+    <tr><td class="paramname">ERROR</td><td>Invalid parameter (NULL pointer) or HAL error.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Should be called after initialization and before first conversion. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function is automatically called during <a class="el" href="#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initialize ADC module.">adc_init_()</a>. It can be called separately if recalibration is needed during runtime. Checks for null pointer and HAL status. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___a_d_c_ga16393acb40aae65ca9e14eb2444f55c5_icgraph.png" border="0" usemap="#agroup___d_r_v___a_d_c_ga16393acb40aae65ca9e14eb2444f55c5_icgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___a_d_c_ga16393acb40aae65ca9e14eb2444f55c5_icgraph" id="agroup___d_r_v___a_d_c_ga16393acb40aae65ca9e14eb2444f55c5_icgraph">
-<area shape="rect" title="Performs ADC calibration sequence." alt="" coords="500,5,606,32"/>
-<area shape="rect" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initializes the ADC hardware and data structure." alt="" coords="379,5,452,32"/>
-<area shape="poly" title=" " alt="" coords="485,21,453,21,453,16,485,16"/>
-<area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
-<area shape="poly" title=" " alt="" coords="363,21,331,21,331,16,363,16"/>
-<area shape="rect" href="main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="5,5,121,32"/>
-<area shape="poly" title=" " alt="" coords="153,21,121,21,121,16,153,16"/>
+<area shape="rect" title="Perform ADC calibration." alt="" coords="434,5,540,32"/>
+<area shape="rect" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initialize ADC module." alt="" coords="313,5,386,32"/>
+<area shape="poly" title=" " alt="" coords="419,21,387,21,387,16,419,16"/>
+<area shape="rect" href="group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842" title="Global function implementations." alt="" coords="103,5,265,32"/>
+<area shape="poly" title=" " alt="" coords="297,21,265,21,265,16,297,16"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
 </div>
 
@@ -294,47 +253,58 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves and processes ADC conversion results. </p>
-<p>Gets the latest ADC conversion results.</p>
-<p>Updates all measurement channels:</p><ul>
-<li>AC voltage <br  />
-</li>
-<li>PFC/LLC temperatures <br  />
-</li>
-<li>Battery voltage/current <br  />
-</li>
-<li>DC output voltage <br  />
-</li>
+<p>Read and process ADC conversion results. </p>
+<p>Copies raw ADC values from DMA buffer to individual measurement fields for easy access to each channel's data.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pADC</td><td>Pointer to <a class="el" href="struct_s___adc___data___type_def.html" title="Public macro definitions.">S_Adc_Data_TypeDef</a> structure that holds both raw buffer and processed ADC values.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">SUCCESS</td><td>Results retrieved successfully. </td></tr>
+    <tr><td class="paramname">ERROR</td><td>Invalid parameter (NULL pointer).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Should be called after ADC conversion is complete to update all measurement values. This function checks for null pointer.</dd></dl>
+<p>Copies raw ADC values from DMA buffer to individual measurement fields for easy access to each channel's data. Maps buffer indices to corresponding measurement parameters:</p><ul>
+<li>buffer_adc[0] → ADC_vac (AC voltage)</li>
+<li>buffer_adc[1] → ADC_thermal_pfc (PFC thermal)</li>
+<li>buffer_adc[2] → ADC_thermal_llc (LLC thermal)</li>
+<li>buffer_adc[3] → ADC_current_bat (Battery current)</li>
+<li>buffer_adc[4] → ADC_voltage_out (Output voltage)</li>
+<li>buffer_adc[5] → ADC_voltage_bat (Battery voltage)</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">pADC</td><td>Pointer to ADC data structure </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pADC</td><td>Pointer to <a class="el" href="struct_s___adc___data___type_def.html" title="Public macro definitions.">S_Adc_Data_TypeDef</a> structure that holds both raw buffer and processed ADC measurement values.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Success <br  />
- </td></tr>
-    <tr><td class="paramname">-1</td><td>Invalid parameters</td></tr>
+    <tr><td class="paramname">SUCCESS</td><td>Results retrieved and processed successfully. </td></tr>
+    <tr><td class="paramname">ERROR</td><td>Invalid parameter (NULL pointer).</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pADC</td><td>Pointer to ADC data structure </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">0</td><td>Success </td></tr>
-    <tr><td class="paramname">-1</td><td>Data not ready </td></tr>
-    <tr><td class="paramname">-2</td><td>Invalid parameters </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#gad85cb208269700f968f1441beb35bf8a" title="Starts ADC conversion sequence in DMA mode.">adc_start_conversion_</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Should be called after ADC conversion is complete to update all measurement values. This function checks for null pointer. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___d_r_v___a_d_c_ga5bff6d15fc0bf77d4b07f54700f4c434_icgraph.png" border="0" usemap="#agroup___d_r_v___a_d_c_ga5bff6d15fc0bf77d4b07f54700f4c434_icgraph" loading="lazy" alt=""/></div>
+<map name="agroup___d_r_v___a_d_c_ga5bff6d15fc0bf77d4b07f54700f4c434_icgraph" id="agroup___d_r_v___a_d_c_ga5bff6d15fc0bf77d4b07f54700f4c434_icgraph">
+<area shape="rect" title="Read and process ADC conversion results." alt="" coords="567,5,681,32"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga7ec30b7794b47ae2138c478f132022d2" title="Update all measurements in Q15 format." alt="" coords="365,5,519,32"/>
+<area shape="poly" title=" " alt="" coords="552,21,520,21,520,16,552,16"/>
+<area shape="rect" href="group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd" title="Main interrupt service routine for real&#45;time control." alt="" coords="142,5,317,32"/>
+<area shape="poly" title=" " alt="" coords="349,21,317,21,317,16,349,16"/>
+<area shape="rect" href="main_8c.html#a4665d4e1d5fea2d34089d4e50a763751" title=" " alt="" coords="5,5,94,32"/>
+<area shape="poly" title=" " alt="" coords="126,21,94,21,94,16,126,16"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -353,60 +323,50 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the ADC hardware and data structure. </p>
-<p>Initializes the ADC module and its data structure.</p>
-<p>Performs:</p><ol type="1">
-<li>Parameter validation <br  />
-</li>
-<li>Buffer reset <br  />
-</li>
-<li>Hardware configuration <br  />
-</li>
-<li>Initial calibration <br  />
-</li>
-<li>DMA setup <br  />
-</li>
-</ol>
+<p>Initialize ADC module. </p>
+<p>Initializes the ADC structure by resetting all ADC-related values, performs calibration, and starts DMA conversion.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">pADC</td><td>ADC data structure to initialize </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pADC</td><td>Pointer to <a class="el" href="struct_s___adc___data___type_def.html" title="Public macro definitions.">S_Adc_Data_TypeDef</a> structure containing ADC configuration and data buffers.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Success <br  />
- </td></tr>
-    <tr><td class="paramname">-1</td><td>Invalid parameters <br  />
- </td></tr>
-    <tr><td class="paramname">-2</td><td>Hardware init failed</td></tr>
+    <tr><td class="paramname">SUCCESS</td><td>Initialization completed successfully. </td></tr>
+    <tr><td class="paramname">ERROR</td><td>Invalid parameter (NULL pointer) or HAL error.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd>Must be called before any other ADC operation.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This function must be called once during system startup before using any other ADC functions. It checks for null pointer and initializes all buffer elements to zero.</dd></dl>
+<p>This function performs initial setup for ADC Driver module:</p><ul>
+<li>Reset internal counters and buffer values to zero</li>
+<li>Configure ADC hardware via calibration</li>
+<li>Start DMA-based continuous conversion The function initializes all 6 ADC channels (VAC, thermal sensors, battery current/voltage, and output voltage).</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pADC</td><td>Pointer to ADC data structure </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pADC</td><td>Pointer to <a class="el" href="struct_s___adc___data___type_def.html" title="Public macro definitions.">S_Adc_Data_TypeDef</a> structure containing ADC configuration and data buffers.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Success </td></tr>
-    <tr><td class="paramname">-1</td><td>Invalid parameters </td></tr>
+    <tr><td class="paramname">SUCCESS</td><td>Initialization completed successfully. </td></tr>
+    <tr><td class="paramname">ERROR</td><td>Invalid parameter (NULL pointer) or hardware error.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Must be called before any other ADC functions. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Must be called once during system startup before using any other ADC functions. Checks for null pointer and initializes all buffer elements to zero. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___a_d_c_gab85cb16e003e34435b1bba7bfecbb5b9_cgraph.png" border="0" usemap="#agroup___d_r_v___a_d_c_gab85cb16e003e34435b1bba7bfecbb5b9_cgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___a_d_c_gab85cb16e003e34435b1bba7bfecbb5b9_cgraph" id="agroup___d_r_v___a_d_c_gab85cb16e003e34435b1bba7bfecbb5b9_cgraph">
-<area shape="rect" title="Initializes the ADC hardware and data structure." alt="" coords="5,31,79,57"/>
-<area shape="rect" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5" title="Performs ADC calibration sequence." alt="" coords="150,5,256,32"/>
+<area shape="rect" title="Initialize ADC module." alt="" coords="5,31,79,57"/>
+<area shape="rect" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5" title="Perform ADC calibration." alt="" coords="150,5,256,32"/>
 <area shape="poly" title=" " alt="" coords="79,36,134,27,135,32,80,41"/>
-<area shape="rect" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a" title="Starts ADC conversion sequence in DMA mode." alt="" coords="127,56,279,83"/>
+<area shape="rect" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a" title="Start ADC conversion using DMA mode." alt="" coords="127,56,279,83"/>
 <area shape="poly" title=" " alt="" coords="80,47,112,52,111,58,79,52"/>
 </map>
 </div>
@@ -415,11 +375,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___a_d_c_gab85cb16e003e34435b1bba7bfecbb5b9_icgraph.png" border="0" usemap="#agroup___d_r_v___a_d_c_gab85cb16e003e34435b1bba7bfecbb5b9_icgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___a_d_c_gab85cb16e003e34435b1bba7bfecbb5b9_icgraph" id="agroup___d_r_v___a_d_c_gab85cb16e003e34435b1bba7bfecbb5b9_icgraph">
-<area shape="rect" title="Initializes the ADC hardware and data structure." alt="" coords="379,5,452,32"/>
-<area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
-<area shape="poly" title=" " alt="" coords="363,21,331,21,331,16,363,16"/>
-<area shape="rect" href="main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="5,5,121,32"/>
-<area shape="poly" title=" " alt="" coords="153,21,121,21,121,16,153,16"/>
+<area shape="rect" title="Initialize ADC module." alt="" coords="313,5,386,32"/>
+<area shape="rect" href="group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842" title="Global function implementations." alt="" coords="103,5,265,32"/>
+<area shape="poly" title=" " alt="" coords="297,21,265,21,265,16,297,16"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
 </div>
 
@@ -440,58 +400,160 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Starts ADC conversion sequence in DMA mode. </p>
-<p>Starts an ADC conversion sequence.</p>
+<p>Start ADC conversion using DMA mode. </p>
+<p>Initiates continuous ADC conversion with DMA for all configured channels. Results are automatically stored in the buffer.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pADC</td><td>ADC data structure for DMA transfer. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pADC</td><td>Pointer to <a class="el" href="struct_s___adc___data___type_def.html" title="Public macro definitions.">S_Adc_Data_TypeDef</a> structure where ADC buffer will be stored.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Success <br  />
- </td></tr>
-    <tr><td class="paramname">-1</td><td>Invalid parameters <br  />
- </td></tr>
-    <tr><td class="paramname">-2</td><td>DMA setup error <br  />
-</td></tr>
+    <tr><td class="paramname">SUCCESS</td><td>Conversion started successfully. </td></tr>
+    <tr><td class="paramname">ERROR</td><td>Invalid parameter (NULL pointer) or HAL error.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Non-blocking operation. Use <a class="el" href="#ga5bff6d15fc0bf77d4b07f54700f4c434" title="Retrieves and processes ADC conversion results.">adc_get_result_()</a> to read results.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The DMA buffer must be properly configured before calling this function. This function checks for null pointer and HAL status.</dd></dl>
+<p>Initiates continuous ADC conversion with DMA for all configured channels (VAC, thermal sensors, battery measurements, output voltage). Conversion results are automatically stored in the DMA buffer by hardware without CPU intervention.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pADC</td><td>Pointer to ADC data structure </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pADC</td><td>Pointer to <a class="el" href="struct_s___adc___data___type_def.html" title="Public macro definitions.">S_Adc_Data_TypeDef</a> structure where ADC buffer will be stored via DMA transfers.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>Success </td></tr>
-    <tr><td class="paramname">-1</td><td>Conversion error </td></tr>
+    <tr><td class="paramname">SUCCESS</td><td>DMA conversion started successfully. </td></tr>
+    <tr><td class="paramname">ERROR</td><td>Invalid parameter (NULL pointer) or HAL error.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Non-blocking function; check results using <a class="el" href="#ga5bff6d15fc0bf77d4b07f54700f4c434" title="Retrieves and processes ADC conversion results.">adc_get_result_()</a>. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The DMA buffer must be properly configured in the ADC structure before calling this function. This function checks for null pointer and HAL status. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___d_r_v___a_d_c_gad85cb208269700f968f1441beb35bf8a_icgraph.png" border="0" usemap="#agroup___d_r_v___a_d_c_gad85cb208269700f968f1441beb35bf8a_icgraph" loading="lazy" alt=""/></div>
 <map name="agroup___d_r_v___a_d_c_gad85cb208269700f968f1441beb35bf8a_icgraph" id="agroup___d_r_v___a_d_c_gad85cb208269700f968f1441beb35bf8a_icgraph">
-<area shape="rect" title="Starts ADC conversion sequence in DMA mode." alt="" coords="500,5,653,32"/>
-<area shape="rect" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initializes the ADC hardware and data structure." alt="" coords="379,5,452,32"/>
-<area shape="poly" title=" " alt="" coords="484,21,453,21,453,16,484,16"/>
-<area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
-<area shape="poly" title=" " alt="" coords="363,21,331,21,331,16,363,16"/>
-<area shape="rect" href="main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="5,5,121,32"/>
-<area shape="poly" title=" " alt="" coords="153,21,121,21,121,16,153,16"/>
+<area shape="rect" title="Start ADC conversion using DMA mode." alt="" coords="434,5,587,32"/>
+<area shape="rect" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initialize ADC module." alt="" coords="313,5,386,32"/>
+<area shape="poly" title=" " alt="" coords="418,21,387,21,387,16,418,16"/>
+<area shape="rect" href="group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842" title="Global function implementations." alt="" coords="103,5,265,32"/>
+<area shape="poly" title=" " alt="" coords="297,21,265,21,265,16,297,16"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
 </div>
 
 </div>
 </div>
 <a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="ga5f46e99a879143174e4d1f013ad9d34c" name="ga5f46e99a879143174e4d1f013ad9d34c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5f46e99a879143174e4d1f013ad9d34c">&#9670;&#160;</a></span>ADC_current_bat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ADC_current_bat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Battery current measurement value </p>
+
+</div>
+</div>
+<a id="gacc3f3f60ba83b8809b768dc85180b71c" name="gacc3f3f60ba83b8809b768dc85180b71c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc3f3f60ba83b8809b768dc85180b71c">&#9670;&#160;</a></span>ADC_thermal_llc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ADC_thermal_llc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>LLC thermal sensor reading </p>
+
+</div>
+</div>
+<a id="ga7cf0add5681cddfb5760a8076fb9cbce" name="ga7cf0add5681cddfb5760a8076fb9cbce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7cf0add5681cddfb5760a8076fb9cbce">&#9670;&#160;</a></span>ADC_thermal_pfc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ADC_thermal_pfc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PFC thermal sensor reading </p>
+
+</div>
+</div>
+<a id="ga6e4486ef0554e48702f9095253afcc72" name="ga6e4486ef0554e48702f9095253afcc72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e4486ef0554e48702f9095253afcc72">&#9670;&#160;</a></span>ADC_vac</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ADC_vac</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>AC voltage measurement value </p>
+
+</div>
+</div>
+<a id="ga0f44518e6b76a378568af6bbc365bb2a" name="ga0f44518e6b76a378568af6bbc365bb2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f44518e6b76a378568af6bbc365bb2a">&#9670;&#160;</a></span>ADC_voltage_bat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ADC_voltage_bat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Battery voltage measurement value </p>
+
+</div>
+</div>
+<a id="ga942b5893c1e875c5f1a0b7350f16c7b5" name="ga942b5893c1e875c5f1a0b7350f16c7b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga942b5893c1e875c5f1a0b7350f16c7b5">&#9670;&#160;</a></span>ADC_voltage_out</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ADC_voltage_out</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Output voltage measurement value </p>
+
+</div>
+</div>
+<a id="gaf0d2ffa00bdaf3b3b36ecb283f8a5b55" name="gaf0d2ffa00bdaf3b3b36ecb283f8a5b55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf0d2ffa00bdaf3b3b36ecb283f8a5b55">&#9670;&#160;</a></span>buffer_adc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t buffer_adc[6]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>DMA buffer holding raw ADC values for all channels [0-5] </p>
+
+</div>
+</div>
 <a id="ga26caa0d775f89d63143e0f475564a166" name="ga26caa0d775f89d63143e0f475564a166"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga26caa0d775f89d63143e0f475564a166">&#9670;&#160;</a></span>g_adc_data_</h2>
 
@@ -511,7 +573,37 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Global ADC data instance </p>
+
+<p>Include public and private headers. </p>
+<p>Local constant definitions. </p><dl class="section note"><dt>Note</dt><dd>Use prefix K_ for constants.</dd></dl>
+<p>Local macro definitions. </p><dl class="section note"><dt>Note</dt><dd>Use prefix M_ for macros.</dd></dl>
+<p>Private data types and enumerations.</p>
+<p>Static helper function prototypes. </p><dl class="section note"><dt>Note</dt><dd>Functions declared here must be defined as static.</dd></dl>
+<p>Module-scope variables. </p><dl class="section note"><dt>Note</dt><dd>Use prefix g_ for global module-level variables. </dd></dl>
+
+</div>
+</div>
+<a id="ga22b804736f5648d52f639b2647d4ed13" name="ga22b804736f5648d52f639b2647d4ed13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22b804736f5648d52f639b2647d4ed13">&#9670;&#160;</a></span>hadc1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADC_HandleTypeDef hadc1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Extern global variables for ADC module. </p>
 
 </div>
 </div>

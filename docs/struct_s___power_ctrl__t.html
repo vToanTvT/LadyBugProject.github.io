@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: S_PowerCtrl_t Struct Reference</title>
+<title>LadyBug Firmware Documentation: S_PowerCtrl_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -89,55 +96,57 @@ $(function(){initNavTree('struct_s___power_ctrl__t.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">S_PowerCtrl_t Struct Reference<div class="ingroups"><a class="el" href="group___m_i_d_d_l_e___l_a_y_e_r.html">Middleware Layer</a> &raquo; <a class="el" href="group___m_i_d___p_o_w_e_r.html">Power Control Middleware</a></div></div></div>
+  <div class="headertitle"><div class="title">S_PowerCtrl_t Struct Reference<div class="ingroups"><a class="el" href="group___m_i_d_d_l_e_w_a_r_e___l_a_y_e_r.html">Middleware Layer</a> &raquo; <a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html">Power Control Middleware</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Power control system state and configuration.  
+<p>Public macro definitions.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="mid__power__control__handler_8h_source.html">mid_power_control_handler.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for S_PowerCtrl_t:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_s___power_ctrl__t__coll__graph.png" border="0" usemap="#a_s___power_ctrl__t_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_s___power_ctrl__t_coll__map" id="a_s___power_ctrl__t_coll__map">
+<area shape="rect" title="Public macro definitions." alt="" coords="5,5,150,288"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a074aef4469c610ce70bdb422665414e0" id="r_a074aef4469c610ce70bdb422665414e0"><td class="memItemLeft" align="right" valign="top">q31_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a074aef4469c610ce70bdb422665414e0">voltage_coef_q15</a></td></tr>
-<tr class="memdesc:a074aef4469c610ce70bdb422665414e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltage derating coefficient in Q15 format.  <br /></td></tr>
+<tr class="memitem:a2941d7c813b2b0ad3f024617f10640cb" id="r_a2941d7c813b2b0ad3f024617f10640cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2941d7c813b2b0ad3f024617f10640cb">power_output</a></td></tr>
+<tr class="memitem:a08edb27b80b7af65987aa707587db7d8" id="r_a08edb27b80b7af65987aa707587db7d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08edb27b80b7af65987aa707587db7d8">power_derate_output</a></td></tr>
+<tr class="memitem:a512038e3567eec410292da43b9e655e9" id="r_a512038e3567eec410292da43b9e655e9"><td class="memItemLeft" align="right" valign="top">_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a512038e3567eec410292da43b9e655e9">derate_power_mode</a></td></tr>
+<tr class="memitem:a074aef4469c610ce70bdb422665414e0" id="r_a074aef4469c610ce70bdb422665414e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a074aef4469c610ce70bdb422665414e0">voltage_coef_q15</a></td></tr>
 <tr class="memitem:a0b8cdfb9165992c2e481009f8e2ee731" id="r_a0b8cdfb9165992c2e481009f8e2ee731"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b8cdfb9165992c2e481009f8e2ee731">voltage_coef_f32</a></td></tr>
-<tr class="memdesc:a0b8cdfb9165992c2e481009f8e2ee731"><td class="mdescLeft">&#160;</td><td class="mdescRight">Voltage derating coefficient in float format.  <br /></td></tr>
-<tr class="memitem:a5679874d6868b9fe6be08b2740125811" id="r_a5679874d6868b9fe6be08b2740125811"><td class="memItemLeft" align="right" valign="top">q31_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5679874d6868b9fe6be08b2740125811">temp_coef_q15</a></td></tr>
-<tr class="memdesc:a5679874d6868b9fe6be08b2740125811"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature derating coefficient in Q15 format.  <br /></td></tr>
+<tr class="memitem:a5679874d6868b9fe6be08b2740125811" id="r_a5679874d6868b9fe6be08b2740125811"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5679874d6868b9fe6be08b2740125811">temp_coef_q15</a></td></tr>
 <tr class="memitem:a4a2a0a78e0f9221409917f60c8a21c39" id="r_a4a2a0a78e0f9221409917f60c8a21c39"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a2a0a78e0f9221409917f60c8a21c39">temp_coef_f32</a></td></tr>
-<tr class="memdesc:a4a2a0a78e0f9221409917f60c8a21c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temperature derating coefficient in float format.  <br /></td></tr>
-<tr class="memitem:acf674f385f7acf3d4de6c31d551d8c22" id="r_acf674f385f7acf3d4de6c31d551d8c22"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf674f385f7acf3d4de6c31d551d8c22">temperature</a> [<a class="el" href="group___m_i_d___p_o_w_e_r.html#gaeeea42d55f471c08d7621ca4b7c6639a">TEMP_CNT</a>]</td></tr>
-<tr class="memdesc:acf674f385f7acf3d4de6c31d551d8c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Circular buffer of temperature measurements in Q15.  <br /></td></tr>
-<tr class="memitem:a048b9264fc947487bf908325fea7e34d" id="r_a048b9264fc947487bf908325fea7e34d"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a048b9264fc947487bf908325fea7e34d">acvolt</a> [<a class="el" href="group___m_i_d___p_o_w_e_r.html#ga93402300bb576b937a3e5790b57bd87d">ACVOL_CNT</a>]</td></tr>
-<tr class="memdesc:a048b9264fc947487bf908325fea7e34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Circular buffer of AC voltage measurements in Q15.  <br /></td></tr>
-<tr class="memitem:aa1c21529eb5c426c3936b33d672afd12" id="r_aa1c21529eb5c426c3936b33d672afd12"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1c21529eb5c426c3936b33d672afd12">temp_avg</a></td></tr>
-<tr class="memdesc:aa1c21529eb5c426c3936b33d672afd12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moving average of temperature measurements.  <br /></td></tr>
-<tr class="memitem:a2c976f9a8093c636fd09d215a78d99b5" id="r_a2c976f9a8093c636fd09d215a78d99b5"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c976f9a8093c636fd09d215a78d99b5">temp_med</a></td></tr>
-<tr class="memdesc:a2c976f9a8093c636fd09d215a78d99b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Median of temperature measurements.  <br /></td></tr>
-<tr class="memitem:a5628930460aef989cadc91ff62e92e9b" id="r_a5628930460aef989cadc91ff62e92e9b"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5628930460aef989cadc91ff62e92e9b">acvolt_avg</a></td></tr>
-<tr class="memdesc:a5628930460aef989cadc91ff62e92e9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moving average of AC voltage measurements.  <br /></td></tr>
-<tr class="memitem:a783a1fbf39e1999abcfe2ec3ebb13fba" id="r_a783a1fbf39e1999abcfe2ec3ebb13fba"><td class="memItemLeft" align="right" valign="top">uq15_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a783a1fbf39e1999abcfe2ec3ebb13fba">acvolt_med</a></td></tr>
-<tr class="memdesc:a783a1fbf39e1999abcfe2ec3ebb13fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Median of AC voltage measurements.  <br /></td></tr>
+<tr class="memitem:acf674f385f7acf3d4de6c31d551d8c22" id="r_acf674f385f7acf3d4de6c31d551d8c22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf674f385f7acf3d4de6c31d551d8c22">temperature</a> [<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gaeeea42d55f471c08d7621ca4b7c6639a">TEMP_CNT</a>]</td></tr>
+<tr class="memitem:a048b9264fc947487bf908325fea7e34d" id="r_a048b9264fc947487bf908325fea7e34d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a048b9264fc947487bf908325fea7e34d">acvolt</a> [<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga93402300bb576b937a3e5790b57bd87d">ACVOL_CNT</a>]</td></tr>
+<tr class="memitem:aa1c21529eb5c426c3936b33d672afd12" id="r_aa1c21529eb5c426c3936b33d672afd12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1c21529eb5c426c3936b33d672afd12">temp_avg</a></td></tr>
+<tr class="memitem:a2c976f9a8093c636fd09d215a78d99b5" id="r_a2c976f9a8093c636fd09d215a78d99b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c976f9a8093c636fd09d215a78d99b5">temp_med</a></td></tr>
+<tr class="memitem:a5628930460aef989cadc91ff62e92e9b" id="r_a5628930460aef989cadc91ff62e92e9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5628930460aef989cadc91ff62e92e9b">acvolt_avg</a></td></tr>
+<tr class="memitem:a783a1fbf39e1999abcfe2ec3ebb13fba" id="r_a783a1fbf39e1999abcfe2ec3ebb13fba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a783a1fbf39e1999abcfe2ec3ebb13fba">acvolt_med</a></td></tr>
 <tr class="memitem:afeac614600f387b71105815595cba7ed" id="r_afeac614600f387b71105815595cba7ed"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afeac614600f387b71105815595cba7ed">derate_coef_f32</a></td></tr>
-<tr class="memdesc:afeac614600f387b71105815595cba7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overall derating coefficient in float format.  <br /></td></tr>
-<tr class="memitem:a9451dcefd92bc597773b94cc107e6bbf" id="r_a9451dcefd92bc597773b94cc107e6bbf"><td class="memItemLeft" align="right" valign="top">q31_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9451dcefd92bc597773b94cc107e6bbf">derate_coef_q15</a></td></tr>
-<tr class="memdesc:a9451dcefd92bc597773b94cc107e6bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overall derating coefficient in Q15 format.  <br /></td></tr>
-<tr class="memitem:aeb824be75611cc83b9b6e8d18b66bfc1" id="r_aeb824be75611cc83b9b6e8d18b66bfc1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb824be75611cc83b9b6e8d18b66bfc1">counter</a></td></tr>
-<tr class="memdesc:aeb824be75611cc83b9b6e8d18b66bfc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update period counter.  <br /></td></tr>
-<tr class="memitem:a258408d6d5d13a24bfa5211d81ce1682" id="r_a258408d6d5d13a24bfa5211d81ce1682"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a258408d6d5d13a24bfa5211d81ce1682">period</a></td></tr>
-<tr class="memdesc:a258408d6d5d13a24bfa5211d81ce1682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update period in system ticks.  <br /></td></tr>
+<tr class="memitem:a045f407c6f4f4d10f9639ad80a1f4693" id="r_a045f407c6f4f4d10f9639ad80a1f4693"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a045f407c6f4f4d10f9639ad80a1f4693">derate_coef_q15</a></td></tr>
+<tr class="memitem:a51322ddb267b4729d6b5f2bb05d49fff" id="r_a51322ddb267b4729d6b5f2bb05d49fff"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51322ddb267b4729d6b5f2bb05d49fff">counter</a></td></tr>
+<tr class="memitem:a81b43df06332b4fef558297592bb7ff1" id="r_a81b43df06332b4fef558297592bb7ff1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81b43df06332b4fef558297592bb7ff1">period</a></td></tr>
 <tr class="memitem:a5d7d3b2c89307fdf136eecc518ce6a12" id="r_a5d7d3b2c89307fdf136eecc518ce6a12"><td class="memItemLeft" align="right" valign="top">_Bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d7d3b2c89307fdf136eecc518ce6a12">flgUpdate</a></td></tr>
-<tr class="memdesc:a5d7d3b2c89307fdf136eecc518ce6a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update flag for synchronization.  <br /></td></tr>
+<tr class="memitem:ae5b57e50481da13117c7f96d8b8e8a4f" id="r_ae5b57e50481da13117c7f96d8b8e8a4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5b57e50481da13117c7f96d8b8e8a4f">current_temp_index</a></td></tr>
+<tr class="memitem:a4f0742d580c408adafae937fb91467a3" id="r_a4f0742d580c408adafae937fb91467a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f0742d580c408adafae937fb91467a3">current_volt_index</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Power control system state and configuration. </p>
-<p>Contains all parameters and state information for power control:</p><ul>
-<li>Derating coefficients (voltage and temperature)</li>
-<li>Measurement buffers and statistics</li>
+<div class="textblock"><p>Public macro definitions. </p>
+<p>Type definitions used in Power Control module.</p>
+<p>Power control instance structure with derating information.</p>
+<p>This structure maintains all state for power derating calculation including:</p><ul>
+<li>Current power output and derated limit</li>
+<li>Derating coefficients from temperature and voltage</li>
+<li>Measurement buffers for filtering (5 samples each)</li>
+<li>Statistical values (average, median)</li>
 <li>Update timing control</li>
-<li>Both fixed and floating-point representations </li>
+<li>Hysteresis zone tracking for stable mode switching </li>
 </ul>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="a048b9264fc947487bf908325fea7e34d" name="a048b9264fc947487bf908325fea7e34d"></a>
@@ -147,12 +156,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uq15_t acvolt[<a class="el" href="group___m_i_d___p_o_w_e_r.html#ga93402300bb576b937a3e5790b57bd87d">ACVOL_CNT</a>]</td>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> acvolt[<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga93402300bb576b937a3e5790b57bd87d">ACVOL_CNT</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Circular buffer of AC voltage measurements in Q15. </p>
+<p>AC voltage measurement buffer (5 samples, Q15) </p>
 
 </div>
 </div>
@@ -163,12 +171,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uq15_t acvolt_avg</td>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> acvolt_avg</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Moving average of AC voltage measurements. </p>
+<p>Average AC voltage from buffer (Q15) </p>
 
 </div>
 </div>
@@ -179,28 +186,56 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uq15_t acvolt_med</td>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> acvolt_med</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Median of AC voltage measurements. </p>
+<p>Median AC voltage from buffer (Q15) </p>
 
 </div>
 </div>
-<a id="aeb824be75611cc83b9b6e8d18b66bfc1" name="aeb824be75611cc83b9b6e8d18b66bfc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb824be75611cc83b9b6e8d18b66bfc1">&#9670;&#160;</a></span>counter</h2>
+<a id="a51322ddb267b4729d6b5f2bb05d49fff" name="a51322ddb267b4729d6b5f2bb05d49fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51322ddb267b4729d6b5f2bb05d49fff">&#9670;&#160;</a></span>counter</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t counter</td>
+          <td class="memname">uint32_t counter</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Tick counter for periodic updates </p>
 
-<p>Update period counter. </p>
+</div>
+</div>
+<a id="ae5b57e50481da13117c7f96d8b8e8a4f" name="ae5b57e50481da13117c7f96d8b8e8a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5b57e50481da13117c7f96d8b8e8a4f">&#9670;&#160;</a></span>current_temp_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> current_temp_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Current temperature zone index for hysteresis </p>
+
+</div>
+</div>
+<a id="a4f0742d580c408adafae937fb91467a3" name="a4f0742d580c408adafae937fb91467a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f0742d580c408adafae937fb91467a3">&#9670;&#160;</a></span>current_volt_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> current_volt_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Current voltage zone index for hysteresis </p>
 
 </div>
 </div>
@@ -215,24 +250,37 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Overall derating coefficient in float format. </p>
+<p>Overall derating coefficient (float, min of voltage and temp) </p>
 
 </div>
 </div>
-<a id="a9451dcefd92bc597773b94cc107e6bbf" name="a9451dcefd92bc597773b94cc107e6bbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9451dcefd92bc597773b94cc107e6bbf">&#9670;&#160;</a></span>derate_coef_q15</h2>
+<a id="a045f407c6f4f4d10f9639ad80a1f4693" name="a045f407c6f4f4d10f9639ad80a1f4693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a045f407c6f4f4d10f9639ad80a1f4693">&#9670;&#160;</a></span>derate_coef_q15</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">q31_t derate_coef_q15</td>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> derate_coef_q15</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Overall derating coefficient (Q15, min of voltage and temp) </p>
 
-<p>Overall derating coefficient in Q15 format. </p>
+</div>
+</div>
+<a id="a512038e3567eec410292da43b9e655e9" name="a512038e3567eec410292da43b9e655e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a512038e3567eec410292da43b9e655e9">&#9670;&#160;</a></span>derate_power_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_Bool derate_power_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Derate power mode flag: true = derating active </p>
 
 </div>
 </div>
@@ -247,24 +295,52 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Update flag for synchronization. </p>
+<p>Update flag: set when period expires </p>
 
 </div>
 </div>
-<a id="a258408d6d5d13a24bfa5211d81ce1682" name="a258408d6d5d13a24bfa5211d81ce1682"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a258408d6d5d13a24bfa5211d81ce1682">&#9670;&#160;</a></span>period</h2>
+<a id="a81b43df06332b4fef558297592bb7ff1" name="a81b43df06332b4fef558297592bb7ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81b43df06332b4fef558297592bb7ff1">&#9670;&#160;</a></span>period</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t period</td>
+          <td class="memname">uint32_t period</td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Update period in ticks (default 1s) </p>
 
-<p>Update period in system ticks. </p>
+</div>
+</div>
+<a id="a08edb27b80b7af65987aa707587db7d8" name="a08edb27b80b7af65987aa707587db7d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08edb27b80b7af65987aa707587db7d8">&#9670;&#160;</a></span>power_derate_output</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> power_derate_output</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Derated power limit (Q15 normalized to POWER_SOFT_LIMIT) </p>
+
+</div>
+</div>
+<a id="a2941d7c813b2b0ad3f024617f10640cb" name="a2941d7c813b2b0ad3f024617f10640cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2941d7c813b2b0ad3f024617f10640cb">&#9670;&#160;</a></span>power_output</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> power_output</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Current power output (Q15 normalized to POWER_SOFT_LIMIT) </p>
 
 </div>
 </div>
@@ -275,12 +351,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uq15_t temp_avg</td>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> temp_avg</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Moving average of temperature measurements. </p>
+<p>Average temperature from buffer (Q15) </p>
 
 </div>
 </div>
@@ -295,8 +370,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Temperature derating coefficient in float format. </p>
+<p>Temperature derating coefficient (float, 0.0-1.0) </p>
 
 </div>
 </div>
@@ -307,12 +381,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">q31_t temp_coef_q15</td>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> temp_coef_q15</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Temperature derating coefficient in Q15 format. </p>
+<p>Temperature derating coefficient (Q15, 0.0-1.0) </p>
 
 </div>
 </div>
@@ -323,12 +396,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uq15_t temp_med</td>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> temp_med</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Median of temperature measurements. </p>
+<p>Median temperature from buffer (Q15) </p>
 
 </div>
 </div>
@@ -339,12 +411,11 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uq15_t temperature[<a class="el" href="group___m_i_d___p_o_w_e_r.html#gaeeea42d55f471c08d7621ca4b7c6639a">TEMP_CNT</a>]</td>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> temperature[<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gaeeea42d55f471c08d7621ca4b7c6639a">TEMP_CNT</a>]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Circular buffer of temperature measurements in Q15. </p>
+<p>Temperature measurement buffer (5 samples, Q15) </p>
 
 </div>
 </div>
@@ -359,8 +430,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Voltage derating coefficient in float format. </p>
+<p>Voltage derating coefficient (float, 0.0-1.0) </p>
 
 </div>
 </div>
@@ -371,17 +441,16 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">q31_t voltage_coef_q15</td>
+          <td class="memname"><a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> voltage_coef_q15</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Voltage derating coefficient in Q15 format. </p>
+<p>Voltage derating coefficient (Q15, 0.0-1.0) </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="mid__power__control__handler_8h_source.html">mid_power_control_handler.h</a></li>
+<li>Source code/_MiddlewareLayer/PowerControl/<a class="el" href="mid__power__control__handler_8h_source.html">mid_power_control_handler.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

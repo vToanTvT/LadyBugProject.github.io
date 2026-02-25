@@ -1,0 +1,11 @@
+<map id="state_idleHandle" name="state_idleHandle">
+<area shape="rect" id="Node000001" title="Handle IDLE state operations (PFC comp on, PFC relay off, fan enable, LLC standby)" alt="" coords="737,5,855,32"/>
+<area shape="rect" id="Node000002" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state machine." alt="" coords="592,5,689,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="721,21,689,21,689,16,721,16"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga8a7c85b9c345204d44030fb96316a5eb" title="EVSE application processing handler." alt="" coords="365,5,544,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="577,21,545,21,545,16,577,16"/>
+<area shape="rect" id="Node000004" href="$group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd" title="Main interrupt service routine for real&#45;time control." alt="" coords="142,5,317,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="350,21,318,21,318,16,350,16"/>
+<area shape="rect" id="Node000005" href="$main_8c.html#a4665d4e1d5fea2d34089d4e50a763751" title=" " alt="" coords="5,5,94,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="126,21,94,21,94,16,126,16"/>
+</map>

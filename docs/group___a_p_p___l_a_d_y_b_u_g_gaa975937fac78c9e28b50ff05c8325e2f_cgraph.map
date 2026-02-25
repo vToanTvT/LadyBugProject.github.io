@@ -1,0 +1,37 @@
+<map id="LB_inf_loop_system" name="LB_inf_loop_system">
+<area shape="rect" id="Node000001" title="Infinite loop processing for background tasks." alt="" coords="5,260,145,287"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b" title="Process LED update when flag is set." alt="" coords="193,116,369,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,257,191,187,245,149,248,154,194,192,97,262"/>
+<area shape="rect" id="Node000007" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac06a2da82bba5c606a45dfd7822e187f" title="Process measurement averaging update if flag set." alt="" coords="201,201,360,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="124,257,216,230,218,235,125,262"/>
+<area shape="rect" id="Node000013" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga0d941d936181024d0a591cbf438f35cd" title="Process fan control update if flag set." alt="" coords="216,252,346,295"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="145,271,200,271,200,276,145,276"/>
+<area shape="rect" id="Node000016" href="$group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga4967a767bd354d2ce90133a5379de3e4" title="Process periodic update when flag is set." alt="" coords="198,319,364,345"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="125,285,218,311,216,316,124,290"/>
+<area shape="rect" id="Node000018" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga3d5254d06dbab993dda09f25f550106c" title="Get LED mode corresponding to current EVSE state." alt="" coords="208,369,354,396"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="93,285,137,320,194,355,208,361,206,366,191,360,134,324,90,289"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b" title="Set LED mode for system status indication." alt="" coords="433,81,567,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="369,113,417,105,418,110,369,118"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="652,5,764,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="535,78,630,41,649,35,651,40,632,47,537,83"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="657,56,759,83"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="567,84,642,75,642,80,568,89"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___g_p_i_o.html#ga4516b6ab8d2d78f90b0f7e365e8ed773" title="Toggle GPIO pin state." alt="" coords="649,107,767,133"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="568,100,633,108,633,114,567,105"/>
+<area shape="rect" id="Node000008" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gab8a9c3244586ea0d412e3e391157fa5e" title="Update measurements to float format." alt="" coords="421,157,579,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="350,198,415,185,416,190,351,203"/>
+<area shape="rect" id="Node000010" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac11d0b2fe43fdbaf29be8a7885271706" title="Update average values for all critical measurements." alt="" coords="417,208,583,235"/>
+<area shape="poly" id="edge9_Node000007_Node000010" title=" " alt="" coords="361,214,401,216,401,221,361,220"/>
+<area shape="rect" id="Node000009" href="$mid__measurement__handler_8c.html#a60b8a41f4a3ae79e98e3bf64b24b4779" title="Convert to human&#45;readable float format." alt="" coords="631,157,785,184"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="580,168,616,168,616,173,580,173"/>
+<area shape="rect" id="Node000011" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga4ae0c65f66d88cf871a9e9ea9292d4dc" title="Measurement module function implementations." alt="" coords="636,208,780,235"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="584,219,620,219,620,224,584,224"/>
+<area shape="rect" id="Node000012" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gad3f25e3fa1c46f5b1f3207743b9848dc" title="Update circular buffer with new value." alt="" coords="635,259,781,285"/>
+<area shape="poly" id="edge11_Node000010_Node000012" title=" " alt="" coords="559,233,636,252,635,257,557,238"/>
+<area shape="rect" id="Node000014" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae389a4ec8879fd13922b8c01b691c7c3" title="Control fan speed with rule&#45;based system." alt="" coords="422,264,578,291"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="347,272,407,273,407,278,347,277"/>
+<area shape="rect" id="Node000015" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="651,309,765,336"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="565,289,637,304,636,310,564,294"/>
+<area shape="rect" id="Node000017" href="$group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga0d28bfa2310fbd7c34ce2ed130bc3356" title="Update derating coefficients and power calculations." alt="" coords="428,319,573,345"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="364,329,412,329,412,335,364,335"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="state_handshakeHandle" name="state_handshakeHandle">
+<area shape="rect" id="Node000001" title="Handle HANDSHAKE state operations (LLC relay on)" alt="" coords="5,5,167,32"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga2ab40e496ed47c23875cbb65b689e9a4" title="Peripheral module function implementations." alt="" coords="215,5,375,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,16,199,16,199,21,167,21"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="423,5,524,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,16,407,16,407,21,375,21"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="meas_init_value_" name="meas_init_value_">
+<area shape="rect" id="Node000001" title="Initialize measurement structure." alt="" coords="495,5,618,32"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initialize measurement system." alt="" coords="313,5,447,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="480,21,448,21,448,16,480,16"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842" title="Global function implementations." alt="" coords="103,5,265,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,21,265,21,265,16,297,16"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

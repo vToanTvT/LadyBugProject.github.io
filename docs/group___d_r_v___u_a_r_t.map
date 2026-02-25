@@ -1,4 +1,4 @@
-<map id="UART Driver Module" name="UART Driver Module">
-<area shape="rect" id="Node000002" href="$group___d_r_i_v_e_r___l_a_y_e_r.html" title="Low&#45;level hardware drivers (ADC, GPIO, PWM, UART...)." alt="" coords="5,5,98,32"/>
-<area shape="rect" id="Node000001" title="Implementation of Comp driver core functions." alt="" coords="146,5,288,32"/>
+<map id="UART Driver" name="UART Driver">
+<area shape="rect" id="Node000002" href="$group___d_r_i_v_e_r___l_a_y_e_r.html" title="Hardware abstraction and low&#45;level peripheral drivers." alt="" coords="5,5,98,32"/>
+<area shape="rect" id="Node000001" title="UART driver for serial communication using DMA." alt="" coords="146,5,242,32"/>
 </map>

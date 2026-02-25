@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: Globals</title>
+<title>LadyBug Firmware Documentation: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -92,8 +99,10 @@ $(function(){initNavTree('globals_defs_u.html','',''); });
 <div class="textblock">Here is a list of all macros with links to the files they belong to:</div>
 
 <h3 class="doxsection"><a id="index_u" name="index_u"></a>- u -</h3><ul>
-<li>userCOMP&#160;:&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#ga702cd9dcc992324e117dbe7a1e16faa5">drv_comp_core.h</a></li>
-<li>userDAC&#160;:&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#ga3e69faea60c1e02bb6485289d603f0ed">drv_comp_core.h</a></li>
+<li>UART_RX_BUFFER_SIZE&#160;:&#160;<a class="el" href="group___d_r_v___u_a_r_t.html#ga5bdd6772c246436bb14377095de79b31">drv_uart_core.h</a></li>
+<li>UART_TX_BUFFER_SIZE&#160;:&#160;<a class="el" href="group___d_r_v___u_a_r_t.html#ga05f5d709605c6317c97e4974bec3402a">drv_uart_core.h</a></li>
+<li>userDAC_ibat&#160;:&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#ga8b13d7b3bd90be44b0444c7451e87ca7">drv_comp_core.h</a></li>
+<li>userDAC_ipri&#160;:&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#ga3d14f94e16dbbdfb04ee2881763345d6">drv_comp_core.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

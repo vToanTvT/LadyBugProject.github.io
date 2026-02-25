@@ -1,9 +1,9 @@
-<map id="drv_pwm_core.c" name="drv_pwm_core.c">
-<area shape="rect" id="Node000001" title="Source file for PWM driver module." alt="" coords="76,5,193,32"/>
-<area shape="rect" id="Node000002" href="$drv__pwm__core_8h.html" title="PWM driver for LLC converter and fan control." alt="" coords="5,80,123,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,34,89,71,85,67,120,31"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="146,80,267,107"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,31,185,67,182,71,145,34"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="32,155,96,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="67,107,67,139,61,139,61,107"/>
+<map id="Source code/_DriverLayer/pwm/drv_pwm_core.c" name="Source code/_DriverLayer/pwm/drv_pwm_core.c">
+<area shape="rect" id="Node000001" title="Implementation of PWM Driver module." alt="" coords="9,5,181,48"/>
+<area shape="rect" id="Node000002" href="$drv__pwm__core_8h.html" title="Header file for PWM Driver module." alt="" coords="36,96,154,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,49,98,80,92,80,92,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,171,70,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,125,59,160,55,157,83,122"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="93,171,214,197"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="107,122,136,157,132,160,103,125"/>
 </map>

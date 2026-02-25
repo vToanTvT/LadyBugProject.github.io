@@ -1,7 +1,9 @@
-<map id="drv_gpio_core.c" name="drv_gpio_core.c">
-<area shape="rect" id="Node000001" title="Source file for GPIO driver module." alt="" coords="5,5,119,32"/>
-<area shape="rect" id="Node000002" href="$drv__gpio__core_8h.html" title="GPIO driver for pin configuration and control." alt="" coords="5,80,119,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,33,65,64,59,64,59,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="30,155,94,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="65,107,65,139,59,139,59,107"/>
+<map id="Source code/_DriverLayer/gpio/drv_gpio_core.c" name="Source code/_DriverLayer/gpio/drv_gpio_core.c">
+<area shape="rect" id="Node000001" title="Implementation of GPIO Driver module." alt="" coords="37,5,209,48"/>
+<area shape="rect" id="Node000002" href="$drv__gpio__core_8h.html" title="Header file for GPIO Driver module." alt="" coords="66,96,180,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,49,126,80,120,80,120,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,171,126,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="115,125,87,160,83,157,111,122"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="149,171,214,197"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="135,122,164,157,160,160,131,125"/>
 </map>

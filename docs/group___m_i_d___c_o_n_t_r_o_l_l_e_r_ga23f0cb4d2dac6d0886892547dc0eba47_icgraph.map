@@ -1,0 +1,25 @@
+<map id="controller_anti_windup_" name="controller_anti_windup_">
+<area shape="rect" id="Node000001" title="Apply anti&#45;windup to PI controller." alt="" coords="1144,164,1302,191"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c.html#gafe4e5a77ff39dea24a2d08ef363cbcc0" title="Execute current regulation loop (PFM mode)." alt="" coords="945,5,1083,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1198,154,1153,108,1095,62,1074,51,1077,46,1098,58,1156,104,1202,150"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___l_l_c.html#ga740d1b313849d823ccdf78e9155eaa61" title="Execute duty cycle regulation loop (PWM mode)." alt="" coords="937,72,1091,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1185,158,1095,113,1064,102,1066,97,1097,108,1187,154"/>
+<area shape="rect" id="Node000004" href="$group___m_i_d___l_l_c.html#ga84238c737cc149f14fc61a023dd84613" title="Execute hybrid PFM/PWM control with PI controllers." alt="" coords="948,123,1081,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1128,165,1081,157,1082,152,1129,160"/>
+<area shape="rect" id="Node000010" href="$group___m_i_d___l_l_c.html#ga3427f2eb9dd80ded3aaacaaf94d3fe74" title="Execute hybrid PFM/PWM control with Multi&#45;Resonant controller." alt="" coords="948,189,1081,232"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1129,195,1082,203,1081,197,1128,190"/>
+<area shape="rect" id="Node000011" href="$group___m_i_d___l_l_c.html#ga74381259fff14dcc75e30df64adc10f0" title="Execute cascaded voltage&#45;to&#45;duty regulation loop." alt="" coords="932,256,1096,283"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1187,201,1097,246,1066,258,1064,253,1095,242,1185,196"/>
+<area shape="rect" id="Node000012" href="$group___m_i_d___l_l_c.html#ga2a627e165db7f32bc036d791806f01fc" title="Execute cascaded voltage regulation loop." alt="" coords="944,307,1084,349"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1202,204,1156,250,1098,297,1077,309,1074,304,1095,292,1153,246,1198,201"/>
+<area shape="rect" id="Node000005" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1f1e0e52e3b18a3fc2ecd5b204913f16" title="Handle CHARGING state operations." alt="" coords="737,131,884,157"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="932,147,885,147,885,141,932,141"/>
+<area shape="rect" id="Node000006" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state machine." alt="" coords="592,131,689,157"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="721,147,689,147,689,141,721,141"/>
+<area shape="rect" id="Node000007" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga8a7c85b9c345204d44030fb96316a5eb" title="EVSE application processing handler." alt="" coords="365,131,544,157"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="577,147,545,147,545,141,577,141"/>
+<area shape="rect" id="Node000008" href="$group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd" title="Main interrupt service routine for real&#45;time control." alt="" coords="142,131,317,157"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="350,147,318,147,318,141,350,141"/>
+<area shape="rect" id="Node000009" href="$main_8c.html#a4665d4e1d5fea2d34089d4e50a763751" title=" " alt="" coords="5,131,94,157"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="126,147,94,147,94,141,126,141"/>
+</map>

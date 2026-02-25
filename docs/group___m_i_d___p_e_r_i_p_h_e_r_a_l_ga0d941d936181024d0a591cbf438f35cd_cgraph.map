@@ -1,0 +1,7 @@
+<map id="peripheral_process_update_" name="peripheral_process_update_">
+<area shape="rect" id="Node000001" title="Process fan control update if flag set." alt="" coords="5,5,136,48"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae389a4ec8879fd13922b8c01b691c7c3" title="Control fan speed with rule&#45;based system." alt="" coords="184,13,339,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,24,168,24,168,29,136,29"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="387,13,500,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="339,24,371,24,371,29,339,29"/>
+</map>

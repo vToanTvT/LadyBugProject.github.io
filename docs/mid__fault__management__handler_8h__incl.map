@@ -1,24 +1,29 @@
-<map id="mid_fault_management_handler.h" name="mid_fault_management_handler.h">
-<area shape="rect" id="Node000001" title="Middleware for comprehensive fault management and protection system." alt="" coords="134,5,290,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,171,80,197"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,51,140,72,107,98,80,128,59,159,55,156,76,125,103,94,137,68,171,46"/>
-<area shape="rect" id="Node000003" href="$mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="118,96,306,123"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,49,214,80,209,80,209,49"/>
-<area shape="rect" id="Node000009" href="$drv__comp__core_8h.html" title="Header file for comparator driver module." alt="" coords="419,245,540,272"/>
-<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="250,46,320,94,400,167,461,232,457,235,396,171,317,98,247,51"/>
-<area shape="poly" id="edge11_Node000003_Node000002" title=" " alt="" coords="183,126,87,167,85,162,181,121"/>
-<area shape="rect" id="Node000004" href="$drv__adc__core_8h.html" title="ADC driver for hardware interfacing." alt="" coords="285,245,395,272"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="283,121,323,139,341,152,355,169,362,184,363,201,355,232,350,231,357,201,356,186,351,172,337,156,320,143,281,126"/>
-<area shape="rect" id="Node000006" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="155,171,340,197"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="220,122,237,155,232,158,216,124"/>
-<area shape="rect" id="Node000007" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="62,245,210,272"/>
-<area shape="poly" id="edge10_Node000003_Node000007" title=" " alt="" coords="191,125,166,145,145,172,137,201,135,230,130,230,131,200,140,169,162,141,188,121"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="261,320,325,347"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="334,274,312,308,307,306,329,271"/>
-<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="254,197,276,271,287,305,282,306,271,273,249,198"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="230,200,170,239,167,234,227,196"/>
-<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="164,270,253,311,251,315,162,275"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="102,320,170,347"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="138,273,138,304,133,304,133,273"/>
-<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="448,275,341,316,339,311,446,270"/>
+<map id="Source code/_MiddlewareLayer/FaultManagement/mid_fault_management_handler.h" name="Source code/_MiddlewareLayer/FaultManagement/mid_fault_management_handler.h">
+<area shape="rect" id="Node000001" title="Header file for Fault Management Middleware module." alt="" coords="314,5,517,64"/>
+<area shape="rect" id="Node000002" href="$mid__measurement__handler_8h.html" title="Header file for Measurement Middleware module." alt="" coords="308,112,523,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="418,64,418,96,413,96,413,64"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="561,227,635,253"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="475,62,508,84,537,110,556,135,571,162,592,211,587,213,566,164,551,138,533,114,505,88,472,67"/>
+<area shape="rect" id="Node000010" href="$drv__comp__core_8h.html" title="Header file for Comparator Driver module." alt="" coords="5,120,167,163"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="326,67,166,117,165,112,324,62"/>
+<area shape="rect" id="Node000003" href="$drv__adc__core_8h.html" title="Header file for ADC Driver module." alt="" coords="158,219,297,261"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="361,174,282,214,280,209,358,169"/>
+<area shape="rect" id="Node000006" href="$mid__global__define__handler_8h.html" title="Header file for Global Definitions Middleware module." alt="" coords="321,219,486,261"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="414,171,410,204,405,203,409,171"/>
+<area shape="rect" id="Node000007" href="$mid__iqmath__handler_8h.html" title="Header file for IQ Math Middleware module." alt="" coords="424,309,623,352"/>
+<area shape="poly" id="edge11_Node000002_Node000007" title=" " alt="" coords="458,169,481,191,500,217,516,255,523,293,518,294,511,257,496,220,477,195,454,173"/>
+<area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="471,169,562,217,559,221,468,174"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="256,400,321,427"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="222,263,213,305,213,329,219,351,234,372,253,389,250,393,230,375,214,353,208,329,207,304,217,261"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="228,317,349,344"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="244,260,274,303,269,306,239,263"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="401,262,388,306,363,354,344,375,323,393,320,388,340,371,358,350,383,304,396,261"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="378,264,318,310,315,306,375,260"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="433,260,485,298,482,302,430,264"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="464,355,337,399,335,393,462,350"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="489,400,558,427"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="526,353,526,384,521,384,521,353"/>
+<area shape="poly" id="edge15_Node000010_Node000004" title=" " alt="" coords="65,165,46,186,30,210,23,236,24,248,28,260,48,288,72,312,129,352,189,380,242,398,241,403,187,385,126,357,69,316,44,291,24,263,18,249,17,235,26,208,42,182,61,161"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="38,227,134,253"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="89,163,89,211,83,211,83,163"/>
 </map>

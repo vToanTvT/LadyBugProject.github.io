@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: Globals</title>
+<title>LadyBug Firmware Documentation: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -90,20 +97,25 @@ $(function(){initNavTree('globals_eval.html','',''); });
 
 <div class="contents">
 <div class="textblock">Here is a list of all enum values with links to the files they belong to:</div><ul>
-<li>EVSE_STATE_AUTORECOVERY&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdeaa68c845a6d1ea29861e4c54b71f839eb">app_state_management_handler.h</a></li>
-<li>EVSE_STATE_CHARGING&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea196b2f6ae2277f1743460bb9e7cf4c77">app_state_management_handler.h</a></li>
-<li>EVSE_STATE_FAULT&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea2f91d6a104e482f39032efdaf9097f89">app_state_management_handler.h</a></li>
-<li>EVSE_STATE_FULLYCHARGED&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea88cfcc12511ac653fe4817027cea7134">app_state_management_handler.h</a></li>
-<li>EVSE_STATE_HANDSHAKE&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdeaac24e6c843e8db3da9d93e83666de969">app_state_management_handler.h</a></li>
-<li>EVSE_STATE_IDLE&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea7ea7f61b9a54d256ba69990634ca3714">app_state_management_handler.h</a></li>
-<li>EVSE_STATE_SHUTDOWN&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea30c5faf504b055cb609fb51a2e77ec56">app_state_management_handler.h</a></li>
-<li>EVSE_STATE_SOFTSTART&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea5962155a1ec157285149f69bc87671a4">app_state_management_handler.h</a></li>
+<li>EVSE_STATE_AUTORECOVERY&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdeaa68c845a6d1ea29861e4c54b71f839eb">StateManagement.h</a></li>
+<li>EVSE_STATE_CHARGING&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea196b2f6ae2277f1743460bb9e7cf4c77">StateManagement.h</a></li>
+<li>EVSE_STATE_FAULT&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea2f91d6a104e482f39032efdaf9097f89">StateManagement.h</a></li>
+<li>EVSE_STATE_FULLYCHARGED&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea88cfcc12511ac653fe4817027cea7134">StateManagement.h</a></li>
+<li>EVSE_STATE_HANDSHAKE&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdeaac24e6c843e8db3da9d93e83666de969">StateManagement.h</a></li>
+<li>EVSE_STATE_IDLE&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea7ea7f61b9a54d256ba69990634ca3714">StateManagement.h</a></li>
+<li>EVSE_STATE_PFC_START&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea125ba52f6194c428ef28b286650f547a">StateManagement.h</a></li>
+<li>EVSE_STATE_SHUTDOWN&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea30c5faf504b055cb609fb51a2e77ec56">StateManagement.h</a></li>
+<li>EVSE_STATE_SOFTSTART&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ggaf385e9d5b5e5b8d6dcb7451515bc0fdea5962155a1ec157285149f69bc87671a4">StateManagement.h</a></li>
 <li>FAST&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41faf84c11ba888e499a8a282a3e6f5de7de">mid_indicator_handler.h</a></li>
-<li>FAULT_AUTO_RECOVER&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t.html#gga92639028765f67b22031dcedd2b5e7e2aa8be678eb6f85c6890b2e7080cd3e521">mid_fault_management_handler.h</a></li>
-<li>FAULT_LATCH&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t.html#gga92639028765f67b22031dcedd2b5e7e2aa219d028ab1857c0610b1fe58c4a90e9">mid_fault_management_handler.h</a></li>
-<li>FAULT_NONE&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t.html#gga92639028765f67b22031dcedd2b5e7e2a310bdf86a6ad78c2997c0f88e11aae28">mid_fault_management_handler.h</a></li>
-<li>LLC_MODE_PFM&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ggaf486012e51550c810ce3764fc55a3d48a6aeb67af37c15b89656f40af358f07c3">mid_llc_handler.h</a></li>
-<li>LLC_MODE_PWM&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ggaf486012e51550c810ce3764fc55a3d48ac0a1ef75308fc7995f162d5933d51c60">mid_llc_handler.h</a></li>
+<li>FAULT_AUTO_RECOVER&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#gga92639028765f67b22031dcedd2b5e7e2aa8be678eb6f85c6890b2e7080cd3e521">mid_fault_management_handler.h</a></li>
+<li>FAULT_LATCH&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#gga92639028765f67b22031dcedd2b5e7e2aa219d028ab1857c0610b1fe58c4a90e9">mid_fault_management_handler.h</a></li>
+<li>FAULT_NONE&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#gga92639028765f67b22031dcedd2b5e7e2a310bdf86a6ad78c2997c0f88e11aae28">mid_fault_management_handler.h</a></li>
+<li>LEDMODE_ACTIVE&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa8d06102c09677226a4b6764497b7938f">mid_indicator_handler.h</a></li>
+<li>LEDMODE_COMPLETE&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaaddb5cb279f1ab3530178a08621637c58">mid_indicator_handler.h</a></li>
+<li>LEDMODE_ERROR&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa0aa356e09b2c4d0ff0079b31a01410d7">mid_indicator_handler.h</a></li>
+<li>LEDMODE_STANDBY&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa47b15c933ee4139ed0c9a58983a86c10">mid_indicator_handler.h</a></li>
+<li>LLC_MODE_PFM&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ggaf486012e51550c810ce3764fc55a3d48a6aeb67af37c15b89656f40af358f07c3">mid_llc_handler.h</a></li>
+<li>LLC_MODE_PWM&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ggaf486012e51550c810ce3764fc55a3d48ac0a1ef75308fc7995f162d5933d51c60">mid_llc_handler.h</a></li>
 <li>MEDIUM&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64">mid_indicator_handler.h</a></li>
 <li>SLOW&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41fab27edad9d3e126dc8448b6030438adb6">mid_indicator_handler.h</a></li>
 </ul>

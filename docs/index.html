@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: Main Page</title>
+<title>LadyBug Firmware Documentation: LadyBug Firmware Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -88,13 +95,116 @@ $(function(){initNavTree('index.html','',''); });
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">LadyBug Documentation</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">LadyBug Firmware Documentation </div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="mainpage"></a></p>
+<h1 class="doxsection"><a class="anchor" id="autotoc_md0"></a>
+1. Project Overview</h1>
+<p>The <b>LadyBug Project</b> is a high-performance firmware platform developed by <b>EVSELab</b>, specifically engineered for an <b>840W EV Charger</b> system. It is optimized for the <b>STM32G0B1KBUx</b> microcontroller, focusing on real-time control, modularity, and industrial-grade safety.</p>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md2"></a>
+2. System Architecture</h1>
+<p>The firmware utilizes a <b>three-layer hierarchical design</b> to ensure strict separation of concerns and high maintainability:</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Layer  </th><th class="markdownTableHeadLeft">Responsibility  </th><th class="markdownTableHeadLeft">Key Components  </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>Application</b>  </td><td class="markdownTableBodyLeft">High-level logic  </td><td class="markdownTableBodyLeft">Charging State Machine, User Interface  </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><b>Middleware</b>  </td><td class="markdownTableBodyLeft">Control &amp; Signal Processing  </td><td class="markdownTableBodyLeft">PFC/LLC Control Loops, Q15/F32 Math, Fault Management  </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><b>Driver</b>  </td><td class="markdownTableBodyLeft">Hardware Abstraction  </td><td class="markdownTableBodyLeft">HAL, Peripheral Drivers (ADC, PWM, DMA, UART, CAN)  </td></tr>
+</table>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md4"></a>
+3. Hardware-Software Interface</h1>
+<ul>
+<li><b>Core:</b> 32-bit ARM Cortex-M0+ CPU, frequency up to 64 MHz <br  />
+</li>
+<li><b>Operating Temperature:</b> −40°C to 85°C / 105°C / 125°C <br  />
+</li>
+<li><b>Memories:</b><ul>
+<li>Up to 512 Kbytes of Flash memory with protection and securable area <br  />
+<ul>
+<li>Two banks <br  />
+</li>
+<li>Read-while-write support <br  />
+</li>
+</ul>
+</li>
+<li>144 Kbytes of SRAM (128 Kbytes with HW parity check)</li>
+</ul>
+</li>
+<li><b>DMA:</b> 12-channel DMA controller with flexible mapping <br  />
+</li>
+<li><b>ADC:</b><ul>
+<li>12-bit, 0.4 µs conversion time (up to 16 external channels) <br  />
+</li>
+<li>Up to 16-bit resolution with hardware oversampling <br  />
+</li>
+<li>Conversion range: 0 to 3.6 V <br  />
+</li>
+</ul>
+</li>
+<li><b>DAC:</b> Two 12-bit DACs with low-power sample-and-hold <br  />
+</li>
+<li><b>Communication Interfaces:</b> UART, SPI, I²C, FDCAN <br  />
+</li>
+<li><b>Timers (15 total):</b><ul>
+<li>Two 128 MHz capable timers (16-bit, advanced motor control)</li>
+<li>One 32-bit general-purpose timer</li>
+<li>Six 16-bit general-purpose timers</li>
+<li>Two basic 16-bit timers</li>
+<li>Two low-power 16-bit timers</li>
+<li>Two watchdog timers</li>
+<li>SysTick timer</li>
+</ul>
+</li>
+</ul>
+<hr  />
+<h1 class="doxsection"><a class="anchor" id="autotoc_md6"></a>
+4. Key Requirement</h1>
+<ul>
+<li><b>Control:</b><ul>
+<li>LLC resonant converter with frequency control</li>
+<li>Duty control for light-load efficiency</li>
+<li>Soft-start mode</li>
+</ul>
+</li>
+<li><b>Measurement:</b><ul>
+<li>Output voltage, battery voltage, and output current monitoring</li>
+<li>AC input voltage monitoring</li>
+<li>Temperature sensing (LLC, PFC)</li>
+</ul>
+</li>
+<li><b>Protection:</b><ul>
+<li>Over-voltage, over-current, and over-temperature protection</li>
+<li>Short-circuit protection</li>
+<li>Fault management with auto-recovery</li>
+</ul>
+</li>
+<li><b>Communication:</b><ul>
+<li>UART for debug and monitoring</li>
+<li>GPIO control for status indication</li>
+</ul>
+</li>
+</ul>
+<dl class="section author"><dt>Author</dt><dd>EVSELab Co. Jsc. </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>February 2026 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>EVSELab Confidential </dd></dl>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
-</div><!-- contents -->
 </div><!-- doc-content -->
+</div><!-- contents -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

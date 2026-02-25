@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: mid_controller_handler.c File Reference</title>
+<title>LadyBug Firmware Documentation: Source code/_MiddlewareLayer/Controller/mid_controller_handler.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -93,53 +100,55 @@ $(function(){initNavTree('mid__controller__handler_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Source file implementing digital PI controller functions.  
+<p>Implementation file for Controller Middleware module.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mid__controller__handler_8h_source.html">mid_controller_handler.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mid_controller_handler.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="mid__controller__handler_8c__incl.png" border="0" usemap="#amid__controller__handler_8c" loading="lazy" alt=""/></div>
-<map name="amid__controller__handler_8c" id="amid__controller__handler_8c">
-<area shape="rect" title="Source file implementing digital PI controller functions." alt="" coords="45,5,207,32"/>
-<area shape="rect" href="mid__controller__handler_8h.html" title="Middleware handler for PI (Proportional&#45;Integral) controller." alt="" coords="45,80,207,107"/>
-<area shape="poly" title=" " alt="" coords="129,33,129,64,124,64,124,33"/>
-<area shape="rect" href="mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="5,229,154,256"/>
-<area shape="poly" title=" " alt="" coords="118,109,103,130,90,156,83,185,81,214,76,214,78,185,85,154,98,127,113,106"/>
-<area shape="rect" href="mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="99,155,284,181"/>
-<area shape="poly" title=" " alt="" coords="140,105,172,141,168,145,136,109"/>
-<area shape="rect" title=" " alt="" coords="149,304,213,331"/>
-<area shape="poly" title=" " alt="" coords="99,254,152,292,149,297,96,259"/>
-<area shape="rect" title=" " alt="" coords="45,304,114,331"/>
-<area shape="poly" title=" " alt="" coords="82,257,82,288,77,288,77,257"/>
-<area shape="poly" title=" " alt="" coords="173,184,113,223,110,218,171,180"/>
-<area shape="poly" title=" " alt="" coords="193,182,185,289,180,288,188,182"/>
+<div class="center"><img src="mid__controller__handler_8c__incl.png" border="0" usemap="#a_source_01code_2___middleware_layer_2_controller_2mid__controller__handler_8c" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2___middleware_layer_2_controller_2mid__controller__handler_8c" id="a_source_01code_2___middleware_layer_2_controller_2mid__controller__handler_8c">
+<area shape="rect" title="Implementation file for Controller Middleware module." alt="" coords="71,5,275,64"/>
+<area shape="rect" href="mid__controller__handler_8h.html" title="Header file for Controller Middleware module." alt="" coords="92,112,254,139"/>
+<area shape="poly" title=" " alt="" coords="176,64,176,96,170,96,170,64"/>
+<area shape="rect" href="mid__iqmath__handler_8h.html" title="Header file for IQ Math Middleware module." alt="" coords="5,293,205,336"/>
+<area shape="poly" title=" " alt="" coords="168,140,145,188,116,279,111,277,140,186,163,138"/>
+<area shape="rect" href="mid__global__define__handler_8h.html" title="Header file for Global Definitions Middleware module." alt="" coords="154,187,320,245"/>
+<area shape="poly" title=" " alt="" coords="184,138,209,172,205,175,180,141"/>
+<area shape="rect" title=" " alt="" coords="186,384,250,411"/>
+<area shape="poly" title=" " alt="" coords="136,334,190,373,187,377,133,339"/>
+<area shape="rect" title=" " alt="" coords="71,384,139,411"/>
+<area shape="poly" title=" " alt="" coords="108,337,108,368,102,368,102,337"/>
+<area shape="poly" title=" " alt="" coords="199,248,147,286,144,282,196,244"/>
+<area shape="poly" title=" " alt="" coords="237,246,224,369,219,368,231,245"/>
+<area shape="rect" title=" " alt="" coords="280,301,400,328"/>
+<area shape="poly" title=" " alt="" coords="269,244,317,289,314,293,265,248"/>
 </map>
 </div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="mid__controller__handler_8c__dep__incl.png" border="0" usemap="#amid__controller__handler_8cdep" loading="lazy" alt=""/></div>
-<map name="amid__controller__handler_8cdep" id="amid__controller__handler_8cdep">
-<area shape="rect" title="Source file implementing digital PI controller functions." alt="" coords="5,5,168,32"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="56,80,117,107"/>
-<area shape="poly" title=" " alt="" coords="89,48,89,80,84,80,84,48"/>
-</map>
-</div>
-</div>
-<p><a href="mid__controller__handler_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gadd845e487a875c4bc2392010cc7375de" id="r_gadd845e487a875c4bc2392010cc7375de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#gadd845e487a875c4bc2392010cc7375de">controller_config_pi_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController, q31_t Kp, q31_t Ki, q31_t Ki_x_Tz, uq15_t RefVal, uq15_t HighLimit, uq15_t LowLimit)</td></tr>
-<tr class="memdesc:gadd845e487a875c4bc2392010cc7375de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a new PI controller instance.  <br /></td></tr>
-<tr class="memitem:gadc53cdf15e0b9ec3f7c05d87dd854dda" id="r_gadc53cdf15e0b9ec3f7c05d87dd854dda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#gadc53cdf15e0b9ec3f7c05d87dd854dda">controller_process_pi_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController, uq15_t Status)</td></tr>
-<tr class="memdesc:gadc53cdf15e0b9ec3f7c05d87dd854dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes one iteration of the PI control algorithm.  <br /></td></tr>
-<tr class="memitem:ga23f0cb4d2dac6d0886892547dc0eba47" id="r_ga23f0cb4d2dac6d0886892547dc0eba47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_t_r_l.html#ga23f0cb4d2dac6d0886892547dc0eba47">controller_anti_windup_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController)</td></tr>
-<tr class="memdesc:ga23f0cb4d2dac6d0886892547dc0eba47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies anti-windup protection to prevent integral saturation.  <br /></td></tr>
+<tr class="memitem:gadd845e487a875c4bc2392010cc7375de" id="r_gadd845e487a875c4bc2392010cc7375de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gadd845e487a875c4bc2392010cc7375de">controller_config_pi_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> Kp, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> Ki, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> Ki_x_Tz, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> RefVal, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> HighLimit, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#ga55906e8b053ee88e948b8eeb71513133">uq15_t</a> LowLimit)</td></tr>
+<tr class="memdesc:gadd845e487a875c4bc2392010cc7375de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include required header files.  <br /></td></tr>
+<tr class="memitem:ga2d517a90930117bcda9492ca3f4a775e" id="r_ga2d517a90930117bcda9492ca3f4a775e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2d517a90930117bcda9492ca3f4a775e">controller_process_pi_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController, FunctionalState Status)</td></tr>
+<tr class="memdesc:ga2d517a90930117bcda9492ca3f4a775e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process PI controller computation.  <br /></td></tr>
+<tr class="memitem:ga23f0cb4d2dac6d0886892547dc0eba47" id="r_ga23f0cb4d2dac6d0886892547dc0eba47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga23f0cb4d2dac6d0886892547dc0eba47">controller_anti_windup_</a> (<a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a> *pController)</td></tr>
+<tr class="memdesc:ga23f0cb4d2dac6d0886892547dc0eba47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply anti-windup to PI controller.  <br /></td></tr>
+<tr class="memitem:gabae91be5774aed961bfe05a7e3229dde" id="r_gabae91be5774aed961bfe05a7e3229dde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gabae91be5774aed961bfe05a7e3229dde">MultiResonant_Config</a> (<a class="el" href="struct_multi_resonant___type_def.html">MultiResonant_TypeDef</a> *pController, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> Kp, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> Ki_x_Tz, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gab5a8fb21a5b3b983d5f54f31614052ea">q15_t</a> RefVal, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> HighLimit, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> LowLimit, uint8_t NumResonant, <a class="el" href="struct_resonant___type_def.html">Resonant_TypeDef</a> *pResonantArray)</td></tr>
+<tr class="memdesc:gabae91be5774aed961bfe05a7e3229dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Multi-Resonant controller.  <br /></td></tr>
+<tr class="memitem:gae1aa5e0d60c20343e3e411317c199905" id="r_gae1aa5e0d60c20343e3e411317c199905"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae1aa5e0d60c20343e3e411317c199905">MultiResonant_ConfigResonant</a> (<a class="el" href="struct_resonant___type_def.html">Resonant_TypeDef</a> *pResonant, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> Kr, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> w0_x_Tz, <a class="el" href="group___m_i_d___i_q_m_a_t_h.html#gadc89a3547f5324b7b3b95adec3806bc0">q31_t</a> wc_x_2Tz)</td></tr>
+<tr class="memdesc:gae1aa5e0d60c20343e3e411317c199905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure individual resonant controller element.  <br /></td></tr>
+<tr class="memitem:gae9a4b1f0f417f77a1db32a7dc4ca1253" id="r_gae9a4b1f0f417f77a1db32a7dc4ca1253"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae9a4b1f0f417f77a1db32a7dc4ca1253">MultiResonant_Process</a> (<a class="el" href="struct_multi_resonant___type_def.html">MultiResonant_TypeDef</a> *pController, FunctionalState Status)</td></tr>
+<tr class="memdesc:gae9a4b1f0f417f77a1db32a7dc4ca1253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process Multi-Resonant controller computation.  <br /></td></tr>
+<tr class="memitem:ga2faa8412d1f332353f3c68e2b022aa97" id="r_ga2faa8412d1f332353f3c68e2b022aa97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2faa8412d1f332353f3c68e2b022aa97">MultiResonant_AntiWindup</a> (<a class="el" href="struct_multi_resonant___type_def.html">MultiResonant_TypeDef</a> *pController)</td></tr>
+<tr class="memdesc:ga2faa8412d1f332353f3c68e2b022aa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply anti-windup to Multi-Resonant controller.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Source file implementing digital PI controller functions. </p>
+<div class="textblock"><p>Implementation file for Controller Middleware module. </p>
+<p>Implements PI and Multi-Resonant controllers for feedback control applications using fixed-point arithmetic. Provides configuration, processing, and anti-windup functions for both controller types.</p>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>August 11, 2025 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>EVSELab Co. Jsc. </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
@@ -153,7 +162,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="mid__controller__handler_8c.html">mid_controller_handler.c</a></li>
+    <li class="navelem"><a href="dir_09b89239bb517dd22b84127916aa0cd2.html">Source code</a></li><li class="navelem"><a href="dir_851f7514f5bd6dec6a6845ba932ee371.html">_MiddlewareLayer</a></li><li class="navelem"><a href="dir_646ce789ed1861c56843a8fc23805ea7.html">Controller</a></li><li class="navelem"><a href="mid__controller__handler_8c.html">mid_controller_handler.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

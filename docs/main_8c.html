@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: main.c File Reference</title>
+<title>LadyBug Firmware Documentation: Source code/main.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -92,498 +99,483 @@ $(function(){initNavTree('main_8c.html','',''); });
   <div class="headertitle"><div class="title">main.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;Stdlib.h&gt;</code><br />
-<code>#include &lt;String.h&gt;</code><br />
-<code>#include &lt;math.h&gt;</code><br />
-<code>#include &lt;Psim.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="drv__adc__core_8h_source.html">drv_adc_core.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="drv__adc__core_8c_source.html">drv_adc_core.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="drv__gpio__core_8h_source.html">drv_gpio_core.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="drv__gpio__core_8c_source.html">drv_gpio_core.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="drv__pwm__core_8h_source.html">drv_pwm_core.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="drv__pwm__core_8c_source.html">drv_pwm_core.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="drv__uart__core_8h_source.html">drv_uart_core.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="drv__uart__core_8c_source.html">drv_uart_core.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="drv__comp__core_8c_source.html">drv_comp_core.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__iqmath__handler_8c_source.html">mid_iqmath_handler.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__iqmath__handler_8h_source.html">mid_iqmath_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__global__define__handler_8h_source.html">mid_global_define_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__global__define__handler_8c_source.html">mid_global_define_handler.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__indicator__handler_8h_source.html">mid_indicator_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__indicator__handler_8c_source.html">mid_indicator_handler.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__controller__handler_8h_source.html">mid_controller_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__controller__handler_8c_source.html">mid_controller_handler.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__measurement__handler_8h_source.html">mid_measurement_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__measurement__handler_8c_source.html">mid_measurement_handler.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__fault__management__handler_8h_source.html">mid_fault_management_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__fault__management__handler_8c_source.html">mid_fault_management_handler.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__llc__handler_8h_source.html">mid_llc_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__llc__handler_8c_source.html">mid_llc_handler.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__power__control__handler_8h_source.html">mid_power_control_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__power__control__handler_8c_source.html">mid_power_control_handler.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__peripheral__handler_8h_source.html">mid_peripheral_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="mid__peripheral__handler_8c_source.html">mid_peripheral_handler.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="app__state__management__handler_8h_source.html">app_state_management_handler.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="app__state__management__handler_8c_source.html">app_state_management_handler.c</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_lady_bug_8c_source.html">LadyBug.c</a>&quot;</code><br />
+
+<p>: Main program body  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;main.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="_lady_bug_8h_source.html">LadyBug.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c__incl.png" border="0" usemap="#amain_8c" loading="lazy" alt=""/></div>
-<map name="amain_8c" id="amain_8c">
-<area shape="rect" title=" " alt="" coords="1530,5,1591,32"/>
-<area shape="rect" title=" " alt="" coords="5,80,71,107"/>
-<area shape="poly" title=" " alt="" coords="1530,23,1273,27,860,36,421,54,232,67,86,83,85,77,232,62,421,49,860,31,1273,21,1530,18"/>
-<area shape="rect" title=" " alt="" coords="94,80,160,107"/>
-<area shape="poly" title=" " alt="" coords="1530,23,1287,28,901,38,490,56,314,68,176,83,175,77,313,63,490,51,901,33,1287,22,1530,18"/>
-<area shape="rect" title=" " alt="" coords="185,80,246,107"/>
-<area shape="poly" title=" " alt="" coords="1530,23,1300,28,939,38,556,56,391,68,262,83,261,77,390,63,555,51,939,33,1300,22,1530,18"/>
-<area shape="rect" title=" " alt="" coords="270,80,332,107"/>
-<area shape="poly" title=" " alt="" coords="1530,23,968,42,612,59,463,70,350,83,348,83,347,78,350,77,462,65,611,54,967,36,1530,18"/>
-<area shape="rect" href="drv__adc__core_8h.html" title="ADC driver for hardware interfacing." alt="" coords="1152,501,1262,528"/>
-<area shape="poly" title=" " alt="" coords="1531,26,1430,45,1369,61,1310,82,1249,113,1197,157,1151,208,1135,231,1123,256,1116,281,1111,309,1111,379,1110,418,1112,434,1120,452,1140,474,1165,492,1162,496,1137,478,1116,455,1107,435,1105,418,1106,379,1106,309,1110,280,1118,254,1130,229,1146,204,1193,153,1246,108,1308,78,1368,56,1429,40,1530,21"/>
-<area shape="rect" href="drv__adc__core_8c.html" title="Source file for ADC driver module." alt="" coords="1130,427,1240,453"/>
-<area shape="poly" title=" " alt="" coords="1531,29,1473,43,1398,69,1319,106,1282,129,1248,157,1202,200,1169,237,1144,279,1122,337,1117,358,1122,378,1135,398,1153,415,1150,419,1131,402,1117,380,1112,358,1117,335,1139,276,1164,233,1198,196,1244,153,1279,125,1317,101,1396,64,1471,38,1530,23"/>
-<area shape="rect" href="drv__gpio__core_8h.html" title="GPIO driver for pin configuration and control." alt="" coords="609,344,723,371"/>
-<area shape="poly" title=" " alt="" coords="1530,24,1110,41,875,59,790,70,742,82,688,114,652,147,625,188,601,246,595,267,600,287,616,312,637,332,633,336,612,315,596,289,590,267,595,245,620,186,647,143,685,109,740,78,789,65,874,53,1110,36,1530,18"/>
-<area shape="rect" href="drv__gpio__core_8c.html" title="Source file for GPIO driver module." alt="" coords="609,253,723,280"/>
-<area shape="poly" title=" " alt="" coords="1530,24,1365,29,1129,41,906,59,826,70,780,82,759,97,741,115,710,157,689,201,676,239,671,238,684,199,706,154,737,111,756,93,778,78,825,64,905,53,1129,36,1365,24,1530,18"/>
-<area shape="rect" href="drv__pwm__core_8h.html" title="PWM driver for LLC converter and fan control." alt="" coords="2097,427,2214,453"/>
-<area shape="poly" title=" " alt="" coords="1591,19,1864,38,2007,55,2058,66,2086,78,2105,99,2112,121,2113,175,2113,268,2116,308,2124,347,2146,411,2141,413,2119,348,2111,308,2107,268,2107,175,2107,122,2100,102,2083,82,2056,71,2006,61,1863,43,1591,24"/>
-<area shape="rect" href="drv__pwm__core_8c.html" title="Source file for PWM driver module." alt="" coords="2438,80,2555,107"/>
-<area shape="poly" title=" " alt="" coords="1591,19,1926,36,2170,53,2420,77,2423,78,2422,83,2419,83,2169,59,1926,41,1591,24"/>
-<area shape="rect" href="drv__uart__core_8h.html" title="UART driver for DMA&#45;based communication." alt="" coords="2633,163,2744,189"/>
-<area shape="poly" title=" " alt="" coords="1591,18,1835,22,2199,33,2538,51,2652,63,2687,70,2705,78,2714,95,2716,114,2705,150,2700,148,2710,113,2709,96,2702,82,2686,75,2651,68,2538,56,2199,38,1834,28,1591,23"/>
-<area shape="rect" href="drv__uart__core_8c.html" title="Source file for UART driver module." alt="" coords="2580,80,2691,107"/>
-<area shape="poly" title=" " alt="" coords="1591,18,1976,31,2264,49,2564,77,2564,82,2263,54,1976,37,1591,23"/>
-<area shape="rect" href="drv__comp__core_8c.html" title="Source file for comparator driver module." alt="" coords="883,344,1004,371"/>
-<area shape="poly" title=" " alt="" coords="1530,23,1456,27,1352,36,1234,54,1116,83,1032,105,1000,123,969,156,958,177,949,199,940,246,939,292,942,329,936,329,933,292,935,246,944,198,953,174,965,153,997,119,1030,100,1115,77,1233,49,1352,31,1456,22,1530,18"/>
-<area shape="rect" href="mid__iqmath__handler_8c.html" title="Implementation of MID_IQMath_Handler module." alt="" coords="2845,501,2994,528"/>
-<area shape="poly" title=" " alt="" coords="1591,18,1870,22,2299,33,2702,51,2838,63,2881,70,2903,78,2924,98,2934,120,2937,145,2937,175,2937,359,2933,428,2926,486,2921,486,2928,427,2931,359,2931,175,2931,145,2929,121,2920,101,2901,82,2880,75,2838,69,2702,57,2299,39,1870,28,1591,23"/>
-<area shape="rect" href="mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="2148,576,2296,603"/>
-<area shape="poly" title=" " alt="" coords="1591,17,1840,19,2221,27,2415,35,2589,45,2723,59,2770,68,2800,78,2835,95,2862,113,2880,139,2886,174,2886,268,2883,306,2874,337,2860,362,2841,384,2790,420,2724,456,2644,488,2529,521,2298,575,2297,570,2528,515,2642,483,2722,451,2787,415,2837,380,2856,359,2869,335,2878,305,2881,268,2881,175,2875,141,2858,117,2833,99,2798,82,2769,73,2722,65,2588,51,2415,40,2221,33,1840,25,1591,23"/>
-<area shape="rect" href="mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="2129,501,2315,528"/>
-<area shape="poly" title=" " alt="" coords="1591,18,1952,37,2149,55,2221,66,2262,78,2326,118,2351,140,2372,164,2386,190,2394,219,2394,252,2386,289,2358,351,2321,408,2282,456,2248,492,2244,489,2278,453,2317,405,2353,349,2381,287,2389,252,2389,220,2381,192,2367,167,2347,144,2322,122,2260,82,2220,71,2149,60,1951,43,1591,24"/>
-<area shape="rect" href="mid__global__define__handler_8c.html" title="Implementation of fixed&#45;point ramping and transition functions." alt="" coords="2340,427,2525,453"/>
-<area shape="poly" title=" " alt="" coords="1591,18,1763,21,2009,30,2132,38,2241,48,2323,61,2352,69,2370,78,2404,112,2427,154,2442,201,2450,249,2452,297,2450,342,2441,412,2436,411,2444,341,2446,297,2444,250,2437,202,2422,156,2400,116,2367,82,2350,74,2322,66,2240,53,2132,43,2008,35,1762,26,1591,23"/>
-<area shape="rect" href="mid__indicator__handler_8h.html" title="LED indicator control system interface." alt="" coords="747,253,905,280"/>
-<area shape="poly" title=" " alt="" coords="1530,24,1209,41,1019,59,940,70,881,83,797,104,766,122,738,156,731,176,738,196,759,223,786,243,783,247,755,227,733,199,726,176,733,153,762,118,795,99,880,77,939,65,1018,54,1209,36,1530,18"/>
-<area shape="rect" href="mid__indicator__handler_8c.html" title="Implementation of LED indicator control middleware." alt="" coords="747,163,905,189"/>
-<area shape="poly" title=" " alt="" coords="1530,23,1404,26,1226,34,1049,52,977,65,924,82,901,97,879,114,845,152,841,148,875,111,898,92,922,78,976,60,1048,47,1226,29,1403,20,1530,18"/>
-<area shape="rect" href="mid__controller__handler_8h.html" title="Middleware handler for PI (Proportional&#45;Integral) controller." alt="" coords="2549,427,2711,453"/>
-<area shape="poly" title=" " alt="" coords="1591,17,1834,19,2202,27,2390,34,2557,45,2686,59,2731,68,2760,78,2792,95,2816,115,2830,140,2835,174,2835,268,2831,297,2820,323,2803,346,2782,367,2733,400,2684,423,2682,418,2730,395,2779,362,2799,343,2815,320,2826,295,2830,268,2830,175,2825,142,2812,118,2789,100,2758,82,2730,73,2685,64,2557,50,2390,39,2202,32,1834,24,1591,23"/>
-<area shape="rect" href="mid__controller__handler_8c.html" title="Source file implementing digital PI controller functions." alt="" coords="2566,344,2728,371"/>
-<area shape="poly" title=" " alt="" coords="1591,18,2209,36,2555,54,2673,65,2709,71,2729,78,2755,103,2767,131,2768,162,2759,198,2742,238,2719,276,2673,334,2668,331,2715,273,2737,236,2754,197,2762,161,2762,132,2750,106,2726,82,2708,76,2672,70,2555,60,2208,42,1591,23"/>
-<area shape="rect" href="mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="1549,427,1738,453"/>
-<area shape="poly" title=" " alt="" coords="1575,31,1596,55,1619,89,1638,130,1646,174,1646,268,1646,411,1641,411,1641,268,1641,175,1633,132,1614,92,1591,58,1571,34"/>
-<area shape="rect" href="mid__measurement__handler_8c.html" title="Implementation of MID_Measurement_Handler module." alt="" coords="1417,253,1606,280"/>
-<area shape="poly" title=" " alt="" coords="1561,33,1531,198,1521,239,1516,238,1526,197,1556,32"/>
-<area shape="rect" href="mid__fault__management__handler_8h.html" title="Middleware for comprehensive fault management and protection system." alt="" coords="1132,336,1288,379"/>
-<area shape="poly" title=" " alt="" coords="1532,35,1429,84,1366,119,1305,157,1251,200,1218,228,1202,247,1196,264,1195,284,1200,321,1195,321,1190,284,1191,264,1197,244,1215,225,1247,196,1302,152,1363,114,1427,80,1530,30"/>
-<area shape="rect" href="mid__fault__management__handler_8c.html" title="Implementation of comprehensive fault management system." alt="" coords="1316,155,1472,197"/>
-<area shape="poly" title=" " alt="" coords="1547,35,1493,82,1426,146,1423,142,1490,78,1544,31"/>
-<area shape="rect" href="mid__llc__handler_8h.html" title="Header file for MID_LLC_Handler module." alt="" coords="2148,344,2270,371"/>
-<area shape="poly" title=" " alt="" coords="1592,19,1887,37,2043,54,2099,65,2130,78,2156,105,2176,136,2190,171,2200,206,2211,274,2213,328,2207,329,2205,275,2195,207,2185,172,2171,139,2152,108,2127,82,2098,70,2043,59,1886,42,1591,24"/>
-<area shape="rect" href="mid__llc__handler_8c.html" title="Implementation of MID_LLC_Handler module." alt="" coords="2249,253,2371,280"/>
-<area shape="poly" title=" " alt="" coords="1592,18,1736,24,1938,35,2126,53,2193,64,2231,78,2250,94,2265,113,2288,156,2302,200,2309,237,2304,238,2297,201,2283,158,2261,116,2246,98,2229,82,2192,69,2125,58,1938,40,1736,29,1591,24"/>
-<area shape="rect" href="mid__power__control__handler_8h.html" title="Power control and derating system middleware." alt="" coords="1680,344,1870,371"/>
-<area shape="poly" title=" " alt="" coords="1592,27,1659,53,1743,97,1785,127,1824,161,1858,200,1884,244,1891,267,1884,289,1859,319,1827,339,1824,335,1856,315,1880,287,1886,267,1880,246,1854,203,1820,164,1782,131,1740,102,1657,58,1590,32"/>
-<area shape="rect" href="mid__power__control__handler_8c.html" title="Middleware for power derating and control." alt="" coords="1680,253,1870,280"/>
-<area shape="poly" title=" " alt="" coords="1591,30,1628,50,1664,78,1698,118,1727,162,1767,238,1762,241,1723,165,1694,121,1660,82,1625,55,1589,35"/>
-<area shape="rect" href="mid__peripheral__handler_8h.html" title="Peripheral control and relay management middleware." alt="" coords="318,163,483,189"/>
-<area shape="poly" title=" " alt="" coords="1530,23,1282,27,910,38,563,56,447,68,412,75,396,82,388,96,385,113,392,148,387,149,380,113,383,94,392,78,411,70,447,63,563,50,909,33,1282,22,1530,18"/>
-<area shape="rect" href="mid__peripheral__handler_8c.html" title="Middleware for peripheral relay control." alt="" coords="406,80,571,107"/>
-<area shape="poly" title=" " alt="" coords="1530,24,1154,43,876,60,590,83,587,83,586,78,590,77,876,55,1153,37,1530,19"/>
-<area shape="rect" href="app__state__management__handler_8h.html" title="Header file for EVSE state machine module." alt="" coords="1232,245,1393,288"/>
-<area shape="poly" title=" " alt="" coords="1559,33,1528,120,1507,167,1487,199,1450,226,1409,245,1406,240,1447,222,1483,196,1503,165,1523,118,1554,31"/>
-<area shape="rect" href="app__state__management__handler_8c.html" title="Implementation of the EVSE state machine module." alt="" coords="979,155,1140,197"/>
-<area shape="poly" title=" " alt="" coords="1530,25,1338,44,1233,61,1190,71,1159,82,1118,111,1086,144,1082,141,1115,107,1157,78,1189,66,1232,56,1337,39,1530,20"/>
-<area shape="rect" href="_lady_bug_8c.html" title="Main implementation file for LadyBug system core functions." alt="" coords="1990,80,2073,107"/>
-<area shape="poly" title=" " alt="" coords="1592,21,1754,43,1972,77,1975,78,1974,83,1971,83,1753,49,1591,27"/>
-<area shape="rect" href="_lady_bug_8h.html" title="Main header file for LadyBug system containing core system functions." alt="" coords="1954,163,2037,189"/>
-<area shape="poly" title=" " alt="" coords="1591,20,1764,38,1857,55,1894,66,1922,78,1942,93,1959,111,1984,148,1980,151,1955,114,1938,97,1919,82,1893,71,1856,60,1763,44,1591,25"/>
-<area shape="rect" title=" " alt="" coords="1294,651,1358,677"/>
-<area shape="poly" title=" " alt="" coords="1220,527,1309,637,1304,640,1215,530"/>
-<area shape="poly" title=" " alt="" coords="1191,453,1201,486,1196,487,1186,455"/>
-<area shape="poly" title=" " alt="" coords="672,370,687,415,716,479,736,513,759,546,787,576,818,600,855,617,906,630,1034,647,1170,656,1278,660,1278,665,1170,662,1034,653,905,635,853,622,815,605,783,580,755,550,731,516,711,482,682,417,667,372"/>
-<area shape="poly" title=" " alt="" coords="669,281,669,328,663,328,663,281"/>
-<area shape="poly" title=" " alt="" coords="2109,456,1374,653,1373,647,2108,451"/>
-<area shape="poly" title=" " alt="" coords="2493,108,2453,188,2422,240,2385,290,2339,340,2283,381,2243,404,2204,423,2201,418,2241,399,2281,376,2335,336,2381,286,2417,237,2448,185,2489,106"/>
-<area shape="rect" title=" " alt="" coords="2488,163,2609,189"/>
-<area shape="poly" title=" " alt="" coords="2507,106,2535,148,2530,151,2503,109"/>
-<area shape="poly" title=" " alt="" coords="2698,189,2723,237,2747,308,2754,347,2754,386,2746,422,2725,455,2678,502,2632,535,2586,557,2540,571,2436,586,2309,605,2224,618,2110,630,1837,647,1374,664,1374,659,1837,642,2110,624,2223,613,2308,600,2436,581,2539,565,2585,552,2629,531,2674,498,2721,452,2741,420,2749,385,2749,347,2742,309,2718,239,2694,191"/>
-<area shape="poly" title=" " alt="" coords="2624,109,2575,154,2571,150,2620,105"/>
-<area shape="poly" title=" " alt="" coords="2646,106,2675,149,2670,152,2641,109"/>
-<area shape="rect" href="drv__comp__core_8h.html" title="Header file for comparator driver module." alt="" coords="884,427,1005,453"/>
-<area shape="poly" title=" " alt="" coords="946,371,947,411,942,411,941,371"/>
-<area shape="poly" title=" " alt="" coords="968,452,1293,640,1290,645,965,456"/>
-<area shape="poly" title=" " alt="" coords="2845,526,2312,581,2311,576,2844,521"/>
-<area shape="poly" title=" " alt="" coords="2148,603,2129,605,1691,642,1374,663,1373,657,1690,637,2128,600,2147,598"/>
-<area shape="rect" title=" " alt="" coords="2188,651,2256,677"/>
-<area shape="poly" title=" " alt="" coords="2225,603,2225,635,2219,635,2219,603"/>
-<area shape="poly" title=" " alt="" coords="2205,531,2140,573,2079,605,2016,620,1933,632,1730,650,1526,660,1374,664,1374,659,1526,654,1730,644,1932,627,2015,615,2077,600,2137,568,2202,526"/>
-<area shape="poly" title=" " alt="" coords="2225,529,2225,560,2219,560,2219,529"/>
-<area shape="poly" title=" " alt="" coords="2397,456,2274,498,2272,493,2395,451"/>
-<area shape="poly" title=" " alt="" coords="830,280,835,348,838,439,838,516,841,532,851,546,867,560,888,573,944,596,1011,615,1158,642,1279,656,1278,661,1157,647,1010,620,942,601,886,578,864,564,847,550,837,534,833,516,833,439,830,348,824,281"/>
-<area shape="poly" title=" " alt="" coords="804,283,703,338,701,334,802,278"/>
-<area shape="poly" title=" " alt="" coords="829,190,829,238,823,238,823,190"/>
-<area shape="poly" title=" " alt="" coords="2596,456,2272,573,2270,568,2594,451"/>
-<area shape="poly" title=" " alt="" coords="2559,457,2309,501,2308,495,2558,451"/>
-<area shape="poly" title=" " alt="" coords="2647,372,2638,412,2633,411,2642,371"/>
-<area shape="poly" title=" " alt="" coords="1567,457,1278,504,1277,499,1566,451"/>
-<area shape="poly" title=" " alt="" coords="1673,451,1762,488,1875,525,2009,555,2133,575,2132,580,2009,560,1873,531,1760,493,1671,456"/>
-<area shape="poly" title=" " alt="" coords="1738,450,2114,497,2114,503,1737,456"/>
-<area shape="rect" title=" " alt="" coords="1498,501,1572,528"/>
-<area shape="poly" title=" " alt="" coords="1626,456,1568,494,1565,490,1623,452"/>
-<area shape="poly" title=" " alt="" coords="1523,279,1626,412,1622,416,1519,282"/>
-<area shape="poly" title=" " alt="" coords="1142,382,1002,424,1000,419,1141,377"/>
-<area shape="poly" title=" " alt="" coords="1289,371,1561,421,1560,426,1288,376"/>
-<area shape="poly" title=" " alt="" coords="1254,377,1496,492,1494,497,1252,382"/>
-<area shape="poly" title=" " alt="" coords="1321,200,1261,223,1237,235,1223,247,1214,264,1209,282,1207,320,1202,320,1203,282,1209,262,1219,244,1234,230,1259,218,1319,195"/>
-<area shape="poly" title=" " alt="" coords="2203,373,2174,416,2169,413,2198,370"/>
-<area shape="poly" title=" " alt="" coords="2215,370,2229,426,2229,453,2227,486,2222,485,2223,453,2223,427,2210,372"/>
-<area shape="poly" title=" " alt="" coords="2257,369,2289,376,2534,421,2533,426,2288,381,2256,374"/>
-<area shape="poly" title=" " alt="" coords="2147,370,1748,427,1747,421,2147,365"/>
-<area shape="poly" title=" " alt="" coords="2297,283,2236,336,2232,332,2294,279"/>
-<area shape="poly" title=" " alt="" coords="1789,369,1869,443,1927,487,1991,526,2062,553,2134,571,2132,577,2061,558,1989,530,1924,492,1866,447,1785,373"/>
-<area shape="poly" title=" " alt="" coords="1756,373,1678,421,1675,416,1753,369"/>
-<area shape="poly" title=" " alt="" coords="1778,371,1774,412,1766,435,1752,455,1715,483,1672,500,1628,511,1588,515,1588,510,1627,505,1670,495,1712,478,1748,451,1761,433,1769,411,1773,371"/>
-<area shape="poly" title=" " alt="" coords="1778,281,1778,328,1773,328,1773,281"/>
-<area shape="poly" title=" " alt="" coords="411,188,448,235,474,262,504,286,555,315,608,336,606,341,553,320,500,290,471,266,444,238,407,192"/>
-<area shape="poly" title=" " alt="" coords="492,107,497,141,508,188,526,239,555,286,585,314,620,335,617,339,582,319,551,290,522,241,503,189,492,142,487,107"/>
-<area shape="poly" title=" " alt="" coords="477,109,427,154,423,150,473,105"/>
-<area shape="poly" title=" " alt="" coords="1318,288,1325,355,1329,439,1329,516,1329,635,1323,635,1323,516,1323,439,1319,355,1313,289"/>
-<area shape="poly" title=" " alt="" coords="1343,286,1405,334,1442,369,1468,400,1495,427,1538,451,1584,466,1646,478,1801,495,1968,505,2114,509,2114,515,1968,510,1801,500,1646,483,1583,471,1536,456,1492,431,1464,404,1438,373,1402,338,1340,291"/>
-<area shape="poly" title=" " alt="" coords="1391,286,1450,306,1509,334,1537,354,1562,377,1615,415,1612,419,1559,381,1533,358,1506,338,1448,311,1390,291"/>
-<area shape="poly" title=" " alt="" coords="1330,286,1391,361,1472,451,1511,489,1508,493,1468,455,1387,364,1326,290"/>
-<area shape="poly" title=" " alt="" coords="1291,290,1247,328,1244,324,1287,286"/>
-<area shape="poly" title=" " alt="" coords="1394,284,1405,285,1553,302,1756,320,2133,348,2132,353,1756,325,1553,308,1404,291,1393,289"/>
-<area shape="poly" title=" " alt="" coords="1394,283,1405,285,1688,338,1687,343,1404,291,1393,288"/>
-<area shape="poly" title=" " alt="" coords="1040,200,987,245,954,270,918,290,873,310,826,326,738,347,737,342,824,320,871,305,915,286,951,265,984,241,1037,196"/>
-<area shape="poly" title=" " alt="" coords="1120,195,1240,237,1238,242,1118,200"/>
-<area shape="poly" title=" " alt="" coords="2028,108,2009,150,2005,148,2023,106"/>
-<area shape="poly" title=" " alt="" coords="2000,190,2007,260,2011,356,2011,441,2015,466,2025,487,2039,506,2058,523,2104,550,2152,568,2150,573,2102,555,2055,527,2036,510,2020,490,2010,467,2006,442,2006,356,2001,261,1994,190"/>
-<area shape="poly" title=" " alt="" coords="2004,188,2030,244,2039,277,2044,305,2048,356,2056,402,2068,426,2087,452,2117,476,2152,493,2149,498,2114,481,2083,455,2063,429,2051,404,2042,356,2039,306,2034,278,2025,246,1999,191"/>
-<area shape="poly" title=" " alt="" coords="1953,183,921,261,920,256,1953,178"/>
-<area shape="poly" title=" " alt="" coords="2022,187,2238,286,2428,361,2582,419,2580,424,2426,366,2236,290,2020,192"/>
-<area shape="poly" title=" " alt="" coords="1995,190,1983,228,1961,279,1928,334,1907,359,1884,381,1854,400,1821,414,1753,433,1752,427,1819,409,1851,395,1880,377,1904,355,1924,331,1956,277,1978,226,1990,189"/>
-<area shape="poly" title=" " alt="" coords="1953,183,1725,206,1570,224,1408,248,1408,242,1569,219,1724,200,1953,178"/>
+<div class="center"><img src="main_8c__incl.png" border="0" usemap="#a_source_01code_2main_8c" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2main_8c" id="a_source_01code_2main_8c">
+<area shape="rect" title=": Main program body" alt="" coords="814,5,951,32"/>
+<area shape="rect" title=" " alt="" coords="804,80,864,107"/>
+<area shape="poly" title=" " alt="" coords="876,34,853,69,849,66,872,31"/>
+<area shape="rect" href="_lady_bug_8h.html" title="Header file for LadyBug Application Main module." alt="" coords="888,80,972,107"/>
+<area shape="poly" title=" " alt="" coords="893,31,916,66,911,69,888,34"/>
+<area shape="rect" title=" " alt="" coords="5,163,258,205"/>
+<area shape="poly" title=" " alt="" coords="889,107,877,109,707,129,574,134,441,140,271,157,241,162,240,157,270,152,440,134,574,129,707,123,876,104,888,102"/>
+<area shape="rect" title=" " alt="" coords="282,155,448,213"/>
+<area shape="poly" title=" " alt="" coords="889,107,877,109,762,125,671,131,579,139,463,157,462,152,579,133,671,126,762,119,876,104,888,102"/>
+<area shape="rect" title=" " alt="" coords="472,155,708,213"/>
+<area shape="poly" title=" " alt="" coords="889,108,716,153,715,148,887,103"/>
+<area shape="rect" title=" " alt="" coords="732,155,928,213"/>
+<area shape="poly" title=" " alt="" coords="918,109,876,146,872,142,914,105"/>
+<area shape="rect" title=" " alt="" coords="952,155,1108,213"/>
+<area shape="poly" title=" " alt="" coords="946,105,988,142,985,146,943,109"/>
+<area shape="rect" title=" " alt="" coords="1133,163,1287,205"/>
+<area shape="poly" title=" " alt="" coords="971,105,1131,155,1130,160,969,110"/>
+<area shape="rect" title=" " alt="" coords="1312,155,1527,213"/>
+<area shape="poly" title=" " alt="" coords="973,98,1113,119,1297,152,1296,157,1112,124,972,103"/>
+<area shape="rect" title=" " alt="" coords="1551,155,1722,213"/>
+<area shape="poly" title=" " alt="" coords="972,94,1209,109,1370,126,1536,151,1535,157,1369,131,1208,114,972,99"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae83fe01293877f782caac6df58624f94" id="r_ae83fe01293877f782caac6df58624f94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae83fe01293877f782caac6df58624f94">SimulationStep</a> (double t, double delt, double *in, double *out, int *pnError, char *szErrorMsg, void **reserved_UserData, int reserved_ThreadIndex, void *reserved_AppPtr)</td></tr>
-<tr class="memitem:a066d3569dc1bd19ed44b537e76022e4c" id="r_a066d3569dc1bd19ed44b537e76022e4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a066d3569dc1bd19ed44b537e76022e4c">SimulationBegin</a> (const char *szId, int nInputCount, int nOutputCount, int nParameterCount, const char **pszParameters, int *pnError, char *szErrorMsg, void **reserved_UserData, int reserved_ThreadIndex, void *reserved_AppPtr)</td></tr>
-<tr class="memitem:a7a136ddde31295955c0a6b3c398fb599" id="r_a7a136ddde31295955c0a6b3c398fb599"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a136ddde31295955c0a6b3c398fb599">SimulationEnd</a> (const char *szId, void **reserved_UserData, int reserved_ThreadIndex, void *reserved_AppPtr)</td></tr>
+<tr class="memitem:a70af21c671abfcc773614a9a4f63d920" id="r_a70af21c671abfcc773614a9a4f63d920"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70af21c671abfcc773614a9a4f63d920">SystemClock_Config</a> (void)</td></tr>
+<tr class="memdesc:a70af21c671abfcc773614a9a4f63d920"><td class="mdescLeft">&#160;</td><td class="mdescRight">System Clock Configuration.  <br /></td></tr>
+<tr class="memitem:a4665d4e1d5fea2d34089d4e50a763751" id="r_a4665d4e1d5fea2d34089d4e50a763751"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4665d4e1d5fea2d34089d4e50a763751">ISR_TIM15</a> ()</td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe" id="r_a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="memdesc:a840291bc02cba5474a4cb46a9b9566fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The application entry point.  <br /></td></tr>
+<tr class="memitem:a1730ffe1e560465665eb47d9264826f9" id="r_a1730ffe1e560465665eb47d9264826f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1730ffe1e560465665eb47d9264826f9">Error_Handler</a> (void)</td></tr>
+<tr class="memdesc:a1730ffe1e560465665eb47d9264826f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is executed in case of error occurrence.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga22b804736f5648d52f639b2647d4ed13" id="r_ga22b804736f5648d52f639b2647d4ed13"><td class="memItemLeft" align="right" valign="top">ADC_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___a_d_c.html#ga22b804736f5648d52f639b2647d4ed13">hadc1</a></td></tr>
+<tr class="memdesc:ga22b804736f5648d52f639b2647d4ed13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extern global variables for ADC module.  <br /></td></tr>
+<tr class="memitem:a1c126854bb1813d31ab4776b21dcc51f" id="r_a1c126854bb1813d31ab4776b21dcc51f"><td class="memItemLeft" align="right" valign="top">DMA_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c126854bb1813d31ab4776b21dcc51f">hdma_adc1</a></td></tr>
+<tr class="memitem:ga6fb8a2d03fc4de85aa0ab3df45c74561" id="r_ga6fb8a2d03fc4de85aa0ab3df45c74561"><td class="memItemLeft" align="right" valign="top">COMP_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga6fb8a2d03fc4de85aa0ab3df45c74561">hcomp1</a></td></tr>
+<tr class="memitem:gaedf70672c75f0f7decf2d5d6f63c3676" id="r_gaedf70672c75f0f7decf2d5d6f63c3676"><td class="memItemLeft" align="right" valign="top">COMP_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#gaedf70672c75f0f7decf2d5d6f63c3676">hcomp3</a></td></tr>
+<tr class="memitem:gaa25a57382819e79fbde3687939c0fd0b" id="r_gaa25a57382819e79fbde3687939c0fd0b"><td class="memItemLeft" align="right" valign="top">DAC_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#gaa25a57382819e79fbde3687939c0fd0b">hdac1</a></td></tr>
+<tr class="memitem:ga25fc663547539bc49fecc0011bd76ab5" id="r_ga25fc663547539bc49fecc0011bd76ab5"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___p_w_m.html#ga25fc663547539bc49fecc0011bd76ab5">htim1</a></td></tr>
+<tr class="memitem:ga2c80fd5510e2990a59a5c90d745c716c" id="r_ga2c80fd5510e2990a59a5c90d745c716c"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___p_w_m.html#ga2c80fd5510e2990a59a5c90d745c716c">htim2</a></td></tr>
+<tr class="memdesc:ga2c80fd5510e2990a59a5c90d745c716c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extern global variables for Global Definitions module.  <br /></td></tr>
+<tr class="memitem:a85788cec5a97ee377e4ee2e74f026484" id="r_a85788cec5a97ee377e4ee2e74f026484"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85788cec5a97ee377e4ee2e74f026484">htim4</a></td></tr>
+<tr class="memitem:ga859a9bb217bb4010bb2bffb6881478c0" id="r_ga859a9bb217bb4010bb2bffb6881478c0"><td class="memItemLeft" align="right" valign="top">TIM_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga859a9bb217bb4010bb2bffb6881478c0">htim15</a></td></tr>
+<tr class="memitem:gab7c63c1b0f65db92b6a4ea19edf957e1" id="r_gab7c63c1b0f65db92b6a4ea19edf957e1"><td class="memItemLeft" align="right" valign="top">UART_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___u_a_r_t.html#gab7c63c1b0f65db92b6a4ea19edf957e1">huart3</a></td></tr>
+<tr class="memitem:a8556819c2aafb13de4f13869b2c315ed" id="r_a8556819c2aafb13de4f13869b2c315ed"><td class="memItemLeft" align="right" valign="top">DMA_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8556819c2aafb13de4f13869b2c315ed">hdma_usart3_tx</a></td></tr>
+<tr class="memitem:a418ff7f6b595dcf41b10de1083e62340" id="r_a418ff7f6b595dcf41b10de1083e62340"><td class="memItemLeft" align="right" valign="top">DMA_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a418ff7f6b595dcf41b10de1083e62340">hdma_usart3_rx</a></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a066d3569dc1bd19ed44b537e76022e4c" name="a066d3569dc1bd19ed44b537e76022e4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a066d3569dc1bd19ed44b537e76022e4c">&#9670;&#160;</a></span>SimulationBegin()</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>: Main program body </p>
+<dl class="section attention"><dt>Attention</dt><dd></dd></dl>
+<p>Copyright (c) 2025 STMicroelectronics. All rights reserved.</p>
+<p>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS. </p>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
+<a id="a1730ffe1e560465665eb47d9264826f9" name="a1730ffe1e560465665eb47d9264826f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1730ffe1e560465665eb47d9264826f9">&#9670;&#160;</a></span>Error_Handler()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SimulationBegin </td>
+          <td class="memname">void Error_Handler </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>szId</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nInputCount</em></span>, </td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function is executed in case of error occurrence. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_a1730ffe1e560465665eb47d9264826f9_icgraph.png" border="0" usemap="#amain_8c_a1730ffe1e560465665eb47d9264826f9_icgraph" loading="lazy" alt=""/></div>
+<map name="amain_8c_a1730ffe1e560465665eb47d9264826f9_icgraph" id="amain_8c_a1730ffe1e560465665eb47d9264826f9_icgraph">
+<area shape="rect" title="This function is executed in case of error occurrence." alt="" coords="296,5,397,32"/>
+<area shape="rect" href="main_8c.html#a70af21c671abfcc773614a9a4f63d920" title="System Clock Configuration." alt="" coords="103,5,248,32"/>
+<area shape="poly" title=" " alt="" coords="281,21,249,21,249,16,281,16"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4665d4e1d5fea2d34089d4e50a763751" name="a4665d4e1d5fea2d34089d4e50a763751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4665d4e1d5fea2d34089d4e50a763751">&#9670;&#160;</a></span>ISR_TIM15()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">void ISR_TIM15 </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nOutputCount</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nParameterCount</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char **</td>          <td class="paramname"><span class="paramname"><em>pszParameters</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>pnError</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>szErrorMsg</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **</td>          <td class="paramname"><span class="paramname"><em>reserved_UserData</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reserved_ThreadIndex</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>reserved_AppPtr</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c_a066d3569dc1bd19ed44b537e76022e4c_cgraph.png" border="0" usemap="#amain_8c_a066d3569dc1bd19ed44b537e76022e4c_cgraph" loading="lazy" alt=""/></div>
-<map name="amain_8c_a066d3569dc1bd19ed44b537e76022e4c_cgraph" id="amain_8c_a066d3569dc1bd19ed44b537e76022e4c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,233,121,260"/>
-<area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,233,331,260"/>
-<area shape="poly" title=" " alt="" coords="121,244,153,244,153,249,121,249"/>
-<area shape="rect" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initializes the ADC hardware and data structure." alt="" coords="410,56,483,83"/>
-<area shape="poly" title=" " alt="" coords="257,231,303,166,338,127,377,92,394,83,396,88,381,97,341,131,307,169,262,234"/>
-<area shape="rect" href="group___m_i_d___f_a_u_l_t.html#gad2bc2cfbcc9b9b46f7eae106fa04fde7" title="Initializes the fault management system." alt="" coords="408,107,485,133"/>
-<area shape="poly" title=" " alt="" coords="264,231,312,189,378,143,392,136,394,140,380,148,315,193,267,235"/>
-<area shape="rect" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gacfa75aa809762cf0ad8a5d4a5dc196c6" title="Initialize the LED indicator subsystem." alt="" coords="396,157,497,184"/>
-<area shape="poly" title=" " alt="" coords="285,230,378,194,394,187,396,192,380,198,287,235"/>
-<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga699bc1df30dc2d3f528d4a7e9f29fa24" title="Initializes the complete LLC control system." alt="" coords="414,208,479,235"/>
-<area shape="poly" title=" " alt="" coords="331,233,398,225,398,230,332,239"/>
-<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initializes the complete measurement system." alt="" coords="379,259,513,285"/>
-<area shape="poly" title=" " alt="" coords="332,255,364,259,363,264,331,260"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#ga7d6efaf97c200f7181d544d024429647" title="Initialize PWM modules." alt="" coords="406,309,486,336"/>
-<area shape="poly" title=" " alt="" coords="287,258,380,295,396,301,394,306,378,300,285,263"/>
-<area shape="rect" href="group___m_i_d___p_o_w_e_r.html#ga3ea28682838bb6082b26dbaf4b46d561" title="Initialize power control structure." alt="" coords="400,360,492,387"/>
-<area shape="poly" title=" " alt="" coords="267,258,315,300,380,346,390,351,388,356,378,350,312,305,264,262"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c" title="Initialize state machine with initial state." alt="" coords="409,436,483,463"/>
-<area shape="poly" title=" " alt="" coords="263,259,312,321,381,397,414,425,411,429,377,401,308,324,259,262"/>
-<area shape="rect" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5" title="Performs ADC calibration sequence." alt="" coords="585,5,690,32"/>
-<area shape="poly" title=" " alt="" coords="483,57,569,34,570,39,484,62"/>
-<area shape="rect" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a" title="Starts ADC conversion sequence in DMA mode." alt="" coords="561,56,714,83"/>
-<area shape="poly" title=" " alt="" coords="483,67,546,67,546,72,483,72"/>
-<area shape="rect" href="group___m_i_d___c_t_r_l.html#gadd845e487a875c4bc2392010cc7375de" title="Configures a new PI controller instance." alt="" coords="567,107,708,133"/>
-<area shape="poly" title=" " alt="" coords="478,210,512,194,526,181,535,169,544,156,560,143,569,138,572,142,563,148,548,160,539,172,530,185,515,198,481,215"/>
-<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga9d8a8d24fe7974b4f9c60db897d689cc" title="Configures LLC converter operating mode." alt="" coords="596,157,679,184"/>
-<area shape="poly" title=" " alt="" coords="478,210,580,183,581,188,480,215"/>
-<area shape="rect" href="mid__measurement__handler_8c.html#aecfbba2e55ac8e1591036ef6f6dae1e9" title="Configures measurement update timing." alt="" coords="586,208,689,235"/>
-<area shape="poly" title=" " alt="" coords="499,255,571,236,572,241,500,261"/>
-<area shape="rect" href="mid__measurement__handler_8c.html#a63dc2f3c304af995705835ccce693b62" title="Initializes a measurement channel with specified parameters." alt="" coords="576,259,699,285"/>
-<area shape="poly" title=" " alt="" coords="513,269,561,269,561,275,513,275"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="567,309,708,336"/>
-<area shape="poly" title=" " alt="" coords="487,320,552,320,552,325,487,325"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="581,360,694,387"/>
-<area shape="poly" title=" " alt="" coords="487,331,570,353,569,358,486,336"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="565,411,710,437"/>
-<area shape="poly" title=" " alt="" coords="488,332,515,346,530,359,539,372,548,384,563,396,572,402,569,406,560,401,544,388,535,375,526,363,512,350,486,337"/>
-<area shape="rect" href="app__state__management__handler_8c.html#a6867f0e73cb92030fee0b24785908e29" title="Initialize state management configuration." alt="" coords="591,461,684,488"/>
-<area shape="poly" title=" " alt="" coords="484,452,576,464,576,469,484,457"/>
+<div class="center"><img src="main_8c_a4665d4e1d5fea2d34089d4e50a763751_cgraph.png" border="0" usemap="#amain_8c_a4665d4e1d5fea2d34089d4e50a763751_cgraph" loading="lazy" alt=""/></div>
+<map name="amain_8c_a4665d4e1d5fea2d34089d4e50a763751_cgraph" id="amain_8c_a4665d4e1d5fea2d34089d4e50a763751_cgraph">
+<area shape="rect" title=" " alt="" coords="5,485,94,512"/>
+<area shape="rect" href="group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd" title="Main interrupt service routine for real&#45;time control." alt="" coords="142,485,317,512"/>
+<area shape="poly" title=" " alt="" coords="94,496,126,496,126,501,94,501"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga8a7c85b9c345204d44030fb96316a5eb" title="EVSE application processing handler." alt="" coords="365,435,544,461"/>
+<area shape="poly" title=" " alt="" coords="292,482,377,463,378,468,293,487"/>
+<area shape="rect" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga4edd34895d407967e0d85945fe8a4449" title="Update fault mode based on current conditions." alt="" coords="386,485,524,512"/>
+<area shape="poly" title=" " alt="" coords="317,496,370,496,370,501,317,501"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga7ec30b7794b47ae2138c478f132022d2" title="Update all measurements in Q15 format." alt="" coords="378,536,532,563"/>
+<area shape="poly" title=" " alt="" coords="293,510,378,529,377,535,292,515"/>
+<area shape="rect" href="group___m_i_d___l_l_c.html#ga9d8a8d24fe7974b4f9c60db897d689cc" title="LLC module function implementations." alt="" coords="629,359,712,385"/>
+<area shape="poly" title=" " alt="" coords="491,432,591,395,613,387,615,392,593,400,493,437"/>
+<area shape="rect" href="group___m_i_d___l_l_c.html#gaf9b7ebe5587e2acd7077f8ab54023a50" title="Select initial LLC operating mode at startup." alt="" coords="594,409,747,436"/>
+<area shape="poly" title=" " alt="" coords="544,435,578,431,579,436,545,440"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state machine." alt="" coords="622,460,719,487"/>
+<area shape="poly" title=" " alt="" coords="545,456,607,463,607,469,544,461"/>
+<area shape="rect" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#gadd66ff8b83b7d62ace627df52da6ad7c" title="Determine if fault should be logged to history." alt="" coords="821,56,948,83"/>
+<area shape="poly" title=" " alt="" coords="718,464,734,457,747,446,762,424,773,402,782,358,778,315,769,271,760,228,757,183,767,138,778,116,795,93,805,83,809,87,799,96,782,118,772,140,762,184,765,227,775,270,784,314,787,358,778,404,767,427,751,450,737,462,720,469"/>
+<area shape="rect" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga2ef8a4e52363253bce2a4ceb62aa94fb" title="Check if fault conditions have cleared." alt="" coords="833,107,936,133"/>
+<area shape="poly" title=" " alt="" coords="718,464,734,457,747,446,770,408,778,371,776,334,769,297,763,259,761,221,770,182,795,143,817,128,820,132,799,147,775,184,766,221,768,258,775,296,782,333,783,372,775,410,751,450,737,461,720,469"/>
+<area shape="rect" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga8ad70d1197990240e6cbb899640152fa" title="Enter fault standby/reset state." alt="" coords="831,157,938,184"/>
+<area shape="poly" title=" " alt="" coords="718,464,734,457,747,446,767,415,774,384,774,353,770,322,765,290,765,259,773,226,795,194,815,179,818,184,799,198,778,229,770,259,770,290,775,321,779,353,780,385,772,417,751,450,737,461,720,469"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26" title="Disable PWM output." alt="" coords="1251,259,1398,285"/>
+<area shape="poly" title=" " alt="" coords="718,463,734,456,747,446,760,429,766,412,768,376,771,341,779,323,795,307,828,290,874,278,930,269,991,264,1121,261,1235,264,1235,270,1121,267,992,269,930,275,875,283,830,295,798,311,784,326,776,342,773,377,771,413,764,432,751,450,736,460,720,468"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#ga23898da2b0024e62dae58b7059f45397" title="Enable PWM output." alt="" coords="1252,813,1397,840"/>
+<area shape="poly" title=" " alt="" coords="720,478,737,485,751,497,773,533,782,568,781,603,775,638,770,672,769,706,777,740,799,774,821,797,846,816,902,844,964,861,1029,868,1094,867,1156,861,1260,842,1261,847,1157,867,1094,873,1029,873,963,866,900,849,843,821,818,801,795,778,772,742,764,706,765,671,770,637,776,603,777,569,768,535,747,500,734,490,718,483"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gae908ff70c6b0b9ba54ec69dbbceca07e" title="Handle AUTORECOVERY state operations." alt="" coords="798,889,971,916"/>
+<area shape="poly" title=" " alt="" coords="720,478,737,485,751,497,768,521,779,545,786,569,789,593,786,639,776,685,766,730,763,776,765,798,772,822,783,845,799,869,809,879,805,883,795,872,778,848,767,823,760,799,758,776,761,729,771,683,780,638,784,593,781,570,774,547,763,524,747,500,734,490,718,482"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1f1e0e52e3b18a3fc2ecd5b204913f16" title="Handle CHARGING state operations." alt="" coords="811,208,958,235"/>
+<area shape="poly" title=" " alt="" coords="718,463,734,456,747,446,763,422,771,399,772,375,770,351,769,327,770,302,778,277,795,252,807,241,811,245,799,255,782,279,775,303,774,327,776,351,777,375,776,400,768,425,751,450,736,461,720,468"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga55640c3a709e22874c844ffee4440939" title="Handle FAULT state operations." alt="" coords="823,384,946,411"/>
+<area shape="poly" title=" " alt="" coords="717,457,748,446,796,420,814,413,816,418,798,425,750,450,719,462"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gaa609d54e2438e5450f96fd281720c5cf" title="Handle FULLYCHARGED state operations." alt="" coords="800,435,968,461"/>
+<area shape="poly" title=" " alt="" coords="719,465,784,457,785,462,720,470"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gad96831e426a2010e8f1da8669cf9ec46" title="Handle HANDSHAKE state operations." alt="" coords="804,737,965,764"/>
+<area shape="poly" title=" " alt="" coords="720,478,737,486,751,497,769,523,777,548,779,573,778,597,777,647,784,672,799,698,814,715,833,727,830,732,811,719,795,702,779,674,772,647,773,597,774,573,772,549,764,525,747,500,734,490,718,483"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga25f2b5c68a1ec0310d97a37e6309f183" title="Handle IDLE state operations." alt="" coords="825,485,944,512"/>
+<area shape="poly" title=" " alt="" coords="720,476,810,487,810,493,719,482"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1f3f76f448b8dc2495b4c6fa50d5f204" title="Check if debounce condition has finished." alt="" coords="797,940,972,967"/>
+<area shape="poly" title=" " alt="" coords="720,477,737,485,751,497,770,525,783,553,790,581,793,608,787,662,774,715,762,767,757,820,759,846,767,873,779,899,799,926,801,928,797,932,795,930,775,902,762,874,754,847,751,820,757,766,769,713,782,661,787,608,785,581,778,555,765,528,747,500,734,489,718,482"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga5e3af4f6ebe90cec1287b588d1ef1bde" title="Check if delay time has finished." alt="" coords="809,991,960,1017"/>
+<area shape="poly" title=" " alt="" coords="720,477,737,485,751,497,772,529,786,560,794,591,796,621,789,681,774,740,759,799,753,858,756,887,763,917,777,947,799,977,801,979,796,983,795,980,773,949,758,918,750,888,748,858,754,798,769,739,784,680,791,621,789,591,781,561,767,531,747,500,734,489,718,482"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gac044c2a9b23a166045e549e87cf16015" title="Handle PFC_START state operations." alt="" coords="810,573,959,600"/>
+<area shape="poly" title=" " alt="" coords="720,484,750,496,807,529,855,562,852,566,804,533,748,501,718,489"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1dc8f3e307384996bd6c0f4bcf9c8704" title="Handle SHUTDOWN state operations." alt="" coords="807,321,962,348"/>
+<area shape="poly" title=" " alt="" coords="718,461,747,446,763,428,771,410,778,390,795,370,822,353,825,357,798,374,783,393,776,412,767,431,750,450,720,466"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga03b668343def8a556453bf8f687d1f34" title="Handle SOFTSTART state operations." alt="" coords="811,661,958,688"/>
+<area shape="poly" title=" " alt="" coords="720,480,750,497,763,511,771,525,778,553,783,581,799,610,821,633,846,651,842,655,817,637,795,614,778,582,772,554,766,527,759,514,747,501,718,484"/>
+<area shape="rect" href="group___d_r_v___c_o_m_p.html#ga127eaaf52bcbe81e23c9e2c1a3a2c20e" title="Reset and reinitialize comparator protection system." alt="" coords="1032,73,1185,100"/>
+<area shape="poly" title=" " alt="" coords="936,154,971,143,1063,104,1065,109,973,148,938,159"/>
+<area shape="rect" href="group___d_r_v___c_o_m_p.html#ga4553469f3dfae5c9c1cb1d96f8fc5c97" title="Initialize Comparator module." alt="" coords="1282,5,1367,32"/>
+<area shape="poly" title=" " alt="" coords="1152,70,1267,34,1268,39,1154,75"/>
+<area shape="rect" href="group___m_i_d___l_l_c.html#ga84238c737cc149f14fc61a023dd84613" title="Execute hybrid PFM/PWM control with PI controllers." alt="" coords="1042,192,1175,235"/>
+<area shape="poly" title=" " alt="" coords="958,216,1026,214,1026,219,958,221"/>
+<area shape="rect" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga23f0cb4d2dac6d0886892547dc0eba47" title="Apply anti&#45;windup to PI controller." alt="" coords="1246,56,1403,83"/>
+<area shape="poly" title=" " alt="" coords="1127,190,1177,141,1209,115,1243,92,1255,86,1257,91,1246,97,1212,119,1180,145,1131,193"/>
+<area shape="rect" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2d517a90930117bcda9492ca3f4a775e" title="Process PI controller computation." alt="" coords="1249,208,1400,235"/>
+<area shape="poly" title=" " alt="" coords="1175,213,1233,215,1233,221,1175,218"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="1254,360,1395,387"/>
+<area shape="poly" title=" " alt="" coords="1134,233,1198,296,1221,323,1231,334,1246,346,1255,351,1253,356,1243,350,1227,338,1217,326,1194,299,1131,237"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="1453,309,1566,336"/>
+<area shape="poly" title=" " alt="" coords="1175,189,1227,178,1286,172,1347,176,1377,183,1406,194,1436,214,1462,240,1497,294,1493,297,1458,244,1433,218,1403,198,1376,188,1346,181,1286,178,1227,184,1176,195"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="1252,309,1397,336"/>
+<area shape="poly" title=" " alt="" coords="1141,233,1189,264,1245,295,1260,301,1258,306,1243,300,1187,269,1138,238"/>
+<area shape="rect" href="group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga467c12fbae6d58401cc50a392b1fc82d" title="Ramp up with rate control." alt="" coords="1274,107,1375,133"/>
+<area shape="poly" title=" " alt="" coords="1155,189,1243,150,1273,137,1275,142,1245,154,1157,194"/>
+<area shape="poly" title=" " alt="" coords="1398,320,1437,320,1437,325,1398,325"/>
+<area shape="rect" href="group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9" title="Set LLC to standby state." alt="" coords="1061,309,1155,336"/>
+<area shape="poly" title=" " alt="" coords="920,381,1019,345,1045,337,1047,342,1021,351,922,386"/>
+<area shape="rect" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga3964b50e6ae1e0fffa533ee5ce56211d" title="Disable LLC relay." alt="" coords="1049,360,1167,403"/>
+<area shape="poly" title=" " alt="" coords="946,390,1033,384,1033,389,946,396"/>
+<area shape="rect" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga5ab6542999b127993cd599854a65f2fb" title="Disable PFC relay." alt="" coords="1046,427,1170,469"/>
+<area shape="poly" title=" " alt="" coords="947,409,1032,428,1031,433,946,414"/>
+<area shape="rect" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae12639ea85a4757563a55dac9b1fc54c" title="Enable PFC voltage compensation signal." alt="" coords="1020,493,1196,520"/>
+<area shape="poly" title=" " alt="" coords="947,408,974,420,989,435,998,451,1007,465,1022,479,1030,484,1027,489,1018,483,1003,469,994,453,985,439,970,425,945,412"/>
+<area shape="poly" title=" " alt="" coords="1155,309,1249,287,1250,292,1156,314"/>
+<area shape="poly" title=" " alt="" coords="1129,307,1180,276,1243,244,1259,238,1261,243,1245,249,1183,281,1132,311"/>
+<area shape="poly" title=" " alt="" coords="1156,331,1250,353,1249,358,1155,336"/>
+<area shape="poly" title=" " alt="" coords="1157,329,1198,346,1213,359,1222,373,1230,386,1246,396,1288,411,1324,415,1360,409,1404,396,1448,373,1483,344,1487,349,1451,378,1406,401,1361,415,1324,420,1287,416,1243,401,1227,390,1217,376,1209,363,1195,350,1155,334"/>
+<area shape="poly" title=" " alt="" coords="1156,320,1236,320,1236,325,1156,325"/>
+<area shape="rect" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae9a4b1f0f417f77a1db32a7dc4ca1253" title="Process Multi&#45;Resonant controller computation." alt="" coords="1244,461,1405,488"/>
+<area shape="poly" title=" " alt="" coords="1157,326,1178,334,1198,346,1217,370,1223,394,1230,418,1246,441,1261,452,1258,456,1242,445,1225,420,1218,395,1212,372,1195,350,1176,339,1155,331"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="1269,512,1380,539"/>
+<area shape="poly" title=" " alt="" coords="1169,395,1198,413,1215,435,1223,457,1230,478,1246,498,1256,505,1253,509,1243,502,1225,480,1218,459,1211,437,1195,417,1166,400"/>
+<area shape="poly" title=" " alt="" coords="1167,467,1197,479,1245,497,1265,504,1263,509,1243,503,1195,484,1166,472"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="1274,712,1375,739"/>
+<area shape="poly" title=" " alt="" coords="1182,518,1198,530,1214,551,1222,573,1223,616,1224,657,1231,678,1246,698,1261,709,1258,714,1242,702,1227,680,1219,658,1218,616,1217,574,1210,554,1194,534,1179,523"/>
+<area shape="poly" title=" " alt="" coords="950,432,970,421,986,403,994,384,1001,365,1018,346,1045,332,1047,337,1022,350,1006,368,998,386,991,406,974,425,953,436"/>
+<area shape="poly" title=" " alt="" coords="933,431,971,420,1033,401,1035,406,973,425,934,437"/>
+<area shape="poly" title=" " alt="" coords="969,445,1031,445,1031,451,969,451"/>
+<area shape="poly" title=" " alt="" coords="939,459,1041,486,1039,491,937,464"/>
+<area shape="rect" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga2ab40e496ed47c23875cbb65b689e9a4" title="Peripheral module function implementations." alt="" coords="1028,813,1188,840"/>
+<area shape="poly" title=" " alt="" coords="921,762,1021,799,1043,806,1041,811,1019,804,919,767"/>
+<area shape="poly" title=" " alt="" coords="1164,810,1195,799,1246,773,1290,745,1293,750,1248,777,1197,804,1166,815"/>
+<area shape="poly" title=" " alt="" coords="943,487,970,471,983,457,989,442,993,410,998,378,1005,362,1018,346,1045,330,1047,335,1022,350,1009,365,1003,380,999,411,994,443,987,459,974,475,945,492"/>
+<area shape="poly" title=" " alt="" coords="943,483,1031,463,1032,468,944,488"/>
+<area shape="poly" title=" " alt="" coords="944,498,1005,500,1004,506,944,503"/>
+<area shape="rect" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gab84b9c81bef5d760800ce5dff4ef70e0" title="Enable fan operation." alt="" coords="1031,544,1185,571"/>
+<area shape="poly" title=" " alt="" coords="939,510,1041,537,1039,542,937,515"/>
+<area shape="poly" title=" " alt="" coords="959,574,1015,567,1016,572,960,580"/>
+<area shape="rect" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gadec52c1bfc71292a44e1e8c248ad8344" title="Disable PFC voltage compensation signal." alt="" coords="1046,595,1170,637"/>
+<area shape="poly" title=" " alt="" coords="960,594,1031,603,1031,609,959,599"/>
+<area shape="rect" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae09a4fb82f031ec0de625ec8271496f4" title="Enable PFC relay." alt="" coords="1026,712,1191,739"/>
+<area shape="poly" title=" " alt="" coords="909,598,974,647,997,675,1006,686,1021,698,1032,703,1029,708,1019,702,1003,690,993,678,970,651,905,603"/>
+<area shape="poly" title=" " alt="" coords="1167,592,1195,580,1279,543,1281,548,1197,585,1169,597"/>
+<area shape="poly" title=" " alt="" coords="1191,723,1258,723,1258,728,1191,728"/>
+<area shape="poly" title=" " alt="" coords="962,328,1046,323,1046,329,962,333"/>
+<area shape="rect" href="group___m_i_d___l_l_c.html#gad127a12de6fc65cf8f07d9ab3f301165" title="Execute LLC soft start sequence." alt="" coords="1056,661,1160,688"/>
+<area shape="poly" title=" " alt="" coords="958,672,1041,672,1041,677,958,677"/>
+<area shape="rect" href="group___m_i_d___l_l_c.html#ga45f821431afea196f52f1a60f70564cd" title="Update integral term scaling for LLC controllers." alt="" coords="1040,763,1176,789"/>
+<area shape="poly" title=" " alt="" coords="911,686,1021,748,1039,755,1037,760,1019,753,908,691"/>
+<area shape="poly" title=" " alt="" coords="1161,682,1198,698,1214,710,1224,721,1246,749,1299,801,1296,804,1242,752,1220,725,1210,714,1195,702,1159,687"/>
+<area shape="poly" title=" " alt="" coords="1159,667,1178,659,1194,647,1212,624,1221,601,1225,578,1224,554,1224,505,1229,477,1242,448,1264,419,1290,395,1293,399,1268,422,1247,451,1234,479,1229,505,1230,554,1230,578,1227,602,1217,626,1198,651,1181,664,1161,672"/>
+<area shape="poly" title=" " alt="" coords="1159,667,1179,660,1194,648,1218,610,1227,574,1225,537,1218,500,1211,462,1210,424,1218,385,1242,346,1244,344,1248,348,1246,350,1223,387,1215,424,1217,461,1223,499,1230,536,1232,574,1223,612,1198,651,1181,664,1161,672"/>
+<area shape="rect" href="group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga99d2815051a0255cb1cfc97b4a9a42b1" title="Ramp down a value towards target." alt="" coords="1279,661,1370,688"/>
+<area shape="poly" title=" " alt="" coords="1160,672,1263,672,1263,677,1160,677"/>
+<area shape="rect" href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434" title="Read and process ADC conversion results." alt="" coords="614,511,727,537"/>
+<area shape="poly" title=" " alt="" coords="532,538,598,530,599,535,533,543"/>
+<area shape="rect" href="mid__measurement__handler_8c.html#abfe051fb6eeef8a004f7a56dcdb1a0ef" title="Convert raw ADC value to Q15 format." alt="" coords="592,561,749,588"/>
+<area shape="poly" title=" " alt="" coords="533,556,577,561,576,566,532,561"/>
+<area shape="rect" href="mid__measurement__handler_8c.html#a79486749f0f8934f861610a7c7005b63" title="Set raw ADC value in measurement structure." alt="" coords="595,612,746,639"/>
+<area shape="poly" title=" " alt="" coords="493,561,593,597,613,604,611,609,591,603,491,566"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a7a136ddde31295955c0a6b3c398fb599" name="a7a136ddde31295955c0a6b3c398fb599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a136ddde31295955c0a6b3c398fb599">&#9670;&#160;</a></span>SimulationEnd()</h2>
+<a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&#160;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SimulationEnd </td>
+          <td class="memname">int main </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>szId</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">void **</td>          <td class="paramname"><span class="paramname"><em>reserved_UserData</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reserved_ThreadIndex</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>reserved_AppPtr</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ae83fe01293877f782caac6df58624f94" name="ae83fe01293877f782caac6df58624f94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae83fe01293877f782caac6df58624f94">&#9670;&#160;</a></span>SimulationStep()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SimulationStep </td>
-          <td>(</td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>t</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>delt</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *</td>          <td class="paramname"><span class="paramname"><em>pnError</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>szErrorMsg</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void **</td>          <td class="paramname"><span class="paramname"><em>reserved_UserData</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>reserved_ThreadIndex</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>reserved_AppPtr</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>The application entry point. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="main_8c_ae83fe01293877f782caac6df58624f94_cgraph.png" border="0" usemap="#amain_8c_ae83fe01293877f782caac6df58624f94_cgraph" loading="lazy" alt=""/></div>
-<map name="amain_8c_ae83fe01293877f782caac6df58624f94_cgraph" id="amain_8c_ae83fe01293877f782caac6df58624f94_cgraph">
-<area shape="rect" title=" " alt="" coords="5,199,115,225"/>
-<area shape="rect" href="_lady_bug_8c.html#acbc3745ea25400eacd9f3ec0104fe540" title="Infinite loop system function implementation." alt="" coords="181,148,320,175"/>
-<area shape="poly" title=" " alt="" coords="112,195,182,177,183,182,114,201"/>
-<area shape="rect" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab" title="Main interrupt service routine implementation." alt="" coords="163,224,338,251"/>
-<area shape="poly" title=" " alt="" coords="115,217,148,221,147,226,115,222"/>
-<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gab8a9c3244586ea0d412e3e391157fa5e" title="Updates all measurements to floating&#45;point format." alt="" coords="386,148,544,175"/>
-<area shape="poly" title=" " alt="" coords="321,159,370,159,370,164,321,164"/>
-<area shape="rect" href="group___m_i_d___p_o_w_e_r.html#ga0d28bfa2310fbd7c34ce2ed130bc3356" title="Update overall derating coefficient." alt="" coords="392,89,538,116"/>
-<area shape="poly" title=" " alt="" coords="301,145,398,118,399,123,303,150"/>
-<area shape="rect" href="mid__measurement__handler_8c.html#a60b8a41f4a3ae79e98e3bf64b24b4779" title="Converts measurement to floating&#45;point format." alt="" coords="603,148,757,175"/>
-<area shape="poly" title=" " alt="" coords="545,159,588,159,588,164,545,164"/>
-<area shape="rect" href="mid__power__control__handler_8c.html#ab603a7e4a1aa44a29b409fb282d540e9" title="Compute temperature derating coefficient." alt="" coords="603,15,757,57"/>
-<area shape="poly" title=" " alt="" coords="510,86,593,60,595,65,512,91"/>
-<area shape="rect" href="mid__power__control__handler_8c.html#ae54f95be71f0ca98e6f02a2ace951dd2" title="Compute voltage derating coefficient." alt="" coords="597,81,763,124"/>
-<area shape="poly" title=" " alt="" coords="538,100,581,100,581,105,538,105"/>
-<area shape="rect" href="mid__power__control__handler_8c.html#a2cde8f1802d1d7f9b83c6381d1f576c7" title="Calculate average of buffer values." alt="" coords="822,56,974,83"/>
-<area shape="poly" title=" " alt="" coords="758,45,807,53,806,58,757,50"/>
-<area shape="rect" href="mid__power__control__handler_8c.html#aa8a37e530fad0e49546479a1cd0cbced" title="Get median of 4&#45;sample array." alt="" coords="827,107,968,133"/>
-<area shape="poly" title=" " alt="" coords="742,55,769,67,817,92,834,99,832,104,815,97,767,72,740,60"/>
-<area shape="rect" href="mid__power__control__handler_8c.html#a849ee7e22e003710fe0f940ae2f50334" title="Update measurement buffer with new value." alt="" coords="822,5,974,32"/>
-<area shape="poly" title=" " alt="" coords="757,27,806,23,807,29,757,33"/>
-<area shape="rect" href="mid__power__control__handler_8c.html#aef859e2b7a51ae3ed4534469a76d1fdc" title="Swap two integer values." alt="" coords="1035,107,1178,133"/>
-<area shape="poly" title=" " alt="" coords="969,117,1019,117,1019,123,969,123"/>
-<area shape="poly" title=" " alt="" coords="763,87,807,81,807,86,764,93"/>
-<area shape="poly" title=" " alt="" coords="764,107,812,111,811,116,763,112"/>
-<area shape="poly" title=" " alt="" coords="740,78,767,67,815,42,832,35,834,40,817,46,769,72,742,83"/>
-<area shape="rect" href="group___m_i_d___f_a_u_l_t.html#ga4edd34895d407967e0d85945fe8a4449" title="Updates overall fault mode and evaluates protection hierarchy." alt="" coords="396,199,534,225"/>
-<area shape="poly" title=" " alt="" coords="338,224,380,219,381,225,339,230"/>
-<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga7ec30b7794b47ae2138c478f132022d2" title="Updates all measurements in Q15 fixed&#45;point format." alt="" coords="388,249,542,276"/>
-<area shape="poly" title=" " alt="" coords="339,245,373,249,372,254,338,250"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state according to state machine." alt="" coords="417,655,513,681"/>
-<area shape="poly" title=" " alt="" coords="261,250,453,640,448,642,256,252"/>
-<area shape="rect" href="mid__fault__management__handler_8c.html#ad7b48f6e97e4d9eae5d65f18f2b09a69" title=" " alt="" coords="609,199,751,225"/>
-<area shape="poly" title=" " alt="" coords="535,209,593,209,593,215,535,215"/>
-<area shape="rect" href="group___m_i_d___f_a_u_l_t.html#gaf8589a7fecc4080c0c66c60e22a11e9e" title="Generic debounce function for fault condition filtering." alt="" coords="840,199,956,225"/>
-<area shape="poly" title=" " alt="" coords="752,209,824,209,824,215,752,215"/>
-<area shape="rect" href="mid__measurement__handler_8c.html#abfe051fb6eeef8a004f7a56dcdb1a0ef" title="Converts raw ADC value to normalized Q15 format." alt="" coords="602,300,758,327"/>
-<area shape="poly" title=" " alt="" coords="526,274,606,293,605,298,524,279"/>
-<area shape="rect" href="mid__measurement__handler_8c.html#a79486749f0f8934f861610a7c7005b63" title="Updates raw ADC value in measurement structure." alt="" coords="604,249,756,276"/>
-<area shape="poly" title=" " alt="" coords="542,260,589,260,589,265,542,265"/>
-<area shape="rect" href="group___m_i_d___f_a_u_l_t.html#ga2ef8a4e52363253bce2a4ceb62aa94fb" title="Checks whether all faults are cleared and safe for restart." alt="" coords="629,401,731,428"/>
-<area shape="poly" title=" " alt="" coords="468,654,482,613,507,557,543,497,565,469,591,445,613,430,616,435,594,449,569,473,547,501,512,560,487,615,473,655"/>
-<area shape="rect" href="group___m_i_d___f_a_u_l_t.html#ga15097dba3133d9c0e90ecaa8ec49033f" title="Puts fault management into standby and clears status." alt="" coords="627,351,733,377"/>
-<area shape="poly" title=" " alt="" coords="466,654,476,604,498,532,515,493,535,455,561,419,591,387,611,375,614,379,594,391,565,422,540,457,520,496,503,534,481,605,471,655"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26" title="Disable PWM output channel." alt="" coords="1033,553,1180,580"/>
-<area shape="poly" title=" " alt="" coords="473,653,491,627,517,594,551,563,591,539,652,519,715,509,779,505,842,508,958,524,1049,546,1048,551,957,529,842,513,779,511,715,514,653,525,593,544,554,567,521,598,495,630,477,656"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#ga23898da2b0024e62dae58b7059f45397" title="Enable PWM output channel." alt="" coords="1034,452,1179,479"/>
-<area shape="poly" title=" " alt="" coords="470,653,486,621,512,579,547,538,568,519,591,504,644,480,700,463,758,452,816,445,926,443,1019,449,1019,455,926,448,816,450,759,457,701,468,646,485,594,509,571,524,551,541,516,582,491,623,475,655"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga5ecdb525291f207d99643327732c3f39" title="Execute AUTORECOVERY state operations." alt="" coords="593,604,767,631"/>
-<area shape="poly" title=" " alt="" coords="513,654,605,632,606,637,514,659"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga64fedf08e758ea7727e7d73db7314f48" title="Execute CHARGING state operations." alt="" coords="606,857,754,884"/>
-<area shape="poly" title=" " alt="" coords="475,681,491,714,517,758,551,804,594,843,601,848,599,852,591,847,547,808,512,761,486,717,470,683"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205" title="Execute FAULT state operations." alt="" coords="618,756,742,783"/>
-<area shape="poly" title=" " alt="" coords="487,680,534,710,593,742,610,748,608,753,591,746,532,715,484,684"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68" title="Execute FULLYCHARGED state operations." alt="" coords="596,655,764,681"/>
-<area shape="poly" title=" " alt="" coords="514,665,580,665,580,671,514,671"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga29ccd3122c8c032024ab28a8b7099a8b" title="Execute HANDSHAKE state operations." alt="" coords="599,807,761,833"/>
-<area shape="poly" title=" " alt="" coords="478,680,524,735,557,766,594,792,604,798,602,803,591,797,554,770,520,738,474,683"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db" title="Execute IDLE state operations." alt="" coords="621,705,739,732"/>
-<area shape="poly" title=" " alt="" coords="514,677,606,699,605,704,513,682"/>
-<area shape="rect" href="app__state__management__handler_8c.html#a71d74504708b0cc5f10d4e36b60fb2ad" title="Check if debounce condition is satisfied." alt="" coords="592,908,768,935"/>
-<area shape="poly" title=" " alt="" coords="473,681,486,723,510,780,546,842,568,870,594,894,600,898,597,903,591,898,564,873,541,845,505,783,481,724,468,682"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga5e3af4f6ebe90cec1287b588d1ef1bde" title="Check if delay period has elapsed." alt="" coords="605,959,755,985"/>
-<area shape="poly" title=" " alt="" coords="471,681,481,731,503,802,520,840,540,879,565,914,594,945,599,948,595,952,591,949,561,917,535,881,515,843,498,804,476,732,466,682"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga7d010aaa755adb17c76805ac708a120f" title="Execute SHUTDOWN state operations." alt="" coords="603,1009,757,1036"/>
-<area shape="poly" title=" " alt="" coords="470,682,478,739,498,824,514,870,535,916,561,958,594,995,598,999,594,1003,590,999,557,962,530,918,509,872,492,825,473,740,465,682"/>
-<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaaa9f8795754e1acbaf89783fc74a6c6b" title="Execute SOFTSTART state operations." alt="" coords="607,553,753,580"/>
-<area shape="poly" title=" " alt="" coords="484,652,532,621,591,590,608,583,610,588,593,594,534,626,487,656"/>
-<area shape="rect" href="group___d_r_v___c_o_m_p.html#ga127eaaf52bcbe81e23c9e2c1a3a2c20e" title="Reset protection system." alt="" coords="821,351,974,377"/>
-<area shape="poly" title=" " alt="" coords="733,361,806,361,806,367,733,367"/>
-<area shape="rect" href="group___d_r_v___c_o_m_p.html#gad782d128a4f5dedfff981ab3452de59d" title="Initialize comparator module." alt="" coords="1064,351,1149,377"/>
-<area shape="poly" title=" " alt="" coords="975,361,1049,361,1049,367,975,367"/>
-<area shape="rect" href="group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9" title="Update comparator threshold." alt="" coords="1233,351,1379,377"/>
-<area shape="poly" title=" " alt="" coords="1149,361,1218,361,1218,367,1149,367"/>
-<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05" title="Hybrid control mode for LLC (PFM/PWM switching)." alt="" coords="816,756,980,783"/>
-<area shape="poly" title=" " alt="" coords="735,854,767,843,818,817,863,789,866,794,821,821,769,848,737,859"/>
-<area shape="rect" href="group___m_i_d___c_t_r_l.html#ga23f0cb4d2dac6d0886892547dc0eba47" title="Applies anti&#45;windup protection to prevent integral saturation." alt="" coords="1028,807,1185,833"/>
-<area shape="poly" title=" " alt="" coords="957,781,1035,800,1033,805,955,786"/>
-<area shape="rect" href="group___m_i_d___c_t_r_l.html#gadc53cdf15e0b9ec3f7c05d87dd854dda" title="Executes one iteration of the PI control algorithm." alt="" coords="1031,756,1182,783"/>
-<area shape="poly" title=" " alt="" coords="981,767,1015,767,1015,772,981,772"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="1036,655,1177,681"/>
-<area shape="poly" title=" " alt="" coords="920,753,1027,691,1042,685,1044,690,1029,696,923,758"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="1050,705,1163,732"/>
-<area shape="poly" title=" " alt="" coords="955,753,1034,733,1035,739,957,758"/>
-<area shape="rect" href="group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="1034,604,1179,631"/>
-<area shape="poly" title=" " alt="" coords="927,753,953,737,978,717,993,697,1000,678,1009,659,1026,641,1033,636,1036,640,1030,645,1013,662,1005,680,997,700,982,721,956,742,929,758"/>
-<area shape="rect" href="group___m_i_d___g_l_o_b_a_l.html#ga467c12fbae6d58401cc50a392b1fc82d" title="Ramp up a value at a specified rate with initialization support." alt="" coords="1056,857,1157,884"/>
-<area shape="poly" title=" " alt="" coords="921,781,969,811,1029,843,1044,849,1042,854,1027,848,967,816,918,785"/>
-<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa" title="Places LLC converter in safe standby mode." alt="" coords="851,680,945,707"/>
-<area shape="poly" title=" " alt="" coords="731,753,767,741,849,710,850,715,769,747,733,758"/>
-<area shape="poly" title=" " alt="" coords="924,677,978,641,1001,614,1011,602,1027,590,1036,585,1038,589,1029,594,1015,606,1005,618,982,645,927,682"/>
-<area shape="poly" title=" " alt="" coords="934,705,1029,741,1048,748,1046,753,1027,747,932,710"/>
-<area shape="poly" title=" " alt="" coords="945,685,1020,676,1021,681,946,690"/>
-<area shape="poly" title=" " alt="" coords="946,696,1035,707,1034,713,945,702"/>
-<area shape="poly" title=" " alt="" coords="932,677,1027,640,1046,633,1048,638,1029,645,934,682"/>
-<area shape="poly" title=" " alt="" coords="765,675,836,684,835,689,764,680"/>
-<area shape="poly" title=" " alt="" coords="739,709,835,698,835,703,740,714"/>
-<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49" title="Perform soft&#45;start sequence for LLC converter." alt="" coords="846,604,950,631"/>
-<area shape="poly" title=" " alt="" coords="741,578,832,599,831,605,740,583"/>
-<area shape="rect" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga76d8b12ca43b47c264af725dc10c1499" title="Updates integral terms of PI controllers." alt="" coords="830,553,966,580"/>
-<area shape="poly" title=" " alt="" coords="754,564,814,564,814,569,754,569"/>
-<area shape="poly" title=" " alt="" coords="949,606,978,590,989,578,996,566,1001,541,1008,515,1015,502,1026,489,1031,485,1034,489,1030,493,1019,505,1013,517,1007,542,1001,568,993,581,982,594,951,611"/>
-<area shape="poly" title=" " alt="" coords="951,627,1034,648,1033,653,949,632"/>
-<area shape="poly" title=" " alt="" coords="923,629,1029,691,1044,697,1042,702,1027,696,920,634"/>
-<area shape="poly" title=" " alt="" coords="950,615,1018,615,1018,620,950,620"/>
-<area shape="rect" href="group___m_i_d___g_l_o_b_a_l.html#ga99d2815051a0255cb1cfc97b4a9a42b1" title="Gradually decrease a value towards a target by a fixed step." alt="" coords="1062,503,1152,529"/>
-<area shape="poly" title=" " alt="" coords="949,603,979,590,993,578,1002,565,1011,552,1027,539,1046,529,1048,534,1029,544,1015,556,1006,568,997,581,981,594,951,608"/>
+<div class="center"><img src="main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" loading="lazy" alt=""/></div>
+<map name="amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="amain_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
+<area shape="rect" title="The application entry point." alt="" coords="5,440,55,467"/>
+<area shape="rect" href="group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f" title="Infinite loop processing for background tasks." alt="" coords="121,183,260,209"/>
+<area shape="poly" title=" " alt="" coords="38,438,171,221,175,224,42,441"/>
+<area shape="rect" href="group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842" title="Global function implementations." alt="" coords="110,643,272,669"/>
+<area shape="poly" title=" " alt="" coords="44,466,172,629,168,632,40,469"/>
+<area shape="rect" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae12639ea85a4757563a55dac9b1fc54c" title="Enable PFC voltage compensation signal." alt="" coords="103,69,279,96"/>
+<area shape="poly" title=" " alt="" coords="30,439,35,392,46,323,67,245,82,206,100,169,127,133,157,104,161,108,131,137,105,172,87,208,72,247,52,325,40,393,35,440"/>
+<area shape="rect" href="main_8c.html#a70af21c671abfcc773614a9a4f63d920" title="System Clock Configuration." alt="" coords="118,820,264,847"/>
+<area shape="poly" title=" " alt="" coords="37,466,62,558,81,619,105,680,140,749,174,805,170,808,135,751,100,682,76,621,56,559,32,468"/>
+<area shape="rect" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b" title="Process LED update when flag is set." alt="" coords="327,107,503,133"/>
+<area shape="poly" title=" " alt="" coords="226,180,326,143,348,136,350,141,328,148,228,185"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac06a2da82bba5c606a45dfd7822e187f" title="Process measurement averaging update if flag set." alt="" coords="336,208,495,235"/>
+<area shape="poly" title=" " alt="" coords="261,201,320,208,320,213,261,207"/>
+<area shape="rect" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga0d941d936181024d0a591cbf438f35cd" title="Process fan control update if flag set." alt="" coords="350,259,480,301"/>
+<area shape="poly" title=" " alt="" coords="230,207,343,250,341,255,228,212"/>
+<area shape="rect" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga4967a767bd354d2ce90133a5379de3e4" title="Process periodic update when flag is set." alt="" coords="332,56,498,83"/>
+<area shape="poly" title=" " alt="" coords="205,180,256,137,290,113,326,92,340,86,342,91,328,97,293,118,259,141,208,184"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga3d5254d06dbab993dda09f25f550106c" title="Get LED mode corresponding to current EVSE state." alt="" coords="342,157,488,184"/>
+<area shape="poly" title=" " alt="" coords="261,185,327,178,327,183,261,191"/>
+<area shape="rect" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b" title="Set LED mode for system status indication." alt="" coords="587,107,722,133"/>
+<area shape="poly" title=" " alt="" coords="504,117,572,117,572,123,504,123"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="827,56,938,83"/>
+<area shape="poly" title=" " alt="" coords="717,103,811,82,812,88,719,109"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="832,5,933,32"/>
+<area shape="poly" title=" " alt="" coords="721,107,756,92,771,81,780,68,789,55,804,42,816,35,819,40,807,46,793,59,784,71,775,84,759,97,723,112"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#ga4516b6ab8d2d78f90b0f7e365e8ed773" title="Toggle GPIO pin state." alt="" coords="823,107,942,133"/>
+<area shape="poly" title=" " alt="" coords="722,117,807,117,807,123,722,123"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gab8a9c3244586ea0d412e3e391157fa5e" title="Update measurements to float format." alt="" coords="575,212,734,239"/>
+<area shape="poly" title=" " alt="" coords="495,220,560,221,559,226,495,225"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac11d0b2fe43fdbaf29be8a7885271706" title="Update average values for all critical measurements." alt="" coords="571,161,738,188"/>
+<area shape="poly" title=" " alt="" coords="486,205,567,189,568,194,487,210"/>
+<area shape="rect" href="mid__measurement__handler_8c.html#a60b8a41f4a3ae79e98e3bf64b24b4779" title="Convert to human&#45;readable float format." alt="" coords="806,259,959,285"/>
+<area shape="poly" title=" " alt="" coords="723,237,799,252,798,258,722,242"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga4ae0c65f66d88cf871a9e9ea9292d4dc" title="Measurement module function implementations." alt="" coords="810,208,954,235"/>
+<area shape="poly" title=" " alt="" coords="723,186,799,202,798,207,722,191"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gad3f25e3fa1c46f5b1f3207743b9848dc" title="Update circular buffer with new value." alt="" coords="810,157,955,184"/>
+<area shape="poly" title=" " alt="" coords="738,171,794,170,794,175,738,176"/>
+<area shape="rect" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae389a4ec8879fd13922b8c01b691c7c3" title="Control fan speed with rule&#45;based system." alt="" coords="577,263,732,289"/>
+<area shape="poly" title=" " alt="" coords="481,276,561,275,561,280,481,282"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="826,668,939,695"/>
+<area shape="poly" title=" " alt="" coords="734,284,759,299,795,340,822,386,844,435,859,486,877,581,883,652,878,653,872,581,854,487,839,437,818,388,790,343,756,303,731,288"/>
+<area shape="rect" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga0d28bfa2310fbd7c34ce2ed130bc3356" title="Update derating coefficients and power calculations." alt="" coords="582,56,727,83"/>
+<area shape="poly" title=" " alt="" coords="499,67,566,67,566,72,499,72"/>
+<area shape="rect" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initialize ADC module." alt="" coords="378,744,452,771"/>
+<area shape="poly" title=" " alt="" coords="215,668,265,698,328,730,365,742,363,747,326,734,263,703,212,672"/>
+<area shape="rect" href="group___m_i_d___c_o_m_m_u_n_i_c_a_t_i_o_n.html#ga12a29b269b35d338dc89c582752db844" title="Include public and private headers." alt="" coords="334,795,497,821"/>
+<area shape="poly" title=" " alt="" coords="205,668,255,722,289,754,328,780,340,786,337,791,326,785,286,758,251,726,201,671"/>
+<area shape="rect" href="group___d_r_v___c_o_m_p.html#ga4553469f3dfae5c9c1cb1d96f8fc5c97" title="Initialize Comparator module." alt="" coords="373,845,457,872"/>
+<area shape="poly" title=" " alt="" coords="201,669,219,702,247,746,284,792,328,831,359,846,357,850,326,836,280,796,243,749,214,705,196,671"/>
+<area shape="rect" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga83ee51b190a2d91e7de7eddf4ac2c2dc" title="Public function implementations." alt="" coords="376,896,454,923"/>
+<area shape="poly" title=" " alt="" coords="202,668,272,791,329,882,363,898,360,903,325,886,268,793,198,671"/>
+<area shape="rect" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga584a458491d250205bc2cad2c474f929" title="Public function implementations." alt="" coords="364,389,466,416"/>
+<area shape="poly" title=" " alt="" coords="194,641,209,599,235,541,274,479,298,451,325,426,349,413,351,418,329,430,302,454,278,482,240,544,214,601,199,643"/>
+<area shape="rect" href="group___m_i_d___l_l_c.html#ga0e7d5275707c1aca1328f973c75cfa83" title="Initialize LLC control module." alt="" coords="382,440,448,467"/>
+<area shape="poly" title=" " alt="" coords="205,640,325,527,384,475,388,479,329,531,208,644"/>
+<area shape="rect" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initialize measurement system." alt="" coords="348,541,482,568"/>
+<area shape="poly" title=" " alt="" coords="212,640,263,609,326,578,344,571,346,576,328,582,265,614,215,644"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#gad26ba1293cce44ad8a1b1ef12a88e339" title="Initialize PWM module." alt="" coords="375,693,455,720"/>
+<area shape="poly" title=" " alt="" coords="254,667,361,692,359,697,253,673"/>
+<area shape="rect" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga3ea28682838bb6082b26dbaf4b46d561" title="Global function prototypes." alt="" coords="370,592,461,619"/>
+<area shape="poly" title=" " alt="" coords="253,639,354,616,355,622,254,645"/>
+<area shape="rect" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c" title="Global function prototypes." alt="" coords="378,643,452,669"/>
+<area shape="poly" title=" " alt="" coords="272,653,363,653,363,659,272,659"/>
+<area shape="rect" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5" title="Perform ADC calibration." alt="" coords="602,871,707,897"/>
+<area shape="poly" title=" " alt="" coords="453,759,479,767,505,781,522,800,530,820,537,839,553,857,588,873,585,878,550,861,532,842,525,822,517,803,502,785,477,772,451,764"/>
+<area shape="rect" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a" title="Start ADC conversion using DMA mode." alt="" coords="578,820,731,847"/>
+<area shape="poly" title=" " alt="" coords="453,763,504,780,529,793,552,806,574,813,572,818,550,810,526,798,502,785,451,769"/>
+<area shape="rect" href="group___d_r_v___u_a_r_t.html#ga1c5535d40e1775b20bd71079b44e1a84" title="Transmit data via UART using DMA." alt="" coords="602,921,707,948"/>
+<area shape="poly" title=" " alt="" coords="484,820,505,831,522,851,530,871,537,890,553,907,588,924,586,928,550,911,532,892,525,873,517,853,502,835,482,824"/>
+<area shape="rect" href="group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9" title="Set comparator threshold value." alt="" coords="582,972,727,999"/>
+<area shape="poly" title=" " alt="" coords="459,862,482,869,505,882,522,901,530,921,537,940,553,958,569,967,566,972,550,962,532,943,525,923,517,904,502,886,480,874,457,867"/>
+<area shape="rect" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gadd845e487a875c4bc2392010cc7375de" title="Include required header files." alt="" coords="584,465,725,492"/>
+<area shape="poly" title=" " alt="" coords="449,454,569,467,569,472,448,459"/>
+<area shape="rect" href="group___m_i_d___l_l_c.html#ga9d8a8d24fe7974b4f9c60db897d689cc" title="LLC module function implementations." alt="" coords="613,313,696,340"/>
+<area shape="poly" title=" " alt="" coords="448,447,475,440,502,426,517,408,525,389,532,369,550,350,572,338,597,330,598,335,574,343,553,354,537,372,530,391,522,411,505,430,477,445,449,452"/>
+<area shape="rect" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gabae91be5774aed961bfe05a7e3229dde" title="Configure Multi&#45;Resonant controller." alt="" coords="579,364,730,391"/>
+<area shape="poly" title=" " alt="" coords="448,443,502,426,526,413,550,400,572,393,574,398,552,405,529,418,504,430,449,448"/>
+<area shape="rect" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae1aa5e0d60c20343e3e411317c199905" title="Configure individual resonant controller element." alt="" coords="551,415,758,441"/>
+<area shape="poly" title=" " alt="" coords="448,447,536,438,537,443,449,453"/>
+<area shape="rect" href="mid__measurement__handler_8c.html#aecfbba2e55ac8e1591036ef6f6dae1e9" title="Configure measurement update control structure." alt="" coords="603,567,706,593"/>
+<area shape="poly" title=" " alt="" coords="483,559,588,570,588,576,482,564"/>
+<area shape="rect" href="mid__measurement__handler_8c.html#a72e64b9fe21b4404cf1ec1b550b0d3bc" title="Initialize measurement structure." alt="" coords="593,516,716,543"/>
+<area shape="poly" title=" " alt="" coords="482,545,577,535,578,540,483,550"/>
+<area shape="poly" title=" " alt="" coords="456,702,810,683,810,688,456,707"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#ga23898da2b0024e62dae58b7059f45397" title="Enable PWM output." alt="" coords="582,769,727,796"/>
+<area shape="poly" title=" " alt="" coords="457,714,504,730,529,742,552,755,574,762,572,767,550,760,526,747,502,734,455,719"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="584,617,725,644"/>
+<area shape="poly" title=" " alt="" coords="455,693,502,679,550,660,592,646,593,652,552,665,504,684,456,699"/>
+<area shape="rect" href="group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="582,719,727,745"/>
+<area shape="poly" title=" " alt="" coords="456,708,567,720,566,725,455,714"/>
+<area shape="poly" title=" " alt="" coords="717,715,810,695,811,700,719,721"/>
+<area shape="poly" title=" " alt="" coords="231,66,276,52,327,41,462,25,598,16,816,14,816,19,598,22,463,30,327,47,278,58,232,71"/>
+<area shape="rect" href="main_8c.html#a1730ffe1e560465665eb47d9264826f9" title="This function is executed in case of error occurrence." alt="" coords="364,947,466,973"/>
+<area shape="poly" title=" " alt="" coords="208,845,259,888,293,912,328,932,351,942,349,947,326,937,290,916,256,892,205,849"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a70af21c671abfcc773614a9a4f63d920" name="a70af21c671abfcc773614a9a4f63d920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70af21c671abfcc773614a9a4f63d920">&#9670;&#160;</a></span>SystemClock_Config()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SystemClock_Config </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>System Clock Configuration. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Configure the main internal regulator output voltage</p>
+<p>Initializes the RCC Oscillators according to the specified parameters in the RCC_OscInitTypeDef structure.</p>
+<p>Initializes the CPU, AHB and APB buses clocks</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_a70af21c671abfcc773614a9a4f63d920_cgraph.png" border="0" usemap="#amain_8c_a70af21c671abfcc773614a9a4f63d920_cgraph" loading="lazy" alt=""/></div>
+<map name="amain_8c_a70af21c671abfcc773614a9a4f63d920_cgraph" id="amain_8c_a70af21c671abfcc773614a9a4f63d920_cgraph">
+<area shape="rect" title="System Clock Configuration." alt="" coords="5,5,151,32"/>
+<area shape="rect" href="main_8c.html#a1730ffe1e560465665eb47d9264826f9" title="This function is executed in case of error occurrence." alt="" coords="199,5,300,32"/>
+<area shape="poly" title=" " alt="" coords="151,16,183,16,183,21,151,21"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8c_a70af21c671abfcc773614a9a4f63d920_icgraph.png" border="0" usemap="#amain_8c_a70af21c671abfcc773614a9a4f63d920_icgraph" loading="lazy" alt=""/></div>
+<map name="amain_8c_a70af21c671abfcc773614a9a4f63d920_icgraph" id="amain_8c_a70af21c671abfcc773614a9a4f63d920_icgraph">
+<area shape="rect" title="System Clock Configuration." alt="" coords="103,5,248,32"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a1c126854bb1813d31ab4776b21dcc51f" name="a1c126854bb1813d31ab4776b21dcc51f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c126854bb1813d31ab4776b21dcc51f">&#9670;&#160;</a></span>hdma_adc1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DMA_HandleTypeDef hdma_adc1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a418ff7f6b595dcf41b10de1083e62340" name="a418ff7f6b595dcf41b10de1083e62340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a418ff7f6b595dcf41b10de1083e62340">&#9670;&#160;</a></span>hdma_usart3_rx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DMA_HandleTypeDef hdma_usart3_rx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8556819c2aafb13de4f13869b2c315ed" name="a8556819c2aafb13de4f13869b2c315ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8556819c2aafb13de4f13869b2c315ed">&#9670;&#160;</a></span>hdma_usart3_tx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DMA_HandleTypeDef hdma_usart3_tx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85788cec5a97ee377e4ee2e74f026484" name="a85788cec5a97ee377e4ee2e74f026484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85788cec5a97ee377e4ee2e74f026484">&#9670;&#160;</a></span>htim4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIM_HandleTypeDef htim4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -600,7 +592,7 @@ Here is the call graph for this function:</div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="main_8c.html">main.c</a></li>
+    <li class="navelem"><a href="dir_09b89239bb517dd22b84127916aa0cd2.html">Source code</a></li><li class="navelem"><a href="main_8c.html">main.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

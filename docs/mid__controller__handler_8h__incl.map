@@ -1,13 +1,15 @@
-<map id="mid_controller_handler.h" name="mid_controller_handler.h">
-<area shape="rect" id="Node000001" title="Middleware handler for PI (Proportional&#45;Integral) controller." alt="" coords="45,5,207,32"/>
-<area shape="rect" id="Node000002" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="5,155,154,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,34,103,55,90,81,83,111,81,139,76,139,78,110,85,79,98,52,113,31"/>
-<area shape="rect" id="Node000005" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="99,80,284,107"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="140,31,172,67,168,70,136,34"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="149,229,213,256"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,180,152,218,149,222,96,184"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="45,229,114,256"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="82,182,82,214,77,214,77,182"/>
-<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="173,109,113,148,110,144,171,105"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="193,107,185,214,180,214,188,107"/>
+<map id="Source code/_MiddlewareLayer/Controller/mid_controller_handler.h" name="Source code/_MiddlewareLayer/Controller/mid_controller_handler.h">
+<area shape="rect" id="Node000001" title="Header file for Controller Middleware module." alt="" coords="71,5,275,64"/>
+<area shape="rect" id="Node000002" href="$mid__iqmath__handler_8h.html" title="Header file for IQ Math Middleware module." alt="" coords="5,219,205,261"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,66,145,113,117,205,112,203,140,111,158,64"/>
+<area shape="rect" id="Node000005" href="$mid__global__define__handler_8h.html" title="Header file for Global Definitions Middleware module." alt="" coords="154,112,320,171"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="193,63,214,97,209,100,188,66"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="186,309,250,336"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="136,260,190,298,187,302,133,264"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="71,309,139,336"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="108,262,108,293,102,293,102,262"/>
+<area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="199,173,147,211,144,207,196,169"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="237,171,224,294,219,294,231,171"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="280,227,400,253"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="269,169,317,214,314,218,265,173"/>
 </map>

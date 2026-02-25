@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['error_0',['error',['../struct_s___p_i___type_def.html#afe60aec5afd7c8835336294120519bad',1,'S_PI_TypeDef']]],
-  ['error_5fcode_1',['error_code',['../structstate__control__t.html#a45998c0b4dd5717ced32282d45d4ef9b',1,'state_control_t']]],
-  ['error_5fcount_2',['error_count',['../structuart__status__t.html#aedd33235b875180b4a57e5bd210cadd3',1,'uart_status_t']]],
-  ['error_5fstatus_3',['error_status',['../structpwm__internal__state__t.html#afd4365c34c05d7486cfd2210f2d0d454',1,'pwm_internal_state_t']]]
+  ['enable_5ffan_0',['enable_fan',['../group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gaea625372cc999a3eb978727a5a91c29e',1,'S_FAN']]],
+  ['error_1',['Error',['../group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gaa8454d65e32b7a5539ed0d9ca085bfcc',1,'MultiResonant_TypeDef']]],
+  ['error_2',['error',['../group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gafe60aec5afd7c8835336294120519bad',1,'S_PI_TypeDef']]]
 ];

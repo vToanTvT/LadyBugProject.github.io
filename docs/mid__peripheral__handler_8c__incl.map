@@ -1,10 +1,11 @@
-<map id="mid_peripheral_handler.c" name="mid_peripheral_handler.c">
-<area shape="rect" id="Node000001" title="Middleware for peripheral relay control." alt="" coords="65,5,231,32"/>
-<area shape="rect" id="Node000002" href="$mid__peripheral__handler_8h.html" title="Peripheral control and relay management middleware." alt="" coords="5,80,171,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,34,110,70,106,66,136,31"/>
-<area shape="rect" id="Node000003" href="$drv__gpio__core_8h.html" title="GPIO driver for pin configuration and control." alt="" coords="91,155,205,181"/>
-<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="160,31,174,53,185,79,187,96,184,113,170,143,165,141,179,112,182,96,180,81,169,55,156,34"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="100,106,130,141,126,145,96,109"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="116,229,180,256"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="151,182,151,214,145,214,145,182"/>
+<map id="Source code/_MiddlewareLayer/Peripheral/mid_peripheral_handler.c" name="Source code/_MiddlewareLayer/Peripheral/mid_peripheral_handler.c">
+<area shape="rect" id="Node000001" title="Implementation file for Peripheral Middleware module." alt="" coords="133,5,336,64"/>
+<area shape="rect" id="Node000002" href="$mid__peripheral__handler_8h.html" title="Header file for Peripheral Middleware module." alt="" coords="152,112,317,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,64,237,96,232,96,232,64"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,195,141,237"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="212,142,125,189,123,185,210,137"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="165,195,304,237"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="237,139,237,179,232,179,232,139"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="328,187,543,245"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="264,137,358,178,355,182,262,142"/>
 </map>

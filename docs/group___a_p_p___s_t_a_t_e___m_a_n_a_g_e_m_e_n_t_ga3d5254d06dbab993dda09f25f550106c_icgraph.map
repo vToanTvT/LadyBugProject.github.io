@@ -1,0 +1,7 @@
+<map id="state_get_led_mode_" name="state_get_led_mode_">
+<area shape="rect" id="Node000001" title="Get LED mode corresponding to current EVSE state." alt="" coords="290,5,435,32"/>
+<area shape="rect" id="Node000002" href="$group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f" title="Infinite loop processing for background tasks." alt="" coords="103,5,242,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,21,242,21,242,16,275,16"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="peripheral_on_pfc_vcomp_" name="peripheral_on_pfc_vcomp_">
+<area shape="rect" id="Node000001" title="Enable PFC voltage compensation signal." alt="" coords="5,5,182,32"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="230,5,331,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,16,214,16,214,21,182,21"/>
+</map>

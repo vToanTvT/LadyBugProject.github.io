@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['architecture_0',['🧩 Software Architecture',['../md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#arch_sec',1,'']]]
+  ['1_20project_20overview_0',['1. Project Overview',['../index.html#autotoc_md0',1,'']]]
 ];

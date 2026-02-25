@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: mid_indicator_handler.h File Reference</title>
+<title>LadyBug Firmware Documentation: Source code/_MiddlewareLayer/Indicator/mid_indicator_handler.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -93,40 +100,37 @@ $(function(){initNavTree('mid__indicator__handler_8h.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>LED indicator control system interface.  
+<p>Header file for Indicator Middleware module.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="drv__gpio__core_8h_source.html">drv_gpio_core.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;stdint.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="drv__gpio__core_8h_source.html">../../_DriverLayer/gpio/drv_gpio_core.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mid_indicator_handler.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="mid__indicator__handler_8h__incl.png" border="0" usemap="#amid__indicator__handler_8h" loading="lazy" alt=""/></div>
-<map name="amid__indicator__handler_8h" id="amid__indicator__handler_8h">
-<area shape="rect" title="LED indicator control system interface." alt="" coords="5,5,164,32"/>
-<area shape="rect" title=" " alt="" coords="52,155,117,181"/>
-<area shape="poly" title=" " alt="" coords="81,33,66,80,67,111,75,140,70,141,61,112,61,80,76,32"/>
-<area shape="rect" href="drv__gpio__core_8h.html" title="GPIO driver for pin configuration and control." alt="" coords="76,80,189,107"/>
-<area shape="poly" title=" " alt="" coords="95,31,118,66,114,69,91,34"/>
-<area shape="poly" title=" " alt="" coords="126,109,103,143,99,140,122,106"/>
+<div class="center"><img src="mid__indicator__handler_8h__incl.png" border="0" usemap="#a_source_01code_2___middleware_layer_2_indicator_2mid__indicator__handler_8h" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2___middleware_layer_2_indicator_2mid__indicator__handler_8h" id="a_source_01code_2___middleware_layer_2_indicator_2mid__indicator__handler_8h">
+<area shape="rect" title="Header file for Indicator Middleware module." alt="" coords="5,5,209,64"/>
+<area shape="rect" title=" " alt="" coords="20,203,84,229"/>
+<area shape="poly" title=" " alt="" coords="98,66,82,113,61,189,56,187,76,111,93,64"/>
+<area shape="rect" href="drv__gpio__core_8h.html" title="Header file for GPIO Driver module." alt="" coords="90,112,236,155"/>
+<area shape="poly" title=" " alt="" coords="126,63,146,98,141,100,121,66"/>
+<area shape="poly" title=" " alt="" coords="136,157,83,196,80,191,133,153"/>
+<area shape="rect" title=" " alt="" coords="108,203,228,229"/>
+<area shape="poly" title=" " alt="" coords="167,155,169,187,164,187,162,155"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="mid__indicator__handler_8h__dep__incl.png" border="0" usemap="#amid__indicator__handler_8hdep" loading="lazy" alt=""/></div>
-<map name="amid__indicator__handler_8hdep" id="amid__indicator__handler_8hdep">
-<area shape="rect" title="LED indicator control system interface." alt="" coords="97,5,256,32"/>
-<area shape="rect" href="_lady_bug_8h.html" title="Main header file for LadyBug system containing core system functions." alt="" coords="56,80,139,107"/>
-<area shape="poly" title=" " alt="" coords="153,45,113,82,109,78,150,41"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="121,229,181,256"/>
-<area shape="poly" title=" " alt="" coords="176,48,155,229,150,229,171,47"/>
-<area shape="rect" href="mid__indicator__handler_8c.html" title="Implementation of LED indicator control middleware." alt="" coords="213,155,372,181"/>
-<area shape="poly" title=" " alt="" coords="198,42,285,153,280,156,193,46"/>
-<area shape="rect" href="_lady_bug_8c.html" title="Main implementation file for LadyBug system core functions." alt="" coords="5,155,89,181"/>
-<area shape="poly" title=" " alt="" coords="82,121,58,156,54,153,78,118"/>
-<area shape="poly" title=" " alt="" coords="110,120,149,228,144,230,105,122"/>
-<area shape="poly" title=" " alt="" coords="79,188,134,227,131,231,76,192"/>
-<area shape="poly" title=" " alt="" coords="256,191,177,231,175,226,253,186"/>
+<div class="center"><img src="mid__indicator__handler_8h__dep__incl.png" border="0" usemap="#a_source_01code_2___middleware_layer_2_indicator_2mid__indicator__handler_8hdep" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2___middleware_layer_2_indicator_2mid__indicator__handler_8hdep" id="a_source_01code_2___middleware_layer_2_indicator_2mid__indicator__handler_8hdep">
+<area shape="rect" title="Header file for Indicator Middleware module." alt="" coords="131,5,334,64"/>
+<area shape="rect" href="mid__indicator__handler_8c.html" title="Implementation file for Indicator Middleware module." alt="" coords="5,112,209,171"/>
+<area shape="poly" title=" " alt="" coords="188,76,143,114,140,110,185,72"/>
+<area shape="rect" href="_state_management_8h.html" title="Header file for State Management Application module." alt="" coords="233,120,485,163"/>
+<area shape="poly" title=" " alt="" coords="280,72,336,117,332,122,277,76"/>
+<area shape="rect" href="_state_management_8c.html" title="Implementation file for State Management Application module." alt="" coords="233,219,485,261"/>
+<area shape="poly" title=" " alt="" coords="362,178,362,218,356,218,356,178"/>
 </map>
 </div>
 </div>
@@ -135,37 +139,55 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:S_5FIndicator_5FLed_5FConfig_5FTypeDef" id="r_S_5FIndicator_5FLed_5FConfig_5FTypeDef"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED configuration and runtime state structure.  <a href="struct_s___indicator___led___config___type_def.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED configuration structure.  <a href="struct_s___indicator___led___config___type_def.html#details">More...</a><br /></td></tr>
+<tr class="memitem:S_5FLed_5FUpdateTypeDef" id="r_S_5FLed_5FUpdateTypeDef"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED update control structure.  <a href="struct_s___led___update_type_def.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga3cf1d1022b50de10e9f766364ad001ba" id="r_ga3cf1d1022b50de10e9f766364ad001ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga3cf1d1022b50de10e9f766364ad001ba">INDICATOR_UPDATE_PERIOD_TICKS</a>&#160;&#160;&#160;2000U</td></tr>
+<tr class="memdesc:ga3cf1d1022b50de10e9f766364ad001ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include required header files.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga1d9293da9a3cb5d663bb7c466c2fd41f" id="r_ga1d9293da9a3cb5d663bb7c466c2fd41f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga1d9293da9a3cb5d663bb7c466c2fd41f">E_Indicator_Blink_Period_TypeDef</a> { <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41fab27edad9d3e126dc8448b6030438adb6">SLOW</a> = 500U
-, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a> = 200U
-, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41faf84c11ba888e499a8a282a3e6f5de7de">FAST</a> = 100U
+<tr class="memitem:ga25ed4e6b8baeaf04ee5f7c03faed0ffa" id="r_ga25ed4e6b8baeaf04ee5f7c03faed0ffa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">E_Indicator_Mode_TypeDef</a> { <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa47b15c933ee4139ed0c9a58983a86c10">LEDMODE_STANDBY</a> = 0
+, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa8d06102c09677226a4b6764497b7938f">LEDMODE_ACTIVE</a>
+, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaaddb5cb279f1ab3530178a08621637c58">LEDMODE_COMPLETE</a>
+, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa0aa356e09b2c4d0ff0079b31a01410d7">LEDMODE_ERROR</a>
  }</td></tr>
-<tr class="memdesc:ga1d9293da9a3cb5d663bb7c466c2fd41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED blinking period enumeration.  <a href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga1d9293da9a3cb5d663bb7c466c2fd41f">More...</a><br /></td></tr>
+<tr class="memdesc:ga25ed4e6b8baeaf04ee5f7c03faed0ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public macro definitions.  <a href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">More...</a><br /></td></tr>
+<tr class="memitem:ga1d9293da9a3cb5d663bb7c466c2fd41f" id="r_ga1d9293da9a3cb5d663bb7c466c2fd41f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga1d9293da9a3cb5d663bb7c466c2fd41f">E_Indicator_Blink_Period_TypeDef</a> { <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41fab27edad9d3e126dc8448b6030438adb6">SLOW</a> = 5U
+, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a> = 2U
+, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga1d9293da9a3cb5d663bb7c466c2fd41faf84c11ba888e499a8a282a3e6f5de7de">FAST</a> = 1U
+ }</td></tr>
+<tr class="memdesc:ga1d9293da9a3cb5d663bb7c466c2fd41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED blink period enumeration.  <a href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga1d9293da9a3cb5d663bb7c466c2fd41f">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gacfa75aa809762cf0ad8a5d4a5dc196c6" id="r_gacfa75aa809762cf0ad8a5d4a5dc196c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gacfa75aa809762cf0ad8a5d4a5dc196c6">indicator_init_</a> (void)</td></tr>
-<tr class="memdesc:gacfa75aa809762cf0ad8a5d4a5dc196c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize LED indicator subsystem.  <br /></td></tr>
+<tr class="memitem:ga584a458491d250205bc2cad2c474f929" id="r_ga584a458491d250205bc2cad2c474f929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga584a458491d250205bc2cad2c474f929">indicator_init_</a> ()</td></tr>
+<tr class="memdesc:ga584a458491d250205bc2cad2c474f929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize indicator system.  <br /></td></tr>
 <tr class="memitem:ga787e0e208d169789ad0777b293c369c8" id="r_ga787e0e208d169789ad0777b293c369c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga787e0e208d169789ad0777b293c369c8">indicator_process_led_</a> (<a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a> *pledConfig)</td></tr>
-<tr class="memdesc:ga787e0e208d169789ad0777b293c369c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process LED blinking according to configured timing.  <br /></td></tr>
+<tr class="memdesc:ga787e0e208d169789ad0777b293c369c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process LED blinking behavior.  <br /></td></tr>
+<tr class="memitem:ga87090ef1563d11686d2f79fdecf6956b" id="r_ga87090ef1563d11686d2f79fdecf6956b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b">indicator_set_mode</a> (<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">E_Indicator_Mode_TypeDef</a> mode)</td></tr>
+<tr class="memdesc:ga87090ef1563d11686d2f79fdecf6956b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LED mode for system status indication.  <br /></td></tr>
+<tr class="memitem:ga20f029b18dfd9d61217a29f9b7eb5a45" id="r_ga20f029b18dfd9d61217a29f9b7eb5a45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga20f029b18dfd9d61217a29f9b7eb5a45">indicator_tick_</a> (<a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a> *indicator_ctrl)</td></tr>
+<tr class="memdesc:ga20f029b18dfd9d61217a29f9b7eb5a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update tick counter for LED timing.  <br /></td></tr>
+<tr class="memitem:ga0ca4c4effaff4ed4cc435d9ca0dccd8b" id="r_ga0ca4c4effaff4ed4cc435d9ca0dccd8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b">indicator_process_update_</a> (<a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a> *indicator_ctrl, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">E_Indicator_Mode_TypeDef</a> mode)</td></tr>
+<tr class="memdesc:ga0ca4c4effaff4ed4cc435d9ca0dccd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process LED update when flag is set.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr id="var-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Global LED Configuration Instances</div></td></tr>
 <tr class="memitem:ga8d85f10b3364f5df950a7162bdbc65f8" id="r_ga8d85f10b3364f5df950a7162bdbc65f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga8d85f10b3364f5df950a7162bdbc65f8">g_indicator_led1_</a></td></tr>
-<tr class="memdesc:ga8d85f10b3364f5df950a7162bdbc65f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 1 configuration instance.  <br /></td></tr>
+<tr class="memdesc:ga8d85f10b3364f5df950a7162bdbc65f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extern global variables for Indicator module.  <br /></td></tr>
 <tr class="memitem:ga3931b379848708892ef911ed354220d3" id="r_ga3931b379848708892ef911ed354220d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga3931b379848708892ef911ed354220d3">g_indicator_led2_</a></td></tr>
-<tr class="memdesc:ga3931b379848708892ef911ed354220d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 2 configuration instance.  <br /></td></tr>
 <tr class="memitem:ga927889d4d5dda3f07eca3da07f0cfc1d" id="r_ga927889d4d5dda3f07eca3da07f0cfc1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga927889d4d5dda3f07eca3da07f0cfc1d">g_indicator_led3_</a></td></tr>
-<tr class="memdesc:ga927889d4d5dda3f07eca3da07f0cfc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 3 configuration instance.  <br /></td></tr>
 <tr class="memitem:ga996a5e3c1318fef1a32df7cf319283b3" id="r_ga996a5e3c1318fef1a32df7cf319283b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga996a5e3c1318fef1a32df7cf319283b3">g_indicator_led4_</a></td></tr>
-<tr class="memdesc:ga996a5e3c1318fef1a32df7cf319283b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 4 configuration instance.  <br /></td></tr>
+<tr class="memitem:ga3faaaf72f4635dfe54c6d2d556794b59" id="r_ga3faaaf72f4635dfe54c6d2d556794b59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga3faaaf72f4635dfe54c6d2d556794b59">g_indicator_ctrl</a></td></tr>
+<tr class="memitem:ga362e2c9dec878acd0ffd771a0d55d483" id="r_ga362e2c9dec878acd0ffd771a0d55d483"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga362e2c9dec878acd0ffd771a0d55d483">g_led_blink_counter</a></td></tr>
+<tr class="memdesc:ga362e2c9dec878acd0ffd771a0d55d483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include required header files.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>LED indicator control system interface. </p>
+<div class="textblock"><p>Header file for Indicator Middleware module. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
@@ -179,7 +201,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="mid__indicator__handler_8h.html">mid_indicator_handler.h</a></li>
+    <li class="navelem"><a href="dir_09b89239bb517dd22b84127916aa0cd2.html">Source code</a></li><li class="navelem"><a href="dir_851f7514f5bd6dec6a6845ba932ee371.html">_MiddlewareLayer</a></li><li class="navelem"><a href="dir_67496b5798e854d5b2512183130e10ae.html">Indicator</a></li><li class="navelem"><a href="mid__indicator__handler_8h.html">mid_indicator_handler.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

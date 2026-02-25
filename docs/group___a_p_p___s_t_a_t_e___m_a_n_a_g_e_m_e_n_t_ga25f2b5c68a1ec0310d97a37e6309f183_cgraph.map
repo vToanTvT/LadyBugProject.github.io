@@ -1,0 +1,28 @@
+<map id="state_idleHandle" name="state_idleHandle">
+<area shape="rect" id="Node000001" title="Handle IDLE state operations (PFC comp on, PFC relay off, fan enable, LLC standby)" alt="" coords="5,276,124,303"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9" title="Set LLC to standby state." alt="" coords="213,157,307,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,273,222,190,225,195,90,278"/>
+<area shape="rect" id="Node000009" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gab84b9c81bef5d760800ce5dff4ef70e0" title="Enable fan operation." alt="" coords="183,247,337,273"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="124,278,167,271,167,277,125,283"/>
+<area shape="rect" id="Node000010" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga5ab6542999b127993cd599854a65f2fb" title="Disable PFC relay." alt="" coords="198,297,322,340"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="125,296,183,305,183,310,124,301"/>
+<area shape="rect" id="Node000012" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae12639ea85a4757563a55dac9b1fc54c" title="Enable PFC voltage compensation signal." alt="" coords="172,364,348,391"/>
+<area shape="poly" id="edge12_Node000001_Node000012" title=" " alt="" coords="87,301,126,325,173,350,190,356,188,361,171,354,123,330,84,305"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2d517a90930117bcda9492ca3f4a775e" title="Process PI controller computation." alt="" coords="400,5,552,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="270,155,320,101,356,69,395,42,405,36,408,41,397,46,359,73,324,104,274,159"/>
+<area shape="rect" id="Node000004" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae9a4b1f0f417f77a1db32a7dc4ca1253" title="Process Multi&#45;Resonant controller computation." alt="" coords="396,56,556,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="281,155,332,124,395,92,411,86,413,91,397,97,335,129,284,159"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26" title="Disable PWM output." alt="" coords="402,107,550,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="307,157,400,135,402,140,308,162"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="406,157,547,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="308,168,390,168,390,173,308,173"/>
+<area shape="rect" id="Node000007" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="604,233,718,260"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="308,177,589,231,588,236,307,182"/>
+<area shape="rect" id="Node000008" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="404,259,549,285"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="288,182,397,238,425,250,423,255,395,242,285,187"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="549,259,589,254,589,259,550,265"/>
+<area shape="rect" id="Node000011" href="$group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="420,309,532,336"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="322,317,405,319,405,324,322,322"/>
+<area shape="rect" id="Node000013" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="426,364,527,391"/>
+<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="348,375,410,375,410,380,348,380"/>
+</map>

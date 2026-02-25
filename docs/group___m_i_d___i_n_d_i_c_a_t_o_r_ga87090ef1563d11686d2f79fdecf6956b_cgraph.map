@@ -1,0 +1,9 @@
+<map id="indicator_set_mode" name="indicator_set_mode">
+<area shape="rect" id="Node000001" title="Set LED mode for system status indication." alt="" coords="5,56,140,83"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="191,5,302,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,53,183,34,184,39,122,58"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="196,56,298,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,67,181,67,181,72,140,72"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___g_p_i_o.html#ga4516b6ab8d2d78f90b0f7e365e8ed773" title="Toggle GPIO pin state." alt="" coords="188,107,306,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,81,184,99,183,104,120,86"/>
+</map>

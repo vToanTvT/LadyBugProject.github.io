@@ -1,7 +1,9 @@
-<map id="drv_comp_core.c" name="drv_comp_core.c">
-<area shape="rect" id="Node000001" title="Source file for comparator driver module." alt="" coords="5,5,127,32"/>
-<area shape="rect" id="Node000002" href="$drv__comp__core_8h.html" title="Header file for comparator driver module." alt="" coords="5,80,127,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,33,69,64,63,64,63,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="34,155,98,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="69,107,69,139,63,139,63,107"/>
+<map id="Source code/_DriverLayer/comp/drv_comp_core.c" name="Source code/_DriverLayer/comp/drv_comp_core.c">
+<area shape="rect" id="Node000001" title="Implementation of Comparator Driver module." alt="" coords="19,5,192,48"/>
+<area shape="rect" id="Node000002" href="$drv__comp__core_8h.html" title="Header file for Comparator Driver module." alt="" coords="45,96,166,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,49,108,80,103,80,103,49"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,171,102,197"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,125,73,160,69,157,94,122"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="125,171,190,197"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="117,122,142,157,138,160,112,125"/>
 </map>

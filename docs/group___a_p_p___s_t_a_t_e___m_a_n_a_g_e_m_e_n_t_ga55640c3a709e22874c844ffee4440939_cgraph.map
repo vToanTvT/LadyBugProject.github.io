@@ -1,0 +1,29 @@
+<map id="state_faultHandle" name="state_faultHandle">
+<area shape="rect" id="Node000001" title="Handle FAULT state operations (safe shutdown: relays off, PFC comp on, LLC standby)" alt="" coords="5,276,129,303"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9" title="Set LLC to standby state." alt="" coords="218,157,312,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,273,175,220,226,190,229,194,178,225,92,278"/>
+<area shape="rect" id="Node000009" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga3964b50e6ae1e0fffa533ee5ce56211d" title="Disable LLC relay." alt="" coords="206,235,324,277"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="129,276,190,266,191,271,129,282"/>
+<area shape="rect" id="Node000011" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga5ab6542999b127993cd599854a65f2fb" title="Disable PFC relay." alt="" coords="203,301,326,344"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="129,297,188,307,187,312,129,302"/>
+<area shape="rect" id="Node000012" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae12639ea85a4757563a55dac9b1fc54c" title="Enable PFC voltage compensation signal." alt="" coords="177,368,353,395"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="89,301,129,327,178,354,194,360,192,365,176,358,126,332,86,306"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2d517a90930117bcda9492ca3f4a775e" title="Process PI controller computation." alt="" coords="406,5,557,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="275,155,325,101,361,69,400,42,410,36,413,41,402,46,364,73,329,104,279,159"/>
+<area shape="rect" id="Node000004" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae9a4b1f0f417f77a1db32a7dc4ca1253" title="Process Multi&#45;Resonant controller computation." alt="" coords="401,56,561,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="286,155,337,124,400,92,416,86,418,91,402,97,340,129,289,159"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26" title="Disable PWM output." alt="" coords="408,107,555,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="312,157,405,135,407,140,313,162"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="410,157,552,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="313,168,395,168,395,173,313,173"/>
+<area shape="rect" id="Node000007" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="609,233,723,260"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="313,177,594,231,593,236,312,182"/>
+<area shape="rect" id="Node000008" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="408,259,554,285"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="293,182,402,238,430,250,428,255,400,242,290,187"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="554,259,594,254,594,259,555,265"/>
+<area shape="rect" id="Node000010" href="$group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="426,309,537,336"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="325,272,421,302,420,307,324,277"/>
+<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="327,320,410,320,410,325,327,325"/>
+<area shape="rect" id="Node000013" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="430,368,532,395"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="353,379,415,379,415,384,353,384"/>
+</map>

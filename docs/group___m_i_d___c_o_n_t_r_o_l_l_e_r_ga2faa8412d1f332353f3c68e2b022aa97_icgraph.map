@@ -1,0 +1,5 @@
+<map id="MultiResonant_AntiWindup" name="MultiResonant_AntiWindup">
+<area shape="rect" id="Node000001" title="Apply anti&#45;windup to Multi&#45;Resonant controller." alt="" coords="187,13,366,40"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c.html#ga3427f2eb9dd80ded3aaacaaf94d3fe74" title="Execute hybrid PFM/PWM control with Multi&#45;Resonant controller." alt="" coords="5,5,139,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,29,139,29,139,24,171,24"/>
+</map>

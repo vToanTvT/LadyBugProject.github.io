@@ -1,0 +1,5 @@
+<map id="Application Layer" name="Application Layer">
+<area shape="rect" id="Node000001" title="High&#45;level system state management." alt="" coords="5,31,127,57"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___l_a_d_y_b_u_g.html" title="Top&#45;level application orchestration and system control." alt="" coords="188,5,360,32"/>
+<area shape="rect" id="Node000002" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html" title="EVSE state machine and application control." alt="" coords="175,56,373,83"/>
+</map>

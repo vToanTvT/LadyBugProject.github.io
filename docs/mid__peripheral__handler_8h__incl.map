@@ -1,7 +1,9 @@
-<map id="mid_peripheral_handler.h" name="mid_peripheral_handler.h">
-<area shape="rect" id="Node000001" title="Peripheral control and relay management middleware." alt="" coords="5,5,171,32"/>
-<area shape="rect" id="Node000002" href="$drv__gpio__core_8h.html" title="GPIO driver for pin configuration and control." alt="" coords="31,80,145,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,33,91,64,85,64,85,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="56,155,120,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,107,91,139,85,139,85,107"/>
+<map id="Source code/_MiddlewareLayer/Peripheral/mid_peripheral_handler.h" name="Source code/_MiddlewareLayer/Peripheral/mid_peripheral_handler.h">
+<area shape="rect" id="Node000001" title="Header file for Peripheral Middleware module." alt="" coords="133,5,336,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,141,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,67,119,114,116,109,189,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="165,120,304,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,64,237,105,232,105,232,64"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="328,112,543,171"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="291,62,368,102,366,107,288,67"/>
 </map>

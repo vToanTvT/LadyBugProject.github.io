@@ -24,15 +24,11 @@
 */
 var NAVTREE =
 [
-  [ "LadyBug", "index.html", [
-    [ "MainPage", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html", [
-      [ "🌐 Overview", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#intro_sec", null ],
-      [ "🧩 Software Architecture", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#arch_sec", null ],
-      [ "⚙️ Key Features", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#feature_sec", null ],
-      [ "📘 How to Use This Documentation", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#usage_sec", null ],
-      [ "🧾 Notes", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#note_sec", null ],
-      [ "📬 Contact", "md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#contact_sec", null ]
-    ] ],
+  [ "LadyBug Firmware Documentation", "index.html", [
+    [ "1. Project Overview", "index.html#autotoc_md0", null ],
+    [ "2. System Architecture", "index.html#autotoc_md2", null ],
+    [ "3. Hardware-Software Interface", "index.html#autotoc_md4", null ],
+    [ "4. Key Requirement", "index.html#autotoc_md6", null ],
     [ "Topics", "topics.html", "topics" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -48,6 +44,7 @@ var NAVTREE =
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
         [ "Enumerator", "globals_eval.html", null ],
         [ "Macros", "globals_defs.html", "globals_defs" ]
@@ -59,8 +56,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_lady_bug_8c.html",
-"group___m_i_d___f_a_u_l_t.html#ga4edd34895d407967e0d85945fe8a4449",
-"mid__llc__handler_8h_source.html"
+"group___d_r_v___p_w_m.html#gaabee74558ff9e654faf584714160faac",
+"group___m_i_d___l_l_c.html#ga7765d13a6f3e0a3788f68aeec3e74a38",
+"struct_s___derate_point__t.html#a990af4dc002a8cc3f1fbbb81a99b8869"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

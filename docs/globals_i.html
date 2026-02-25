@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: Globals</title>
+<title>LadyBug Firmware Documentation: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -92,9 +99,15 @@ $(function(){initNavTree('globals_i.html','',''); });
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
 
 <h3 class="doxsection"><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>INDI_ConfigLED()&#160;:&#160;<a class="el" href="mid__indicator__handler_8c.html#a69f43f50592bfb336afcad55dbce7a2a">mid_indicator_handler.c</a></li>
-<li>indicator_init_()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gacfa75aa809762cf0ad8a5d4a5dc196c6">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gacfa75aa809762cf0ad8a5d4a5dc196c6">mid_indicator_handler.h</a></li>
+<li>indicator_init_()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga584a458491d250205bc2cad2c474f929">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga584a458491d250205bc2cad2c474f929">mid_indicator_handler.h</a></li>
 <li>indicator_process_led_()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga787e0e208d169789ad0777b293c369c8">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga787e0e208d169789ad0777b293c369c8">mid_indicator_handler.h</a></li>
+<li>indicator_process_update_()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b">mid_indicator_handler.h</a></li>
+<li>indicator_set_mode()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b">mid_indicator_handler.h</a></li>
+<li>indicator_tick_()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga20f029b18dfd9d61217a29f9b7eb5a45">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga20f029b18dfd9d61217a29f9b7eb5a45">mid_indicator_handler.h</a></li>
+<li>INDICATOR_UPDATE_PERIOD_TICKS&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga3cf1d1022b50de10e9f766364ad001ba">mid_indicator_handler.h</a></li>
+<li>INV_DUTY_MAX&#160;:&#160;<a class="el" href="mid__llc__handler_8c.html#a63ee9d9ec373748d3bb26a39f9318a5f">mid_llc_handler.c</a></li>
+<li>INV_FREQ_MAX&#160;:&#160;<a class="el" href="mid__llc__handler_8c.html#a9cde648907ef07f55ab779dbc70ead50">mid_llc_handler.c</a></li>
+<li>ISR_TIM15()&#160;:&#160;<a class="el" href="main_8c.html#a4665d4e1d5fea2d34089d4e50a763751">main.c</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

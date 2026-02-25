@@ -1,8 +1,9 @@
-<map id="mid_peripheral_handler.h" name="mid_peripheral_handler.h">
-<area shape="rect" id="Node000001" title="Peripheral control and relay management middleware." alt="" coords="5,5,171,32"/>
-<area shape="rect" id="Node000002" href="$main_8c.html" title=" " alt="" coords="58,155,118,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,46,56,81,55,100,60,120,80,153,75,155,55,122,50,101,51,79,67,44"/>
-<area shape="rect" id="Node000003" href="$mid__peripheral__handler_8c.html" title="Middleware for peripheral relay control." alt="" coords="65,80,231,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,42,140,78,136,81,106,46"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="130,120,100,156,96,153,126,117"/>
+<map id="Source code/_MiddlewareLayer/Peripheral/mid_peripheral_handler.h" name="Source code/_MiddlewareLayer/Peripheral/mid_peripheral_handler.h">
+<area shape="rect" id="Node000001" title="Header file for Peripheral Middleware module." alt="" coords="131,5,334,64"/>
+<area shape="rect" id="Node000002" href="$mid__peripheral__handler_8c.html" title="Implementation file for Peripheral Middleware module." alt="" coords="5,112,209,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,76,143,114,140,110,185,72"/>
+<area shape="rect" id="Node000003" href="$_state_management_8h.html" title="Header file for State Management Application module." alt="" coords="233,120,485,163"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="280,72,336,117,332,122,277,76"/>
+<area shape="rect" id="Node000004" href="$_state_management_8c.html" title="Implementation file for State Management Application module." alt="" coords="233,219,485,261"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="362,178,362,218,356,218,356,178"/>
 </map>

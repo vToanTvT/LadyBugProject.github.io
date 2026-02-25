@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: Globals</title>
+<title>LadyBug Firmware Documentation: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -92,132 +99,154 @@ $(function(){initNavTree('globals_func.html','',''); });
 <div class="textblock">Here is a list of all functions with links to the files they belong to:</div>
 
 <h3 class="doxsection"><a id="index_a" name="index_a"></a>- a -</h3><ul>
-<li>adc_calibrate_()&#160;:&#160;<a class="el" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">drv_adc_core.c</a></li>
-<li>adc_get_result_()&#160;:&#160;<a class="el" href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">drv_adc_core.c</a></li>
-<li>adc_init_()&#160;:&#160;<a class="el" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">drv_adc_core.c</a></li>
-<li>adc_start_conversion_()&#160;:&#160;<a class="el" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">drv_adc_core.c</a></li>
+<li>adc_calibrate_()&#160;:&#160;<a class="el" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">drv_adc_core.c</a>, <a class="el" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">drv_adc_core.h</a></li>
+<li>adc_get_result_()&#160;:&#160;<a class="el" href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">drv_adc_core.c</a>, <a class="el" href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">drv_adc_core.h</a></li>
+<li>adc_init_()&#160;:&#160;<a class="el" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">drv_adc_core.c</a>, <a class="el" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">drv_adc_core.h</a></li>
+<li>adc_start_conversion_()&#160;:&#160;<a class="el" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">drv_adc_core.c</a>, <a class="el" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">drv_adc_core.h</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>comp_init_()&#160;:&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#gad782d128a4f5dedfff981ab3452de59d">drv_comp_core.c</a>, <a class="el" href="group___d_r_v___c_o_m_p.html#gad782d128a4f5dedfff981ab3452de59d">drv_comp_core.h</a></li>
+<li>communication_transmit()&#160;:&#160;<a class="el" href="group___m_i_d___c_o_m_m_u_n_i_c_a_t_i_o_n.html#ga12a29b269b35d338dc89c582752db844">mid_communication_handler.c</a>, <a class="el" href="group___m_i_d___c_o_m_m_u_n_i_c_a_t_i_o_n.html#ga12a29b269b35d338dc89c582752db844">mid_communication_handler.h</a></li>
+<li>comp_get_state_()&#160;:&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#ga65ec317dc45cf4d3e5c89735a6ae94ee">drv_comp_core.c</a>, <a class="el" href="group___d_r_v___c_o_m_p.html#ga65ec317dc45cf4d3e5c89735a6ae94ee">drv_comp_core.h</a></li>
+<li>comp_init_()&#160;:&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#ga4553469f3dfae5c9c1cb1d96f8fc5c97">drv_comp_core.c</a>, <a class="el" href="group___d_r_v___c_o_m_p.html#ga4553469f3dfae5c9c1cb1d96f8fc5c97">drv_comp_core.h</a></li>
 <li>comp_reset_protection()&#160;:&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#ga127eaaf52bcbe81e23c9e2c1a3a2c20e">drv_comp_core.c</a>, <a class="el" href="group___d_r_v___c_o_m_p.html#ga127eaaf52bcbe81e23c9e2c1a3a2c20e">drv_comp_core.h</a></li>
 <li>comp_set_state_()&#160;:&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#ga416d150f7c79ea1d9136122110b6334e">drv_comp_core.c</a>, <a class="el" href="group___d_r_v___c_o_m_p.html#ga416d150f7c79ea1d9136122110b6334e">drv_comp_core.h</a></li>
 <li>comp_set_threshold_()&#160;:&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9">drv_comp_core.c</a>, <a class="el" href="group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9">drv_comp_core.h</a></li>
-<li>controller_anti_windup_()&#160;:&#160;<a class="el" href="group___m_i_d___c_t_r_l.html#ga23f0cb4d2dac6d0886892547dc0eba47">mid_controller_handler.c</a>, <a class="el" href="group___m_i_d___c_t_r_l.html#ga23f0cb4d2dac6d0886892547dc0eba47">mid_controller_handler.h</a></li>
-<li>controller_config_pi_()&#160;:&#160;<a class="el" href="group___m_i_d___c_t_r_l.html#gadd845e487a875c4bc2392010cc7375de">mid_controller_handler.c</a>, <a class="el" href="group___m_i_d___c_t_r_l.html#gadd845e487a875c4bc2392010cc7375de">mid_controller_handler.h</a></li>
-<li>controller_process_pi_()&#160;:&#160;<a class="el" href="group___m_i_d___c_t_r_l.html#gadc53cdf15e0b9ec3f7c05d87dd854dda">mid_controller_handler.c</a>, <a class="el" href="group___m_i_d___c_t_r_l.html#gadc53cdf15e0b9ec3f7c05d87dd854dda">mid_controller_handler.h</a></li>
+<li>controller_anti_windup_()&#160;:&#160;<a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga23f0cb4d2dac6d0886892547dc0eba47">mid_controller_handler.c</a>, <a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga23f0cb4d2dac6d0886892547dc0eba47">mid_controller_handler.h</a></li>
+<li>controller_config_pi_()&#160;:&#160;<a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gadd845e487a875c4bc2392010cc7375de">mid_controller_handler.c</a>, <a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gadd845e487a875c4bc2392010cc7375de">mid_controller_handler.h</a></li>
+<li>controller_process_pi_()&#160;:&#160;<a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2d517a90930117bcda9492ca3f4a775e">mid_controller_handler.c</a>, <a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2d517a90930117bcda9492ca3f4a775e">mid_controller_handler.h</a></li>
 </ul>
 
 
-<h3 class="doxsection"><a id="index_d" name="index_d"></a>- d -</h3><ul>
-<li>drv_uart_get_status()&#160;:&#160;<a class="el" href="group___d_r_v___u_a_r_t.html#ga3a356630dc4706229fa359797fd1bb50">drv_uart_core.c</a>, <a class="el" href="group___d_r_v___u_a_r_t.html#ga3a356630dc4706229fa359797fd1bb50">drv_uart_core.h</a></li>
-<li>drv_uart_init()&#160;:&#160;<a class="el" href="group___d_r_v___u_a_r_t.html#ga3380362530cfe4cf815bec8a02e461af">drv_uart_core.c</a>, <a class="el" href="group___d_r_v___u_a_r_t.html#ga3380362530cfe4cf815bec8a02e461af">drv_uart_core.h</a></li>
-<li>drv_uart_receive()&#160;:&#160;<a class="el" href="group___d_r_v___u_a_r_t.html#gad6ad211dfe3a3db322f67372964a37c5">drv_uart_core.c</a>, <a class="el" href="group___d_r_v___u_a_r_t.html#gad6ad211dfe3a3db322f67372964a37c5">drv_uart_core.h</a></li>
-<li>drv_uart_transmit()&#160;:&#160;<a class="el" href="group___d_r_v___u_a_r_t.html#ga9adfd7151133054f167fcd643058b2dc">drv_uart_core.c</a>, <a class="el" href="group___d_r_v___u_a_r_t.html#ga9adfd7151133054f167fcd643058b2dc">drv_uart_core.h</a></li>
+<h3 class="doxsection"><a id="index_e" name="index_e"></a>- e -</h3><ul>
+<li>Error_Handler()&#160;:&#160;<a class="el" href="main_8c.html#a1730ffe1e560465665eb47d9264826f9">main.c</a></li>
+<li>EVSE_application_process()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga8a7c85b9c345204d44030fb96316a5eb">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga8a7c85b9c345204d44030fb96316a5eb">StateManagement.h</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_f" name="index_f"></a>- f -</h3><ul>
-<li>fault_debounce_()&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t.html#gaf8589a7fecc4080c0c66c60e22a11e9e">mid_fault_management_handler.c</a>, <a class="el" href="group___m_i_d___f_a_u_l_t.html#gaf8589a7fecc4080c0c66c60e22a11e9e">mid_fault_management_handler.h</a></li>
-<li>fault_init_()&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t.html#gad2bc2cfbcc9b9b46f7eae106fa04fde7">mid_fault_management_handler.c</a>, <a class="el" href="group___m_i_d___f_a_u_l_t.html#gad2bc2cfbcc9b9b46f7eae106fa04fde7">mid_fault_management_handler.h</a></li>
-<li>fault_release_()&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t.html#ga2ef8a4e52363253bce2a4ceb62aa94fb">mid_fault_management_handler.c</a>, <a class="el" href="group___m_i_d___f_a_u_l_t.html#ga2ef8a4e52363253bce2a4ceb62aa94fb">mid_fault_management_handler.h</a></li>
-<li>fault_standby_()&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t.html#ga15097dba3133d9c0e90ecaa8ec49033f">mid_fault_management_handler.c</a>, <a class="el" href="group___m_i_d___f_a_u_l_t.html#ga15097dba3133d9c0e90ecaa8ec49033f">mid_fault_management_handler.h</a></li>
-<li>fault_update_mode_()&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t.html#ga4edd34895d407967e0d85945fe8a4449">mid_fault_management_handler.c</a>, <a class="el" href="group___m_i_d___f_a_u_l_t.html#ga4edd34895d407967e0d85945fe8a4449">mid_fault_management_handler.h</a></li>
-<li>fault_update_status_()&#160;:&#160;<a class="el" href="mid__fault__management__handler_8c.html#ad7b48f6e97e4d9eae5d65f18f2b09a69">mid_fault_management_handler.c</a></li>
+<li>fault_accumulate_()&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#gadd66ff8b83b7d62ace627df52da6ad7c">mid_fault_management_handler.c</a>, <a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#gadd66ff8b83b7d62ace627df52da6ad7c">mid_fault_management_handler.h</a></li>
+<li>fault_init_()&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga83ee51b190a2d91e7de7eddf4ac2c2dc">mid_fault_management_handler.c</a>, <a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga83ee51b190a2d91e7de7eddf4ac2c2dc">mid_fault_management_handler.h</a></li>
+<li>fault_release_()&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga2ef8a4e52363253bce2a4ceb62aa94fb">mid_fault_management_handler.c</a>, <a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga2ef8a4e52363253bce2a4ceb62aa94fb">mid_fault_management_handler.h</a></li>
+<li>fault_standby_()&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga8ad70d1197990240e6cbb899640152fa">mid_fault_management_handler.c</a>, <a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga8ad70d1197990240e6cbb899640152fa">mid_fault_management_handler.h</a></li>
+<li>fault_update_mode_()&#160;:&#160;<a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga4edd34895d407967e0d85945fe8a4449">mid_fault_management_handler.c</a>, <a class="el" href="group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga4edd34895d407967e0d85945fe8a4449">mid_fault_management_handler.h</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>gpio_clear_pin_()&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga85f5f35c656ebc7b4fc33ea8f35289db">drv_gpio_core.c</a>, <a class="el" href="group___d_r_v___g_p_i_o.html#ga85f5f35c656ebc7b4fc33ea8f35289db">drv_gpio_core.h</a></li>
-<li>gpio_read_pin_()&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#gad044a74c6e31282fc208be30515b2d4a">drv_gpio_core.c</a>, <a class="el" href="group___d_r_v___g_p_i_o.html#gad044a74c6e31282fc208be30515b2d4a">drv_gpio_core.h</a></li>
-<li>gpio_set_pin_()&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga6e289f873fb61fe35f8874f4360b2797">drv_gpio_core.c</a>, <a class="el" href="group___d_r_v___g_p_i_o.html#ga6e289f873fb61fe35f8874f4360b2797">drv_gpio_core.h</a></li>
-<li>gpio_toggle_pin_()&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga3e8410808b48c920702b522e2eec7f46">drv_gpio_core.c</a>, <a class="el" href="group___d_r_v___g_p_i_o.html#ga3e8410808b48c920702b522e2eec7f46">drv_gpio_core.h</a></li>
+<li>gpio_clear_pin_()&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31">drv_gpio_core.c</a>, <a class="el" href="group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31">drv_gpio_core.h</a></li>
+<li>gpio_read_pin_()&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#gaee26a3b16f406bfe0b7ec5fffbf87684">drv_gpio_core.c</a>, <a class="el" href="group___d_r_v___g_p_i_o.html#gaee26a3b16f406bfe0b7ec5fffbf87684">drv_gpio_core.h</a></li>
+<li>gpio_set_pin_()&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4">drv_gpio_core.c</a>, <a class="el" href="group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4">drv_gpio_core.h</a></li>
+<li>gpio_toggle_pin_()&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga4516b6ab8d2d78f90b0f7e365e8ed773">drv_gpio_core.c</a>, <a class="el" href="group___d_r_v___g_p_i_o.html#ga4516b6ab8d2d78f90b0f7e365e8ed773">drv_gpio_core.h</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>INDI_ConfigLED()&#160;:&#160;<a class="el" href="mid__indicator__handler_8c.html#a69f43f50592bfb336afcad55dbce7a2a">mid_indicator_handler.c</a></li>
-<li>indicator_init_()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gacfa75aa809762cf0ad8a5d4a5dc196c6">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gacfa75aa809762cf0ad8a5d4a5dc196c6">mid_indicator_handler.h</a></li>
+<li>indicator_init_()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga584a458491d250205bc2cad2c474f929">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga584a458491d250205bc2cad2c474f929">mid_indicator_handler.h</a></li>
 <li>indicator_process_led_()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga787e0e208d169789ad0777b293c369c8">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga787e0e208d169789ad0777b293c369c8">mid_indicator_handler.h</a></li>
+<li>indicator_process_update_()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b">mid_indicator_handler.h</a></li>
+<li>indicator_set_mode()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b">mid_indicator_handler.h</a></li>
+<li>indicator_tick_()&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga20f029b18dfd9d61217a29f9b7eb5a45">mid_indicator_handler.c</a>, <a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga20f029b18dfd9d61217a29f9b7eb5a45">mid_indicator_handler.h</a></li>
+<li>ISR_TIM15()&#160;:&#160;<a class="el" href="main_8c.html#a4665d4e1d5fea2d34089d4e50a763751">main.c</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_l" name="index_l"></a>- l -</h3><ul>
-<li>LB_inf_loop_system()&#160;:&#160;<a class="el" href="_lady_bug_8c.html#acbc3745ea25400eacd9f3ec0104fe540">LadyBug.c</a>, <a class="el" href="_lady_bug_8h.html#acbc3745ea25400eacd9f3ec0104fe540">LadyBug.h</a></li>
-<li>LB_main_interrupt_service()&#160;:&#160;<a class="el" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab">LadyBug.c</a>, <a class="el" href="_lady_bug_8h.html#a085c52fc0af5b2b87e7887a559ddacab">LadyBug.h</a></li>
-<li>LB_system_initialization()&#160;:&#160;<a class="el" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867">LadyBug.c</a>, <a class="el" href="_lady_bug_8h.html#a42976755d32f1ba3595eb4385ffa2867">LadyBug.h</a></li>
-<li>llc_config_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga9d8a8d24fe7974b4f9c60db897d689cc">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga9d8a8d24fe7974b4f9c60db897d689cc">mid_llc_handler.h</a></li>
-<li>llc_init_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga699bc1df30dc2d3f528d4a7e9f29fa24">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga699bc1df30dc2d3f528d4a7e9f29fa24">mid_llc_handler.h</a></li>
-<li>llc_regulator_current_loop_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa06d2118dd9547c02d2235dacdac6cc7">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa06d2118dd9547c02d2235dacdac6cc7">mid_llc_handler.h</a></li>
-<li>llc_regulator_duty_loop()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga74ed837c6a4ca9e7d749a56dcab91e03">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga74ed837c6a4ca9e7d749a56dcab91e03">mid_llc_handler.h</a></li>
-<li>llc_regulator_hybrid_loop()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05">mid_llc_handler.h</a></li>
-<li>llc_regulator_voldut_loop()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga60e70e3354da6e9de8b1c30063ca8b6e">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga60e70e3354da6e9de8b1c30063ca8b6e">mid_llc_handler.h</a></li>
-<li>llc_regulator_voltage_loop_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gadbadb6c1b30ff13e84f24f92db70a82a">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gadbadb6c1b30ff13e84f24f92db70a82a">mid_llc_handler.h</a></li>
-<li>llc_soft_start_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49">mid_llc_handler.h</a></li>
-<li>llc_standby_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa">mid_llc_handler.h</a></li>
-<li>llc_update_integral_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga76d8b12ca43b47c264af725dc10c1499">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga76d8b12ca43b47c264af725dc10c1499">mid_llc_handler.h</a></li>
+<li>LB_inf_loop_system()&#160;:&#160;<a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f">LadyBug.c</a>, <a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f">LadyBug.h</a></li>
+<li>LB_main_interrupt_service()&#160;:&#160;<a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd">LadyBug.c</a>, <a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd">LadyBug.h</a></li>
+<li>LB_system_initialization()&#160;:&#160;<a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842">LadyBug.c</a>, <a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842">LadyBug.h</a></li>
+<li>llc_config_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga9d8a8d24fe7974b4f9c60db897d689cc">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga9d8a8d24fe7974b4f9c60db897d689cc">mid_llc_handler.h</a></li>
+<li>llc_init_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga0e7d5275707c1aca1328f973c75cfa83">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga0e7d5275707c1aca1328f973c75cfa83">mid_llc_handler.h</a></li>
+<li>llc_regulator_current_loop_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#gafe4e5a77ff39dea24a2d08ef363cbcc0">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#gafe4e5a77ff39dea24a2d08ef363cbcc0">mid_llc_handler.h</a></li>
+<li>llc_regulator_duty_loop()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga740d1b313849d823ccdf78e9155eaa61">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga740d1b313849d823ccdf78e9155eaa61">mid_llc_handler.h</a></li>
+<li>llc_regulator_hybrid_loop_PI()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga84238c737cc149f14fc61a023dd84613">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga84238c737cc149f14fc61a023dd84613">mid_llc_handler.h</a></li>
+<li>llc_regulator_hybrid_loop_PIR()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga3427f2eb9dd80ded3aaacaaf94d3fe74">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga3427f2eb9dd80ded3aaacaaf94d3fe74">mid_llc_handler.h</a></li>
+<li>llc_regulator_voldut_loop()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga74381259fff14dcc75e30df64adc10f0">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga74381259fff14dcc75e30df64adc10f0">mid_llc_handler.h</a></li>
+<li>llc_regulator_voltage_loop_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga2a627e165db7f32bc036d791806f01fc">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga2a627e165db7f32bc036d791806f01fc">mid_llc_handler.h</a></li>
+<li>llc_select_initial_mode()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#gaf9b7ebe5587e2acd7077f8ab54023a50">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#gaf9b7ebe5587e2acd7077f8ab54023a50">mid_llc_handler.h</a></li>
+<li>llc_soft_start_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#gad127a12de6fc65cf8f07d9ab3f301165">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#gad127a12de6fc65cf8f07d9ab3f301165">mid_llc_handler.h</a></li>
+<li>llc_standby_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9">mid_llc_handler.h</a></li>
+<li>llc_update_integral_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga45f821431afea196f52f1a60f70564cd">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga45f821431afea196f52f1a60f70564cd">mid_llc_handler.h</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_m" name="index_m"></a>- m -</h3><ul>
+<li>main()&#160;:&#160;<a class="el" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main.c</a></li>
+<li>meas_calc_average_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga4ae0c65f66d88cf871a9e9ea9292d4dc">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga4ae0c65f66d88cf871a9e9ea9292d4dc">mid_measurement_handler.h</a></li>
 <li>meas_config_()&#160;:&#160;<a class="el" href="mid__measurement__handler_8c.html#aecfbba2e55ac8e1591036ef6f6dae1e9">mid_measurement_handler.c</a></li>
 <li>meas_convert_to_f32_()&#160;:&#160;<a class="el" href="mid__measurement__handler_8c.html#a60b8a41f4a3ae79e98e3bf64b24b4779">mid_measurement_handler.c</a></li>
 <li>meas_convert_to_q15_()&#160;:&#160;<a class="el" href="mid__measurement__handler_8c.html#abfe051fb6eeef8a004f7a56dcdb1a0ef">mid_measurement_handler.c</a></li>
-<li>meas_init_system_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaeda8e8d8c2e6a1efbaacdcc006494774">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaeda8e8d8c2e6a1efbaacdcc006494774">mid_measurement_handler.h</a></li>
-<li>meas_init_value_()&#160;:&#160;<a class="el" href="mid__measurement__handler_8c.html#a63dc2f3c304af995705835ccce693b62">mid_measurement_handler.c</a></li>
+<li>meas_init_system_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaeda8e8d8c2e6a1efbaacdcc006494774">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaeda8e8d8c2e6a1efbaacdcc006494774">mid_measurement_handler.h</a></li>
+<li>meas_init_value_()&#160;:&#160;<a class="el" href="mid__measurement__handler_8c.html#a72e64b9fe21b4404cf1ec1b550b0d3bc">mid_measurement_handler.c</a></li>
+<li>meas_process_update_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac06a2da82bba5c606a45dfd7822e187f">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac06a2da82bba5c606a45dfd7822e187f">mid_measurement_handler.h</a></li>
 <li>meas_set_raw_value_()&#160;:&#160;<a class="el" href="mid__measurement__handler_8c.html#a79486749f0f8934f861610a7c7005b63">mid_measurement_handler.c</a></li>
-<li>meas_update_all_float_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gab8a9c3244586ea0d412e3e391157fa5e">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gab8a9c3244586ea0d412e3e391157fa5e">mid_measurement_handler.h</a></li>
-<li>meas_update_all_q15_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga7ec30b7794b47ae2138c478f132022d2">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga7ec30b7794b47ae2138c478f132022d2">mid_measurement_handler.h</a></li>
+<li>meas_tick_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga612b05e2acbb6f292ed392ffdef3ee58">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga612b05e2acbb6f292ed392ffdef3ee58">mid_measurement_handler.h</a></li>
+<li>meas_update_all_float_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gab8a9c3244586ea0d412e3e391157fa5e">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gab8a9c3244586ea0d412e3e391157fa5e">mid_measurement_handler.h</a></li>
+<li>meas_update_all_q15_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga7ec30b7794b47ae2138c478f132022d2">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga7ec30b7794b47ae2138c478f132022d2">mid_measurement_handler.h</a></li>
+<li>meas_update_averages_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac11d0b2fe43fdbaf29be8a7885271706">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac11d0b2fe43fdbaf29be8a7885271706">mid_measurement_handler.h</a></li>
+<li>meas_update_buffer_()&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gad3f25e3fa1c46f5b1f3207743b9848dc">mid_measurement_handler.c</a>, <a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gad3f25e3fa1c46f5b1f3207743b9848dc">mid_measurement_handler.h</a></li>
+<li>MultiResonant_AntiWindup()&#160;:&#160;<a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2faa8412d1f332353f3c68e2b022aa97">mid_controller_handler.c</a>, <a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2faa8412d1f332353f3c68e2b022aa97">mid_controller_handler.h</a></li>
+<li>MultiResonant_Config()&#160;:&#160;<a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gabae91be5774aed961bfe05a7e3229dde">mid_controller_handler.c</a>, <a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gabae91be5774aed961bfe05a7e3229dde">mid_controller_handler.h</a></li>
+<li>MultiResonant_ConfigResonant()&#160;:&#160;<a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae1aa5e0d60c20343e3e411317c199905">mid_controller_handler.c</a>, <a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae1aa5e0d60c20343e3e411317c199905">mid_controller_handler.h</a></li>
+<li>MultiResonant_Process()&#160;:&#160;<a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae9a4b1f0f417f77a1db32a7dc4ca1253">mid_controller_handler.c</a>, <a class="el" href="group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae9a4b1f0f417f77a1db32a7dc4ca1253">mid_controller_handler.h</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>peripheral_off_llc_relay_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga3964b50e6ae1e0fffa533ee5ce56211d">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga3964b50e6ae1e0fffa533ee5ce56211d">mid_peripheral_handler.h</a></li>
-<li>peripheral_off_pfc_relay_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga5ab6542999b127993cd599854a65f2fb">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga5ab6542999b127993cd599854a65f2fb">mid_peripheral_handler.h</a></li>
-<li>peripheral_on_llc_relay_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga2ab40e496ed47c23875cbb65b689e9a4">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga2ab40e496ed47c23875cbb65b689e9a4">mid_peripheral_handler.h</a></li>
-<li>peripheral_on_pfc_relay_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#gae09a4fb82f031ec0de625ec8271496f4">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#gae09a4fb82f031ec0de625ec8271496f4">mid_peripheral_handler.h</a></li>
+<li>peripheral_control_fan_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae389a4ec8879fd13922b8c01b691c7c3">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae389a4ec8879fd13922b8c01b691c7c3">mid_peripheral_handler.h</a></li>
+<li>peripheral_disable_fan_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gac5a6e14268bd3d31e4ca078bfc23389d">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gac5a6e14268bd3d31e4ca078bfc23389d">mid_peripheral_handler.h</a></li>
+<li>peripheral_enable_fan_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gab84b9c81bef5d760800ce5dff4ef70e0">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gab84b9c81bef5d760800ce5dff4ef70e0">mid_peripheral_handler.h</a></li>
+<li>peripheral_off_llc_relay_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga3964b50e6ae1e0fffa533ee5ce56211d">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga3964b50e6ae1e0fffa533ee5ce56211d">mid_peripheral_handler.h</a></li>
+<li>peripheral_off_pfc_relay_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga5ab6542999b127993cd599854a65f2fb">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga5ab6542999b127993cd599854a65f2fb">mid_peripheral_handler.h</a></li>
+<li>peripheral_off_pfc_vcomp_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gadec52c1bfc71292a44e1e8c248ad8344">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gadec52c1bfc71292a44e1e8c248ad8344">mid_peripheral_handler.h</a></li>
+<li>peripheral_on_llc_relay_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga2ab40e496ed47c23875cbb65b689e9a4">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga2ab40e496ed47c23875cbb65b689e9a4">mid_peripheral_handler.h</a></li>
+<li>peripheral_on_pfc_relay_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae09a4fb82f031ec0de625ec8271496f4">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae09a4fb82f031ec0de625ec8271496f4">mid_peripheral_handler.h</a></li>
+<li>peripheral_on_pfc_vcomp_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae12639ea85a4757563a55dac9b1fc54c">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae12639ea85a4757563a55dac9b1fc54c">mid_peripheral_handler.h</a></li>
+<li>peripheral_process_update_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga0d941d936181024d0a591cbf438f35cd">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga0d941d936181024d0a591cbf438f35cd">mid_peripheral_handler.h</a></li>
+<li>peripheral_tick_()&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gadb8df55b1530025ce335441cda79041b">mid_peripheral_handler.c</a>, <a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gadb8df55b1530025ce335441cda79041b">mid_peripheral_handler.h</a></li>
 <li>pwm_disable_output_()&#160;:&#160;<a class="el" href="group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26">drv_pwm_core.c</a>, <a class="el" href="group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26">drv_pwm_core.h</a></li>
 <li>pwm_enable_output_()&#160;:&#160;<a class="el" href="group___d_r_v___p_w_m.html#ga23898da2b0024e62dae58b7059f45397">drv_pwm_core.c</a>, <a class="el" href="group___d_r_v___p_w_m.html#ga23898da2b0024e62dae58b7059f45397">drv_pwm_core.h</a></li>
-<li>pwm_init_()&#160;:&#160;<a class="el" href="group___d_r_v___p_w_m.html#ga7d6efaf97c200f7181d544d024429647">drv_pwm_core.c</a>, <a class="el" href="group___d_r_v___p_w_m.html#ga7d6efaf97c200f7181d544d024429647">drv_pwm_core.h</a></li>
+<li>pwm_init_()&#160;:&#160;<a class="el" href="group___d_r_v___p_w_m.html#gad26ba1293cce44ad8a1b1ef12a88e339">drv_pwm_core.c</a>, <a class="el" href="group___d_r_v___p_w_m.html#gad26ba1293cce44ad8a1b1ef12a88e339">drv_pwm_core.h</a></li>
 <li>pwm_set_deadtime_()&#160;:&#160;<a class="el" href="group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63">drv_pwm_core.c</a>, <a class="el" href="group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63">drv_pwm_core.h</a></li>
 <li>pwm_set_duty_()&#160;:&#160;<a class="el" href="group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293">drv_pwm_core.c</a>, <a class="el" href="group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293">drv_pwm_core.h</a></li>
 <li>pwm_set_frequency_()&#160;:&#160;<a class="el" href="group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da">drv_pwm_core.c</a>, <a class="el" href="group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da">drv_pwm_core.h</a></li>
-<li>pwrctrl_calc_average_()&#160;:&#160;<a class="el" href="mid__power__control__handler_8c.html#a2cde8f1802d1d7f9b83c6381d1f576c7">mid_power_control_handler.c</a></li>
-<li>pwrctrl_compute_temp_coef_()&#160;:&#160;<a class="el" href="mid__power__control__handler_8c.html#ab603a7e4a1aa44a29b409fb282d540e9">mid_power_control_handler.c</a></li>
-<li>pwrctrl_compute_voltage_coef_()&#160;:&#160;<a class="el" href="mid__power__control__handler_8c.html#ae54f95be71f0ca98e6f02a2ace951dd2">mid_power_control_handler.c</a></li>
-<li>pwrctrl_get_median_()&#160;:&#160;<a class="el" href="mid__power__control__handler_8c.html#aa8a37e530fad0e49546479a1cd0cbced">mid_power_control_handler.c</a></li>
-<li>pwrctrl_init_()&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#ga3ea28682838bb6082b26dbaf4b46d561">mid_power_control_handler.c</a>, <a class="el" href="group___m_i_d___p_o_w_e_r.html#ga3ea28682838bb6082b26dbaf4b46d561">mid_power_control_handler.h</a></li>
-<li>pwrctrl_update_buffer_()&#160;:&#160;<a class="el" href="mid__power__control__handler_8c.html#a849ee7e22e003710fe0f940ae2f50334">mid_power_control_handler.c</a></li>
-<li>pwrctrl_update_coef_()&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#ga0d28bfa2310fbd7c34ce2ed130bc3356">mid_power_control_handler.c</a>, <a class="el" href="group___m_i_d___p_o_w_e_r.html#ga0d28bfa2310fbd7c34ce2ed130bc3356">mid_power_control_handler.h</a></li>
-<li>pwrctrl_value_swap_()&#160;:&#160;<a class="el" href="mid__power__control__handler_8c.html#aef859e2b7a51ae3ed4534469a76d1fdc">mid_power_control_handler.c</a></li>
+<li>pwrctrl_init_()&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga3ea28682838bb6082b26dbaf4b46d561">mid_power_control_handler.c</a>, <a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga3ea28682838bb6082b26dbaf4b46d561">mid_power_control_handler.h</a></li>
+<li>pwrctrl_process_update_()&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga4967a767bd354d2ce90133a5379de3e4">mid_power_control_handler.c</a>, <a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga4967a767bd354d2ce90133a5379de3e4">mid_power_control_handler.h</a></li>
+<li>pwrctrl_tick_()&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gab5eae99e7c2070562bb5e7fad83388c5">mid_power_control_handler.c</a>, <a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gab5eae99e7c2070562bb5e7fad83388c5">mid_power_control_handler.h</a></li>
+<li>pwrctrl_update_coef_()&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga0d28bfa2310fbd7c34ce2ed130bc3356">mid_power_control_handler.c</a>, <a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga0d28bfa2310fbd7c34ce2ed130bc3356">mid_power_control_handler.h</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>RampDown()&#160;:&#160;<a class="el" href="group___m_i_d___g_l_o_b_a_l.html#ga99d2815051a0255cb1cfc97b4a9a42b1">mid_global_define_handler.c</a>, <a class="el" href="group___m_i_d___g_l_o_b_a_l.html#ga99d2815051a0255cb1cfc97b4a9a42b1">mid_global_define_handler.h</a></li>
-<li>RampUp()&#160;:&#160;<a class="el" href="group___m_i_d___g_l_o_b_a_l.html#ga2ff8dbcbbc2804faaa0e8f0b65b77917">mid_global_define_handler.c</a>, <a class="el" href="group___m_i_d___g_l_o_b_a_l.html#ga2ff8dbcbbc2804faaa0e8f0b65b77917">mid_global_define_handler.h</a></li>
-<li>RampUpRate()&#160;:&#160;<a class="el" href="group___m_i_d___g_l_o_b_a_l.html#ga467c12fbae6d58401cc50a392b1fc82d">mid_global_define_handler.c</a>, <a class="el" href="group___m_i_d___g_l_o_b_a_l.html#ga467c12fbae6d58401cc50a392b1fc82d">mid_global_define_handler.h</a></li>
+<li>RampDown()&#160;:&#160;<a class="el" href="group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga99d2815051a0255cb1cfc97b4a9a42b1">mid_global_define_handler.c</a>, <a class="el" href="group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga99d2815051a0255cb1cfc97b4a9a42b1">mid_global_define_handler.h</a></li>
+<li>RampUp()&#160;:&#160;<a class="el" href="group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#gaddd56cdacd990cbb41cd767da050bfce">mid_global_define_handler.c</a>, <a class="el" href="group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#gaddd56cdacd990cbb41cd767da050bfce">mid_global_define_handler.h</a></li>
+<li>RampUpRate()&#160;:&#160;<a class="el" href="group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga467c12fbae6d58401cc50a392b1fc82d">mid_global_define_handler.c</a>, <a class="el" href="group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga467c12fbae6d58401cc50a392b1fc82d">mid_global_define_handler.h</a></li>
 </ul>
 
 
 <h3 class="doxsection"><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>SimulationBegin()&#160;:&#160;<a class="el" href="main_8c.html#a066d3569dc1bd19ed44b537e76022e4c">main.c</a></li>
-<li>SimulationEnd()&#160;:&#160;<a class="el" href="main_8c.html#a7a136ddde31295955c0a6b3c398fb599">main.c</a></li>
-<li>SimulationStep()&#160;:&#160;<a class="el" href="main_8c.html#ae83fe01293877f782caac6df58624f94">main.c</a></li>
-<li>state_autorecoveryHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga5ecdb525291f207d99643327732c3f39">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga5ecdb525291f207d99643327732c3f39">app_state_management_handler.h</a></li>
-<li>state_chargingHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga64fedf08e758ea7727e7d73db7314f48">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga64fedf08e758ea7727e7d73db7314f48">app_state_management_handler.h</a></li>
-<li>state_config()&#160;:&#160;<a class="el" href="app__state__management__handler_8c.html#a6867f0e73cb92030fee0b24785908e29">app_state_management_handler.c</a></li>
-<li>state_faultHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gac2e896631140039c72e47a4b2aea7205">app_state_management_handler.h</a></li>
-<li>state_fullychargedHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga35591692ae6cf3ce5c80f9b45009ec68">app_state_management_handler.h</a></li>
-<li>state_handshakeHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga29ccd3122c8c032024ab28a8b7099a8b">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga29ccd3122c8c032024ab28a8b7099a8b">app_state_management_handler.h</a></li>
-<li>state_idleHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga091c8d156cb84c8f94622ee7a1a4f3db">app_state_management_handler.h</a></li>
-<li>state_init()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c">app_state_management_handler.h</a></li>
-<li>state_isDebounceFinished()&#160;:&#160;<a class="el" href="app__state__management__handler_8c.html#a71d74504708b0cc5f10d4e36b60fb2ad">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga1f3f76f448b8dc2495b4c6fa50d5f204">app_state_management_handler.h</a></li>
-<li>state_isDelayFinished()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga5e3af4f6ebe90cec1287b588d1ef1bde">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga5e3af4f6ebe90cec1287b588d1ef1bde">app_state_management_handler.h</a></li>
-<li>state_shutdownHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga7d010aaa755adb17c76805ac708a120f">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga7d010aaa755adb17c76805ac708a120f">app_state_management_handler.h</a></li>
-<li>state_softstartHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaaa9f8795754e1acbaf89783fc74a6c6b">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gaaa9f8795754e1acbaf89783fc74a6c6b">app_state_management_handler.h</a></li>
-<li>state_update()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8">app_state_management_handler.h</a></li>
+<li>state_autorecoveryHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gae908ff70c6b0b9ba54ec69dbbceca07e">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gae908ff70c6b0b9ba54ec69dbbceca07e">StateManagement.h</a></li>
+<li>state_chargingHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1f1e0e52e3b18a3fc2ecd5b204913f16">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1f1e0e52e3b18a3fc2ecd5b204913f16">StateManagement.h</a></li>
+<li>state_faultHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga55640c3a709e22874c844ffee4440939">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga55640c3a709e22874c844ffee4440939">StateManagement.h</a></li>
+<li>state_fullychargedHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gaa609d54e2438e5450f96fd281720c5cf">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gaa609d54e2438e5450f96fd281720c5cf">StateManagement.h</a></li>
+<li>state_get_led_mode_()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga3d5254d06dbab993dda09f25f550106c">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga3d5254d06dbab993dda09f25f550106c">StateManagement.h</a></li>
+<li>state_handshakeHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gad96831e426a2010e8f1da8669cf9ec46">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gad96831e426a2010e8f1da8669cf9ec46">StateManagement.h</a></li>
+<li>state_idleHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga25f2b5c68a1ec0310d97a37e6309f183">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga25f2b5c68a1ec0310d97a37e6309f183">StateManagement.h</a></li>
+<li>state_init()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c">StateManagement.h</a></li>
+<li>state_isDebounceFinished()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1f3f76f448b8dc2495b4c6fa50d5f204">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1f3f76f448b8dc2495b4c6fa50d5f204">StateManagement.h</a></li>
+<li>state_isDelayFinished()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga5e3af4f6ebe90cec1287b588d1ef1bde">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga5e3af4f6ebe90cec1287b588d1ef1bde">StateManagement.h</a></li>
+<li>state_pfc_startHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gac044c2a9b23a166045e549e87cf16015">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gac044c2a9b23a166045e549e87cf16015">StateManagement.h</a></li>
+<li>state_shutdownHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1dc8f3e307384996bd6c0f4bcf9c8704">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1dc8f3e307384996bd6c0f4bcf9c8704">StateManagement.h</a></li>
+<li>state_softstartHandle()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga03b668343def8a556453bf8f687d1f34">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga03b668343def8a556453bf8f687d1f34">StateManagement.h</a></li>
+<li>state_update()&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8">StateManagement.h</a></li>
+<li>SystemClock_Config()&#160;:&#160;<a class="el" href="main_8c.html#a70af21c671abfcc773614a9a4f63d920">main.c</a></li>
+</ul>
+
+
+<h3 class="doxsection"><a id="index_u" name="index_u"></a>- u -</h3><ul>
+<li>uart_receive_()&#160;:&#160;<a class="el" href="group___d_r_v___u_a_r_t.html#gabc2a8f2887d5d49a97e798fb3469c88c">drv_uart_core.c</a>, <a class="el" href="group___d_r_v___u_a_r_t.html#gabc2a8f2887d5d49a97e798fb3469c88c">drv_uart_core.h</a></li>
+<li>uart_transmit_()&#160;:&#160;<a class="el" href="group___d_r_v___u_a_r_t.html#ga1c5535d40e1775b20bd71079b44e1a84">drv_uart_core.c</a>, <a class="el" href="group___d_r_v___u_a_r_t.html#ga1c5535d40e1775b20bd71079b44e1a84">drv_uart_core.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

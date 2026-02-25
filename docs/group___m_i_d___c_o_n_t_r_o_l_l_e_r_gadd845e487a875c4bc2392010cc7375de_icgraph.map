@@ -1,0 +1,9 @@
+<map id="controller_config_pi_" name="controller_config_pi_">
+<area shape="rect" id="Node000001" title="Configure PI controller parameters." alt="" coords="426,5,567,32"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c.html#ga0e7d5275707c1aca1328f973c75cfa83" title="Initialize LLC control module." alt="" coords="313,5,378,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="411,21,379,21,379,16,411,16"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842" title="Global function implementations." alt="" coords="103,5,265,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,21,265,21,265,16,297,16"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

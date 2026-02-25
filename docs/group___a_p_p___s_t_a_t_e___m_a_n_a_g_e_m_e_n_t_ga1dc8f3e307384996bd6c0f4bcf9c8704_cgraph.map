@@ -1,0 +1,18 @@
+<map id="state_shutdownHandle" name="state_shutdownHandle">
+<area shape="rect" id="Node000001" title="Handle SHUTDOWN state operations (permanent shutdown, LLC standby)" alt="" coords="5,132,160,159"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9" title="Set LLC to standby state." alt="" coords="208,132,302,159"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,143,192,143,192,148,160,148"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2d517a90930117bcda9492ca3f4a775e" title="Process PI controller computation." alt="" coords="354,5,506,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="263,130,297,87,321,63,349,42,358,37,360,41,351,46,325,67,301,90,268,133"/>
+<area shape="rect" id="Node000004" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae9a4b1f0f417f77a1db32a7dc4ca1253" title="Process Multi&#45;Resonant controller computation." alt="" coords="350,56,510,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="278,129,349,92,366,86,368,91,351,97,280,134"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26" title="Disable PWM output." alt="" coords="356,107,504,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="302,136,341,130,342,135,303,141"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="360,157,501,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="303,149,345,156,344,161,302,155"/>
+<area shape="rect" id="Node000007" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="558,233,672,260"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="279,157,312,176,351,193,450,221,543,236,542,242,449,226,349,199,309,181,276,161"/>
+<area shape="rect" id="Node000008" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="358,259,503,285"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="269,158,303,197,352,238,373,250,371,254,348,242,300,200,265,161"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="503,259,543,254,543,259,504,265"/>
+</map>

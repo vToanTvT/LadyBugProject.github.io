@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notes_0',['🧾 Notes',['../md__d_1_2_a___project_2_tool_2_git___doxygen_2_git___doxygen_2_main_page.html#note_sec',1,'']]]
+  ['hardware_20software_20interface_0',['3. Hardware-Software Interface',['../index.html#autotoc_md4',1,'']]]
 ];

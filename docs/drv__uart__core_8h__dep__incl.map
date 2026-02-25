@@ -1,8 +1,9 @@
-<map id="drv_uart_core.h" name="drv_uart_core.h">
-<area shape="rect" id="Node000001" title="UART driver for DMA&#45;based communication." alt="" coords="52,5,163,32"/>
-<area shape="rect" id="Node000002" href="$drv__uart__core_8c.html" title="Source file for UART driver module." alt="" coords="5,80,117,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,47,71,81,67,78,89,44"/>
-<area shape="rect" id="Node000003" href="$main_8c.html" title=" " alt="" coords="78,155,138,181"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="122,46,132,80,132,101,129,122,116,155,111,154,124,120,127,100,126,80,117,47"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="80,118,102,153,97,156,75,121"/>
+<map id="Source code/_DriverLayer/uart/drv_uart_core.h" name="Source code/_DriverLayer/uart/drv_uart_core.h">
+<area shape="rect" id="Node000001" title="Header file for UART Driver module." alt="" coords="119,5,291,48"/>
+<area shape="rect" id="Node000002" href="$drv__uart__core_8c.html" title="Implementation of UART Driver module." alt="" coords="5,104,178,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,60,118,105,114,101,168,56"/>
+<area shape="rect" id="Node000003" href="$mid__communication__handler_8h.html" title="Header file for Communication Middleware module." alt="" coords="201,96,438,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,56,287,94,284,98,239,60"/>
+<area shape="rect" id="Node000004" href="$mid__communication__handler_8c.html" title="Implementation of Communication Middleware module." alt="" coords="201,203,438,261"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="322,170,322,202,317,202,317,170"/>
 </map>

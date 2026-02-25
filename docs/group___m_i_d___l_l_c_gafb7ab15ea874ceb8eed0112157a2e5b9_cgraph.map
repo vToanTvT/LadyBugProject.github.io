@@ -1,0 +1,16 @@
+<map id="llc_standby_" name="llc_standby_">
+<area shape="rect" id="Node000001" title="Set LLC to standby state." alt="" coords="5,132,100,159"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2d517a90930117bcda9492ca3f4a775e" title="Process PI controller computation." alt="" coords="152,5,304,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,130,95,87,119,63,146,42,155,37,158,41,149,46,123,67,99,90,65,133"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae9a4b1f0f417f77a1db32a7dc4ca1253" title="Process Multi&#45;Resonant controller computation." alt="" coords="148,56,308,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="76,129,147,92,163,86,165,91,149,97,78,134"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26" title="Disable PWM output." alt="" coords="154,107,302,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="100,136,139,130,139,135,100,141"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="157,157,298,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="100,149,142,156,141,161,100,155"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="356,233,469,260"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="76,157,110,176,149,193,248,221,341,236,340,242,247,226,147,199,107,181,74,161"/>
+<area shape="rect" id="Node000007" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="155,259,300,285"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="67,158,101,197,149,238,171,250,168,254,146,242,97,200,63,161"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="301,259,340,254,341,259,302,265"/>
+</map>

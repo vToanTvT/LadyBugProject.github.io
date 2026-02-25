@@ -1,5 +1,7 @@
-<map id="drv_gpio_core.h" name="drv_gpio_core.h">
-<area shape="rect" id="Node000001" title="GPIO driver for pin configuration and control." alt="" coords="5,5,119,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="30,80,94,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,33,65,64,59,64,59,33"/>
+<map id="Source code/_DriverLayer/gpio/drv_gpio_core.h" name="Source code/_DriverLayer/gpio/drv_gpio_core.h">
+<area shape="rect" id="Node000001" title="Header file for GPIO Driver module." alt="" coords="37,5,209,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,126,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,50,85,85,81,82,106,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="149,96,214,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="140,47,165,82,161,85,136,50"/>
 </map>

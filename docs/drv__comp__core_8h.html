@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: drv_comp_core.h File Reference</title>
+<title>LadyBug Firmware Documentation: Source code/_DriverLayer/comp/drv_comp_core.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -93,47 +100,38 @@ $(function(){initNavTree('drv__comp__core_8h.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Header file for comparator driver module.  
+<p>Header file for Comparator Driver module.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;stm32g0xx.h&quot;</code><br />
+<code>#include &quot;stdint.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for drv_comp_core.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="drv__comp__core_8h__incl.png" border="0" usemap="#adrv__comp__core_8h" loading="lazy" alt=""/></div>
-<map name="adrv__comp__core_8h" id="adrv__comp__core_8h">
-<area shape="rect" title="Header file for comparator driver module." alt="" coords="5,5,127,32"/>
-<area shape="rect" title=" " alt="" coords="34,80,98,107"/>
-<area shape="poly" title=" " alt="" coords="69,33,69,64,63,64,63,33"/>
+<div class="center"><img src="drv__comp__core_8h__incl.png" border="0" usemap="#a_source_01code_2___driver_layer_2comp_2drv__comp__core_8h" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2___driver_layer_2comp_2drv__comp__core_8h" id="a_source_01code_2___driver_layer_2comp_2drv__comp__core_8h">
+<area shape="rect" title="Header file for Comparator Driver module." alt="" coords="19,5,192,48"/>
+<area shape="rect" title=" " alt="" coords="5,96,102,123"/>
+<area shape="poly" title=" " alt="" coords="94,50,72,84,68,81,90,47"/>
+<area shape="rect" title=" " alt="" coords="125,96,190,123"/>
+<area shape="poly" title=" " alt="" coords="121,47,143,81,139,84,117,50"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="drv__comp__core_8h__dep__incl.png" border="0" usemap="#adrv__comp__core_8hdep" loading="lazy" alt=""/></div>
-<map name="adrv__comp__core_8hdep" id="adrv__comp__core_8hdep">
-<area shape="rect" title="Header file for comparator driver module." alt="" coords="87,5,208,32"/>
-<area shape="rect" href="drv__comp__core_8c.html" title="Source file for comparator driver module." alt="" coords="5,352,127,379"/>
-<area shape="poly" title=" " alt="" coords="144,48,72,352,66,351,138,47"/>
-<area shape="rect" href="mid__fault__management__handler_8h.html" title="Middleware for comprehensive fault management and protection system." alt="" coords="153,80,310,123"/>
-<area shape="poly" title=" " alt="" coords="173,41,212,78,208,82,169,45"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="236,427,296,453"/>
-<area shape="poly" title=" " alt="" coords="116,382,236,425,235,430,114,387"/>
-<area shape="poly" title=" " alt="" coords="212,137,198,171,195,192,198,213,211,297,236,378,261,425,256,427,232,380,205,298,193,214,190,192,193,170,207,135"/>
-<area shape="rect" href="app__state__management__handler_8h.html" title="Header file for EVSE state machine module." alt="" coords="207,171,368,213"/>
-<area shape="poly" title=" " alt="" coords="255,135,277,169,272,172,250,137"/>
-<area shape="rect" href="mid__fault__management__handler_8c.html" title="Implementation of comprehensive fault management system." alt="" coords="434,171,591,213"/>
-<area shape="poly" title=" " alt="" coords="312,125,447,167,446,173,311,130"/>
-<area shape="poly" title=" " alt="" coords="262,227,243,262,237,308,242,355,252,396,263,425,258,427,247,397,237,356,232,308,238,261,257,224"/>
-<area shape="rect" href="_lady_bug_8h.html" title="Main header file for LadyBug system containing core system functions." alt="" coords="252,269,336,296"/>
-<area shape="poly" title=" " alt="" coords="293,229,296,269,290,269,287,229"/>
-<area shape="rect" href="app__state__management__handler_8c.html" title="Implementation of the EVSE state machine module." alt="" coords="359,261,520,304"/>
-<area shape="poly" title=" " alt="" coords="337,219,405,259,403,263,335,224"/>
-<area shape="poly" title=" " alt="" coords="292,312,271,427,266,426,286,311"/>
-<area shape="rect" href="_lady_bug_8c.html" title="Main implementation file for LadyBug system core functions." alt="" coords="303,352,386,379"/>
-<area shape="poly" title=" " alt="" coords="312,308,339,350,335,353,308,311"/>
-<area shape="poly" title=" " alt="" coords="321,392,281,428,278,424,318,388"/>
-<area shape="poly" title=" " alt="" coords="433,320,420,351,400,380,376,400,349,415,297,434,295,429,347,410,373,396,396,377,416,349,428,318"/>
-<area shape="poly" title=" " alt="" coords="532,227,541,265,540,286,534,305,512,337,485,363,454,384,420,401,353,425,297,437,296,432,351,420,418,397,451,380,482,359,508,333,529,303,535,285,535,266,526,228"/>
+<div class="center"><img src="drv__comp__core_8h__dep__incl.png" border="0" usemap="#a_source_01code_2___driver_layer_2comp_2drv__comp__core_8hdep" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2___driver_layer_2comp_2drv__comp__core_8hdep" id="a_source_01code_2___driver_layer_2comp_2drv__comp__core_8hdep">
+<area shape="rect" title="Header file for Comparator Driver module." alt="" coords="111,5,283,48"/>
+<area shape="rect" href="drv__comp__core_8c.html" title="Implementation of Comparator Driver module." alt="" coords="5,104,178,147"/>
+<area shape="poly" title=" " alt="" coords="165,60,116,105,112,101,162,57"/>
+<area shape="rect" href="mid__fault__management__handler_8h.html" title="Header file for Fault Management Middleware module." alt="" coords="202,96,405,155"/>
+<area shape="poly" title=" " alt="" coords="232,56,274,94,270,98,229,60"/>
+<area shape="rect" href="mid__fault__management__handler_8c.html" title="Implementation file for Fault Management Middleware module." alt="" coords="75,203,278,261"/>
+<area shape="poly" title=" " alt="" coords="259,167,213,204,210,200,255,163"/>
+<area shape="rect" href="_state_management_8h.html" title="Header file for State Management Application module." alt="" coords="303,211,555,253"/>
+<area shape="poly" title=" " alt="" coords="351,163,406,208,402,212,348,167"/>
+<area shape="rect" href="_state_management_8c.html" title="Implementation file for State Management Application module." alt="" coords="303,309,555,352"/>
+<area shape="poly" title=" " alt="" coords="432,269,432,309,426,309,426,269"/>
 </map>
 </div>
 </div>
@@ -142,35 +140,46 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:S_5FComp_5FTypeDef" id="r_S_5FComp_5FTypeDef"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator configuration and state structure.  <a href="struct_s___comp___type_def.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public macro definitions.  <a href="struct_s___comp___type_def.html#details">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga52d9ef4da125de2b0f535e96f3cec2ad" id="r_ga52d9ef4da125de2b0f535e96f3cec2ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga52d9ef4da125de2b0f535e96f3cec2ad">hcomp</a>&#160;&#160;&#160;hcomp3</td></tr>
-<tr class="memdesc:ga52d9ef4da125de2b0f535e96f3cec2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Comparator hardware instances and constants.  <br /></td></tr>
-<tr class="memitem:ga868d87bf25b6772ca70fc5473ff79b19" id="r_ga868d87bf25b6772ca70fc5473ff79b19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga868d87bf25b6772ca70fc5473ff79b19">hdac</a>&#160;&#160;&#160;hdac1</td></tr>
-<tr class="memitem:ga702cd9dcc992324e117dbe7a1e16faa5" id="r_ga702cd9dcc992324e117dbe7a1e16faa5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga702cd9dcc992324e117dbe7a1e16faa5">userCOMP</a>&#160;&#160;&#160;COMP3</td></tr>
-<tr class="memitem:ga3e69faea60c1e02bb6485289d603f0ed" id="r_ga3e69faea60c1e02bb6485289d603f0ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga3e69faea60c1e02bb6485289d603f0ed">userDAC</a>&#160;&#160;&#160;DAC_CHANNEL_1</td></tr>
-<tr class="memitem:gaaca7e6c0c1031452b9f10ea7d8aeb603" id="r_gaaca7e6c0c1031452b9f10ea7d8aeb603"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#gaaca7e6c0c1031452b9f10ea7d8aeb603">COMP_THRESHOLD</a>&#160;&#160;&#160;3500</td></tr>
+<tr id="define-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Comparator Configuration</div></td></tr>
+<tr><td colspan="2" class="ititle"><div class="groupText"><p>Include required header files.</p>
+<p>Public constant definitions for Comparator module. </p>
+</div></td></tr>
+<tr class="memitem:ga868d87bf25b6772ca70fc5473ff79b19" id="r_ga868d87bf25b6772ca70fc5473ff79b19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga868d87bf25b6772ca70fc5473ff79b19">hdac</a>&#160;&#160;&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#gaa25a57382819e79fbde3687939c0fd0b">hdac1</a></td></tr>
+<tr class="memitem:ga89b4667ca4bf6d545702fa1beb42029d" id="r_ga89b4667ca4bf6d545702fa1beb42029d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga89b4667ca4bf6d545702fa1beb42029d">hcomp_ipri</a>&#160;&#160;&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#gaedf70672c75f0f7decf2d5d6f63c3676">hcomp3</a></td></tr>
+<tr class="memitem:gac02e2e0e802e19a784633d925f6cc68c" id="r_gac02e2e0e802e19a784633d925f6cc68c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#gac02e2e0e802e19a784633d925f6cc68c">hcomp_ibat</a>&#160;&#160;&#160;<a class="el" href="group___d_r_v___c_o_m_p.html#ga6fb8a2d03fc4de85aa0ab3df45c74561">hcomp1</a></td></tr>
+<tr class="memitem:ga3d14f94e16dbbdfb04ee2881763345d6" id="r_ga3d14f94e16dbbdfb04ee2881763345d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga3d14f94e16dbbdfb04ee2881763345d6">userDAC_ipri</a>&#160;&#160;&#160;DAC_CHANNEL_1</td></tr>
+<tr class="memitem:ga8b13d7b3bd90be44b0444c7451e87ca7" id="r_ga8b13d7b3bd90be44b0444c7451e87ca7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga8b13d7b3bd90be44b0444c7451e87ca7">userDAC_ibat</a>&#160;&#160;&#160;DAC_CHANNEL_2</td></tr>
+<tr class="memitem:ga8017ca7c26da815eeaa5af291eefced5" id="r_ga8017ca7c26da815eeaa5af291eefced5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga8017ca7c26da815eeaa5af291eefced5">COMP_THRESHOLD_IPRI</a>&#160;&#160;&#160;4000</td></tr>
+<tr class="memitem:ga6d88acb685a9e51d4d1c6dfdfe322ad1" id="r_ga6d88acb685a9e51d4d1c6dfdfe322ad1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga6d88acb685a9e51d4d1c6dfdfe322ad1">COMP_THRESHOLD_IBAT</a>&#160;&#160;&#160;1490</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad782d128a4f5dedfff981ab3452de59d" id="r_gad782d128a4f5dedfff981ab3452de59d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#gad782d128a4f5dedfff981ab3452de59d">comp_init_</a> (<a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> *pcomp)</td></tr>
-<tr class="memdesc:gad782d128a4f5dedfff981ab3452de59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize comparator module.  <br /></td></tr>
+<tr class="memitem:ga4553469f3dfae5c9c1cb1d96f8fc5c97" id="r_ga4553469f3dfae5c9c1cb1d96f8fc5c97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga4553469f3dfae5c9c1cb1d96f8fc5c97">comp_init_</a> ()</td></tr>
+<tr class="memdesc:ga4553469f3dfae5c9c1cb1d96f8fc5c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Comparator module.  <br /></td></tr>
 <tr class="memitem:ga79780eab52f33a6dcb63d5e0a9703ec9" id="r_ga79780eab52f33a6dcb63d5e0a9703ec9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9">comp_set_threshold_</a> (<a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> *pcomp)</td></tr>
-<tr class="memdesc:ga79780eab52f33a6dcb63d5e0a9703ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update comparator threshold.  <br /></td></tr>
+<tr class="memdesc:ga79780eab52f33a6dcb63d5e0a9703ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set comparator threshold value.  <br /></td></tr>
 <tr class="memitem:ga416d150f7c79ea1d9136122110b6334e" id="r_ga416d150f7c79ea1d9136122110b6334e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga416d150f7c79ea1d9136122110b6334e">comp_set_state_</a> (<a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> *pcomp)</td></tr>
-<tr class="memdesc:ga416d150f7c79ea1d9136122110b6334e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set protection triggered state.  <br /></td></tr>
+<tr class="memdesc:ga416d150f7c79ea1d9136122110b6334e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set comparator state flag.  <br /></td></tr>
+<tr class="memitem:ga65ec317dc45cf4d3e5c89735a6ae94ee" id="r_ga65ec317dc45cf4d3e5c89735a6ae94ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga65ec317dc45cf4d3e5c89735a6ae94ee">comp_get_state_</a> (<a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> *pcomp)</td></tr>
+<tr class="memdesc:ga65ec317dc45cf4d3e5c89735a6ae94ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and update comparator state.  <br /></td></tr>
 <tr class="memitem:ga127eaaf52bcbe81e23c9e2c1a3a2c20e" id="r_ga127eaaf52bcbe81e23c9e2c1a3a2c20e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga127eaaf52bcbe81e23c9e2c1a3a2c20e">comp_reset_protection</a> (<a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> *pcomp)</td></tr>
-<tr class="memdesc:ga127eaaf52bcbe81e23c9e2c1a3a2c20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset protection system.  <br /></td></tr>
+<tr class="memdesc:ga127eaaf52bcbe81e23c9e2c1a3a2c20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset comparator protection system.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga77641fe5a1618bd61cd1ef18df22db3b" id="r_ga77641fe5a1618bd61cd1ef18df22db3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga77641fe5a1618bd61cd1ef18df22db3b">g_thisComp_</a></td></tr>
-<tr class="memdesc:ga77641fe5a1618bd61cd1ef18df22db3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include public and private headers.  <br /></td></tr>
+<tr class="memitem:ga0d289d33fd0727716659d14b126c27fc" id="r_ga0d289d33fd0727716659d14b126c27fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga0d289d33fd0727716659d14b126c27fc">g_thisComp_ipri</a></td></tr>
+<tr class="memdesc:ga0d289d33fd0727716659d14b126c27fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extern global variables for Comparator module.  <br /></td></tr>
+<tr class="memitem:ga418305d1d14a3670de61398f6be368fb" id="r_ga418305d1d14a3670de61398f6be368fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga418305d1d14a3670de61398f6be368fb">g_thisComp_ibat</a></td></tr>
+<tr class="memitem:gaedf70672c75f0f7decf2d5d6f63c3676" id="r_gaedf70672c75f0f7decf2d5d6f63c3676"><td class="memItemLeft" align="right" valign="top">COMP_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#gaedf70672c75f0f7decf2d5d6f63c3676">hcomp3</a></td></tr>
+<tr class="memitem:ga6fb8a2d03fc4de85aa0ab3df45c74561" id="r_ga6fb8a2d03fc4de85aa0ab3df45c74561"><td class="memItemLeft" align="right" valign="top">COMP_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga6fb8a2d03fc4de85aa0ab3df45c74561">hcomp1</a></td></tr>
+<tr class="memitem:gaa25a57382819e79fbde3687939c0fd0b" id="r_gaa25a57382819e79fbde3687939c0fd0b"><td class="memItemLeft" align="right" valign="top">DAC_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#gaa25a57382819e79fbde3687939c0fd0b">hdac1</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header file for comparator driver module. </p>
+<div class="textblock"><p>Header file for Comparator Driver module. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
@@ -184,7 +193,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="drv__comp__core_8h.html">drv_comp_core.h</a></li>
+    <li class="navelem"><a href="dir_09b89239bb517dd22b84127916aa0cd2.html">Source code</a></li><li class="navelem"><a href="dir_00405e03c9c1104e215d41da878a945c.html">_DriverLayer</a></li><li class="navelem"><a href="dir_397e66c98b5e20516e47b91c2fd3d53c.html">comp</a></li><li class="navelem"><a href="drv__comp__core_8h.html">drv_comp_core.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

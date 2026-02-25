@@ -1,0 +1,111 @@
+<map id="EVSE_application_process" name="EVSE_application_process">
+<area shape="rect" id="Node000001" title="EVSE application processing handler." alt="" coords="5,409,185,436"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c.html#ga9d8a8d24fe7974b4f9c60db897d689cc" title="LLC module function implementations." alt="" coords="267,359,350,385"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,406,252,383,253,388,155,411"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___l_l_c.html#gaf9b7ebe5587e2acd7077f8ab54023a50" title="Select initial LLC operating mode at startup." alt="" coords="233,409,385,436"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,420,217,420,217,425,185,425"/>
+<area shape="rect" id="Node000004" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state machine." alt="" coords="261,460,357,487"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,434,246,456,245,461,154,439"/>
+<area shape="rect" id="Node000005" href="$group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#gadd66ff8b83b7d62ace627df52da6ad7c" title="Determine if fault should be logged to history." alt="" coords="457,56,584,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="356,464,371,457,383,446,399,424,409,402,418,358,415,315,405,271,396,227,393,183,403,138,414,116,431,93,442,83,445,87,435,96,419,118,408,140,399,184,402,227,411,270,420,314,423,358,414,403,403,427,387,450,374,461,359,468"/>
+<area shape="rect" id="Node000006" href="$group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga2ef8a4e52363253bce2a4ceb62aa94fb" title="Check if fault conditions have cleared." alt="" coords="470,107,572,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="356,463,371,456,383,446,406,408,414,371,412,334,406,296,399,259,397,221,406,182,431,143,453,128,456,132,435,147,411,184,403,221,404,258,411,296,418,333,420,371,411,410,387,450,374,461,359,468"/>
+<area shape="rect" id="Node000007" href="$group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga8ad70d1197990240e6cbb899640152fa" title="Enter fault standby/reset state." alt="" coords="468,157,574,184"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="356,463,371,456,383,446,403,415,411,384,410,353,406,322,401,290,401,259,410,226,431,194,452,179,455,184,435,198,414,229,406,259,407,290,411,321,416,353,416,385,408,417,387,450,374,461,359,468"/>
+<area shape="rect" id="Node000011" href="$group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26" title="Disable PWM output." alt="" coords="887,259,1034,285"/>
+<area shape="poly" id="edge10_Node000004_Node000011" title=" " alt="" coords="356,462,383,446,396,429,402,412,404,376,408,341,416,323,431,307,465,290,511,278,566,269,628,264,757,261,872,264,872,270,757,267,628,269,567,275,512,283,467,295,435,311,420,326,413,342,410,377,407,413,401,432,387,450,359,467"/>
+<area shape="rect" id="Node000012" href="$group___d_r_v___p_w_m.html#ga23898da2b0024e62dae58b7059f45397" title="Enable PWM output." alt="" coords="889,813,1033,840"/>
+<area shape="poly" id="edge11_Node000004_Node000012" title=" " alt="" coords="314,487,320,545,338,630,354,676,375,721,401,763,435,799,460,819,488,835,548,858,611,871,676,874,741,871,801,864,901,842,902,847,802,869,741,877,676,880,611,876,546,863,485,840,457,823,431,803,397,766,370,724,349,678,333,631,315,546,308,487"/>
+<area shape="rect" id="Node000013" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gae908ff70c6b0b9ba54ec69dbbceca07e" title="Handle AUTORECOVERY state operations." alt="" coords="434,889,607,916"/>
+<area shape="poly" id="edge12_Node000004_Node000013" title=" " alt="" coords="313,487,317,554,334,656,349,712,370,769,399,822,435,869,448,879,445,884,431,873,394,825,365,771,344,714,328,657,312,555,308,487"/>
+<area shape="rect" id="Node000014" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1f1e0e52e3b18a3fc2ecd5b204913f16" title="Handle CHARGING state operations." alt="" coords="447,208,594,235"/>
+<area shape="poly" id="edge13_Node000004_Node000014" title=" " alt="" coords="356,463,371,456,383,446,400,422,407,399,408,375,407,351,405,327,406,302,414,277,431,252,443,241,447,245,435,255,419,279,412,303,410,327,412,351,414,375,412,400,404,425,387,450,374,460,359,468"/>
+<area shape="rect" id="Node000022" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga55640c3a709e22874c844ffee4440939" title="Handle FAULT state operations." alt="" coords="459,384,582,411"/>
+<area shape="poly" id="edge22_Node000004_Node000022" title=" " alt="" coords="354,457,384,446,432,420,450,413,452,418,434,425,386,450,356,462"/>
+<area shape="rect" id="Node000030" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gaa609d54e2438e5450f96fd281720c5cf" title="Handle FULLYCHARGED state operations." alt="" coords="436,435,605,461"/>
+<area shape="poly" id="edge36_Node000004_Node000030" title=" " alt="" coords="357,465,420,457,421,463,358,470"/>
+<area shape="rect" id="Node000031" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gad96831e426a2010e8f1da8669cf9ec46" title="Handle HANDSHAKE state operations." alt="" coords="440,763,601,789"/>
+<area shape="poly" id="edge41_Node000004_Node000031" title=" " alt="" coords="318,486,361,579,395,640,435,698,462,727,490,751,486,755,458,731,431,702,390,643,356,581,313,488"/>
+<area shape="rect" id="Node000033" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga25f2b5c68a1ec0310d97a37e6309f183" title="Handle IDLE state operations." alt="" coords="462,485,580,512"/>
+<area shape="poly" id="edge44_Node000004_Node000033" title=" " alt="" coords="358,476,446,487,446,492,357,482"/>
+<area shape="rect" id="Node000035" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1f3f76f448b8dc2495b4c6fa50d5f204" title="Check if debounce condition has finished." alt="" coords="433,940,608,967"/>
+<area shape="poly" id="edge49_Node000004_Node000035" title=" " alt="" coords="315,487,329,575,354,708,371,777,391,840,412,892,435,926,438,929,434,933,431,930,407,894,386,842,366,778,349,709,323,576,309,487"/>
+<area shape="rect" id="Node000036" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga5e3af4f6ebe90cec1287b588d1ef1bde" title="Check if delay time has finished." alt="" coords="446,991,596,1017"/>
+<area shape="poly" id="edge50_Node000004_Node000036" title=" " alt="" coords="314,487,327,584,351,732,368,809,388,880,410,938,435,977,438,980,434,984,431,980,405,940,383,881,363,810,346,733,321,585,309,487"/>
+<area shape="rect" id="Node000037" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gac044c2a9b23a166045e549e87cf16015" title="Handle PFC_START state operations." alt="" coords="446,573,595,600"/>
+<area shape="poly" id="edge51_Node000004_Node000037" title=" " alt="" coords="337,485,482,563,480,568,335,490"/>
+<area shape="rect" id="Node000040" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1dc8f3e307384996bd6c0f4bcf9c8704" title="Handle SHUTDOWN state operations." alt="" coords="444,321,598,348"/>
+<area shape="poly" id="edge57_Node000004_Node000040" title=" " alt="" coords="356,460,383,446,399,428,407,409,415,390,431,370,458,353,461,357,435,374,419,393,412,411,404,431,387,450,359,465"/>
+<area shape="rect" id="Node000041" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga03b668343def8a556453bf8f687d1f34" title="Handle SOFTSTART state operations." alt="" coords="448,661,594,688"/>
+<area shape="poly" id="edge59_Node000004_Node000041" title=" " alt="" coords="323,486,369,542,435,610,487,650,483,654,431,614,365,546,319,489"/>
+<area shape="rect" id="Node000008" href="$group___d_r_v___c_o_m_p.html#ga127eaaf52bcbe81e23c9e2c1a3a2c20e" title="Reset and reinitialize comparator protection system." alt="" coords="668,73,821,100"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="573,154,607,143,699,104,702,109,609,148,574,159"/>
+<area shape="rect" id="Node000009" href="$group___d_r_v___c_o_m_p.html#ga4553469f3dfae5c9c1cb1d96f8fc5c97" title="Initialize Comparator module." alt="" coords="919,5,1003,32"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="789,70,903,34,905,39,790,75"/>
+<area shape="rect" id="Node000010" href="$group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9" title="Set comparator threshold value." alt="" coords="1089,5,1234,32"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="1003,16,1073,16,1073,21,1003,21"/>
+<area shape="rect" id="Node000015" href="$group___m_i_d___l_l_c.html#ga84238c737cc149f14fc61a023dd84613" title="Execute hybrid PFM/PWM control with PI controllers." alt="" coords="678,192,811,235"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="594,216,662,214,662,219,595,221"/>
+<area shape="rect" id="Node000016" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga23f0cb4d2dac6d0886892547dc0eba47" title="Apply anti&#45;windup to PI controller." alt="" coords="882,56,1040,83"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="763,190,813,141,845,115,879,92,891,86,893,91,882,97,848,119,817,145,767,193"/>
+<area shape="rect" id="Node000017" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2d517a90930117bcda9492ca3f4a775e" title="Process PI controller computation." alt="" coords="885,208,1036,235"/>
+<area shape="poly" id="edge16_Node000015_Node000017" title=" " alt="" coords="812,213,869,215,869,221,812,218"/>
+<area shape="rect" id="Node000018" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="890,360,1032,387"/>
+<area shape="poly" id="edge17_Node000015_Node000018" title=" " alt="" coords="771,233,835,296,857,323,867,334,882,346,891,351,889,356,879,350,863,338,853,326,831,299,767,237"/>
+<area shape="rect" id="Node000019" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="1105,309,1218,336"/>
+<area shape="poly" id="edge18_Node000015_Node000019" title=" " alt="" coords="811,190,863,180,922,174,983,177,1013,184,1042,194,1076,214,1105,240,1147,294,1143,297,1101,244,1073,218,1040,198,1012,189,982,183,922,180,863,185,812,196"/>
+<area shape="rect" id="Node000020" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="888,309,1034,336"/>
+<area shape="poly" id="edge19_Node000015_Node000020" title=" " alt="" coords="778,233,826,264,882,295,896,301,894,306,880,300,823,269,775,238"/>
+<area shape="rect" id="Node000021" href="$group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga467c12fbae6d58401cc50a392b1fc82d" title="Ramp up with rate control." alt="" coords="910,107,1012,133"/>
+<area shape="poly" id="edge21_Node000015_Node000021" title=" " alt="" coords="791,189,880,150,909,137,911,142,882,154,794,194"/>
+<area shape="poly" id="edge20_Node000020_Node000019" title=" " alt="" coords="1034,320,1090,320,1090,325,1034,325"/>
+<area shape="rect" id="Node000023" href="$group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9" title="Set LLC to standby state." alt="" coords="697,309,792,336"/>
+<area shape="poly" id="edge23_Node000022_Node000023" title=" " alt="" coords="557,381,655,345,682,337,683,342,657,351,559,386"/>
+<area shape="rect" id="Node000025" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga3964b50e6ae1e0fffa533ee5ce56211d" title="Disable LLC relay." alt="" coords="685,360,804,403"/>
+<area shape="poly" id="edge30_Node000022_Node000025" title=" " alt="" coords="582,390,669,384,670,389,583,396"/>
+<area shape="rect" id="Node000027" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga5ab6542999b127993cd599854a65f2fb" title="Disable PFC relay." alt="" coords="683,427,806,469"/>
+<area shape="poly" id="edge32_Node000022_Node000027" title=" " alt="" coords="583,409,668,428,667,433,582,414"/>
+<area shape="rect" id="Node000028" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae12639ea85a4757563a55dac9b1fc54c" title="Enable PFC voltage compensation signal." alt="" coords="656,493,833,520"/>
+<area shape="poly" id="edge34_Node000022_Node000028" title=" " alt="" coords="584,408,610,420,626,435,635,451,643,465,658,479,667,484,664,489,655,483,639,469,630,453,622,439,607,425,581,412"/>
+<area shape="poly" id="edge26_Node000023_Node000011" title=" " alt="" coords="792,309,885,287,886,292,793,314"/>
+<area shape="poly" id="edge24_Node000023_Node000017" title=" " alt="" coords="766,307,817,276,880,244,896,238,898,243,882,249,819,281,768,311"/>
+<area shape="poly" id="edge27_Node000023_Node000018" title=" " alt="" coords="793,331,886,353,885,358,792,336"/>
+<area shape="poly" id="edge28_Node000023_Node000019" title=" " alt="" coords="793,329,834,346,849,359,858,373,867,386,882,396,924,411,960,414,996,408,1040,396,1091,373,1132,344,1135,348,1093,378,1042,401,997,414,960,419,923,416,879,401,863,390,854,376,845,363,831,350,791,334"/>
+<area shape="poly" id="edge29_Node000023_Node000020" title=" " alt="" coords="792,320,873,320,873,325,792,325"/>
+<area shape="rect" id="Node000024" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae9a4b1f0f417f77a1db32a7dc4ca1253" title="Process Multi&#45;Resonant controller computation." alt="" coords="881,461,1041,488"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="793,326,815,334,834,346,853,370,860,394,866,418,883,441,898,452,895,456,879,445,861,420,855,395,848,372,831,350,812,339,791,331"/>
+<area shape="rect" id="Node000026" href="$group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="905,512,1016,539"/>
+<area shape="poly" id="edge31_Node000025_Node000026" title=" " alt="" coords="805,395,834,413,852,435,859,457,866,478,882,498,892,505,889,509,879,502,861,480,854,459,847,437,831,417,803,400"/>
+<area shape="poly" id="edge33_Node000027_Node000026" title=" " alt="" coords="804,467,834,479,882,497,901,504,899,509,880,503,832,484,802,472"/>
+<area shape="rect" id="Node000029" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="910,712,1012,739"/>
+<area shape="poly" id="edge35_Node000028_Node000029" title=" " alt="" coords="819,518,835,530,851,551,858,573,860,616,861,657,868,678,883,698,898,709,894,714,879,702,863,680,855,658,854,616,853,574,846,554,831,534,816,523"/>
+<area shape="poly" id="edge37_Node000030_Node000023" title=" " alt="" coords="587,432,607,421,622,403,630,384,638,365,655,346,681,332,684,337,658,350,642,368,635,386,627,406,610,425,589,436"/>
+<area shape="poly" id="edge38_Node000030_Node000025" title=" " alt="" coords="569,431,608,420,670,401,671,406,609,425,571,437"/>
+<area shape="poly" id="edge39_Node000030_Node000027" title=" " alt="" coords="605,445,667,445,667,451,605,451"/>
+<area shape="poly" id="edge40_Node000030_Node000028" title=" " alt="" coords="575,459,677,486,676,491,574,464"/>
+<area shape="rect" id="Node000032" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga2ab40e496ed47c23875cbb65b689e9a4" title="Peripheral module function implementations." alt="" coords="664,813,825,840"/>
+<area shape="poly" id="edge42_Node000031_Node000032" title=" " alt="" coords="584,787,668,807,667,812,582,793"/>
+<area shape="poly" id="edge43_Node000032_Node000029" title=" " alt="" coords="800,810,832,799,882,773,926,745,929,750,885,777,834,804,802,815"/>
+<area shape="poly" id="edge45_Node000033_Node000023" title=" " alt="" coords="579,487,607,471,619,457,626,442,630,410,634,378,641,362,655,346,681,330,684,335,658,350,646,365,639,380,635,411,631,443,623,459,610,475,582,492"/>
+<area shape="poly" id="edge47_Node000033_Node000027" title=" " alt="" coords="580,483,667,463,668,468,581,488"/>
+<area shape="poly" id="edge48_Node000033_Node000028" title=" " alt="" coords="580,498,641,500,641,506,580,503"/>
+<area shape="rect" id="Node000034" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gab84b9c81bef5d760800ce5dff4ef70e0" title="Enable fan operation." alt="" coords="667,544,822,571"/>
+<area shape="poly" id="edge46_Node000033_Node000034" title=" " alt="" coords="575,510,677,537,676,542,574,515"/>
+<area shape="poly" id="edge52_Node000037_Node000034" title=" " alt="" coords="595,574,652,567,652,572,596,580"/>
+<area shape="rect" id="Node000038" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gadec52c1bfc71292a44e1e8c248ad8344" title="Disable PFC voltage compensation signal." alt="" coords="683,595,806,637"/>
+<area shape="poly" id="edge53_Node000037_Node000038" title=" " alt="" coords="596,594,668,603,667,609,595,599"/>
+<area shape="rect" id="Node000039" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae09a4fb82f031ec0de625ec8271496f4" title="Enable PFC relay." alt="" coords="662,712,827,739"/>
+<area shape="poly" id="edge55_Node000037_Node000039" title=" " alt="" coords="545,598,610,647,633,675,643,686,658,698,668,703,665,708,655,702,639,690,629,678,607,651,542,603"/>
+<area shape="poly" id="edge54_Node000038_Node000026" title=" " alt="" coords="803,592,832,580,915,543,917,548,834,585,805,597"/>
+<area shape="poly" id="edge56_Node000039_Node000029" title=" " alt="" coords="828,723,895,723,895,728,828,728"/>
+<area shape="poly" id="edge58_Node000040_Node000023" title=" " alt="" coords="598,328,682,323,682,329,598,333"/>
+<area shape="rect" id="Node000042" href="$group___m_i_d___l_l_c.html#gad127a12de6fc65cf8f07d9ab3f301165" title="Execute LLC soft start sequence." alt="" coords="693,661,796,688"/>
+<area shape="poly" id="edge60_Node000041_Node000042" title=" " alt="" coords="594,672,677,672,677,677,594,677"/>
+<area shape="rect" id="Node000044" href="$group___m_i_d___l_l_c.html#ga45f821431afea196f52f1a60f70564cd" title="Update integral term scaling for LLC controllers." alt="" coords="676,763,813,789"/>
+<area shape="poly" id="edge65_Node000041_Node000044" title=" " alt="" coords="544,686,595,717,657,748,675,755,673,760,655,753,592,722,542,691"/>
+<area shape="poly" id="edge61_Node000042_Node000012" title=" " alt="" coords="797,682,834,698,850,710,860,721,883,749,936,801,932,804,879,752,856,725,846,714,831,702,795,687"/>
+<area shape="poly" id="edge62_Node000042_Node000018" title=" " alt="" coords="796,667,815,659,831,647,849,624,858,601,861,578,861,554,860,505,866,477,878,448,900,419,926,395,930,399,904,422,883,451,871,479,866,505,866,554,866,578,863,602,853,626,835,651,817,664,798,672"/>
+<area shape="poly" id="edge63_Node000042_Node000020" title=" " alt="" coords="796,667,815,660,831,648,854,610,863,574,861,537,855,500,848,462,846,424,854,385,879,346,881,344,885,348,883,350,859,387,851,424,853,461,860,499,867,536,868,574,859,612,835,651,818,664,798,672"/>
+<area shape="rect" id="Node000043" href="$group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga99d2815051a0255cb1cfc97b4a9a42b1" title="Ramp down a value towards target." alt="" coords="916,661,1006,688"/>
+<area shape="poly" id="edge64_Node000042_Node000043" title=" " alt="" coords="796,672,900,672,900,677,796,677"/>
+</map>

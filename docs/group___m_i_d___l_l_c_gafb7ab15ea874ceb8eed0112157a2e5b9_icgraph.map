@@ -1,0 +1,22 @@
+<map id="llc_standby_" name="llc_standby_">
+<area shape="rect" id="Node000001" title="Set LLC to standby state." alt="" coords="953,81,1047,108"/>
+<area shape="rect" id="Node000002" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga55640c3a709e22874c844ffee4440939" title="Handle FAULT state operations." alt="" coords="759,5,882,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="962,76,904,46,873,35,874,30,906,42,965,71"/>
+<area shape="rect" id="Node000007" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gaa609d54e2438e5450f96fd281720c5cf" title="Handle FULLYCHARGED state operations." alt="" coords="737,56,905,83"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="937,88,905,84,906,79,938,83"/>
+<area shape="rect" id="Node000008" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga25f2b5c68a1ec0310d97a37e6309f183" title="Handle IDLE state operations." alt="" coords="762,107,880,133"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="938,106,881,114,880,109,937,101"/>
+<area shape="rect" id="Node000009" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga1dc8f3e307384996bd6c0f4bcf9c8704" title="Handle SHUTDOWN state operations." alt="" coords="744,157,898,184"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="965,118,906,148,874,159,873,154,904,143,962,114"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state machine." alt="" coords="592,81,689,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="755,40,738,46,666,83,663,79,736,42,753,35"/>
+<area shape="rect" id="Node000004" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga8a7c85b9c345204d44030fb96316a5eb" title="EVSE application processing handler." alt="" coords="365,81,544,108"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="577,97,545,97,545,92,577,92"/>
+<area shape="rect" id="Node000005" href="$group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd" title="Main interrupt service routine for real&#45;time control." alt="" coords="142,81,317,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="350,97,318,97,318,92,350,92"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a4665d4e1d5fea2d34089d4e50a763751" title=" " alt="" coords="5,81,94,108"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="126,97,94,97,94,92,126,92"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="722,86,689,91,689,85,721,81"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="746,112,689,104,689,99,747,107"/>
+<area shape="poly" id="edge11_Node000009_Node000003" title=" " alt="" coords="753,155,736,148,663,111,666,106,738,143,755,150"/>
+</map>

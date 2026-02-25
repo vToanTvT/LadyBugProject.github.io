@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: LED Indicator Middleware</title>
+<title>LadyBug Firmware Documentation: Indicator Middleware</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -89,77 +96,102 @@ $(function(){initNavTree('group___m_i_d___i_n_d_i_c_a_t_o_r.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">LED Indicator Middleware <div class="ingroups"><a class="el" href="group___m_i_d_d_l_e___l_a_y_e_r.html">Middleware Layer</a></div></div></div>
+  <div class="headertitle"><div class="title">Indicator Middleware <div class="ingroups"><a class="el" href="group___m_i_d_d_l_e_w_a_r_e___l_a_y_e_r.html">Middleware Layer</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Middleware for controlling multiple LEDs with flexible blinking patterns.  
+<p>LED indicator control and visual feedback system.  
 <a href="#details">More...</a></p>
 <div class="dynheader">
-Collaboration diagram for LED Indicator Middleware:</div>
+Collaboration diagram for Indicator Middleware:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___m_i_d___i_n_d_i_c_a_t_o_r.png" border="0" usemap="#agroup______m__i__d______i__n__d__i__c__a__t__o__r" loading="lazy" alt=""/></div>
 <map name="agroup______m__i__d______i__n__d__i__c__a__t__o__r" id="agroup______m__i__d______i__n__d__i__c__a__t__o__r">
-<area shape="rect" href="group___m_i_d_d_l_e___l_a_y_e_r.html" title="Intermediate control logic (PI controller, Fault handler...)." alt="" coords="5,5,129,32"/>
-<area shape="rect" title="Middleware for controlling multiple LEDs with flexible blinking patterns." alt="" coords="177,5,348,32"/>
+<area shape="rect" href="group___m_i_d_d_l_e_w_a_r_e___l_a_y_e_r.html" title="Control logic and system services." alt="" coords="5,5,129,32"/>
+<area shape="rect" title="LED indicator control and visual feedback system." alt="" coords="177,5,318,32"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:S_5FIndicator_5FLed_5FConfig_5FTypeDef" id="r_S_5FIndicator_5FLed_5FConfig_5FTypeDef"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED configuration and runtime state structure.  <a href="struct_s___indicator___led___config___type_def.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED configuration structure.  <a href="struct_s___indicator___led___config___type_def.html#details">More...</a><br /></td></tr>
+<tr class="memitem:S_5FLed_5FUpdateTypeDef" id="r_S_5FLed_5FUpdateTypeDef"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED update control structure.  <a href="struct_s___led___update_type_def.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga3cf1d1022b50de10e9f766364ad001ba" id="r_ga3cf1d1022b50de10e9f766364ad001ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3cf1d1022b50de10e9f766364ad001ba">INDICATOR_UPDATE_PERIOD_TICKS</a>&#160;&#160;&#160;2000U</td></tr>
+<tr class="memdesc:ga3cf1d1022b50de10e9f766364ad001ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include required header files.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga1d9293da9a3cb5d663bb7c466c2fd41f" id="r_ga1d9293da9a3cb5d663bb7c466c2fd41f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1d9293da9a3cb5d663bb7c466c2fd41f">E_Indicator_Blink_Period_TypeDef</a> { <a class="el" href="#gga1d9293da9a3cb5d663bb7c466c2fd41fab27edad9d3e126dc8448b6030438adb6">SLOW</a> = 500U
-, <a class="el" href="#gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a> = 200U
-, <a class="el" href="#gga1d9293da9a3cb5d663bb7c466c2fd41faf84c11ba888e499a8a282a3e6f5de7de">FAST</a> = 100U
+<tr class="memitem:ga25ed4e6b8baeaf04ee5f7c03faed0ffa" id="r_ga25ed4e6b8baeaf04ee5f7c03faed0ffa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">E_Indicator_Mode_TypeDef</a> { <a class="el" href="#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa47b15c933ee4139ed0c9a58983a86c10">LEDMODE_STANDBY</a> = 0
+, <a class="el" href="#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa8d06102c09677226a4b6764497b7938f">LEDMODE_ACTIVE</a>
+, <a class="el" href="#gga25ed4e6b8baeaf04ee5f7c03faed0ffaaddb5cb279f1ab3530178a08621637c58">LEDMODE_COMPLETE</a>
+, <a class="el" href="#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa0aa356e09b2c4d0ff0079b31a01410d7">LEDMODE_ERROR</a>
  }</td></tr>
-<tr class="memdesc:ga1d9293da9a3cb5d663bb7c466c2fd41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED blinking period enumeration.  <a href="#ga1d9293da9a3cb5d663bb7c466c2fd41f">More...</a><br /></td></tr>
+<tr class="memdesc:ga25ed4e6b8baeaf04ee5f7c03faed0ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public macro definitions.  <a href="#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">More...</a><br /></td></tr>
+<tr class="memitem:ga1d9293da9a3cb5d663bb7c466c2fd41f" id="r_ga1d9293da9a3cb5d663bb7c466c2fd41f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1d9293da9a3cb5d663bb7c466c2fd41f">E_Indicator_Blink_Period_TypeDef</a> { <a class="el" href="#gga1d9293da9a3cb5d663bb7c466c2fd41fab27edad9d3e126dc8448b6030438adb6">SLOW</a> = 5U
+, <a class="el" href="#gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64">MEDIUM</a> = 2U
+, <a class="el" href="#gga1d9293da9a3cb5d663bb7c466c2fd41faf84c11ba888e499a8a282a3e6f5de7de">FAST</a> = 1U
+ }</td></tr>
+<tr class="memdesc:ga1d9293da9a3cb5d663bb7c466c2fd41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED blink period enumeration.  <a href="#ga1d9293da9a3cb5d663bb7c466c2fd41f">More...</a><br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gacfa75aa809762cf0ad8a5d4a5dc196c6" id="r_gacfa75aa809762cf0ad8a5d4a5dc196c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacfa75aa809762cf0ad8a5d4a5dc196c6">indicator_init_</a> (void)</td></tr>
-<tr class="memdesc:gacfa75aa809762cf0ad8a5d4a5dc196c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize LED indicator subsystem.  <br /></td></tr>
+<tr class="memitem:ga584a458491d250205bc2cad2c474f929" id="r_ga584a458491d250205bc2cad2c474f929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga584a458491d250205bc2cad2c474f929">indicator_init_</a> ()</td></tr>
+<tr class="memdesc:ga584a458491d250205bc2cad2c474f929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize indicator system.  <br /></td></tr>
 <tr class="memitem:ga787e0e208d169789ad0777b293c369c8" id="r_ga787e0e208d169789ad0777b293c369c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga787e0e208d169789ad0777b293c369c8">indicator_process_led_</a> (<a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a> *pledConfig)</td></tr>
-<tr class="memdesc:ga787e0e208d169789ad0777b293c369c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process LED blinking according to configured timing.  <br /></td></tr>
+<tr class="memdesc:ga787e0e208d169789ad0777b293c369c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process LED blinking behavior.  <br /></td></tr>
+<tr class="memitem:ga87090ef1563d11686d2f79fdecf6956b" id="r_ga87090ef1563d11686d2f79fdecf6956b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga87090ef1563d11686d2f79fdecf6956b">indicator_set_mode</a> (<a class="el" href="#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">E_Indicator_Mode_TypeDef</a> mode)</td></tr>
+<tr class="memdesc:ga87090ef1563d11686d2f79fdecf6956b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LED mode for system status indication.  <br /></td></tr>
+<tr class="memitem:ga20f029b18dfd9d61217a29f9b7eb5a45" id="r_ga20f029b18dfd9d61217a29f9b7eb5a45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga20f029b18dfd9d61217a29f9b7eb5a45">indicator_tick_</a> (<a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a> *indicator_ctrl)</td></tr>
+<tr class="memdesc:ga20f029b18dfd9d61217a29f9b7eb5a45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update tick counter for LED timing.  <br /></td></tr>
+<tr class="memitem:ga0ca4c4effaff4ed4cc435d9ca0dccd8b" id="r_ga0ca4c4effaff4ed4cc435d9ca0dccd8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga0ca4c4effaff4ed4cc435d9ca0dccd8b">indicator_process_update_</a> (<a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a> *indicator_ctrl, <a class="el" href="#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">E_Indicator_Mode_TypeDef</a> mode)</td></tr>
+<tr class="memdesc:ga0ca4c4effaff4ed4cc435d9ca0dccd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process LED update when flag is set.  <br /></td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-member-group" class="groupheader"><a id="member-group" name="member-group"></a>
-Global LED Configuration Instances</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
 <tr class="memitem:ga8d85f10b3364f5df950a7162bdbc65f8" id="r_ga8d85f10b3364f5df950a7162bdbc65f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8d85f10b3364f5df950a7162bdbc65f8">g_indicator_led1_</a></td></tr>
-<tr class="memdesc:ga8d85f10b3364f5df950a7162bdbc65f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 1 configuration instance.  <br /></td></tr>
+<tr class="memdesc:ga8d85f10b3364f5df950a7162bdbc65f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extern global variables for Indicator module.  <br /></td></tr>
 <tr class="memitem:ga3931b379848708892ef911ed354220d3" id="r_ga3931b379848708892ef911ed354220d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3931b379848708892ef911ed354220d3">g_indicator_led2_</a></td></tr>
-<tr class="memdesc:ga3931b379848708892ef911ed354220d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 2 configuration instance.  <br /></td></tr>
 <tr class="memitem:ga927889d4d5dda3f07eca3da07f0cfc1d" id="r_ga927889d4d5dda3f07eca3da07f0cfc1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga927889d4d5dda3f07eca3da07f0cfc1d">g_indicator_led3_</a></td></tr>
-<tr class="memdesc:ga927889d4d5dda3f07eca3da07f0cfc1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 3 configuration instance.  <br /></td></tr>
 <tr class="memitem:ga996a5e3c1318fef1a32df7cf319283b3" id="r_ga996a5e3c1318fef1a32df7cf319283b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___indicator___led___config___type_def.html">S_Indicator_Led_Config_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga996a5e3c1318fef1a32df7cf319283b3">g_indicator_led4_</a></td></tr>
-<tr class="memdesc:ga996a5e3c1318fef1a32df7cf319283b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">LED 4 configuration instance.  <br /></td></tr>
+<tr class="memitem:ga3faaaf72f4635dfe54c6d2d556794b59" id="r_ga3faaaf72f4635dfe54c6d2d556794b59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3faaaf72f4635dfe54c6d2d556794b59">g_indicator_ctrl</a></td></tr>
+<tr class="memitem:ga362e2c9dec878acd0ffd771a0d55d483" id="r_ga362e2c9dec878acd0ffd771a0d55d483"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga362e2c9dec878acd0ffd771a0d55d483">g_led_blink_counter</a></td></tr>
+<tr class="memdesc:ga362e2c9dec878acd0ffd771a0d55d483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include required header files.  <br /></td></tr>
+<tr class="memitem:gad7f3c69ec7862eaea6ef5414be19b357" id="r_gad7f3c69ec7862eaea6ef5414be19b357"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___g_p_i_o___pin___type_def.html">S_GPIO_Pin_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad7f3c69ec7862eaea6ef5414be19b357">pin</a></td></tr>
+<tr class="memitem:ga51322ddb267b4729d6b5f2bb05d49fff" id="r_ga51322ddb267b4729d6b5f2bb05d49fff"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga51322ddb267b4729d6b5f2bb05d49fff">counter</a></td></tr>
+<tr class="memitem:ga2a2dfbe4e16d354a061e65011284a313" id="r_ga2a2dfbe4e16d354a061e65011284a313"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#ga1d9293da9a3cb5d663bb7c466c2fd41f">E_Indicator_Blink_Period_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2a2dfbe4e16d354a061e65011284a313">period</a></td></tr>
+<tr class="memitem:ga81b43df06332b4fef558297592bb7ff1" id="r_ga81b43df06332b4fef558297592bb7ff1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga81b43df06332b4fef558297592bb7ff1">period</a></td></tr>
+<tr class="memitem:ga51322ddb267b4729d6b5f2bb05d49fff" id="r_ga51322ddb267b4729d6b5f2bb05d49fff"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga51322ddb267b4729d6b5f2bb05d49fff">counter</a></td></tr>
+<tr class="memitem:ga97373b7916d388eb61d634014e054dea" id="r_ga97373b7916d388eb61d634014e054dea"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga97373b7916d388eb61d634014e054dea">flgUpdate</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<p>Middleware for controlling multiple LEDs with flexible blinking patterns. </p>
-<p><br  />
-</p>
-<p>This module implements a flexible, non-blocking LED indicator system:</p><ul>
-<li>Configurable blinking periods (SLOW, MEDIUM, FAST)</li>
-<li>Independent control for multiple LEDs</li>
-<li>Timer-based non-blocking operation</li>
-<li>Runtime reconfiguration of blinking speed</li>
-</ul>
+<p>LED indicator control and visual feedback system. </p>
+<p>This module manages LED indicators for system status visualization. Provides different LED patterns for various operating modes including standby, active (charging), complete, and error states. Features configurable blink rates, sequential LED animations, and synchronized timing control for consistent visual feedback.</p>
 <dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17 </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>EVSELab</dd></dl>
-<p><br  />
-</p>
-<p>Provides APIs for managing LED indicators with configurable blink rates. Features include:</p><ul>
-<li>Multiple predefined blink periods (SLOW, MEDIUM, FAST)</li>
-<li>Independent per-LED control</li>
-<li>Non-blocking software counter implementation</li>
-<li>Runtime reconfiguration support</li>
-</ul>
-<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2025-10-17 </dd></dl>
-<dl class="section author"><dt>Author</dt><dd>EVSELab </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>August 11, 2025 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>EVSELab Co. Jsc. </dd></dl>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="ga3cf1d1022b50de10e9f766364ad001ba" name="ga3cf1d1022b50de10e9f766364ad001ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3cf1d1022b50de10e9f766364ad001ba">&#9670;&#160;</a></span>INDICATOR_UPDATE_PERIOD_TICKS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INDICATOR_UPDATE_PERIOD_TICKS&#160;&#160;&#160;2000U</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Include required header files. </p>
+<p>Public constant definitions. </p><dl class="section note"><dt>Note</dt><dd>Use prefix K_INDICATOR_ for constants. LED update period in ticks (200 ms) </dd></dl>
+
+</div>
+</div>
 <a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga1d9293da9a3cb5d663bb7c466c2fd41f" name="ga1d9293da9a3cb5d663bb7c466c2fd41f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1d9293da9a3cb5d663bb7c466c2fd41f">&#9670;&#160;</a></span>E_Indicator_Blink_Period_TypeDef</h2>
@@ -173,26 +205,51 @@ Global LED Configuration Instances</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>LED blinking period enumeration. </p>
-<p>Defines blink speed in sampling time multiples. Example (T_sampling = 1 ms):</p><ul>
-<li>SLOW → 500 ms (1 Hz)</li>
-<li>MEDIUM → 200 ms (2.5 Hz)</li>
-<li>FAST → 100 ms (5 Hz) </li>
-</ul>
+<p>LED blink period enumeration. </p>
+<p>Defines blink rates as multiples of sampling period. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1d9293da9a3cb5d663bb7c466c2fd41fab27edad9d3e126dc8448b6030438adb6" name="gga1d9293da9a3cb5d663bb7c466c2fd41fab27edad9d3e126dc8448b6030438adb6"></a>SLOW&#160;</td><td class="fielddoc"><p>Slow blinking: 500 * T_sampling </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1d9293da9a3cb5d663bb7c466c2fd41fab27edad9d3e126dc8448b6030438adb6" name="gga1d9293da9a3cb5d663bb7c466c2fd41fab27edad9d3e126dc8448b6030438adb6"></a>SLOW&#160;</td><td class="fielddoc"><p>Slow blink rate (500 ms period) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64" name="gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64"></a>MEDIUM&#160;</td><td class="fielddoc"><p>Medium blinking: 200 * T_sampling </p>
+<tr><td class="fieldname"><a id="gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64" name="gga1d9293da9a3cb5d663bb7c466c2fd41fa5340ec7ecef6cc3886684a3bd3450d64"></a>MEDIUM&#160;</td><td class="fielddoc"><p>Medium blink rate (200 ms period) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga1d9293da9a3cb5d663bb7c466c2fd41faf84c11ba888e499a8a282a3e6f5de7de" name="gga1d9293da9a3cb5d663bb7c466c2fd41faf84c11ba888e499a8a282a3e6f5de7de"></a>FAST&#160;</td><td class="fielddoc"><p>Fast blinking: 100 * T_sampling </p>
+<tr><td class="fieldname"><a id="gga1d9293da9a3cb5d663bb7c466c2fd41faf84c11ba888e499a8a282a3e6f5de7de" name="gga1d9293da9a3cb5d663bb7c466c2fd41faf84c11ba888e499a8a282a3e6f5de7de"></a>FAST&#160;</td><td class="fielddoc"><p>Fast blink rate (100 ms period) </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga25ed4e6b8baeaf04ee5f7c03faed0ffa" name="ga25ed4e6b8baeaf04ee5f7c03faed0ffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">&#9670;&#160;</a></span>E_Indicator_Mode_TypeDef</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">E_Indicator_Mode_TypeDef</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Public macro definitions. </p>
+<dl class="section note"><dt>Note</dt><dd>Use prefix M_INDICATOR_ for macros to avoid conflicts.</dd></dl>
+<p>LED indicator operating modes.</p>
+<p>Defines visual feedback patterns for different system states. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga25ed4e6b8baeaf04ee5f7c03faed0ffaa47b15c933ee4139ed0c9a58983a86c10" name="gga25ed4e6b8baeaf04ee5f7c03faed0ffaa47b15c933ee4139ed0c9a58983a86c10"></a>LEDMODE_STANDBY&#160;</td><td class="fielddoc"><p>Standby mode: single LED slow blink (LED4) </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga25ed4e6b8baeaf04ee5f7c03faed0ffaa8d06102c09677226a4b6764497b7938f" name="gga25ed4e6b8baeaf04ee5f7c03faed0ffaa8d06102c09677226a4b6764497b7938f"></a>LEDMODE_ACTIVE&#160;</td><td class="fielddoc"><p>Active/charging mode: sequential LED animation </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga25ed4e6b8baeaf04ee5f7c03faed0ffaaddb5cb279f1ab3530178a08621637c58" name="gga25ed4e6b8baeaf04ee5f7c03faed0ffaaddb5cb279f1ab3530178a08621637c58"></a>LEDMODE_COMPLETE&#160;</td><td class="fielddoc"><p>Completion mode: all LEDs off </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga25ed4e6b8baeaf04ee5f7c03faed0ffaa0aa356e09b2c4d0ff0079b31a01410d7" name="gga25ed4e6b8baeaf04ee5f7c03faed0ffaa0aa356e09b2c4d0ff0079b31a01410d7"></a>LEDMODE_ERROR&#160;</td><td class="fielddoc"><p>Error mode: all LEDs continuously on </p>
 </td></tr>
 </table>
 
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="gacfa75aa809762cf0ad8a5d4a5dc196c6" name="gacfa75aa809762cf0ad8a5d4a5dc196c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacfa75aa809762cf0ad8a5d4a5dc196c6">&#9670;&#160;</a></span>indicator_init_()</h2>
+<a id="ga584a458491d250205bc2cad2c474f929" name="ga584a458491d250205bc2cad2c474f929"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga584a458491d250205bc2cad2c474f929">&#9670;&#160;</a></span>indicator_init_()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,34 +257,53 @@ Global LED Configuration Instances</h2></td></tr>
         <tr>
           <td class="memname">void indicator_init_ </td>
           <td>(</td>
-          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize LED indicator subsystem. </p>
-<dl class="section note"><dt>Note</dt><dd>Must be called once during system startup.</dd></dl>
-<p>Initialize LED indicator subsystem.</p>
-<p>Performs:</p><ul>
-<li>Configuration of LED GPIO pins <br  />
-</li>
-<li>Default blinking period assignment <br  />
-</li>
-<li>Reset of internal counters <br  />
-</li>
-</ul>
-<dl class="section note"><dt>Note</dt><dd>Should be called once during system initialization. </dd></dl>
+<p>Initialize indicator system. </p>
+<p>Configures all LED indicators with default settings (SLOW blink rate). Initializes LED1-LED4 with their respective GPIO pins.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Call once during system initialization before using LEDs.</dd></dl>
+<p>Initialize indicator system.</p>
+<p>Initialize indicator system.</p>
+<p>Configures all LED indicators with default settings (SLOW blink rate). Initializes LED1-LED4 with their respective GPIO pins.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Call once during system initialization before using LEDs. </dd></dl>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="group___m_i_d___i_n_d_i_c_a_t_o_r_gacfa75aa809762cf0ad8a5d4a5dc196c6_icgraph.png" border="0" usemap="#agroup___m_i_d___i_n_d_i_c_a_t_o_r_gacfa75aa809762cf0ad8a5d4a5dc196c6_icgraph" loading="lazy" alt=""/></div>
-<map name="agroup___m_i_d___i_n_d_i_c_a_t_o_r_gacfa75aa809762cf0ad8a5d4a5dc196c6_icgraph" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_gacfa75aa809762cf0ad8a5d4a5dc196c6_icgraph">
-<area shape="rect" title="Initialize LED indicator subsystem." alt="" coords="379,5,480,32"/>
-<area shape="rect" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867" title="Implementation of system initialization." alt="" coords="169,5,331,32"/>
-<area shape="poly" title=" " alt="" coords="363,21,331,21,331,16,363,16"/>
-<area shape="rect" href="main_8c.html#a066d3569dc1bd19ed44b537e76022e4c" title=" " alt="" coords="5,5,121,32"/>
-<area shape="poly" title=" " alt="" coords="153,21,121,21,121,16,153,16"/>
+<div class="center"><img src="group___m_i_d___i_n_d_i_c_a_t_o_r_ga584a458491d250205bc2cad2c474f929_icgraph.png" border="0" usemap="#agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga584a458491d250205bc2cad2c474f929_icgraph" loading="lazy" alt=""/></div>
+<map name="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga584a458491d250205bc2cad2c474f929_icgraph" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga584a458491d250205bc2cad2c474f929_icgraph">
+<area shape="rect" title="Initialize indicator system." alt="" coords="313,5,414,32"/>
+<area shape="rect" href="group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842" title="Global function implementations." alt="" coords="103,5,265,32"/>
+<area shape="poly" title=" " alt="" coords="297,21,265,21,265,16,297,16"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
 </map>
 </div>
 
@@ -248,45 +324,264 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Process LED blinking according to configured timing. </p>
+<p>Process LED blinking behavior. </p>
+<p>Updates LED state based on counter and configured period. Increments counter and toggles LED when period expires. Should be called periodically at consistent rate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">pledConfig</td><td>Pointer to LED configuration structure.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Should be called periodically (e.g., in main loop or timer ISR).</dd></dl>
-<p>Process LED blinking according to configured timing.</p>
-<p>Implements the blinking logic:</p><ol type="1">
-<li>Increment counter <br  />
-</li>
-<li>Compare with configured period <br  />
-</li>
-<li>Toggle LED and reset counter when period elapsed <br  />
-</li>
-</ol>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pledConfig</td><td>Pointer to LED configuration structure</td></tr>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>Should be called periodically at system sampling rate. </dd></dl>
-<dl class="section warning"><dt>Warning</dt><dd>The system call rate must be at least twice the fastest blinking frequency. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Call at fixed rate matching blink period timing requirements. </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="group___m_i_d___i_n_d_i_c_a_t_o_r_ga787e0e208d169789ad0777b293c369c8_cgraph.png" border="0" usemap="#agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga787e0e208d169789ad0777b293c369c8_cgraph" loading="lazy" alt=""/></div>
 <map name="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga787e0e208d169789ad0777b293c369c8_cgraph" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga787e0e208d169789ad0777b293c369c8_cgraph">
-<area shape="rect" title="Process LED blinking according to configured timing." alt="" coords="5,5,160,32"/>
-<area shape="rect" href="group___d_r_v___g_p_i_o.html#ga3e8410808b48c920702b522e2eec7f46" title="Toggle GPIO pin state." alt="" coords="208,5,326,32"/>
+<area shape="rect" title="Process LED blinking behavior." alt="" coords="5,5,160,32"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#ga4516b6ab8d2d78f90b0f7e365e8ed773" title="Toggle GPIO pin state." alt="" coords="208,5,326,32"/>
 <area shape="poly" title=" " alt="" coords="160,16,192,16,192,21,160,21"/>
 </map>
 </div>
 
 </div>
 </div>
+<a id="ga0ca4c4effaff4ed4cc435d9ca0dccd8b" name="ga0ca4c4effaff4ed4cc435d9ca0dccd8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ca4c4effaff4ed4cc435d9ca0dccd8b">&#9670;&#160;</a></span>indicator_process_update_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void indicator_process_update_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>indicator_ctrl</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">E_Indicator_Mode_TypeDef</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process LED update when flag is set. </p>
+<p>Checks update flag and calls <a class="el" href="#ga87090ef1563d11686d2f79fdecf6956b" title="Set LED mode for system status indication.">indicator_set_mode()</a> when period expires. Automatically clears update flag after processing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">indicator_ctrl</td><td>Pointer to LED update control structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Current LED operating mode.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Call in main loop or timer callback after <a class="el" href="#ga20f029b18dfd9d61217a29f9b7eb5a45" title="Update tick counter for LED timing.">indicator_tick_()</a>. Only processes when flgUpdate == 1. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___m_i_d___i_n_d_i_c_a_t_o_r_ga0ca4c4effaff4ed4cc435d9ca0dccd8b_cgraph.png" border="0" usemap="#agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga0ca4c4effaff4ed4cc435d9ca0dccd8b_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga0ca4c4effaff4ed4cc435d9ca0dccd8b_cgraph" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga0ca4c4effaff4ed4cc435d9ca0dccd8b_cgraph">
+<area shape="rect" title="Process LED update when flag is set." alt="" coords="5,56,182,83"/>
+<area shape="rect" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b" title="Set LED mode for system status indication." alt="" coords="230,56,364,83"/>
+<area shape="poly" title=" " alt="" coords="182,67,214,67,214,72,182,72"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="416,5,527,32"/>
+<area shape="poly" title=" " alt="" coords="345,53,407,34,409,39,346,58"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="420,56,522,83"/>
+<area shape="poly" title=" " alt="" coords="365,67,405,67,405,72,365,72"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#ga4516b6ab8d2d78f90b0f7e365e8ed773" title="Toggle GPIO pin state." alt="" coords="412,107,530,133"/>
+<area shape="poly" title=" " alt="" coords="346,81,409,99,407,104,345,86"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___m_i_d___i_n_d_i_c_a_t_o_r_ga0ca4c4effaff4ed4cc435d9ca0dccd8b_icgraph.png" border="0" usemap="#agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga0ca4c4effaff4ed4cc435d9ca0dccd8b_icgraph" loading="lazy" alt=""/></div>
+<map name="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga0ca4c4effaff4ed4cc435d9ca0dccd8b_icgraph" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga0ca4c4effaff4ed4cc435d9ca0dccd8b_icgraph">
+<area shape="rect" title="Process LED update when flag is set." alt="" coords="290,5,466,32"/>
+<area shape="rect" href="group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f" title="Infinite loop processing for background tasks." alt="" coords="103,5,242,32"/>
+<area shape="poly" title=" " alt="" coords="274,21,243,21,243,16,274,16"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga87090ef1563d11686d2f79fdecf6956b" name="ga87090ef1563d11686d2f79fdecf6956b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga87090ef1563d11686d2f79fdecf6956b">&#9670;&#160;</a></span>indicator_set_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void indicator_set_mode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ga25ed4e6b8baeaf04ee5f7c03faed0ffa">E_Indicator_Mode_TypeDef</a></td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set LED mode for system status indication. </p>
+<p>Changes LED pattern according to operating mode. Manages state transitions, resets counters, and controls all four LEDs for appropriate visual feedback pattern.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Desired LED operating mode.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Uses static variables for state tracking. Automatically handles transitions between modes with proper LED cleanup. </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___m_i_d___i_n_d_i_c_a_t_o_r_ga87090ef1563d11686d2f79fdecf6956b_cgraph.png" border="0" usemap="#agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga87090ef1563d11686d2f79fdecf6956b_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga87090ef1563d11686d2f79fdecf6956b_cgraph" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga87090ef1563d11686d2f79fdecf6956b_cgraph">
+<area shape="rect" title="Set LED mode for system status indication." alt="" coords="5,56,140,83"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="191,5,302,32"/>
+<area shape="poly" title=" " alt="" coords="120,53,183,34,184,39,122,58"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="196,56,298,83"/>
+<area shape="poly" title=" " alt="" coords="140,67,181,67,181,72,140,72"/>
+<area shape="rect" href="group___d_r_v___g_p_i_o.html#ga4516b6ab8d2d78f90b0f7e365e8ed773" title="Toggle GPIO pin state." alt="" coords="188,107,306,133"/>
+<area shape="poly" title=" " alt="" coords="122,81,184,99,183,104,120,86"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="group___m_i_d___i_n_d_i_c_a_t_o_r_ga87090ef1563d11686d2f79fdecf6956b_icgraph.png" border="0" usemap="#agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga87090ef1563d11686d2f79fdecf6956b_icgraph" loading="lazy" alt=""/></div>
+<map name="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga87090ef1563d11686d2f79fdecf6956b_icgraph" id="agroup___m_i_d___i_n_d_i_c_a_t_o_r_ga87090ef1563d11686d2f79fdecf6956b_icgraph">
+<area shape="rect" title="Set LED mode for system status indication." alt="" coords="514,5,649,32"/>
+<area shape="rect" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b" title="Process LED update when flag is set." alt="" coords="290,5,466,32"/>
+<area shape="poly" title=" " alt="" coords="499,21,467,21,467,16,499,16"/>
+<area shape="rect" href="group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f" title="Infinite loop processing for background tasks." alt="" coords="103,5,242,32"/>
+<area shape="poly" title=" " alt="" coords="274,21,243,21,243,16,274,16"/>
+<area shape="rect" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga20f029b18dfd9d61217a29f9b7eb5a45" name="ga20f029b18dfd9d61217a29f9b7eb5a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20f029b18dfd9d61217a29f9b7eb5a45">&#9670;&#160;</a></span>indicator_tick_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void indicator_tick_ </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a> *</td>          <td class="paramname"><span class="paramname"><em>indicator_ctrl</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update tick counter for LED timing. </p>
+<p>Increments counter and sets update flag when period expires. Provides timing base for periodic LED updates.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">indicator_ctrl</td><td>Pointer to LED update control structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">None</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Call at fixed sampling rate (typically 100 µs) to maintain accurate timing. Update flag cleared by <a class="el" href="#ga0ca4c4effaff4ed4cc435d9ca0dccd8b" title="Process LED update when flag is set.">indicator_process_update_()</a>. </dd></dl>
+
+</div>
+</div>
 <a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="ga51322ddb267b4729d6b5f2bb05d49fff" name="ga51322ddb267b4729d6b5f2bb05d49fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga51322ddb267b4729d6b5f2bb05d49fff">&#9670;&#160;</a></span>counter <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Internal counter for blink timing </p>
+
+</div>
+</div>
+<a id="ga51322ddb267b4729d6b5f2bb05d49fff" name="ga51322ddb267b4729d6b5f2bb05d49fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga51322ddb267b4729d6b5f2bb05d49fff">&#9670;&#160;</a></span>counter <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Current tick counter </p>
+
+</div>
+</div>
+<a id="ga97373b7916d388eb61d634014e054dea" name="ga97373b7916d388eb61d634014e054dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97373b7916d388eb61d634014e054dea">&#9670;&#160;</a></span>flgUpdate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t flgUpdate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update flag (1 = update ready, 0 = waiting) </p>
+
+</div>
+</div>
+<a id="ga3faaaf72f4635dfe54c6d2d556794b59" name="ga3faaaf72f4635dfe54c6d2d556794b59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3faaaf72f4635dfe54c6d2d556794b59">&#9670;&#160;</a></span>g_indicator_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_s___led___update_type_def.html">S_Led_UpdateTypeDef</a> g_indicator_ctrl</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>LED update controller</p>
+<p>LED update controller instance </p>
+
+</div>
+</div>
 <a id="ga8d85f10b3364f5df950a7162bdbc65f8" name="ga8d85f10b3364f5df950a7162bdbc65f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8d85f10b3364f5df950a7162bdbc65f8">&#9670;&#160;</a></span>g_indicator_led1_</h2>
 
@@ -307,8 +602,9 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>LED 1 configuration instance. </p>
-<p>LED 1 configuration </p>
+<p>Extern global variables for Indicator module. </p>
+<p>LED1 configuration</p>
+<p>LED1 configuration instance </p>
 
 </div>
 </div>
@@ -331,9 +627,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>LED 2 configuration instance. </p>
-<p>LED 2 configuration </p>
+<p>LED2 configuration</p>
+<p>LED2 configuration instance </p>
 
 </div>
 </div>
@@ -356,9 +651,8 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>LED 3 configuration instance. </p>
-<p>LED 3 configuration </p>
+<p>LED3 configuration</p>
+<p>LED3 configuration instance </p>
 
 </div>
 </div>
@@ -381,9 +675,83 @@ Here is the call graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>LED4 configuration</p>
+<p>LED4 configuration instance </p>
 
-<p>LED 4 configuration instance. </p>
-<p>LED 4 configuration </p>
+</div>
+</div>
+<a id="ga362e2c9dec878acd0ffd771a0d55d483" name="ga362e2c9dec878acd0ffd771a0d55d483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga362e2c9dec878acd0ffd771a0d55d483">&#9670;&#160;</a></span>g_led_blink_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t g_led_blink_counter</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel extern">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Include required header files. </p>
+<p>Global blink counter</p>
+<p>Private constant definitions.</p>
+<p>Private macro definitions.</p>
+<p>Private type definitions.</p>
+<p>Private static variables.</p>
+<p>Global variables definition. Global counter for synchronized LED blinking </p>
+
+</div>
+</div>
+<a id="ga2a2dfbe4e16d354a061e65011284a313" name="ga2a2dfbe4e16d354a061e65011284a313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a2dfbe4e16d354a061e65011284a313">&#9670;&#160;</a></span>period <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="#ga1d9293da9a3cb5d663bb7c466c2fd41f">E_Indicator_Blink_Period_TypeDef</a> period</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Blink period setting </p>
+
+</div>
+</div>
+<a id="ga81b43df06332b4fef558297592bb7ff1" name="ga81b43df06332b4fef558297592bb7ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81b43df06332b4fef558297592bb7ff1">&#9670;&#160;</a></span>period <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t period</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Update period in ticks </p>
+
+</div>
+</div>
+<a id="gad7f3c69ec7862eaea6ef5414be19b357" name="gad7f3c69ec7862eaea6ef5414be19b357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7f3c69ec7862eaea6ef5414be19b357">&#9670;&#160;</a></span>pin</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_s___g_p_i_o___pin___type_def.html">S_GPIO_Pin_TypeDef</a> pin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GPIO pin assignment for this LED </p>
 
 </div>
 </div>

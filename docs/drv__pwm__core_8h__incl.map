@@ -1,5 +1,7 @@
-<map id="drv_pwm_core.h" name="drv_pwm_core.h">
-<area shape="rect" id="Node000001" title="PWM driver for LLC converter and fan control." alt="" coords="5,5,123,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="32,80,96,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,33,67,64,61,64,61,33"/>
+<map id="Source code/_DriverLayer/pwm/drv_pwm_core.h" name="Source code/_DriverLayer/pwm/drv_pwm_core.h">
+<area shape="rect" id="Node000001" title="Header file for PWM Driver module." alt="" coords="9,5,181,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,70,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,50,57,85,53,82,78,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="93,96,214,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,47,137,82,133,85,108,50"/>
 </map>

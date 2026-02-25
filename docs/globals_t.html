@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: Globals</title>
+<title>LadyBug Firmware Documentation: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -92,19 +99,29 @@ $(function(){initNavTree('globals_t.html','',''); });
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
 
 <h3 class="doxsection"><a id="index_t" name="index_t"></a>- t -</h3><ul>
-<li>T_Q15&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#gaaa2487d53d286e23fa0c7342f1550c3a">mid_power_control_handler.h</a></li>
-<li>TEMP_CNT&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#gaeeea42d55f471c08d7621ca4b7c6639a">mid_power_control_handler.h</a></li>
-<li>THERMAL_LLC_GAIN_F32&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga4ee8daf2e6b01407bbc981d596aecb79">mid_measurement_handler.h</a></li>
-<li>THERMAL_LLC_OFFSET_F32&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga8c2b180a989fa02b93e3ece84730e6bd">mid_measurement_handler.h</a></li>
-<li>THERMAL_LLC_SCALE_FACTOR&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga06f58793ac2c7adab63f2431d44a3447">mid_measurement_handler.h</a></li>
-<li>THERMAL_LLC_STATIC_OFFSET&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gae922cbc27dfde4bd275cfc4677438cc1">mid_measurement_handler.h</a></li>
-<li>THERMAL_PFC_GAIN_F32&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga82f4f60c5ca06dc05e0658f32a252846">mid_measurement_handler.h</a></li>
-<li>THERMAL_PFC_OFFSET_F32&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga434948e9dc2838f91cc4e2f5c2a83172">mid_measurement_handler.h</a></li>
-<li>THERMAL_PFC_SCALE_FACTOR&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gada2a97e6d53578ecee1524a961026a56">mid_measurement_handler.h</a></li>
-<li>THERMAL_PFC_STATIC_OFFSET&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga2024ed324ddd83a01d24d047f2374993">mid_measurement_handler.h</a></li>
-<li>thisEVSE&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga4c3d9d6ec4fb0b0400ba95634c1b9ac3">app_state_management_handler.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html#ga4c3d9d6ec4fb0b0400ba95634c1b9ac3">app_state_management_handler.h</a></li>
-<li>thisMeas&#160;:&#160;<a class="el" href="mid__measurement__handler_8c.html#a6d44b524d530ce4f413925eba07a72c2">mid_measurement_handler.c</a></li>
-<li>TXBuffer&#160;:&#160;<a class="el" href="group___d_r_v___u_a_r_t.html#gabaa3661d45010d94234555c1d9ac95c3">drv_uart_core.c</a>, <a class="el" href="group___d_r_v___u_a_r_t.html#gabaa3661d45010d94234555c1d9ac95c3">drv_uart_core.h</a></li>
+<li>TEMP_CNT&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gaeeea42d55f471c08d7621ca4b7c6639a">mid_power_control_handler.h</a></li>
+<li>temp_debug_current&#160;:&#160;<a class="el" href="_lady_bug_8c.html#ada0061f3c62f541a2f577ea1b9e035b9">LadyBug.c</a></li>
+<li>temp_debug_power&#160;:&#160;<a class="el" href="_lady_bug_8c.html#a704af0a7b02e0f3414f216cceb915b83">LadyBug.c</a></li>
+<li>temp_debug_thermal&#160;:&#160;<a class="el" href="_lady_bug_8c.html#a941550da01dce6f3db50bcf224d011ef">LadyBug.c</a></li>
+<li>temp_debug_vac&#160;:&#160;<a class="el" href="_lady_bug_8c.html#a9406c2aa5a4cfaa0a6b2891bce3b9390">LadyBug.c</a></li>
+<li>temp_debug_voltage&#160;:&#160;<a class="el" href="_lady_bug_8c.html#a3ebb7c93a18305e2c688f54966c6834b">LadyBug.c</a></li>
+<li>temp_debug_voltage_bat&#160;:&#160;<a class="el" href="_lady_bug_8c.html#afde321e5e49d1cfd1fc700713129e0a2">LadyBug.c</a></li>
+<li>temp_fault_status&#160;:&#160;<a class="el" href="mid__fault__management__handler_8c.html#a9737b684a390714069bbe487518be47d">mid_fault_management_handler.c</a></li>
+<li>TEMP_THRESHOLD_HIGH&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae7237291e5dd904b9eeeb466dd59fb19">mid_peripheral_handler.h</a></li>
+<li>TEMP_THRESHOLD_HIGH_Q15&#160;:&#160;<a class="el" href="mid__peripheral__handler_8c.html#ad0d3bf37b71c7385c8ff893e9a042442">mid_peripheral_handler.c</a></li>
+<li>TEMP_THRESHOLD_LOW&#160;:&#160;<a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga37aea109a37b3e252e89be6ef84df8a6">mid_peripheral_handler.h</a></li>
+<li>TEMP_THRESHOLD_LOW_Q15&#160;:&#160;<a class="el" href="mid__peripheral__handler_8c.html#ab96fe945eac0435c68a072c5a32609ee">mid_peripheral_handler.c</a></li>
+<li>THERMAL_FLOAT_TO_Q15&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga2c0cfc2e52acc6199524d5517e3ca022">mid_measurement_handler.h</a></li>
+<li>THERMAL_LLC_GAIN_F32&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga4ee8daf2e6b01407bbc981d596aecb79">mid_measurement_handler.h</a></li>
+<li>THERMAL_LLC_OFFSET_F32&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga8c2b180a989fa02b93e3ece84730e6bd">mid_measurement_handler.h</a></li>
+<li>THERMAL_LLC_SCALE_FACTOR&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga06f58793ac2c7adab63f2431d44a3447">mid_measurement_handler.h</a></li>
+<li>THERMAL_LLC_STATIC_OFFSET&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gae922cbc27dfde4bd275cfc4677438cc1">mid_measurement_handler.h</a></li>
+<li>THERMAL_PFC_GAIN_F32&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga82f4f60c5ca06dc05e0658f32a252846">mid_measurement_handler.h</a></li>
+<li>THERMAL_PFC_OFFSET_F32&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga434948e9dc2838f91cc4e2f5c2a83172">mid_measurement_handler.h</a></li>
+<li>THERMAL_PFC_SCALE_FACTOR&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gada2a97e6d53578ecee1524a961026a56">mid_measurement_handler.h</a></li>
+<li>THERMAL_PFC_STATIC_OFFSET&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga2024ed324ddd83a01d24d047f2374993">mid_measurement_handler.h</a></li>
+<li>thisEVSE&#160;:&#160;<a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga4c3d9d6ec4fb0b0400ba95634c1b9ac3">StateManagement.c</a>, <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga4c3d9d6ec4fb0b0400ba95634c1b9ac3">StateManagement.h</a></li>
+<li>TXBuffer&#160;:&#160;<a class="el" href="group___d_r_v___u_a_r_t.html#gae261ae998237cac2b6f47771d74264eb">drv_uart_core.c</a>, <a class="el" href="group___d_r_v___u_a_r_t.html#gae261ae998237cac2b6f47771d74264eb">drv_uart_core.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

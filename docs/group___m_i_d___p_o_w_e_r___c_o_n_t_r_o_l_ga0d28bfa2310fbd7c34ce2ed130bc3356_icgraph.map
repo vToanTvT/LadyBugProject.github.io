@@ -1,0 +1,9 @@
+<map id="pwrctrl_update_coef_" name="pwrctrl_update_coef_">
+<area shape="rect" id="Node000001" title="Update derating coefficients and power calculations." alt="" coords="504,5,650,32"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga4967a767bd354d2ce90133a5379de3e4" title="Process periodic update when flag is set." alt="" coords="290,5,456,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="489,21,457,21,457,16,489,16"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f" title="Infinite loop processing for background tasks." alt="" coords="103,5,242,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="274,21,242,21,242,16,274,16"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

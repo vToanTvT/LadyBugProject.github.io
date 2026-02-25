@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: Globals</title>
+<title>LadyBug Firmware Documentation: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -92,11 +99,13 @@ $(function(){initNavTree('globals_defs_m.html','',''); });
 <div class="textblock">Here is a list of all macros with links to the files they belong to:</div>
 
 <h3 class="doxsection"><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>M_GPIO_CHECK_PTR_&#160;:&#160;<a class="el" href="drv__gpio__core_8c.html#a3d18c545ffcfd5bffc4f162e2572d3e2">drv_gpio_core.c</a></li>
-<li>M_STATE_CHECK_VALID_&#160;:&#160;<a class="el" href="app__state__management__handler_8c.html#a1403dce3b307aa013cf918ab43fc89a1">app_state_management_handler.c</a></li>
-<li>M_STATE_IS_FAULT_&#160;:&#160;<a class="el" href="app__state__management__handler_8c.html#ab7482019724dbf341145fefd583984b8">app_state_management_handler.c</a></li>
-<li>M_UART_CHECK_PTR_&#160;:&#160;<a class="el" href="drv__uart__core_8c.html#aa972c99b6342cd0c50e815047741b485">drv_uart_core.c</a></li>
-<li>MEAS_PERIOD&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga3a3e043e9dea9f5bbe19dd3e07dcf461">mid_measurement_handler.h</a></li>
+<li>mcu_LLC_relay_GPIO_Port&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#gac2fb3360e881f38982218f2e0c662635">drv_gpio_core.h</a></li>
+<li>mcu_LLC_relay_Pin&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#gaaeec9bd88dca6e1efd70153eb9ecabe1">drv_gpio_core.h</a></li>
+<li>mcu_pfc_relay_GPIO_Port&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga688344854a8d2f83d158bdac49eafa6f">drv_gpio_core.h</a></li>
+<li>mcu_pfc_relay_Pin&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#gae47c7eb7f2c18935034e8da61a940349">drv_gpio_core.h</a></li>
+<li>mcu_pfc_vcomp_GPIO_Port&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#gac705bd8e02cd434de70adc1a15f802a3">drv_gpio_core.h</a></li>
+<li>mcu_pfc_vcomp_Pin&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#gae64ade742832a85a42c26f83ea48f06c">drv_gpio_core.h</a></li>
+<li>MEAS_AVG_UPDATE_PERIOD_TICKS&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gad569ab711a5fb31deb4a90bcb101e403">mid_measurement_handler.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

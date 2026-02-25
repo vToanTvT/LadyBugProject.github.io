@@ -1,5 +1,9 @@
-<map id="drv_uart_core.h" name="drv_uart_core.h">
-<area shape="rect" id="Node000001" title="UART driver for DMA&#45;based communication." alt="" coords="5,5,117,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="29,80,93,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,33,64,64,58,64,58,33"/>
+<map id="Source code/_DriverLayer/uart/drv_uart_core.h" name="Source code/_DriverLayer/uart/drv_uart_core.h">
+<area shape="rect" id="Node000001" title="Header file for UART Driver module." alt="" coords="38,5,210,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,70,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,51,64,87,60,83,100,47"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="94,96,154,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,49,127,80,122,80,122,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="179,96,299,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="155,46,210,85,207,89,152,51"/>
 </map>

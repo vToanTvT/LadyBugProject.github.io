@@ -1,0 +1,7 @@
+<map id="peripheral_process_update_" name="peripheral_process_update_">
+<area shape="rect" id="Node000001" title="Process fan control update if flag set." alt="" coords="290,5,420,48"/>
+<area shape="rect" id="Node000002" href="$group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f" title="Infinite loop processing for background tasks." alt="" coords="103,13,242,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,29,242,29,242,24,275,24"/>
+<area shape="rect" id="Node000003" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,13,55,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,29,55,29,55,24,87,24"/>
+</map>

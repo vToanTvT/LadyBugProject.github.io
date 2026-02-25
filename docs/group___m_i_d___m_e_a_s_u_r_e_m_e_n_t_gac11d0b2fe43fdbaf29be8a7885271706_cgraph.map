@@ -1,0 +1,7 @@
+<map id="meas_update_averages_" name="meas_update_averages_">
+<area shape="rect" id="Node000001" title="Update average values for all critical measurements." alt="" coords="5,31,172,57"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga4ae0c65f66d88cf871a9e9ea9292d4dc" title="Measurement module function implementations." alt="" coords="220,5,364,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,31,205,27,205,32,173,36"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gad3f25e3fa1c46f5b1f3207743b9848dc" title="Update circular buffer with new value." alt="" coords="220,56,365,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,52,205,56,204,61,172,57"/>
+</map>

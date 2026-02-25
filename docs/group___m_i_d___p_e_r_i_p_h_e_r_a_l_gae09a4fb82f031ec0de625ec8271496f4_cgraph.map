@@ -1,0 +1,5 @@
+<map id="peripheral_on_pfc_relay_" name="peripheral_on_pfc_relay_">
+<area shape="rect" id="Node000001" title="Enable PFC relay." alt="" coords="5,5,171,32"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="219,5,320,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,16,203,16,203,21,171,21"/>
+</map>

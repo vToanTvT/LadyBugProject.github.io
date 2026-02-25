@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['integral_0',['integral',['../struct_s___p_i___type_def.html#a48688424d5265eb45ae7bfe3c8bf3874',1,'S_PI_TypeDef']]],
-  ['is_5fcomplete_1',['is_complete',['../structuart__transfer__t.html#a891fb231faa0eb41f9fd3b643b15b289',1,'uart_transfer_t']]],
-  ['is_5frx_5fbusy_2',['is_rx_busy',['../structuart__status__t.html#aead52f5a1c24d46360182d9f3a649e89',1,'uart_status_t']]],
-  ['is_5ftx_5fbusy_3',['is_tx_busy',['../structuart__status__t.html#a73c8495b87f2cd1d85264f5e24b8bcf2',1,'uart_status_t']]]
+  ['initcounter_0',['initCounter',['../struct_s___e_v_s_e__t.html#ad561645e6b2a20236339d6b4725b876b',1,'S_EVSE_t']]],
+  ['initflag_1',['initFlag',['../struct_s___e_v_s_e__t.html#a5ce55b5f01c16925965f94c5418da359',1,'S_EVSE_t']]],
+  ['integral_2',['Integral',['../group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gaeb3d21074c6e4a39c474ffc5793a7005',1,'MultiResonant_TypeDef']]],
+  ['integral_3',['integral',['../group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga48688424d5265eb45ae7bfe3c8bf3874',1,'S_PI_TypeDef']]],
+  ['inv_5fduty_5fmax_4',['INV_DUTY_MAX',['../mid__llc__handler_8c.html#a63ee9d9ec373748d3bb26a39f9318a5f',1,'mid_llc_handler.c']]],
+  ['inv_5ffreq_5fmax_5',['INV_FREQ_MAX',['../mid__llc__handler_8c.html#a9cde648907ef07f55ab779dbc70ead50',1,'mid_llc_handler.c']]]
 ];

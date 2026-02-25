@@ -1,0 +1,96 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="The application entry point." alt="" coords="5,440,55,467"/>
+<area shape="rect" id="Node000002" href="$group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f" title="Infinite loop processing for background tasks." alt="" coords="121,183,260,209"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="38,438,171,221,175,224,42,441"/>
+<area shape="rect" id="Node000020" href="$group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842" title="Global function implementations." alt="" coords="110,643,272,669"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="44,466,172,629,168,632,40,469"/>
+<area shape="rect" id="Node000044" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae12639ea85a4757563a55dac9b1fc54c" title="Enable PFC voltage compensation signal." alt="" coords="103,69,279,96"/>
+<area shape="poly" id="edge45_Node000001_Node000044" title=" " alt="" coords="30,439,35,392,46,323,67,245,82,206,100,169,127,133,157,104,161,108,131,137,105,172,87,208,72,247,52,325,40,393,35,440"/>
+<area shape="rect" id="Node000045" href="$main_8c.html#a70af21c671abfcc773614a9a4f63d920" title="System Clock Configuration." alt="" coords="118,820,264,847"/>
+<area shape="poly" id="edge47_Node000001_Node000045" title=" " alt="" coords="37,466,62,558,81,619,105,680,140,749,174,805,170,808,135,751,100,682,76,621,56,559,32,468"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b" title="Process LED update when flag is set." alt="" coords="327,107,503,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="226,180,326,143,348,136,350,141,328,148,228,185"/>
+<area shape="rect" id="Node000008" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac06a2da82bba5c606a45dfd7822e187f" title="Process measurement averaging update if flag set." alt="" coords="336,208,495,235"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="261,201,320,208,320,213,261,207"/>
+<area shape="rect" id="Node000014" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga0d941d936181024d0a591cbf438f35cd" title="Process fan control update if flag set." alt="" coords="350,259,480,301"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="230,207,343,250,341,255,228,212"/>
+<area shape="rect" id="Node000017" href="$group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga4967a767bd354d2ce90133a5379de3e4" title="Process periodic update when flag is set." alt="" coords="332,56,498,83"/>
+<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="205,180,256,137,290,113,326,92,340,86,342,91,328,97,293,118,259,141,208,184"/>
+<area shape="rect" id="Node000019" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga3d5254d06dbab993dda09f25f550106c" title="Get LED mode corresponding to current EVSE state." alt="" coords="342,157,488,184"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="261,185,327,178,327,183,261,191"/>
+<area shape="rect" id="Node000004" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b" title="Set LED mode for system status indication." alt="" coords="587,107,722,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="504,117,572,117,572,123,504,123"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="827,56,938,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="717,103,811,82,812,88,719,109"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="832,5,933,32"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="721,107,756,92,771,81,780,68,789,55,804,42,816,35,819,40,807,46,793,59,784,71,775,84,759,97,723,112"/>
+<area shape="rect" id="Node000007" href="$group___d_r_v___g_p_i_o.html#ga4516b6ab8d2d78f90b0f7e365e8ed773" title="Toggle GPIO pin state." alt="" coords="823,107,942,133"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="722,117,807,117,807,123,722,123"/>
+<area shape="rect" id="Node000009" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gab8a9c3244586ea0d412e3e391157fa5e" title="Update measurements to float format." alt="" coords="575,212,734,239"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="495,220,560,221,559,226,495,225"/>
+<area shape="rect" id="Node000011" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac11d0b2fe43fdbaf29be8a7885271706" title="Update average values for all critical measurements." alt="" coords="571,161,738,188"/>
+<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="486,205,567,189,568,194,487,210"/>
+<area shape="rect" id="Node000010" href="$mid__measurement__handler_8c.html#a60b8a41f4a3ae79e98e3bf64b24b4779" title="Convert to human&#45;readable float format." alt="" coords="806,259,959,285"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="723,237,799,252,798,258,722,242"/>
+<area shape="rect" id="Node000012" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga4ae0c65f66d88cf871a9e9ea9292d4dc" title="Measurement module function implementations." alt="" coords="810,208,954,235"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="723,186,799,202,798,207,722,191"/>
+<area shape="rect" id="Node000013" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gad3f25e3fa1c46f5b1f3207743b9848dc" title="Update circular buffer with new value." alt="" coords="810,157,955,184"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="738,171,794,170,794,175,738,176"/>
+<area shape="rect" id="Node000015" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae389a4ec8879fd13922b8c01b691c7c3" title="Control fan speed with rule&#45;based system." alt="" coords="577,263,732,289"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="481,276,561,275,561,280,481,282"/>
+<area shape="rect" id="Node000016" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="826,668,939,695"/>
+<area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="734,284,759,299,795,340,822,386,844,435,859,486,877,581,883,652,878,653,872,581,854,487,839,437,818,388,790,343,756,303,731,288"/>
+<area shape="rect" id="Node000018" href="$group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga0d28bfa2310fbd7c34ce2ed130bc3356" title="Update derating coefficients and power calculations." alt="" coords="582,56,727,83"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="499,67,566,67,566,72,499,72"/>
+<area shape="rect" id="Node000021" href="$group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initialize ADC module." alt="" coords="378,744,452,771"/>
+<area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="215,668,265,698,328,730,365,742,363,747,326,734,263,703,212,672"/>
+<area shape="rect" id="Node000024" href="$group___m_i_d___c_o_m_m_u_n_i_c_a_t_i_o_n.html#ga12a29b269b35d338dc89c582752db844" title="Include public and private headers." alt="" coords="334,795,497,821"/>
+<area shape="poly" id="edge23_Node000020_Node000024" title=" " alt="" coords="205,668,255,722,289,754,328,780,340,786,337,791,326,785,286,758,251,726,201,671"/>
+<area shape="rect" id="Node000026" href="$group___d_r_v___c_o_m_p.html#ga4553469f3dfae5c9c1cb1d96f8fc5c97" title="Initialize Comparator module." alt="" coords="373,845,457,872"/>
+<area shape="poly" id="edge25_Node000020_Node000026" title=" " alt="" coords="201,669,219,702,247,746,284,792,328,831,359,846,357,850,326,836,280,796,243,749,214,705,196,671"/>
+<area shape="rect" id="Node000028" href="$group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga83ee51b190a2d91e7de7eddf4ac2c2dc" title="Public function implementations." alt="" coords="376,896,454,923"/>
+<area shape="poly" id="edge27_Node000020_Node000028" title=" " alt="" coords="202,668,272,791,329,882,363,898,360,903,325,886,268,793,198,671"/>
+<area shape="rect" id="Node000029" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga584a458491d250205bc2cad2c474f929" title="Public function implementations." alt="" coords="364,389,466,416"/>
+<area shape="poly" id="edge28_Node000020_Node000029" title=" " alt="" coords="194,641,209,599,235,541,274,479,298,451,325,426,349,413,351,418,329,430,302,454,278,482,240,544,214,601,199,643"/>
+<area shape="rect" id="Node000030" href="$group___m_i_d___l_l_c.html#ga0e7d5275707c1aca1328f973c75cfa83" title="Initialize LLC control module." alt="" coords="382,440,448,467"/>
+<area shape="poly" id="edge29_Node000020_Node000030" title=" " alt="" coords="205,640,325,527,384,475,388,479,329,531,208,644"/>
+<area shape="rect" id="Node000035" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initialize measurement system." alt="" coords="348,541,482,568"/>
+<area shape="poly" id="edge34_Node000020_Node000035" title=" " alt="" coords="212,640,263,609,326,578,344,571,346,576,328,582,265,614,215,644"/>
+<area shape="rect" id="Node000038" href="$group___d_r_v___p_w_m.html#gad26ba1293cce44ad8a1b1ef12a88e339" title="Initialize PWM module." alt="" coords="375,693,455,720"/>
+<area shape="poly" id="edge37_Node000020_Node000038" title=" " alt="" coords="254,667,361,692,359,697,253,673"/>
+<area shape="rect" id="Node000042" href="$group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga3ea28682838bb6082b26dbaf4b46d561" title="Global function prototypes." alt="" coords="370,592,461,619"/>
+<area shape="poly" id="edge43_Node000020_Node000042" title=" " alt="" coords="253,639,354,616,355,622,254,645"/>
+<area shape="rect" id="Node000043" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c" title="Global function prototypes." alt="" coords="378,643,452,669"/>
+<area shape="poly" id="edge44_Node000020_Node000043" title=" " alt="" coords="272,653,363,653,363,659,272,659"/>
+<area shape="rect" id="Node000022" href="$group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5" title="Perform ADC calibration." alt="" coords="602,871,707,897"/>
+<area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="453,759,479,767,505,781,522,800,530,820,537,839,553,857,588,873,585,878,550,861,532,842,525,822,517,803,502,785,477,772,451,764"/>
+<area shape="rect" id="Node000023" href="$group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a" title="Start ADC conversion using DMA mode." alt="" coords="578,820,731,847"/>
+<area shape="poly" id="edge22_Node000021_Node000023" title=" " alt="" coords="453,763,504,780,529,793,552,806,574,813,572,818,550,810,526,798,502,785,451,769"/>
+<area shape="rect" id="Node000025" href="$group___d_r_v___u_a_r_t.html#ga1c5535d40e1775b20bd71079b44e1a84" title="Transmit data via UART using DMA." alt="" coords="602,921,707,948"/>
+<area shape="poly" id="edge24_Node000024_Node000025" title=" " alt="" coords="484,820,505,831,522,851,530,871,537,890,553,907,588,924,586,928,550,911,532,892,525,873,517,853,502,835,482,824"/>
+<area shape="rect" id="Node000027" href="$group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9" title="Set comparator threshold value." alt="" coords="582,972,727,999"/>
+<area shape="poly" id="edge26_Node000026_Node000027" title=" " alt="" coords="459,862,482,869,505,882,522,901,530,921,537,940,553,958,569,967,566,972,550,962,532,943,525,923,517,904,502,886,480,874,457,867"/>
+<area shape="rect" id="Node000031" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gadd845e487a875c4bc2392010cc7375de" title="Include required header files." alt="" coords="584,465,725,492"/>
+<area shape="poly" id="edge30_Node000030_Node000031" title=" " alt="" coords="449,454,569,467,569,472,448,459"/>
+<area shape="rect" id="Node000032" href="$group___m_i_d___l_l_c.html#ga9d8a8d24fe7974b4f9c60db897d689cc" title="LLC module function implementations." alt="" coords="613,313,696,340"/>
+<area shape="poly" id="edge31_Node000030_Node000032" title=" " alt="" coords="448,447,475,440,502,426,517,408,525,389,532,369,550,350,572,338,597,330,598,335,574,343,553,354,537,372,530,391,522,411,505,430,477,445,449,452"/>
+<area shape="rect" id="Node000033" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gabae91be5774aed961bfe05a7e3229dde" title="Configure Multi&#45;Resonant controller." alt="" coords="579,364,730,391"/>
+<area shape="poly" id="edge32_Node000030_Node000033" title=" " alt="" coords="448,443,502,426,526,413,550,400,572,393,574,398,552,405,529,418,504,430,449,448"/>
+<area shape="rect" id="Node000034" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae1aa5e0d60c20343e3e411317c199905" title="Configure individual resonant controller element." alt="" coords="551,415,758,441"/>
+<area shape="poly" id="edge33_Node000030_Node000034" title=" " alt="" coords="448,447,536,438,537,443,449,453"/>
+<area shape="rect" id="Node000036" href="$mid__measurement__handler_8c.html#aecfbba2e55ac8e1591036ef6f6dae1e9" title="Configure measurement update control structure." alt="" coords="603,567,706,593"/>
+<area shape="poly" id="edge35_Node000035_Node000036" title=" " alt="" coords="483,559,588,570,588,576,482,564"/>
+<area shape="rect" id="Node000037" href="$mid__measurement__handler_8c.html#a72e64b9fe21b4404cf1ec1b550b0d3bc" title="Initialize measurement structure." alt="" coords="593,516,716,543"/>
+<area shape="poly" id="edge36_Node000035_Node000037" title=" " alt="" coords="482,545,577,535,578,540,483,550"/>
+<area shape="poly" id="edge40_Node000038_Node000016" title=" " alt="" coords="456,702,810,683,810,688,456,707"/>
+<area shape="rect" id="Node000039" href="$group___d_r_v___p_w_m.html#ga23898da2b0024e62dae58b7059f45397" title="Enable PWM output." alt="" coords="582,769,727,796"/>
+<area shape="poly" id="edge38_Node000038_Node000039" title=" " alt="" coords="457,714,504,730,529,742,552,755,574,762,572,767,550,760,526,747,502,734,455,719"/>
+<area shape="rect" id="Node000040" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="584,617,725,644"/>
+<area shape="poly" id="edge39_Node000038_Node000040" title=" " alt="" coords="455,693,502,679,550,660,592,646,593,652,552,665,504,684,456,699"/>
+<area shape="rect" id="Node000041" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="582,719,727,745"/>
+<area shape="poly" id="edge41_Node000038_Node000041" title=" " alt="" coords="456,708,567,720,566,725,455,714"/>
+<area shape="poly" id="edge42_Node000041_Node000016" title=" " alt="" coords="717,715,810,695,811,700,719,721"/>
+<area shape="poly" id="edge46_Node000044_Node000006" title=" " alt="" coords="231,66,276,52,327,41,462,25,598,16,816,14,816,19,598,22,463,30,327,47,278,58,232,71"/>
+<area shape="rect" id="Node000046" href="$main_8c.html#a1730ffe1e560465665eb47d9264826f9" title="This function is executed in case of error occurrence." alt="" coords="364,947,466,973"/>
+<area shape="poly" id="edge48_Node000045_Node000046" title=" " alt="" coords="208,845,259,888,293,912,328,932,351,942,349,947,326,937,290,916,256,892,205,849"/>
+</map>

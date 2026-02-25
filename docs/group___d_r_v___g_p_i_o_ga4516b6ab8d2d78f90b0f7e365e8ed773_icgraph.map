@@ -1,0 +1,13 @@
+<map id="gpio_toggle_pin_" name="gpio_toggle_pin_">
+<area shape="rect" id="Node000001" title="Toggle GPIO pin state." alt="" coords="717,31,835,57"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga787e0e208d169789ad0777b293c369c8" title="Process LED blinking behavior." alt="" coords="514,5,669,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="701,36,669,32,669,27,701,31"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b" title="Set LED mode for system status indication." alt="" coords="524,56,659,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="701,57,659,63,658,57,701,52"/>
+<area shape="rect" id="Node000004" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b" title="Process LED update when flag is set." alt="" coords="290,56,466,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="509,72,467,72,467,67,509,67"/>
+<area shape="rect" id="Node000005" href="$group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f" title="Infinite loop processing for background tasks." alt="" coords="103,56,242,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="274,72,243,72,243,67,274,67"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+</map>

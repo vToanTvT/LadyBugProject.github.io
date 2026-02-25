@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: drv_adc_core.c File Reference</title>
+<title>LadyBug Firmware Documentation: Source code/_DriverLayer/adc/drv_adc_core.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -93,54 +100,45 @@ $(function(){initNavTree('drv__adc__core_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Source file for ADC driver module.  
+<p>Implementation of ADC Driver module.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="drv__adc__core_8h_source.html">drv_adc_core.h</a>&quot;</code><br />
+<code>#include &quot;main.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for drv_adc_core.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="drv__adc__core_8c__incl.png" border="0" usemap="#adrv__adc__core_8c" loading="lazy" alt=""/></div>
-<map name="adrv__adc__core_8c" id="adrv__adc__core_8c">
-<area shape="rect" title="Source file for ADC driver module." alt="" coords="5,5,116,32"/>
-<area shape="rect" href="drv__adc__core_8h.html" title="ADC driver for hardware interfacing." alt="" coords="5,80,116,107"/>
-<area shape="poly" title=" " alt="" coords="63,33,63,64,58,64,58,33"/>
-<area shape="rect" title=" " alt="" coords="28,155,93,181"/>
-<area shape="poly" title=" " alt="" coords="63,107,63,139,58,139,58,107"/>
+<div class="center"><img src="drv__adc__core_8c__incl.png" border="0" usemap="#a_source_01code_2___driver_layer_2adc_2drv__adc__core_8c" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2___driver_layer_2adc_2drv__adc__core_8c" id="a_source_01code_2___driver_layer_2adc_2drv__adc__core_8c">
+<area shape="rect" title="Implementation of ADC Driver module." alt="" coords="63,5,236,48"/>
+<area shape="rect" href="drv__adc__core_8h.html" title="Header file for ADC Driver module." alt="" coords="40,96,150,123"/>
+<area shape="poly" title=" " alt="" coords="138,50,114,85,110,82,133,47"/>
+<area shape="rect" title=" " alt="" coords="174,96,234,123"/>
+<area shape="poly" title=" " alt="" coords="166,47,189,82,185,85,161,50"/>
+<area shape="rect" title=" " alt="" coords="5,171,70,197"/>
+<area shape="poly" title=" " alt="" coords="87,125,59,160,55,157,83,122"/>
+<area shape="rect" title=" " alt="" coords="93,171,214,197"/>
+<area shape="poly" title=" " alt="" coords="107,122,136,157,132,160,103,125"/>
 </map>
 </div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="drv__adc__core_8c__dep__incl.png" border="0" usemap="#adrv__adc__core_8cdep" loading="lazy" alt=""/></div>
-<map name="adrv__adc__core_8cdep" id="adrv__adc__core_8cdep">
-<area shape="rect" title="Source file for ADC driver module." alt="" coords="5,5,116,32"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="30,80,91,107"/>
-<area shape="poly" title=" " alt="" coords="63,48,63,80,58,80,58,48"/>
-</map>
-</div>
-</div>
-<p><a href="drv__adc__core_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gadffac13c9ed303087df5376912f2f6bf" id="r_gadffac13c9ed303087df5376912f2f6bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___a_d_c.html#gadffac13c9ed303087df5376912f2f6bf">K_ADC_TIMEOUT_MS_</a>&#160;&#160;&#160;1000</td></tr>
-<tr class="memdesc:gadffac13c9ed303087df5376912f2f6bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local constant definitions.  <br /></td></tr>
-<tr class="memitem:ga06df8b827269d26565943e7898a12dbc" id="r_ga06df8b827269d26565943e7898a12dbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___a_d_c.html#ga06df8b827269d26565943e7898a12dbc">K_ADC_MAX_RETRIES_</a>&#160;&#160;&#160;3</td></tr>
-<tr class="memitem:gaab3ae09012311e80ab56555d2f667213" id="r_gaab3ae09012311e80ab56555d2f667213"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___a_d_c.html#gaab3ae09012311e80ab56555d2f667213">K_ADC_CHANNELS_</a>&#160;&#160;&#160;6</td></tr>
-</table><table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gab85cb16e003e34435b1bba7bfecbb5b9" id="r_gab85cb16e003e34435b1bba7bfecbb5b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a> (<a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</td></tr>
-<tr class="memdesc:gab85cb16e003e34435b1bba7bfecbb5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the ADC hardware and data structure.  <br /></td></tr>
+<tr class="memdesc:gab85cb16e003e34435b1bba7bfecbb5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize ADC module.  <br /></td></tr>
 <tr class="memitem:gad85cb208269700f968f1441beb35bf8a" id="r_gad85cb208269700f968f1441beb35bf8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a> (<a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</td></tr>
-<tr class="memdesc:gad85cb208269700f968f1441beb35bf8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts ADC conversion sequence in DMA mode.  <br /></td></tr>
+<tr class="memdesc:gad85cb208269700f968f1441beb35bf8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start ADC conversion using DMA mode.  <br /></td></tr>
 <tr class="memitem:ga5bff6d15fc0bf77d4b07f54700f4c434" id="r_ga5bff6d15fc0bf77d4b07f54700f4c434"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a> (<a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</td></tr>
-<tr class="memdesc:ga5bff6d15fc0bf77d4b07f54700f4c434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves and processes ADC conversion results.  <br /></td></tr>
+<tr class="memdesc:ga5bff6d15fc0bf77d4b07f54700f4c434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and process ADC conversion results.  <br /></td></tr>
 <tr class="memitem:ga16393acb40aae65ca9e14eb2444f55c5" id="r_ga16393acb40aae65ca9e14eb2444f55c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a> (<a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC)</td></tr>
-<tr class="memdesc:ga16393acb40aae65ca9e14eb2444f55c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs ADC calibration sequence.  <br /></td></tr>
+<tr class="memdesc:ga16393acb40aae65ca9e14eb2444f55c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform ADC calibration.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga26caa0d775f89d63143e0f475564a166" id="r_ga26caa0d775f89d63143e0f475564a166"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___a_d_c.html#ga26caa0d775f89d63143e0f475564a166">g_adc_data_</a></td></tr>
+<tr class="memdesc:ga26caa0d775f89d63143e0f475564a166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include public and private headers.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Source file for ADC driver module. </p>
+<div class="textblock"><p>Implementation of ADC Driver module. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
@@ -154,7 +152,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="drv__adc__core_8c.html">drv_adc_core.c</a></li>
+    <li class="navelem"><a href="dir_09b89239bb517dd22b84127916aa0cd2.html">Source code</a></li><li class="navelem"><a href="dir_00405e03c9c1104e215d41da878a945c.html">_DriverLayer</a></li><li class="navelem"><a href="dir_d4d36b4bdb451afd71f002679afd251b.html">adc</a></li><li class="navelem"><a href="drv__adc__core_8c.html">drv_adc_core.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

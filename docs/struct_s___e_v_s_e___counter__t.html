@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: S_EVSE_Counter_t Struct Reference</title>
+<title>LadyBug Firmware Documentation: S_EVSE_Counter_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -89,18 +96,27 @@ $(function(){initNavTree('struct_s___e_v_s_e___counter__t.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">S_EVSE_Counter_t Struct Reference<div class="ingroups"><a class="el" href="group___a_p_p___l_a_y_e_r.html">Application Layer</a> &raquo; <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_g_e_m_e_n_t.html">State Machine Management</a></div></div></div>
+  <div class="headertitle"><div class="title">S_EVSE_Counter_t Struct Reference<div class="ingroups"><a class="el" href="group___a_p_p_l_i_c_a_t_i_o_n___l_a_y_e_r.html">Application Layer</a> &raquo; <a class="el" href="group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html">State Management Application</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>State counter structure for debounce and delay.  
+<p>Counter structure for state timing control.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="app__state__management__handler_8h_source.html">app_state_management_handler.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_state_management_8h_source.html">StateManagement.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for S_EVSE_Counter_t:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_s___e_v_s_e___counter__t__coll__graph.png" border="0" usemap="#a_s___e_v_s_e___counter__t_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+<map name="a_s___e_v_s_e___counter__t_coll__map" id="a_s___e_v_s_e___counter__t_coll__map">
+<area shape="rect" title="Counter structure for state timing control." alt="" coords="5,5,178,277"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a02aee36035331678c8b64c0e8bfa1686" id="r_a02aee36035331678c8b64c0e8bfa1686"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02aee36035331678c8b64c0e8bfa1686">state_idle_counter</a></td></tr>
+<tr class="memitem:a50974e39a014fc92a0a46f7e066373aa" id="r_a50974e39a014fc92a0a46f7e066373aa"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50974e39a014fc92a0a46f7e066373aa">state_pfc_start_counter</a></td></tr>
 <tr class="memitem:a6d1d583c8b9fb11b3101cb5dc78cebcc" id="r_a6d1d583c8b9fb11b3101cb5dc78cebcc"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d1d583c8b9fb11b3101cb5dc78cebcc">state_softstart_counter</a></td></tr>
 <tr class="memitem:ac8b8c625e5d58ed25ace710149fbc598" id="r_ac8b8c625e5d58ed25ace710149fbc598"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8b8c625e5d58ed25ace710149fbc598">state_handshake_counter</a></td></tr>
 <tr class="memitem:a17ec81a7cf5b2a28c7011e8f704b17c5" id="r_a17ec81a7cf5b2a28c7011e8f704b17c5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17ec81a7cf5b2a28c7011e8f704b17c5">state_charging_counter</a></td></tr>
@@ -110,7 +126,8 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aa37f99f54afc673a4592182b17828635" id="r_aa37f99f54afc673a4592182b17828635"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa37f99f54afc673a4592182b17828635">state_shutdown_counter</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>State counter structure for debounce and delay. </p>
+<div class="textblock"><p>Counter structure for state timing control. </p>
+<p>Maintains separate counters for each state's delay and debounce timing. Used by both delay and debounce mechanisms to ensure stable state transitions. </p>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
 <a id="ae12c073b6fc4669cff5c6e9adfc76cfb" name="ae12c073b6fc4669cff5c6e9adfc76cfb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae12c073b6fc4669cff5c6e9adfc76cfb">&#9670;&#160;</a></span>state_autorecovery_counter</h2>
@@ -123,6 +140,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>AUTORECOVERY state counter </p>
 
 </div>
 </div>
@@ -137,6 +155,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>CHARGING state counter </p>
 
 </div>
 </div>
@@ -151,6 +170,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>FAULT state counter </p>
 
 </div>
 </div>
@@ -165,6 +185,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>FULLYCHARGED state counter </p>
 
 </div>
 </div>
@@ -179,6 +200,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>HANDSHAKE state counter </p>
 
 </div>
 </div>
@@ -193,6 +215,22 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>IDLE state counter </p>
+
+</div>
+</div>
+<a id="a50974e39a014fc92a0a46f7e066373aa" name="a50974e39a014fc92a0a46f7e066373aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50974e39a014fc92a0a46f7e066373aa">&#9670;&#160;</a></span>state_pfc_start_counter</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t state_pfc_start_counter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>PFC_START state counter </p>
 
 </div>
 </div>
@@ -207,6 +245,7 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>SHUTDOWN state counter </p>
 
 </div>
 </div>
@@ -221,11 +260,12 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>SOFTSTART state counter </p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="app__state__management__handler_8h_source.html">app_state_management_handler.h</a></li>
+<li>Source code/_MiddlewareLayer/StateManagement/<a class="el" href="_state_management_8h_source.html">StateManagement.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

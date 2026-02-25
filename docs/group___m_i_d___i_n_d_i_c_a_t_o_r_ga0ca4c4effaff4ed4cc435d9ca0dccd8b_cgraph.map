@@ -1,0 +1,11 @@
+<map id="indicator_process_update_" name="indicator_process_update_">
+<area shape="rect" id="Node000001" title="Process LED update when flag is set." alt="" coords="5,56,182,83"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga87090ef1563d11686d2f79fdecf6956b" title="Set LED mode for system status indication." alt="" coords="230,56,364,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,67,214,67,214,72,182,72"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="416,5,527,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="345,53,407,34,409,39,346,58"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="420,56,522,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="365,67,405,67,405,72,365,72"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___g_p_i_o.html#ga4516b6ab8d2d78f90b0f7e365e8ed773" title="Toggle GPIO pin state." alt="" coords="412,107,530,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="346,81,409,99,407,104,345,86"/>
+</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: Globals</title>
+<title>LadyBug Firmware Documentation: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -92,16 +99,20 @@ $(function(){initNavTree('globals_defs_p.html','',''); });
 <div class="textblock">Here is a list of all macros with links to the files they belong to:</div>
 
 <h3 class="doxsection"><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>PFC_VOL_START_DERATE&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#gaf0ad7223d375d9d20e091953104ff312">mid_power_control_handler.h</a></li>
-<li>PI&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga598a3330b3c21701223ee0ca14316eca">mid_measurement_handler.h</a></li>
-<li>PWRCTRL_DEFAULT_TEMP_COEF&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#ga7d826550664c48ca29d451b35496c421">mid_power_control_handler.h</a></li>
-<li>PWRCTRL_DEFAULT_TEMP_COEF_Q15&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#ga67cc7b70b27cecfbf0c49daf17267f29">mid_power_control_handler.h</a></li>
-<li>PWRCTRL_DEFAULT_VOLTAGE_COEF&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#gaf2cf2b96a61c74a3131e1f528588b262">mid_power_control_handler.h</a></li>
-<li>PWRCTRL_DEFAULT_VOLTAGE_COEF_Q15&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#ga993672753ece91c8ef65baf5a27dc644">mid_power_control_handler.h</a></li>
-<li>PWRCTRL_DERATE_COEF_INIT&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#ga9d7589e890b12ba88aab9bd99fcca947">mid_power_control_handler.h</a></li>
-<li>PWRCTRL_DERATE_CONDITION&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#ga59e3100b2a9c776f8aa01ab52db9be19">mid_power_control_handler.h</a></li>
-<li>PWRCTRL_INPUT_VOLT_DERATE_Q15&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#gab9bbd53e0bef89477efc991b6a3293d6">mid_power_control_handler.h</a></li>
-<li>PWRCTRL_PERIOD&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r.html#ga280ddd23f3dcdd7d9cdd6459fea5d567">mid_power_control_handler.h</a></li>
+<li>PFC_VOL_START_DERATE&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gaf0ad7223d375d9d20e091953104ff312">mid_power_control_handler.h</a></li>
+<li>PI&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga598a3330b3c21701223ee0ca14316eca">mid_measurement_handler.h</a></li>
+<li>POWER_MAX&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gaa6e76f4521435290179bf24f98731b50">mid_power_control_handler.h</a></li>
+<li>POWER_MAX_Q15&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gaa089e5d482702eba08533250dc88c053">mid_power_control_handler.h</a></li>
+<li>POWER_SOFT_LIMIT&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gae75b3ef9a66ce9aa2c978b4691e8c62a">mid_power_control_handler.h</a></li>
+<li>PWRCTRL_DEFAULT_TEMP_COEF&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga7d826550664c48ca29d451b35496c421">mid_power_control_handler.h</a></li>
+<li>PWRCTRL_DEFAULT_TEMP_COEF_Q15&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga67cc7b70b27cecfbf0c49daf17267f29">mid_power_control_handler.h</a></li>
+<li>PWRCTRL_DEFAULT_VOLTAGE_COEF&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gaf2cf2b96a61c74a3131e1f528588b262">mid_power_control_handler.h</a></li>
+<li>PWRCTRL_DEFAULT_VOLTAGE_COEF_Q15&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga993672753ece91c8ef65baf5a27dc644">mid_power_control_handler.h</a></li>
+<li>PWRCTRL_DERATE_COEF_INIT&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga9d7589e890b12ba88aab9bd99fcca947">mid_power_control_handler.h</a></li>
+<li>PWRCTRL_DERATE_CONDITION&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga59e3100b2a9c776f8aa01ab52db9be19">mid_power_control_handler.h</a></li>
+<li>PWRCTRL_INPUT_VOLT_DERATE_Q15&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gab9bbd53e0bef89477efc991b6a3293d6">mid_power_control_handler.h</a></li>
+<li>PWRCTRL_PERIOD&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga280ddd23f3dcdd7d9cdd6459fea5d567">mid_power_control_handler.h</a></li>
+<li>PWRCTRL_UPDATE_PERIOD_TICKS&#160;:&#160;<a class="el" href="group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#gae4279df7c104359ca34146a90ba5b593">mid_power_control_handler.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

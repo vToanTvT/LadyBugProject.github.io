@@ -1,0 +1,52 @@
+<map id="LB_system_initialization" name="LB_system_initialization">
+<area shape="rect" id="Node000001" title="Include required header files." alt="" coords="5,284,168,311"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9" title="Initialize ADC module." alt="" coords="261,56,334,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,283,105,245,131,194,167,140,189,115,214,92,245,77,247,82,217,97,193,118,172,143,136,197,110,247,95,285"/>
+<area shape="rect" id="Node000005" href="$group___m_i_d___c_o_m_m_u_n_i_c_a_t_i_o_n.html#ga12a29b269b35d338dc89c582752db844" title="Include public and private headers." alt="" coords="216,107,379,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="93,282,139,216,173,177,214,143,223,138,226,142,217,148,177,181,143,219,98,285"/>
+<area shape="rect" id="Node000007" href="$group___d_r_v___c_o_m_p.html#ga4553469f3dfae5c9c1cb1d96f8fc5c97" title="Initialize Comparator module." alt="" coords="255,157,340,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="100,282,148,239,180,215,214,194,239,183,242,188,217,198,183,219,151,243,103,286"/>
+<area shape="rect" id="Node000009" href="$group___m_i_d___f_a_u_l_t___m_a_n_a_g_e_m_e_n_t.html#ga83ee51b190a2d91e7de7eddf4ac2c2dc" title="Public function implementations." alt="" coords="259,208,336,235"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="120,281,215,244,243,235,245,240,217,249,122,286"/>
+<area shape="rect" id="Node000010" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga584a458491d250205bc2cad2c474f929" title="Public function implementations." alt="" coords="247,259,348,285"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="168,285,231,277,232,282,169,290"/>
+<area shape="rect" id="Node000011" href="$group___m_i_d___l_l_c.html#ga0e7d5275707c1aca1328f973c75cfa83" title="Initialize LLC control module." alt="" coords="265,309,330,336"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="169,304,249,314,249,320,168,310"/>
+<area shape="rect" id="Node000016" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaeda8e8d8c2e6a1efbaacdcc006494774" title="Initialize measurement system." alt="" coords="230,411,364,437"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="112,309,262,400,259,405,109,313"/>
+<area shape="rect" id="Node000019" href="$group___d_r_v___p_w_m.html#gad26ba1293cce44ad8a1b1ef12a88e339" title="Initialize PWM module." alt="" coords="257,512,338,539"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="101,310,150,371,218,447,271,500,268,504,214,451,146,374,97,313"/>
+<area shape="rect" id="Node000024" href="$group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga3ea28682838bb6082b26dbaf4b46d561" title="Global function prototypes." alt="" coords="252,563,343,589"/>
+<area shape="poly" id="edge24_Node000001_Node000024" title=" " alt="" coords="93,311,106,356,130,420,166,489,190,521,217,549,238,561,236,566,214,553,186,524,162,492,125,423,101,358,88,312"/>
+<area shape="rect" id="Node000025" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gab6279279ac9e404eedf7848ce01d529c" title="Global function prototypes." alt="" coords="260,613,334,640"/>
+<area shape="poly" id="edge25_Node000001_Node000025" title=" " alt="" coords="92,311,102,364,123,442,140,484,161,526,186,565,217,599,247,616,244,620,214,603,182,569,156,529,135,487,118,444,97,366,87,312"/>
+<area shape="rect" id="Node000003" href="$group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5" title="Perform ADC calibration." alt="" coords="478,5,583,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,59,462,31,463,36,335,64"/>
+<area shape="rect" id="Node000004" href="$group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a" title="Start ADC conversion using DMA mode." alt="" coords="454,56,606,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="335,67,438,67,438,72,335,72"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___u_a_r_t.html#ga1c5535d40e1775b20bd71079b44e1a84" title="Transmit data via UART using DMA." alt="" coords="478,107,582,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="379,117,462,117,462,123,379,123"/>
+<area shape="rect" id="Node000008" href="$group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9" title="Set comparator threshold value." alt="" coords="458,157,603,184"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="340,168,442,168,442,173,340,173"/>
+<area shape="rect" id="Node000012" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gadd845e487a875c4bc2392010cc7375de" title="Include required header files." alt="" coords="460,208,600,235"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="330,314,354,306,378,295,392,283,401,270,410,257,426,244,444,235,446,240,428,249,414,261,405,273,396,286,380,300,356,311,331,319"/>
+<area shape="rect" id="Node000013" href="$group___m_i_d___l_l_c.html#ga9d8a8d24fe7974b4f9c60db897d689cc" title="LLC module function implementations." alt="" coords="488,259,572,285"/>
+<area shape="poly" id="edge12_Node000011_Node000013" title=" " alt="" coords="330,313,473,282,474,287,331,318"/>
+<area shape="rect" id="Node000014" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gabae91be5774aed961bfe05a7e3229dde" title="Configure Multi&#45;Resonant controller." alt="" coords="455,309,605,336"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="330,320,440,320,440,325,330,325"/>
+<area shape="rect" id="Node000015" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae1aa5e0d60c20343e3e411317c199905" title="Configure individual resonant controller element." alt="" coords="427,360,633,387"/>
+<area shape="poly" id="edge14_Node000011_Node000015" title=" " alt="" coords="331,327,451,354,450,359,330,332"/>
+<area shape="rect" id="Node000017" href="$mid__measurement__handler_8c.html#aecfbba2e55ac8e1591036ef6f6dae1e9" title="Configure measurement update control structure." alt="" coords="479,411,581,437"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="365,421,463,421,463,427,365,427"/>
+<area shape="rect" id="Node000018" href="$mid__measurement__handler_8c.html#a72e64b9fe21b4404cf1ec1b550b0d3bc" title="Initialize measurement structure." alt="" coords="469,461,591,488"/>
+<area shape="poly" id="edge17_Node000016_Node000018" title=" " alt="" coords="363,435,455,456,453,461,362,441"/>
+<area shape="rect" id="Node000020" href="$group___d_r_v___p_w_m.html#ga23898da2b0024e62dae58b7059f45397" title="Enable PWM output." alt="" coords="458,512,602,539"/>
+<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="338,523,442,523,442,528,338,528"/>
+<area shape="rect" id="Node000021" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="460,563,601,589"/>
+<area shape="poly" id="edge20_Node000019_Node000021" title=" " alt="" coords="338,531,451,556,450,561,337,537"/>
+<area shape="rect" id="Node000022" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="681,639,795,665"/>
+<area shape="poly" id="edge21_Node000019_Node000022" title=" " alt="" coords="339,531,380,548,396,562,405,575,414,588,428,599,487,623,550,639,611,647,666,650,665,656,611,652,549,644,486,628,426,604,410,591,400,578,392,565,378,553,337,536"/>
+<area shape="rect" id="Node000023" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="458,664,603,691"/>
+<area shape="poly" id="edge22_Node000019_Node000023" title=" " alt="" coords="339,529,361,536,381,549,399,573,406,597,412,621,429,643,447,655,444,660,425,647,407,623,400,599,394,575,377,553,358,541,337,534"/>
+<area shape="poly" id="edge23_Node000023_Node000022" title=" " alt="" coords="603,666,665,658,666,663,604,671"/>
+</map>

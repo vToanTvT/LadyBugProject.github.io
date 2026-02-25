@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: drv_adc_core.h Source File</title>
+<title>LadyBug Firmware Documentation: Source code/_DriverLayer/adc/drv_adc_core.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -93,77 +100,140 @@ $(function(){initNavTree('drv__adc__core_8h_source.html','',''); });
 </div><!--header-->
 <div class="contents">
 <a href="drv__adc__core_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#ifndef DRIVERLAYER_ADC_CORE_H_</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define DRIVERLAYER_ADC_CORE_H_</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">/*==================================================================================================</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"> *                                        INCLUDES</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"> ==================================================================================================*/</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">// #include &lt;stm32g0xx_hal.h&gt;</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">/*==================================================================================================</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment"> *                                    TYPE DEFINITIONS</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment"> ==================================================================================================*/</span></div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="struct_s___adc___data___type_def.html">   46</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>{</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">   48</a></span>    uint16_t <a class="code hl_variable" href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[6];          </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="struct_s___adc___data___type_def.html#a7cf0add5681cddfb5760a8076fb9cbce">   49</a></span>    uint16_t <a class="code hl_variable" href="struct_s___adc___data___type_def.html#a7cf0add5681cddfb5760a8076fb9cbce">ADC_thermal_pfc</a>;        </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="struct_s___adc___data___type_def.html#acc3f3f60ba83b8809b768dc85180b71c">   50</a></span>    uint16_t <a class="code hl_variable" href="struct_s___adc___data___type_def.html#acc3f3f60ba83b8809b768dc85180b71c">ADC_thermal_llc</a>;        </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="struct_s___adc___data___type_def.html#a5f46e99a879143174e4d1f013ad9d34c">   51</a></span>    uint16_t <a class="code hl_variable" href="struct_s___adc___data___type_def.html#a5f46e99a879143174e4d1f013ad9d34c">ADC_current_bat</a>;        </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">   52</a></span>    uint16_t <a class="code hl_variable" href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">ADC_voltage_bat</a>;        </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="struct_s___adc___data___type_def.html#a942b5893c1e875c5f1a0b7350f16c7b5">   53</a></span>    uint16_t <a class="code hl_variable" href="struct_s___adc___data___type_def.html#a942b5893c1e875c5f1a0b7350f16c7b5">ADC_voltage_out</a>;        </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="struct_s___adc___data___type_def.html#a6e4486ef0554e48702f9095253afcc72">   54</a></span>    uint16_t <a class="code hl_variable" href="struct_s___adc___data___type_def.html#a6e4486ef0554e48702f9095253afcc72">ADC_vac</a>;                </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifndef DRIVERLAYER_ADC_CORE_H_</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define DRIVERLAYER_ADC_CORE_H_</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> *                                        INCLUDES</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &lt;stm32g0xx_hal.h&gt;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment">/***************************************************************************************************</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">* Naming Conventions for INCLUDES:</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">* --------------------------------</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">* - Use format: &lt;layer&gt;_&lt;module&gt;_&lt;role&gt;.h (e.g. drv_spi_core.h, mid_comm_handler.h)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">* - Layer: drv (driver), mid (middleware), app (application), util (utility), test (test)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">* - Include only headers necessary for declarations in this file to minimize dependencies.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment">***************************************************************************************************/</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment"> *                                        DEFINES</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#ga6da6732b91372cf0e9585a30f607484a">   49</a></span><span class="preprocessor">#define hadc hadc1</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="comment">/***************************************************************************************************</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="comment">* Naming Conventions for DEFINES:</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="comment">* ------------------------------</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment">* - Constants: K_&lt;MODULE&gt;_&lt;NAME&gt;_ (e.g. K_ADC_MAX_CHANNELS_)</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment">* - Expressions: M_&lt;MODULE&gt;_&lt;NAME&gt;_ (e.g. M_ADC_BUFFER_SIZE_)</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">* - Use UPPER_SNAKE_CASE for all macro names</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">* - Prefix macros with module name to avoid conflicts</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment">***************************************************************************************************/</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment"> *                                        MACROS</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">/***************************************************************************************************</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">* Naming Conventions for MACROS:</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="comment">* ------------------------------</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="comment">* - Function-like macros: M_&lt;MODULE&gt;_&lt;ACTION&gt;_() (e.g. M_ADC_CONVERT_(), M_ADC_VALIDATE_())</span></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="comment">* - Conditional macros: M_&lt;MODULE&gt;_&lt;CONDITION&gt;_() (e.g. M_ADC_IS_VALID_())</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="comment">* - Multi-statement macros: Use do-while(0) pattern for safety</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span><span class="comment">* - Use UPPER_SNAKE_CASE for all macro names</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment">* - Prefix macros with module name to avoid conflicts</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">***************************************************************************************************/</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="comment"> *                                   TYPE DEFINITIONS</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="};">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="struct_s___adc___data___type_def.html">  104</a></span><span class="keyword">typedef</span> <span class="keyword">struct</span>{</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#gaf0d2ffa00bdaf3b3b36ecb283f8a5b55">  105</a></span>    uint16_t <a class="code hl_variable" href="group___d_r_v___a_d_c.html#gaf0d2ffa00bdaf3b3b36ecb283f8a5b55">buffer_adc</a>[6];</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#ga6e4486ef0554e48702f9095253afcc72">  107</a></span>    uint16_t <a class="code hl_variable" href="group___d_r_v___a_d_c.html#ga6e4486ef0554e48702f9095253afcc72">ADC_vac</a>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#ga7cf0add5681cddfb5760a8076fb9cbce">  108</a></span>    uint16_t <a class="code hl_variable" href="group___d_r_v___a_d_c.html#ga7cf0add5681cddfb5760a8076fb9cbce">ADC_thermal_pfc</a>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#gacc3f3f60ba83b8809b768dc85180b71c">  109</a></span>    uint16_t <a class="code hl_variable" href="group___d_r_v___a_d_c.html#gacc3f3f60ba83b8809b768dc85180b71c">ADC_thermal_llc</a>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#ga5f46e99a879143174e4d1f013ad9d34c">  110</a></span>    uint16_t <a class="code hl_variable" href="group___d_r_v___a_d_c.html#ga5f46e99a879143174e4d1f013ad9d34c">ADC_current_bat</a>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#ga0f44518e6b76a378568af6bbc365bb2a">  111</a></span>    uint16_t <a class="code hl_variable" href="group___d_r_v___a_d_c.html#ga0f44518e6b76a378568af6bbc365bb2a">ADC_voltage_bat</a>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="group___d_r_v___a_d_c.html#ga942b5893c1e875c5f1a0b7350f16c7b5">  112</a></span>    uint16_t <a class="code hl_variable" href="group___d_r_v___a_d_c.html#ga942b5893c1e875c5f1a0b7350f16c7b5">ADC_voltage_out</a>;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>}<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a>;</div>
 </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">/*==================================================================================================</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="comment"> *                                  FUNCTION DECLARATIONS</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="comment"> ==================================================================================================*/</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span></div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="comment">/*==================================================================================================</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span><span class="comment"> *                                  GLOBAL VARIABLES</span></div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="comment"> ==================================================================================================*/</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="comment">// extern ADC_HandleTypeDef hadc1; /**&lt; ADC HAL handle */</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> <a class="code hl_variable" href="group___d_r_v___a_d_c.html#ga26caa0d775f89d63143e0f475564a166">g_adc_data_</a>; </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif </span><span class="comment">/* DRIVERLAYER_ADC_CORE_H_ */</span><span class="preprocessor"></span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> <span class="comment">// End of DRV_ADC group</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="comment">/***************************************************************************************************</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="comment"> * End of file</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span><span class="comment"> **************************************************************************************************/</span></div>
-<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga16393acb40aae65ca9e14eb2444f55c5"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a></div><div class="ttdeci">int adc_calibrate_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Performs ADC calibration sequence.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:188</div></div>
-<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga26caa0d775f89d63143e0f475564a166"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga26caa0d775f89d63143e0f475564a166">g_adc_data_</a></div><div class="ttdeci">S_Adc_Data_TypeDef g_adc_data_</div></div>
-<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga5bff6d15fc0bf77d4b07f54700f4c434"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a></div><div class="ttdeci">int adc_get_result_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Retrieves and processes ADC conversion results.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:162</div></div>
-<div class="ttc" id="agroup___d_r_v___a_d_c_html_gab85cb16e003e34435b1bba7bfecbb5b9"><div class="ttname"><a href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a></div><div class="ttdeci">int adc_init_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Initializes the ADC hardware and data structure.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:103</div></div>
-<div class="ttc" id="agroup___d_r_v___a_d_c_html_gad85cb208269700f968f1441beb35bf8a"><div class="ttname"><a href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a></div><div class="ttdeci">int adc_start_conversion_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Starts ADC conversion sequence in DMA mode.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:137</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html"><div class="ttname"><a href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a></div><div class="ttdoc">Include necessary header files.</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:47</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a0f44518e6b76a378568af6bbc365bb2a"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a0f44518e6b76a378568af6bbc365bb2a">S_Adc_Data_TypeDef::ADC_voltage_bat</a></div><div class="ttdeci">uint16_t ADC_voltage_bat</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:52</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a5f46e99a879143174e4d1f013ad9d34c"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a5f46e99a879143174e4d1f013ad9d34c">S_Adc_Data_TypeDef::ADC_current_bat</a></div><div class="ttdeci">uint16_t ADC_current_bat</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:51</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a6e4486ef0554e48702f9095253afcc72"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a6e4486ef0554e48702f9095253afcc72">S_Adc_Data_TypeDef::ADC_vac</a></div><div class="ttdeci">uint16_t ADC_vac</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:54</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a7cf0add5681cddfb5760a8076fb9cbce"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a7cf0add5681cddfb5760a8076fb9cbce">S_Adc_Data_TypeDef::ADC_thermal_pfc</a></div><div class="ttdeci">uint16_t ADC_thermal_pfc</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:49</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_a942b5893c1e875c5f1a0b7350f16c7b5"><div class="ttname"><a href="struct_s___adc___data___type_def.html#a942b5893c1e875c5f1a0b7350f16c7b5">S_Adc_Data_TypeDef::ADC_voltage_out</a></div><div class="ttdeci">uint16_t ADC_voltage_out</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:53</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_acc3f3f60ba83b8809b768dc85180b71c"><div class="ttname"><a href="struct_s___adc___data___type_def.html#acc3f3f60ba83b8809b768dc85180b71c">S_Adc_Data_TypeDef::ADC_thermal_llc</a></div><div class="ttdeci">uint16_t ADC_thermal_llc</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:50</div></div>
-<div class="ttc" id="astruct_s___adc___data___type_def_html_af0d2ffa00bdaf3b3b36ecb283f8a5b55"><div class="ttname"><a href="struct_s___adc___data___type_def.html#af0d2ffa00bdaf3b3b36ecb283f8a5b55">S_Adc_Data_TypeDef::buffer_adc</a></div><div class="ttdeci">uint16_t buffer_adc[6]</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:48</div></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="comment">/***************************************************************************************************</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="comment">* Naming Conventions for TYPE DEFINITIONS:</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="comment">* ----------------------------------------</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span><span class="comment">* - Enum: E_&lt;Module&gt;_&lt;Name&gt;_t (e.g. E_Adc_Channel_t)</span></div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="comment">* - Enum values: &lt;MODULE&gt;_&lt;NAME&gt; (e.g. ADC_CHANNEL_VAC)</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="comment">* - Struct: S_&lt;Module&gt;_&lt;Name&gt;_t (e.g. S_Adc_Data_TypeDef)</span></div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span><span class="comment">* - Struct fields: &lt;name&gt; (e.g. buffer_adc, ADC_vac)</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="comment">* - Typedef: T_&lt;Module&gt;_&lt;Name&gt;_t (e.g. T_Adc_Callback_t)</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="comment">* - Use lower_snake_case for struct fields, UPPER_SNAKE_CASE for enum values</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment">***************************************************************************************************/</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span><span class="comment"> *                                   FUNCTION PROTOTYPES</span></div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span></div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC);</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span></div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC);</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span></div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span><span class="keywordtype">int</span> <a class="code hl_function" href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a>(<a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> *pADC);</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span><span class="comment">/***************************************************************************************************</span></div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span><span class="comment">* Naming Conventions for FUNCTION PROTOTYPES:</span></div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span><span class="comment">* -------------------------------------------</span></div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span><span class="comment">* - Format: &lt;module&gt;_&lt;action&gt;_ (e.g. adc_init_(), adc_read_value_())</span></div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span><span class="comment">* - Use lower_snake_case with module prefix</span></div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span><span class="comment">* - Action verbs: init, read, write, set, get, start, stop, enable, disable</span></div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment">* - End function names with underscore (_) for consistency</span></div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">***************************************************************************************************/</span></div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span> </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span><span class="comment">/*==================================================================================================</span></div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="comment"> *                                   GLOBAL VARIABLES</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span><span class="comment"> ==================================================================================================*/</span></div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span><span class="keyword">extern</span> ADC_HandleTypeDef <a class="code hl_variable" href="group___d_r_v___a_d_c.html#ga22b804736f5648d52f639b2647d4ed13">hadc1</a>;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="keyword">extern</span> <a class="code hl_struct" href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a> <a class="code hl_variable" href="group___d_r_v___a_d_c.html#ga26caa0d775f89d63143e0f475564a166">g_adc_data_</a>;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span><span class="comment">/***************************************************************************************************</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span><span class="comment">* Naming Conventions for GLOBAL VARIABLES:</span></div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span><span class="comment">* ----------------------------------------</span></div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span><span class="comment">* - Global variables: g_&lt;module&gt;_&lt;name&gt;_ (e.g. g_adc_data_)</span></div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span><span class="comment">* - Static variables: s_&lt;module&gt;_&lt;name&gt;_ (e.g. s_adc_status_)</span></div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span><span class="comment">* - Local variables: &lt;module&gt;_&lt;name&gt;_ (e.g. adc_temp_value_)</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="comment">* - Constants: K_&lt;MODULE&gt;_&lt;NAME&gt;_ (e.g. K_ADC_MAX_VALUE_)</span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="comment">* - Pointers: &lt;type&gt;_p_&lt;name&gt;_ (e.g. adc_p_buffer_)</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="comment">* - Avoid defining variables in header; use extern declarations only</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="comment">***************************************************************************************************/</span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> <span class="comment">// End of DRV_ADC</span> <span class="comment">// End of DRIVER_LAYER</span></div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span><span class="preprocessor">#endif </span><span class="comment">/* DRIVERLAYER_ADC_CORE_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="comment">/***************************************************************************************************</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span><span class="comment"> * End of file</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span><span class="comment"> ***************************************************************************************************/</span></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga0f44518e6b76a378568af6bbc365bb2a"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga0f44518e6b76a378568af6bbc365bb2a">S_Adc_Data_TypeDef::ADC_voltage_bat</a></div><div class="ttdeci">uint16_t ADC_voltage_bat</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:111</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga16393acb40aae65ca9e14eb2444f55c5"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga16393acb40aae65ca9e14eb2444f55c5">adc_calibrate_</a></div><div class="ttdeci">int adc_calibrate_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Perform ADC calibration.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:256</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga22b804736f5648d52f639b2647d4ed13"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga22b804736f5648d52f639b2647d4ed13">hadc1</a></div><div class="ttdeci">ADC_HandleTypeDef hadc1</div><div class="ttdoc">Extern global variables for ADC module.</div><div class="ttdef"><b>Definition</b> main.c:45</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga26caa0d775f89d63143e0f475564a166"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga26caa0d775f89d63143e0f475564a166">g_adc_data_</a></div><div class="ttdeci">S_Adc_Data_TypeDef g_adc_data_</div><div class="ttdoc">Include public and private headers.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:120</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga5bff6d15fc0bf77d4b07f54700f4c434"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga5bff6d15fc0bf77d4b07f54700f4c434">adc_get_result_</a></div><div class="ttdeci">int adc_get_result_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Read and process ADC conversion results.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:223</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga5f46e99a879143174e4d1f013ad9d34c"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga5f46e99a879143174e4d1f013ad9d34c">S_Adc_Data_TypeDef::ADC_current_bat</a></div><div class="ttdeci">uint16_t ADC_current_bat</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:110</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga6e4486ef0554e48702f9095253afcc72"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga6e4486ef0554e48702f9095253afcc72">S_Adc_Data_TypeDef::ADC_vac</a></div><div class="ttdeci">uint16_t ADC_vac</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:107</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga7cf0add5681cddfb5760a8076fb9cbce"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga7cf0add5681cddfb5760a8076fb9cbce">S_Adc_Data_TypeDef::ADC_thermal_pfc</a></div><div class="ttdeci">uint16_t ADC_thermal_pfc</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:108</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_ga942b5893c1e875c5f1a0b7350f16c7b5"><div class="ttname"><a href="group___d_r_v___a_d_c.html#ga942b5893c1e875c5f1a0b7350f16c7b5">S_Adc_Data_TypeDef::ADC_voltage_out</a></div><div class="ttdeci">uint16_t ADC_voltage_out</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:112</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_gab85cb16e003e34435b1bba7bfecbb5b9"><div class="ttname"><a href="group___d_r_v___a_d_c.html#gab85cb16e003e34435b1bba7bfecbb5b9">adc_init_</a></div><div class="ttdeci">int adc_init_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Initialize ADC module.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:146</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_gacc3f3f60ba83b8809b768dc85180b71c"><div class="ttname"><a href="group___d_r_v___a_d_c.html#gacc3f3f60ba83b8809b768dc85180b71c">S_Adc_Data_TypeDef::ADC_thermal_llc</a></div><div class="ttdeci">uint16_t ADC_thermal_llc</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:109</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_gad85cb208269700f968f1441beb35bf8a"><div class="ttname"><a href="group___d_r_v___a_d_c.html#gad85cb208269700f968f1441beb35bf8a">adc_start_conversion_</a></div><div class="ttdeci">int adc_start_conversion_(S_Adc_Data_TypeDef *pADC)</div><div class="ttdoc">Start ADC conversion using DMA mode.</div><div class="ttdef"><b>Definition</b> drv_adc_core.c:189</div></div>
+<div class="ttc" id="agroup___d_r_v___a_d_c_html_gaf0d2ffa00bdaf3b3b36ecb283f8a5b55"><div class="ttname"><a href="group___d_r_v___a_d_c.html#gaf0d2ffa00bdaf3b3b36ecb283f8a5b55">S_Adc_Data_TypeDef::buffer_adc</a></div><div class="ttdeci">uint16_t buffer_adc[6]</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:105</div></div>
+<div class="ttc" id="astruct_s___adc___data___type_def_html"><div class="ttname"><a href="struct_s___adc___data___type_def.html">S_Adc_Data_TypeDef</a></div><div class="ttdoc">Public macro definitions.</div><div class="ttdef"><b>Definition</b> drv_adc_core.h:104</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="drv__adc__core_8h.html">drv_adc_core.h</a></li>
+    <li class="navelem"><a href="dir_09b89239bb517dd22b84127916aa0cd2.html">Source code</a></li><li class="navelem"><a href="dir_00405e03c9c1104e215d41da878a945c.html">_DriverLayer</a></li><li class="navelem"><a href="dir_d4d36b4bdb451afd71f002679afd251b.html">adc</a></li><li class="navelem"><a href="drv__adc__core_8h.html">drv_adc_core.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

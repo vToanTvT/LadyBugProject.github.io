@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: mid_llc_handler.c File Reference</title>
+<title>LadyBug Firmware Documentation: Source code/_MiddlewareLayer/LLC/mid_llc_handler.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -93,94 +100,173 @@ $(function(){initNavTree('mid__llc__handler_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of MID_LLC_Handler module.  
+<p>Implementation file for LLC Middleware module.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="mid__llc__handler_8h_source.html">mid_llc_handler.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mid_llc_handler.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="mid__llc__handler_8c__incl.png" border="0" usemap="#amid__llc__handler_8c" loading="lazy" alt=""/></div>
-<map name="amid__llc__handler_8c" id="amid__llc__handler_8c">
-<area shape="rect" title="Implementation of MID_LLC_Handler module." alt="" coords="221,5,343,32"/>
-<area shape="rect" href="mid__llc__handler_8h.html" title="Header file for MID_LLC_Handler module." alt="" coords="221,80,343,107"/>
-<area shape="poly" title=" " alt="" coords="285,33,285,64,279,64,279,33"/>
-<area shape="rect" href="mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="5,229,191,256"/>
-<area shape="poly" title=" " alt="" coords="221,98,186,104,150,114,117,131,91,156,85,169,83,184,89,214,84,215,78,184,80,168,87,153,114,127,148,109,185,98,220,93"/>
-<area shape="rect" href="mid__controller__handler_8h.html" title="Middleware handler for PI (Proportional&#45;Integral) controller." alt="" coords="101,155,263,181"/>
-<area shape="poly" title=" " alt="" coords="266,109,213,147,210,143,263,105"/>
-<area shape="rect" href="drv__pwm__core_8h.html" title="PWM driver for LLC converter and fan control." alt="" coords="459,304,577,331"/>
-<area shape="poly" title=" " alt="" coords="344,93,381,99,421,109,459,127,491,153,511,185,521,222,524,258,524,289,518,288,519,258,516,223,506,187,487,156,456,131,419,114,380,104,343,99"/>
-<area shape="rect" href="mid__measurement__handler_8h.html" title="Header file for MID_Measurement_Handler module." alt="" coords="288,155,476,181"/>
-<area shape="poly" title=" " alt="" coords="301,105,354,143,351,147,298,109"/>
-<area shape="rect" title=" " alt="" coords="316,379,381,405"/>
-<area shape="poly" title=" " alt="" coords="103,256,116,292,127,312,142,329,170,343,211,357,302,379,301,384,209,362,167,348,139,333,123,315,111,294,98,258"/>
-<area shape="rect" href="mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="153,304,302,331"/>
-<area shape="poly" title=" " alt="" coords="122,254,193,294,190,298,119,259"/>
-<area shape="poly" title=" " alt="" coords="250,329,316,368,313,373,247,334"/>
-<area shape="rect" title=" " alt="" coords="193,379,262,405"/>
-<area shape="poly" title=" " alt="" coords="230,331,230,363,225,363,225,331"/>
-<area shape="poly" title=" " alt="" coords="169,184,126,221,122,217,166,180"/>
-<area shape="poly" title=" " alt="" coords="189,181,206,229,223,288,218,290,201,230,184,183"/>
-<area shape="poly" title=" " alt="" coords="490,334,393,375,391,370,487,329"/>
-<area shape="poly" title=" " alt="" coords="333,184,163,228,162,222,332,179"/>
-<area shape="poly" title=" " alt="" coords="383,182,376,218,367,239,355,258,324,283,289,301,287,296,321,279,351,254,362,237,371,217,378,181"/>
-<area shape="rect" href="drv__adc__core_8h.html" title="ADC driver for hardware interfacing." alt="" coords="326,304,436,331"/>
-<area shape="poly" title=" " alt="" coords="389,181,398,215,399,256,392,290,387,289,394,256,392,216,384,182"/>
-<area shape="rect" title=" " alt="" coords="266,229,340,256"/>
-<area shape="poly" title=" " alt="" coords="370,184,330,221,326,217,366,180"/>
-<area shape="poly" title=" " alt="" coords="378,332,363,366,358,363,373,330"/>
+<div class="center"><img src="mid__llc__handler_8c__incl.png" border="0" usemap="#a_source_01code_2___middleware_layer_2_l_l_c_2mid__llc__handler_8c" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2___middleware_layer_2_l_l_c_2mid__llc__handler_8c" id="a_source_01code_2___middleware_layer_2_l_l_c_2mid__llc__handler_8c">
+<area shape="rect" title="Implementation file for LLC Middleware module." alt="" coords="316,5,519,48"/>
+<area shape="rect" href="mid__llc__handler_8h.html" title="Header file for LLC Middleware module." alt="" coords="356,96,479,123"/>
+<area shape="poly" title=" " alt="" coords="420,49,420,80,415,80,415,49"/>
+<area shape="rect" href="mid__global__define__handler_8h.html" title="Header file for Global Definitions Middleware module." alt="" coords="396,384,562,443"/>
+<area shape="poly" title=" " alt="" coords="430,122,474,185,497,229,515,277,519,307,515,337,504,370,499,369,510,335,514,307,510,278,492,231,469,188,425,125"/>
+<area shape="rect" href="mid__controller__handler_8h.html" title="Header file for Controller Middleware module." alt="" coords="334,277,501,336"/>
+<area shape="poly" title=" " alt="" coords="420,123,420,262,415,262,415,123"/>
+<area shape="rect" href="drv__pwm__core_8h.html" title="Header file for PWM Driver module." alt="" coords="586,392,739,435"/>
+<area shape="poly" title=" " alt="" coords="439,121,468,142,498,169,544,223,586,280,647,377,642,380,581,283,540,226,494,173,465,146,436,125"/>
+<area shape="rect" href="mid__measurement__handler_8h.html" title="Header file for Measurement Middleware module." alt="" coords="95,277,310,336"/>
+<area shape="poly" title=" " alt="" coords="406,125,247,268,244,265,402,121"/>
+<area shape="rect" href="mid__power__control__handler_8h.html" title="Header file for Power Control Middleware module." alt="" coords="46,171,218,229"/>
+<area shape="poly" title=" " alt="" coords="377,126,233,170,232,165,376,121"/>
+<area shape="rect" title=" " alt="" coords="381,581,446,608"/>
+<area shape="poly" title=" " alt="" coords="490,443,497,487,495,511,488,534,472,557,452,574,449,570,468,553,483,532,490,510,491,487,485,443"/>
+<area shape="rect" title=" " alt="" coords="353,499,474,525"/>
+<area shape="poly" title=" " alt="" coords="462,444,433,487,428,484,457,441"/>
+<area shape="rect" href="mid__iqmath__handler_8h.html" title="Header file for IQ Math Middleware module." alt="" coords="79,491,278,533"/>
+<area shape="poly" title=" " alt="" coords="396,444,259,488,257,483,394,439"/>
+<area shape="poly" title=" " alt="" coords="240,531,367,575,366,580,238,536"/>
+<area shape="rect" title=" " alt="" coords="145,581,213,608"/>
+<area shape="poly" title=" " alt="" coords="181,534,181,565,176,565,176,534"/>
+<area shape="poly" title=" " alt="" coords="437,335,457,369,452,372,432,338"/>
+<area shape="poly" title=" " alt="" coords="335,339,263,366,222,386,207,406,196,429,185,476,180,475,191,428,203,403,218,382,260,361,333,334"/>
+<area shape="poly" title=" " alt="" coords="639,437,510,536,449,575,446,571,507,531,636,433"/>
+<area shape="poly" title=" " alt="" coords="610,438,461,495,459,490,608,433"/>
+<area shape="poly" title=" " alt="" coords="280,334,390,376,388,381,278,339"/>
+<area shape="poly" title=" " alt="" coords="193,337,179,384,175,431,177,475,172,475,170,431,174,384,188,336"/>
+<area shape="rect" href="drv__adc__core_8h.html" title="Header file for ADC Driver module." alt="" coords="232,392,371,435"/>
+<area shape="poly" title=" " alt="" coords="232,335,274,379,270,383,228,338"/>
+<area shape="rect" title=" " alt="" coords="32,400,107,427"/>
+<area shape="poly" title=" " alt="" coords="168,339,99,392,96,388,165,334"/>
+<area shape="poly" title=" " alt="" coords="307,434,320,481,330,507,344,532,362,553,382,570,379,574,358,556,339,535,325,510,315,483,302,436"/>
+<area shape="poly" title=" " alt="" coords="327,433,389,487,386,491,324,437"/>
+<area shape="poly" title=" " alt="" coords="103,232,63,274,27,328,15,357,9,386,11,414,22,441,44,464,71,482,68,486,40,468,18,444,6,416,3,386,10,355,23,326,59,271,99,228"/>
+<area shape="poly" title=" " alt="" coords="154,228,177,263,173,266,149,231"/>
+<area shape="poly" title=" " alt="" coords="111,231,97,254,85,278,74,334,71,385,66,385,68,334,80,276,92,251,107,228"/>
 </map>
 </div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="mid__llc__handler_8c__dep__incl.png" border="0" usemap="#amid__llc__handler_8cdep" loading="lazy" alt=""/></div>
-<map name="amid__llc__handler_8cdep" id="amid__llc__handler_8cdep">
-<area shape="rect" title="Implementation of MID_LLC_Handler module." alt="" coords="5,5,128,32"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="36,80,97,107"/>
-<area shape="poly" title=" " alt="" coords="69,48,69,80,64,80,64,48"/>
-</map>
-</div>
-</div>
-<p><a href="mid__llc__handler_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9d8a8d24fe7974b4f9c60db897d689cc" id="r_ga9d8a8d24fe7974b4f9c60db897d689cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga9d8a8d24fe7974b4f9c60db897d689cc">llc_config_</a> (<a class="el" href="struct_s___l_l_c__t.html">S_LLC_t</a> *llc_config, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaf486012e51550c810ce3764fc55a3d48">E_LLC_Mode_t</a> llc_mode)</td></tr>
-<tr class="memdesc:ga9d8a8d24fe7974b4f9c60db897d689cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures LLC converter operating mode.  <br /></td></tr>
-<tr class="memitem:ga699bc1df30dc2d3f528d4a7e9f29fa24" id="r_ga699bc1df30dc2d3f528d4a7e9f29fa24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga699bc1df30dc2d3f528d4a7e9f29fa24">llc_init_</a> (void)</td></tr>
-<tr class="memdesc:ga699bc1df30dc2d3f528d4a7e9f29fa24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the complete LLC control system.  <br /></td></tr>
-<tr class="memitem:gafb985567cb7b7e7fb43ca783264c6baa" id="r_gafb985567cb7b7e7fb43ca783264c6baa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa">llc_standby_</a> (void)</td></tr>
-<tr class="memdesc:gafb985567cb7b7e7fb43ca783264c6baa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places LLC converter in safe standby mode.  <br /></td></tr>
-<tr class="memitem:ga76d8b12ca43b47c264af725dc10c1499" id="r_ga76d8b12ca43b47c264af725dc10c1499"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga76d8b12ca43b47c264af725dc10c1499">llc_update_integral_</a> (void)</td></tr>
-<tr class="memdesc:ga76d8b12ca43b47c264af725dc10c1499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates integral terms of PI controllers.  <br /></td></tr>
-<tr class="memitem:gaa7093348e9ee47fd97a3370e1496fe49" id="r_gaa7093348e9ee47fd97a3370e1496fe49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49">llc_soft_start_</a> ()</td></tr>
-<tr class="memdesc:gaa7093348e9ee47fd97a3370e1496fe49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform soft-start sequence for LLC converter.  <br /></td></tr>
-<tr class="memitem:gaa06d2118dd9547c02d2235dacdac6cc7" id="r_gaa06d2118dd9547c02d2235dacdac6cc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa06d2118dd9547c02d2235dacdac6cc7">llc_regulator_current_loop_</a> (void)</td></tr>
-<tr class="memdesc:gaa06d2118dd9547c02d2235dacdac6cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes current regulation loop using frequency control.  <br /></td></tr>
-<tr class="memitem:gadbadb6c1b30ff13e84f24f92db70a82a" id="r_gadbadb6c1b30ff13e84f24f92db70a82a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gadbadb6c1b30ff13e84f24f92db70a82a">llc_regulator_voltage_loop_</a> ()</td></tr>
-<tr class="memdesc:gadbadb6c1b30ff13e84f24f92db70a82a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute voltage regulation loop for LLC converter.  <br /></td></tr>
-<tr class="memitem:ga74ed837c6a4ca9e7d749a56dcab91e03" id="r_ga74ed837c6a4ca9e7d749a56dcab91e03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga74ed837c6a4ca9e7d749a56dcab91e03">llc_regulator_duty_loop</a> ()</td></tr>
-<tr class="memdesc:ga74ed837c6a4ca9e7d749a56dcab91e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duty cycle control loop for LLC converter.  <br /></td></tr>
-<tr class="memitem:ga60e70e3354da6e9de8b1c30063ca8b6e" id="r_ga60e70e3354da6e9de8b1c30063ca8b6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga60e70e3354da6e9de8b1c30063ca8b6e">llc_regulator_voldut_loop</a> ()</td></tr>
-<tr class="memdesc:ga60e70e3354da6e9de8b1c30063ca8b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cascaded voltage-duty control loop.  <br /></td></tr>
-<tr class="memitem:ga503cba24d2cffd938f549785cdfb8a05" id="r_ga503cba24d2cffd938f549785cdfb8a05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05">llc_regulator_hybrid_loop</a> ()</td></tr>
-<tr class="memdesc:ga503cba24d2cffd938f549785cdfb8a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hybrid control mode for LLC (PFM/PWM switching).  <br /></td></tr>
+<tr class="memitem:ga9d8a8d24fe7974b4f9c60db897d689cc" id="r_ga9d8a8d24fe7974b4f9c60db897d689cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#ga9d8a8d24fe7974b4f9c60db897d689cc">llc_config_</a> (<a class="el" href="struct_s___l_l_c__t.html">S_LLC_t</a> *llc_config, <a class="el" href="group___m_i_d___l_l_c.html#gaf486012e51550c810ce3764fc55a3d48">E_LLC_Mode_t</a> llc_mode)</td></tr>
+<tr class="memdesc:ga9d8a8d24fe7974b4f9c60db897d689cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">LLC module function implementations.  <br /></td></tr>
+<tr class="memitem:ga0e7d5275707c1aca1328f973c75cfa83" id="r_ga0e7d5275707c1aca1328f973c75cfa83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#ga0e7d5275707c1aca1328f973c75cfa83">llc_init_</a> ()</td></tr>
+<tr class="memdesc:ga0e7d5275707c1aca1328f973c75cfa83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize LLC control module.  <br /></td></tr>
+<tr class="memitem:gaf9b7ebe5587e2acd7077f8ab54023a50" id="r_gaf9b7ebe5587e2acd7077f8ab54023a50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___m_i_d___l_l_c.html#gaf486012e51550c810ce3764fc55a3d48">E_LLC_Mode_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#gaf9b7ebe5587e2acd7077f8ab54023a50">llc_select_initial_mode</a> (void)</td></tr>
+<tr class="memdesc:gaf9b7ebe5587e2acd7077f8ab54023a50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select initial LLC operating mode at startup.  <br /></td></tr>
+<tr class="memitem:gafb7ab15ea874ceb8eed0112157a2e5b9" id="r_gafb7ab15ea874ceb8eed0112157a2e5b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9">llc_standby_</a> ()</td></tr>
+<tr class="memdesc:gafb7ab15ea874ceb8eed0112157a2e5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LLC to standby state.  <br /></td></tr>
+<tr class="memitem:ga45f821431afea196f52f1a60f70564cd" id="r_ga45f821431afea196f52f1a60f70564cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#ga45f821431afea196f52f1a60f70564cd">llc_update_integral_</a> ()</td></tr>
+<tr class="memdesc:ga45f821431afea196f52f1a60f70564cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update integral term scaling for LLC controllers.  <br /></td></tr>
+<tr class="memitem:gad127a12de6fc65cf8f07d9ab3f301165" id="r_gad127a12de6fc65cf8f07d9ab3f301165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#gad127a12de6fc65cf8f07d9ab3f301165">llc_soft_start_</a> ()</td></tr>
+<tr class="memdesc:gad127a12de6fc65cf8f07d9ab3f301165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute LLC soft start sequence.  <br /></td></tr>
+<tr class="memitem:gafe4e5a77ff39dea24a2d08ef363cbcc0" id="r_gafe4e5a77ff39dea24a2d08ef363cbcc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#gafe4e5a77ff39dea24a2d08ef363cbcc0">llc_regulator_current_loop_</a> ()</td></tr>
+<tr class="memdesc:gafe4e5a77ff39dea24a2d08ef363cbcc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute current regulation loop (PFM mode).  <br /></td></tr>
+<tr class="memitem:ga2a627e165db7f32bc036d791806f01fc" id="r_ga2a627e165db7f32bc036d791806f01fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#ga2a627e165db7f32bc036d791806f01fc">llc_regulator_voltage_loop_</a> ()</td></tr>
+<tr class="memdesc:ga2a627e165db7f32bc036d791806f01fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute cascaded voltage regulation loop.  <br /></td></tr>
+<tr class="memitem:ga740d1b313849d823ccdf78e9155eaa61" id="r_ga740d1b313849d823ccdf78e9155eaa61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#ga740d1b313849d823ccdf78e9155eaa61">llc_regulator_duty_loop</a> ()</td></tr>
+<tr class="memdesc:ga740d1b313849d823ccdf78e9155eaa61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute duty cycle regulation loop (PWM mode).  <br /></td></tr>
+<tr class="memitem:ga74381259fff14dcc75e30df64adc10f0" id="r_ga74381259fff14dcc75e30df64adc10f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#ga74381259fff14dcc75e30df64adc10f0">llc_regulator_voldut_loop</a> ()</td></tr>
+<tr class="memdesc:ga74381259fff14dcc75e30df64adc10f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute cascaded voltage-to-duty regulation loop.  <br /></td></tr>
+<tr class="memitem:ga84238c737cc149f14fc61a023dd84613" id="r_ga84238c737cc149f14fc61a023dd84613"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#ga84238c737cc149f14fc61a023dd84613">llc_regulator_hybrid_loop_PI</a> ()</td></tr>
+<tr class="memdesc:ga84238c737cc149f14fc61a023dd84613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute hybrid PFM/PWM control with PI controllers.  <br /></td></tr>
+<tr class="memitem:ga3427f2eb9dd80ded3aaacaaf94d3fe74" id="r_ga3427f2eb9dd80ded3aaacaaf94d3fe74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#ga3427f2eb9dd80ded3aaacaaf94d3fe74">llc_regulator_hybrid_loop_PIR</a> ()</td></tr>
+<tr class="memdesc:ga3427f2eb9dd80ded3aaacaaf94d3fe74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute hybrid PFM/PWM control with Multi-Resonant controller.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr id="var-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Global Controller Instances</div></td></tr>
-<tr><td colspan="2" class="ititle"><div class="groupText"><p>Include public and private headers. </p>
-</div></td></tr>
-<tr class="memitem:ga72537cc95881cf6d93df3a152a730c80" id="r_ga72537cc95881cf6d93df3a152a730c80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga72537cc95881cf6d93df3a152a730c80">g_LLC_Cur_Controller</a></td></tr>
-<tr class="memdesc:ga72537cc95881cf6d93df3a152a730c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extern global variables for MID_LLC_Handler.  <br /></td></tr>
-<tr class="memitem:gab97e056791f2cab720652e412044ce27" id="r_gab97e056791f2cab720652e412044ce27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gab97e056791f2cab720652e412044ce27">g_LLC_Vol_Controller</a></td></tr>
-<tr class="memitem:gac983f854cab41029a8c9f298861e0eab" id="r_gac983f854cab41029a8c9f298861e0eab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gac983f854cab41029a8c9f298861e0eab">g_LLC_Dut_Controller</a></td></tr>
-<tr class="memitem:gafa69c06d109ffeeaa3d95e933e5a21d2" id="r_gafa69c06d109ffeeaa3d95e933e5a21d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___l_l_c__t.html">S_LLC_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafa69c06d109ffeeaa3d95e933e5a21d2">g_LLC_Config</a></td></tr>
+<tr class="memitem:a9cde648907ef07f55ab779dbc70ead50" id="r_a9cde648907ef07f55ab779dbc70ead50"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cde648907ef07f55ab779dbc70ead50">INV_FREQ_MAX</a> = 1.0f/<a class="el" href="group___m_i_d___l_l_c.html#ga94163a2b46e66d27bede4639532eed5c">FREQ_MAX</a></td></tr>
+<tr class="memdesc:a9cde648907ef07f55ab779dbc70ead50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include required header files.  <br /></td></tr>
+<tr class="memitem:a63ee9d9ec373748d3bb26a39f9318a5f" id="r_a63ee9d9ec373748d3bb26a39f9318a5f"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63ee9d9ec373748d3bb26a39f9318a5f">INV_DUTY_MAX</a> = 1.0f/<a class="el" href="group___m_i_d___l_l_c.html#ga0fd8ccea4c0d3fee95da045da247aed6">DUTY_MAX</a></td></tr>
+<tr class="memitem:ga72537cc95881cf6d93df3a152a730c80" id="r_ga72537cc95881cf6d93df3a152a730c80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#ga72537cc95881cf6d93df3a152a730c80">g_LLC_Cur_Controller</a></td></tr>
+<tr class="memdesc:ga72537cc95881cf6d93df3a152a730c80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variables with module-wide scope.  <br /></td></tr>
+<tr class="memitem:gab97e056791f2cab720652e412044ce27" id="r_gab97e056791f2cab720652e412044ce27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#gab97e056791f2cab720652e412044ce27">g_LLC_Vol_Controller</a></td></tr>
+<tr class="memitem:gac983f854cab41029a8c9f298861e0eab" id="r_gac983f854cab41029a8c9f298861e0eab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___p_i___type_def.html">S_PI_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#gac983f854cab41029a8c9f298861e0eab">g_LLC_Dut_Controller</a></td></tr>
+<tr class="memitem:gafa69c06d109ffeeaa3d95e933e5a21d2" id="r_gafa69c06d109ffeeaa3d95e933e5a21d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___l_l_c__t.html">S_LLC_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___l_l_c.html#gafa69c06d109ffeeaa3d95e933e5a21d2">g_LLC_Config</a></td></tr>
+<tr class="memitem:a29056d16f682c5e99ba52a3f753029ce" id="r_a29056d16f682c5e99ba52a3f753029ce"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_resonant___type_def.html">Resonant_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29056d16f682c5e99ba52a3f753029ce">LLC_Cur_ResonantArray</a> [<a class="el" href="group___m_i_d___l_l_c.html#ga74bd435a61707dafe1ce16ceb83dcaf8">NUM_RES_CONTROLLER</a>]</td></tr>
+<tr class="memitem:a263c808d94e16add33b207ee09f05667" id="r_a263c808d94e16add33b207ee09f05667"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_multi_resonant___type_def.html">MultiResonant_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a263c808d94e16add33b207ee09f05667">LLC_Cur_Controller_MR</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of MID_LLC_Handler module. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Implementation file for LLC Middleware module. </p>
+<p>This file implements control algorithms for LLC resonant converter. Features include:</p><ul>
+<li>Multiple regulation modes: PFM (Pulse Frequency Modulation) and PWM (Pulse Width Modulation)</li>
+<li>Multiple control loops: current loop, voltage loop, duty loop, and cascaded voltage-duty loop</li>
+<li>Hybrid control with automatic mode switching based on saturation</li>
+<li>PI and Multi-Resonant controllers for improved harmonic rejection</li>
+<li>Soft-start sequence with gradual deadtime and frequency ramping</li>
+<li>Power derate integration for thermal management</li>
+<li>Adaptive current threshold based on voltage level</li>
+<li>Fixed-point Q15 arithmetic for efficient embedded execution</li>
+</ul>
+<dl class="section version"><dt>Version</dt><dd>1.0.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>May 30, 2025 </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>EVSELab Co. Jsc. </dd></dl>
+</div><a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Variable Documentation</h2>
+<a id="a63ee9d9ec373748d3bb26a39f9318a5f" name="a63ee9d9ec373748d3bb26a39f9318a5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ee9d9ec373748d3bb26a39f9318a5f">&#9670;&#160;</a></span>INV_DUTY_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float INV_DUTY_MAX = 1.0f/<a class="el" href="group___m_i_d___l_l_c.html#ga0fd8ccea4c0d3fee95da045da247aed6">DUTY_MAX</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inverse of maximum duty for scaling </p>
+
+</div>
+</div>
+<a id="a9cde648907ef07f55ab779dbc70ead50" name="a9cde648907ef07f55ab779dbc70ead50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cde648907ef07f55ab779dbc70ead50">&#9670;&#160;</a></span>INV_FREQ_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const float INV_FREQ_MAX = 1.0f/<a class="el" href="group___m_i_d___l_l_c.html#ga94163a2b46e66d27bede4639532eed5c">FREQ_MAX</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Include required header files. </p>
+<p>Private constant definitions. Inverse of maximum frequency for scaling </p>
+
+</div>
+</div>
+<a id="a263c808d94e16add33b207ee09f05667" name="a263c808d94e16add33b207ee09f05667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a263c808d94e16add33b207ee09f05667">&#9670;&#160;</a></span>LLC_Cur_Controller_MR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_multi_resonant___type_def.html">MultiResonant_TypeDef</a> LLC_Cur_Controller_MR</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Multi-Resonant controller instance </p>
+
+</div>
+</div>
+<a id="a29056d16f682c5e99ba52a3f753029ce" name="a29056d16f682c5e99ba52a3f753029ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29056d16f682c5e99ba52a3f753029ce">&#9670;&#160;</a></span>LLC_Cur_ResonantArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_resonant___type_def.html">Resonant_TypeDef</a> LLC_Cur_ResonantArray[<a class="el" href="group___m_i_d___l_l_c.html#ga74bd435a61707dafe1ce16ceb83dcaf8">NUM_RES_CONTROLLER</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Resonant controller array (100Hz, 120Hz) </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
 <div id="page-nav-resize-handle"></div>
@@ -193,7 +279,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="mid__llc__handler_8c.html">mid_llc_handler.c</a></li>
+    <li class="navelem"><a href="dir_09b89239bb517dd22b84127916aa0cd2.html">Source code</a></li><li class="navelem"><a href="dir_851f7514f5bd6dec6a6845ba932ee371.html">_MiddlewareLayer</a></li><li class="navelem"><a href="dir_cd520316976140de1196ac387d29cad0.html">LLC</a></li><li class="navelem"><a href="mid__llc__handler_8c.html">mid_llc_handler.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

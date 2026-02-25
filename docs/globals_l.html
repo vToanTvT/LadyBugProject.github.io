@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: Globals</title>
+<title>LadyBug Firmware Documentation: Globals</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -92,38 +99,53 @@ $(function(){initNavTree('globals_l.html','',''); });
 <div class="textblock">Here is a list of all functions, variables, defines, enums, and typedefs with links to the files they belong to:</div>
 
 <h3 class="doxsection"><a id="index_l" name="index_l"></a>- l -</h3><ul>
-<li>LB_inf_loop_system()&#160;:&#160;<a class="el" href="_lady_bug_8c.html#acbc3745ea25400eacd9f3ec0104fe540">LadyBug.c</a>, <a class="el" href="_lady_bug_8h.html#acbc3745ea25400eacd9f3ec0104fe540">LadyBug.h</a></li>
-<li>LB_main_interrupt_service()&#160;:&#160;<a class="el" href="_lady_bug_8c.html#a085c52fc0af5b2b87e7887a559ddacab">LadyBug.c</a>, <a class="el" href="_lady_bug_8h.html#a085c52fc0af5b2b87e7887a559ddacab">LadyBug.h</a></li>
-<li>LB_system_initialization()&#160;:&#160;<a class="el" href="_lady_bug_8c.html#a42976755d32f1ba3595eb4385ffa2867">LadyBug.c</a>, <a class="el" href="_lady_bug_8h.html#a42976755d32f1ba3595eb4385ffa2867">LadyBug.h</a></li>
-<li>llc_config_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga9d8a8d24fe7974b4f9c60db897d689cc">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga9d8a8d24fe7974b4f9c60db897d689cc">mid_llc_handler.h</a></li>
-<li>LLC_END_DEADTIME&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gab1e3e5c6477a316bbdf323f3d677180d">mid_llc_handler.h</a></li>
-<li>LLC_END_DUTY&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga8afad7ae246ba0a7b191a1b7a1dafad6">mid_llc_handler.h</a></li>
-<li>LLC_END_FREQUENCY&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga0f21e0c3db3a7fbf1856685b99e27257">mid_llc_handler.h</a></li>
-<li>llc_init_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga699bc1df30dc2d3f528d4a7e9f29fa24">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga699bc1df30dc2d3f528d4a7e9f29fa24">mid_llc_handler.h</a></li>
-<li>LLC_MODE_PFM&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ggaf486012e51550c810ce3764fc55a3d48a6aeb67af37c15b89656f40af358f07c3">mid_llc_handler.h</a></li>
-<li>LLC_MODE_PWM&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ggaf486012e51550c810ce3764fc55a3d48ac0a1ef75308fc7995f162d5933d51c60">mid_llc_handler.h</a></li>
-<li>llc_regulator_current_loop_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa06d2118dd9547c02d2235dacdac6cc7">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa06d2118dd9547c02d2235dacdac6cc7">mid_llc_handler.h</a></li>
-<li>llc_regulator_duty_loop()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga74ed837c6a4ca9e7d749a56dcab91e03">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga74ed837c6a4ca9e7d749a56dcab91e03">mid_llc_handler.h</a></li>
-<li>llc_regulator_hybrid_loop()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga503cba24d2cffd938f549785cdfb8a05">mid_llc_handler.h</a></li>
-<li>llc_regulator_voldut_loop()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga60e70e3354da6e9de8b1c30063ca8b6e">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga60e70e3354da6e9de8b1c30063ca8b6e">mid_llc_handler.h</a></li>
-<li>llc_regulator_voltage_loop_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gadbadb6c1b30ff13e84f24f92db70a82a">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gadbadb6c1b30ff13e84f24f92db70a82a">mid_llc_handler.h</a></li>
-<li>llc_soft_start_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaa7093348e9ee47fd97a3370e1496fe49">mid_llc_handler.h</a></li>
-<li>llc_standby_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gafb985567cb7b7e7fb43ca783264c6baa">mid_llc_handler.h</a></li>
-<li>llc_update_integral_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga76d8b12ca43b47c264af725dc10c1499">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga76d8b12ca43b47c264af725dc10c1499">mid_llc_handler.h</a></li>
-<li>LOW_LIMIT_CUR&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga2f1e0add0fa60e710b07cc1279d9a02f">mid_llc_handler.h</a></li>
-<li>LOW_LIMIT_CUR_Q15&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#gaccec82662e3c87feb6372c9e92a084d8">mid_llc_handler.h</a></li>
-<li>LOW_LIMIT_VOL&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga051dd5244abae06ddec491444939da55">mid_llc_handler.h</a></li>
-<li>LOW_LIMIT_VOL_Q15&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c___h_a_n_d_l_e_r.html#ga289bd81fef74811c410f38b8d219a033">mid_llc_handler.h</a></li>
-<li>LPF_GAIN_001Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaf6c086114ebb6a0b9cc0cf100b8571d5">mid_measurement_handler.h</a></li>
-<li>LPF_GAIN_010Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga78594fbdc942b34093ee5fc0d090b1dc">mid_measurement_handler.h</a></li>
-<li>LPF_GAIN_01kHz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaa5ac57fd7b9b8c23f190c665669c16ec">mid_measurement_handler.h</a></li>
-<li>LPF_GAIN_02kHz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gadc81313f351db6889e7fd9cdcd2f15be">mid_measurement_handler.h</a></li>
-<li>LPF_GAIN_0_5Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#gaa04c6a936cc5e074c3ad740ed9cd8d91">mid_measurement_handler.h</a></li>
-<li>LPF_GAIN_100Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga014489e5e28d84fc7a2c4cec657f4974">mid_measurement_handler.h</a></li>
-<li>LPF_GAIN_10kHz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga1eb986adeafd6c682abf5d74c9f894a1">mid_measurement_handler.h</a></li>
-<li>LPF_GAIN_200Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga2664033b34c3c90b073c968acce2d7fa">mid_measurement_handler.h</a></li>
-<li>LPF_GAIN_20kHz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga1ca9de5bf392c80548f71598657ae3e8">mid_measurement_handler.h</a></li>
-<li>LPF_GAIN_500Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t___h_a_n_d_l_e_r.html#ga34acd14de9f6b082b4c79648ff46e382">mid_measurement_handler.h</a></li>
+<li>LB_inf_loop_system()&#160;:&#160;<a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f">LadyBug.c</a>, <a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f">LadyBug.h</a></li>
+<li>LB_main_interrupt_service()&#160;:&#160;<a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd">LadyBug.c</a>, <a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd">LadyBug.h</a></li>
+<li>LB_system_initialization()&#160;:&#160;<a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842">LadyBug.c</a>, <a class="el" href="group___a_p_p___l_a_d_y_b_u_g.html#ga92575d106e9621cd83364e7921c16842">LadyBug.h</a></li>
+<li>LED1_GPIO_Port&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga0f2b198c57d3f7bfa5fb789743ab67ce">drv_gpio_core.h</a></li>
+<li>LED1_Pin&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga53f9670b915a28d987db1c08b25dedad">drv_gpio_core.h</a></li>
+<li>LED2_GPIO_Port&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga23a7287d8a29ae7030f0e30427cf2837">drv_gpio_core.h</a></li>
+<li>LED2_Pin&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga4efaabd90ea562958ac22e0b077f0d9f">drv_gpio_core.h</a></li>
+<li>LED3_GPIO_Port&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga71c3e500032a31fc42dfff4ac071bcdb">drv_gpio_core.h</a></li>
+<li>LED3_Pin&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#gaa730e8f563c757d110ecc98bbea3f0ad">drv_gpio_core.h</a></li>
+<li>LED4_GPIO_Port&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga3ebc48ae86f1014d2ab681c469a7cd98">drv_gpio_core.h</a></li>
+<li>LED4_Pin&#160;:&#160;<a class="el" href="group___d_r_v___g_p_i_o.html#ga20da6050ff511a24f2c294378db4ffdc">drv_gpio_core.h</a></li>
+<li>LEDMODE_ACTIVE&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa8d06102c09677226a4b6764497b7938f">mid_indicator_handler.h</a></li>
+<li>LEDMODE_COMPLETE&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaaddb5cb279f1ab3530178a08621637c58">mid_indicator_handler.h</a></li>
+<li>LEDMODE_ERROR&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa0aa356e09b2c4d0ff0079b31a01410d7">mid_indicator_handler.h</a></li>
+<li>LEDMODE_STANDBY&#160;:&#160;<a class="el" href="group___m_i_d___i_n_d_i_c_a_t_o_r.html#gga25ed4e6b8baeaf04ee5f7c03faed0ffaa47b15c933ee4139ed0c9a58983a86c10">mid_indicator_handler.h</a></li>
+<li>llc_config_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga9d8a8d24fe7974b4f9c60db897d689cc">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga9d8a8d24fe7974b4f9c60db897d689cc">mid_llc_handler.h</a></li>
+<li>LLC_Cur_Controller_MR&#160;:&#160;<a class="el" href="mid__llc__handler_8c.html#a263c808d94e16add33b207ee09f05667">mid_llc_handler.c</a></li>
+<li>LLC_Cur_ResonantArray&#160;:&#160;<a class="el" href="mid__llc__handler_8c.html#a29056d16f682c5e99ba52a3f753029ce">mid_llc_handler.c</a></li>
+<li>LLC_END_DEADTIME&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#gab1e3e5c6477a316bbdf323f3d677180d">mid_llc_handler.h</a></li>
+<li>LLC_END_DUTY&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga8afad7ae246ba0a7b191a1b7a1dafad6">mid_llc_handler.h</a></li>
+<li>llc_init_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga0e7d5275707c1aca1328f973c75cfa83">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga0e7d5275707c1aca1328f973c75cfa83">mid_llc_handler.h</a></li>
+<li>LLC_MODE_PFM&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ggaf486012e51550c810ce3764fc55a3d48a6aeb67af37c15b89656f40af358f07c3">mid_llc_handler.h</a></li>
+<li>LLC_MODE_PWM&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ggaf486012e51550c810ce3764fc55a3d48ac0a1ef75308fc7995f162d5933d51c60">mid_llc_handler.h</a></li>
+<li>llc_regulator_current_loop_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#gafe4e5a77ff39dea24a2d08ef363cbcc0">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#gafe4e5a77ff39dea24a2d08ef363cbcc0">mid_llc_handler.h</a></li>
+<li>llc_regulator_duty_loop()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga740d1b313849d823ccdf78e9155eaa61">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga740d1b313849d823ccdf78e9155eaa61">mid_llc_handler.h</a></li>
+<li>llc_regulator_hybrid_loop_PI()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga84238c737cc149f14fc61a023dd84613">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga84238c737cc149f14fc61a023dd84613">mid_llc_handler.h</a></li>
+<li>llc_regulator_hybrid_loop_PIR()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga3427f2eb9dd80ded3aaacaaf94d3fe74">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga3427f2eb9dd80ded3aaacaaf94d3fe74">mid_llc_handler.h</a></li>
+<li>llc_regulator_voldut_loop()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga74381259fff14dcc75e30df64adc10f0">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga74381259fff14dcc75e30df64adc10f0">mid_llc_handler.h</a></li>
+<li>llc_regulator_voltage_loop_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga2a627e165db7f32bc036d791806f01fc">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga2a627e165db7f32bc036d791806f01fc">mid_llc_handler.h</a></li>
+<li>llc_select_initial_mode()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#gaf9b7ebe5587e2acd7077f8ab54023a50">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#gaf9b7ebe5587e2acd7077f8ab54023a50">mid_llc_handler.h</a></li>
+<li>llc_soft_start_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#gad127a12de6fc65cf8f07d9ab3f301165">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#gad127a12de6fc65cf8f07d9ab3f301165">mid_llc_handler.h</a></li>
+<li>llc_standby_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9">mid_llc_handler.h</a></li>
+<li>llc_update_integral_()&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga45f821431afea196f52f1a60f70564cd">mid_llc_handler.c</a>, <a class="el" href="group___m_i_d___l_l_c.html#ga45f821431afea196f52f1a60f70564cd">mid_llc_handler.h</a></li>
+<li>LOW_LIMIT_CUR&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga2f1e0add0fa60e710b07cc1279d9a02f">mid_llc_handler.h</a></li>
+<li>LOW_LIMIT_CUR_Q15&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#gaccec82662e3c87feb6372c9e92a084d8">mid_llc_handler.h</a></li>
+<li>LOW_LIMIT_VOL&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga051dd5244abae06ddec491444939da55">mid_llc_handler.h</a></li>
+<li>LOW_LIMIT_VOL_Q15&#160;:&#160;<a class="el" href="group___m_i_d___l_l_c.html#ga289bd81fef74811c410f38b8d219a033">mid_llc_handler.h</a></li>
+<li>LPF_GAIN_001Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaf6c086114ebb6a0b9cc0cf100b8571d5">mid_measurement_handler.h</a></li>
+<li>LPF_GAIN_010Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga78594fbdc942b34093ee5fc0d090b1dc">mid_measurement_handler.h</a></li>
+<li>LPF_GAIN_01kHz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaa5ac57fd7b9b8c23f190c665669c16ec">mid_measurement_handler.h</a></li>
+<li>LPF_GAIN_02kHz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gadc81313f351db6889e7fd9cdcd2f15be">mid_measurement_handler.h</a></li>
+<li>LPF_GAIN_0_5Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gaa04c6a936cc5e074c3ad740ed9cd8d91">mid_measurement_handler.h</a></li>
+<li>LPF_GAIN_100Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga014489e5e28d84fc7a2c4cec657f4974">mid_measurement_handler.h</a></li>
+<li>LPF_GAIN_10kHz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga1eb986adeafd6c682abf5d74c9f894a1">mid_measurement_handler.h</a></li>
+<li>LPF_GAIN_200Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga2664033b34c3c90b073c968acce2d7fa">mid_measurement_handler.h</a></li>
+<li>LPF_GAIN_20kHz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga1ca9de5bf392c80548f71598657ae3e8">mid_measurement_handler.h</a></li>
+<li>LPF_GAIN_500Hz_T&#160;:&#160;<a class="el" href="group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga34acd14de9f6b082b4c79648ff46e382">mid_measurement_handler.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

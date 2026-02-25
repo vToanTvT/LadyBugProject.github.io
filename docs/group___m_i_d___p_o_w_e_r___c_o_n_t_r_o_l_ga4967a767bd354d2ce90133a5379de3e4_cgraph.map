@@ -1,0 +1,5 @@
+<map id="pwrctrl_process_update_" name="pwrctrl_process_update_">
+<area shape="rect" id="Node000001" title="Process periodic update when flag is set." alt="" coords="5,5,172,32"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___p_o_w_e_r___c_o_n_t_r_o_l.html#ga0d28bfa2310fbd7c34ce2ed130bc3356" title="Update derating coefficients and power calculations." alt="" coords="220,5,365,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,16,204,16,204,21,172,21"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="communication_transmit" name="communication_transmit">
+<area shape="rect" id="Node000001" title="Include required header files." alt="" coords="5,5,169,32"/>
+<area shape="rect" id="Node000002" href="$group___d_r_v___u_a_r_t.html#ga1c5535d40e1775b20bd71079b44e1a84" title="Transmit data via UART using DMA." alt="" coords="217,5,321,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,16,201,16,201,21,169,21"/>
+</map>

@@ -1,12 +1,22 @@
 var searchData=
 [
-  ['calc_5fmethod_0',['calc_method',['../struct_s___meas___type_def.html#a90cb3a0278489a47122f3857cedb041d',1,'S_Meas_TypeDef']]],
-  ['channel_1',['channel',['../struct_s___pwm___config___type_def.html#a0c72dd5e18823aef187a34137983c9a6',1,'S_Pwm_Config_TypeDef']]],
-  ['cnt_5fcompare_2',['cnt_compare',['../struct_s___pwm___config___type_def.html#a4390687555bbc8035897fbf9457688b2',1,'S_Pwm_Config_TypeDef']]],
-  ['cnt_5fdeadtime_3',['cnt_deadtime',['../struct_s___pwm___config___type_def.html#a771c06457025fded13f9140441a5d19d',1,'S_Pwm_Config_TypeDef']]],
-  ['cnt_5ftimebase_4',['cnt_timebase',['../struct_s___pwm___config___type_def.html#a3884b42792d861acb4e5561ea63fb6ca',1,'S_Pwm_Config_TypeDef']]],
-  ['coef_5fq15_5',['coef_q15',['../struct_s___derate_point__t.html#af8c4457540bc1fc81e147dc3a657da81',1,'S_DeratePoint_t']]],
-  ['comp_5fthreshold_6',['comp_threshold',['../struct_s___comp___type_def.html#af6ba3377b9f5f09dbce8fd1e03c29e14',1,'S_Comp_TypeDef']]],
-  ['count_7',['count',['../structuart__transfer__t.html#af6a39bfc7e1dc3b6f9c997c1c43fa996',1,'uart_transfer_t']]],
-  ['counter_8',['counter',['../struct_s___indicator___led___config___type_def.html#a51322ddb267b4729d6b5f2bb05d49fff',1,'S_Indicator_Led_Config_TypeDef::counter'],['../struct_s___meas___update_type_def.html#aeb824be75611cc83b9b6e8d18b66bfc1',1,'S_Meas_UpdateTypeDef::counter'],['../struct_s___power_ctrl__t.html#aeb824be75611cc83b9b6e8d18b66bfc1',1,'S_PowerCtrl_t::counter']]]
+  ['calc_5fmethod_0',['calc_method',['../group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga90cb3a0278489a47122f3857cedb041d',1,'S_Meas_TypeDef']]],
+  ['channel_1',['channel',['../group___d_r_v___p_w_m.html#ga0c72dd5e18823aef187a34137983c9a6',1,'S_Pwm_Config_TypeDef']]],
+  ['channel_5fdac_2',['channel_dac',['../group___d_r_v___c_o_m_p.html#gaa3a277706860b684ceb66e6edbaddf4f',1,'S_Comp_TypeDef']]],
+  ['check_3',['check',['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#gad47d5b159b4c95a163edac9d1b659751',1,'check:&#160;mid_global_define_handler.c'],['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#gad47d5b159b4c95a163edac9d1b659751',1,'check:&#160;mid_global_define_handler.c']]],
+  ['check_5fisr_4',['check_isr',['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga8d049da0c63aa41543c8d951c1a6fdf3',1,'check_isr:&#160;mid_global_define_handler.c'],['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga8d049da0c63aa41543c8d951c1a6fdf3',1,'check_isr:&#160;mid_global_define_handler.c']]],
+  ['check_5fmain_5',['check_main',['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga3102ef516035385a8def2b4e1282440b',1,'check_main:&#160;mid_global_define_handler.c'],['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga3102ef516035385a8def2b4e1282440b',1,'check_main:&#160;mid_global_define_handler.c']]],
+  ['clkcycledelta_6',['clkCycleDelta',['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#gaa131ac633ce6edcb98205dd9bb60aae2',1,'clkCycleDelta:&#160;mid_global_define_handler.c'],['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#gaa131ac633ce6edcb98205dd9bb60aae2',1,'clkCycleDelta:&#160;mid_global_define_handler.c']]],
+  ['clkcycledeltamax_7',['clkCycleDeltaMax',['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#gaceb9ea60adb7fdf49607bf25c16dd1c9',1,'clkCycleDeltaMax:&#160;mid_global_define_handler.c'],['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#gaceb9ea60adb7fdf49607bf25c16dd1c9',1,'clkCycleDeltaMax:&#160;mid_global_define_handler.c']]],
+  ['clkcyclestart_8',['clkCycleStart',['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga8d819fad2c4249a5b825c212d2cb3366',1,'clkCycleStart:&#160;mid_global_define_handler.c'],['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#ga8d819fad2c4249a5b825c212d2cb3366',1,'clkCycleStart:&#160;mid_global_define_handler.c']]],
+  ['clkcyclestop_9',['clkCycleStop',['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#gab261899de4a3ad56086c31c63de49916',1,'clkCycleStop:&#160;mid_global_define_handler.c'],['../group___m_i_d___g_l_o_b_a_l___d_e_f_i_n_e.html#gab261899de4a3ad56086c31c63de49916',1,'clkCycleStop:&#160;mid_global_define_handler.c']]],
+  ['cnt_5fcompare_10',['cnt_compare',['../group___d_r_v___p_w_m.html#ga4390687555bbc8035897fbf9457688b2',1,'S_Pwm_Config_TypeDef']]],
+  ['cnt_5fdeadtime_11',['cnt_deadtime',['../group___d_r_v___p_w_m.html#ga771c06457025fded13f9140441a5d19d',1,'S_Pwm_Config_TypeDef']]],
+  ['cnt_5ftimebase_12',['cnt_timebase',['../group___d_r_v___p_w_m.html#ga3884b42792d861acb4e5561ea63fb6ca',1,'S_Pwm_Config_TypeDef']]],
+  ['coef_5fq15_13',['coef_q15',['../struct_s___derate_point__t.html#af8c4457540bc1fc81e147dc3a657da81',1,'S_DeratePoint_t']]],
+  ['comp_14',['comp',['../group___d_r_v___c_o_m_p.html#gafa59c2f9ec039bb1637988969b75f6dc',1,'S_Comp_TypeDef']]],
+  ['comp_5fthreshold_15',['comp_threshold',['../group___d_r_v___c_o_m_p.html#gaf6ba3377b9f5f09dbce8fd1e03c29e14',1,'S_Comp_TypeDef']]],
+  ['counter_16',['counter',['../group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga51322ddb267b4729d6b5f2bb05d49fff',1,'S_Indicator_Led_Config_TypeDef::counter'],['../group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga51322ddb267b4729d6b5f2bb05d49fff',1,'S_Led_UpdateTypeDef::counter'],['../group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga51322ddb267b4729d6b5f2bb05d49fff',1,'S_Meas_UpdateTypeDef::counter'],['../group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga51322ddb267b4729d6b5f2bb05d49fff',1,'S_Fan_UpdateTypeDef::counter'],['../struct_s___power_ctrl__t.html#a51322ddb267b4729d6b5f2bb05d49fff',1,'S_PowerCtrl_t::counter']]],
+  ['current_5ftemp_5findex_17',['current_temp_index',['../struct_s___power_ctrl__t.html#ae5b57e50481da13117c7f96d8b8e8a4f',1,'S_PowerCtrl_t']]],
+  ['current_5fvolt_5findex_18',['current_volt_index',['../struct_s___power_ctrl__t.html#a4f0742d580c408adafae937fb91467a3',1,'S_PowerCtrl_t']]]
 ];

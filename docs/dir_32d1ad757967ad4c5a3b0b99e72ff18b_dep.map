@@ -1,0 +1,22 @@
+<map id="Source code/_MiddlewareLayer/StateManagement" name="Source code/_MiddlewareLayer/StateManagement">
+<area shape="rect" id="node1" href="dir_360533581529c8172ac940888d138517.html" title="Peripheral" alt="" coords="27,128,106,155"/>
+<area shape="rect" id="node2" href="dir_e022a53a642931de97fc251a729a4061.html" title="FaultManagement" alt="" coords="131,128,256,155"/>
+<area shape="rect" id="node3" href="dir_dbaf29d4518b25160225c9409530ccc8.html" title="Measurement" alt="" coords="280,128,381,155"/>
+<area shape="rect" id="node4" href="dir_cd520316976140de1196ac387d29cad0.html" title="LLC" alt="" coords="405,128,451,155"/>
+<area shape="rect" id="node5" href="dir_4e369dd7162ec8e253ebf633a45e295f.html" title="PowerControl" alt="" coords="475,128,576,155"/>
+<area shape="rect" id="node6" href="dir_67496b5798e854d5b2512183130e10ae.html" title="Indicator" alt="" coords="599,128,670,155"/>
+<area shape="rect" id="node7" href="dir_32d1ad757967ad4c5a3b0b99e72ff18b.html" title="StateManagement" alt="" coords="315,53,442,80"/>
+<area shape="poly" id="edge1" href="dir_000017_000013.html" alt="" coords="325,83,122,130,121,125,323,78"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000017_000013.html" title="1" alt="" coords="123,127,130,143"/>
+<area shape="poly" id="edge6" href="dir_000017_000006.html" alt="" coords="347,83,241,124,239,119,345,78"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000017_000006.html" title="1" alt="" coords="242,121,249,137"/>
+<area shape="poly" id="edge5" href="dir_000017_000012.html" alt="" coords="373,82,350,117,345,114,368,79"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000017_000012.html" title="1" alt="" coords="353,109,360,125"/>
+<area shape="poly" id="edge4" href="dir_000017_000011.html" alt="" coords="389,79,413,114,409,117,385,82"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000017_000011.html" title="1" alt="" coords="413,100,420,116"/>
+<area shape="poly" id="edge2" href="dir_000017_000014.html" alt="" coords="405,78,487,118,485,123,403,83"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000017_000014.html" title="1" alt="" coords="484,104,491,120"/>
+<area shape="poly" id="edge3" href="dir_000017_000009.html" alt="" coords="424,78,585,123,583,128,423,83"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000017_000009.html" title="1" alt="" coords="580,109,587,125"/>
+<area shape="rect" id="clust1" href="dir_851f7514f5bd6dec6a6845ba932ee371.html" title="_MiddlewareLayer" alt="" coords="16,16,681,165"/>
+</map>

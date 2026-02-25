@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: mid_peripheral_handler.h File Reference</title>
+<title>LadyBug Firmware Documentation: Source code/_MiddlewareLayer/Peripheral/mid_peripheral_handler.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -93,52 +100,94 @@ $(function(){initNavTree('mid__peripheral__handler_8h.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Peripheral control and relay management middleware.  
+<p>Header file for Peripheral Middleware module.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="drv__gpio__core_8h_source.html">drv_gpio_core.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;../_DriverLayer/gpio/drv_gpio_core.h&quot;</code><br />
+<code>#include &quot;../_DriverLayer/pwm/drv_pwm_core.h&quot;</code><br />
+<code>#include &quot;../_MiddlewareLayer/Measurement/mid_measurement_handler.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mid_peripheral_handler.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="mid__peripheral__handler_8h__incl.png" border="0" usemap="#amid__peripheral__handler_8h" loading="lazy" alt=""/></div>
-<map name="amid__peripheral__handler_8h" id="amid__peripheral__handler_8h">
-<area shape="rect" title="Peripheral control and relay management middleware." alt="" coords="5,5,171,32"/>
-<area shape="rect" href="drv__gpio__core_8h.html" title="GPIO driver for pin configuration and control." alt="" coords="31,80,145,107"/>
-<area shape="poly" title=" " alt="" coords="91,33,91,64,85,64,85,33"/>
-<area shape="rect" title=" " alt="" coords="56,155,120,181"/>
-<area shape="poly" title=" " alt="" coords="91,107,91,139,85,139,85,107"/>
+<div class="center"><img src="mid__peripheral__handler_8h__incl.png" border="0" usemap="#a_source_01code_2___middleware_layer_2_peripheral_2mid__peripheral__handler_8h" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2___middleware_layer_2_peripheral_2mid__peripheral__handler_8h" id="a_source_01code_2___middleware_layer_2_peripheral_2mid__peripheral__handler_8h">
+<area shape="rect" title="Header file for Peripheral Middleware module." alt="" coords="133,5,336,64"/>
+<area shape="rect" title=" " alt="" coords="5,120,141,163"/>
+<area shape="poly" title=" " alt="" coords="192,67,119,114,116,109,189,62"/>
+<area shape="rect" title=" " alt="" coords="165,120,304,163"/>
+<area shape="poly" title=" " alt="" coords="237,64,237,105,232,105,232,64"/>
+<area shape="rect" title=" " alt="" coords="328,112,543,171"/>
+<area shape="poly" title=" " alt="" coords="291,62,368,102,366,107,288,67"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="mid__peripheral__handler_8h__dep__incl.png" border="0" usemap="#amid__peripheral__handler_8hdep" loading="lazy" alt=""/></div>
-<map name="amid__peripheral__handler_8hdep" id="amid__peripheral__handler_8hdep">
-<area shape="rect" title="Peripheral control and relay management middleware." alt="" coords="5,5,171,32"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="58,155,118,181"/>
-<area shape="poly" title=" " alt="" coords="72,46,56,81,55,100,60,120,80,153,75,155,55,122,50,101,51,79,67,44"/>
-<area shape="rect" href="mid__peripheral__handler_8c.html" title="Middleware for peripheral relay control." alt="" coords="65,80,231,107"/>
-<area shape="poly" title=" " alt="" coords="110,42,140,78,136,81,106,46"/>
-<area shape="poly" title=" " alt="" coords="130,120,100,156,96,153,126,117"/>
+<div class="center"><img src="mid__peripheral__handler_8h__dep__incl.png" border="0" usemap="#a_source_01code_2___middleware_layer_2_peripheral_2mid__peripheral__handler_8hdep" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2___middleware_layer_2_peripheral_2mid__peripheral__handler_8hdep" id="a_source_01code_2___middleware_layer_2_peripheral_2mid__peripheral__handler_8hdep">
+<area shape="rect" title="Header file for Peripheral Middleware module." alt="" coords="131,5,334,64"/>
+<area shape="rect" href="mid__peripheral__handler_8c.html" title="Implementation file for Peripheral Middleware module." alt="" coords="5,112,209,171"/>
+<area shape="poly" title=" " alt="" coords="188,76,143,114,140,110,185,72"/>
+<area shape="rect" href="_state_management_8h.html" title="Header file for State Management Application module." alt="" coords="233,120,485,163"/>
+<area shape="poly" title=" " alt="" coords="280,72,336,117,332,122,277,76"/>
+<area shape="rect" href="_state_management_8c.html" title="Implementation file for State Management Application module." alt="" coords="233,219,485,261"/>
+<area shape="poly" title=" " alt="" coords="362,178,362,218,356,218,356,178"/>
 </map>
 </div>
 </div>
 <p><a href="mid__peripheral__handler_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:S_5FFAN" id="r_S_5FFAN"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s___f_a_n.html">S_FAN</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public macro definitions.  <a href="struct_s___f_a_n.html#details">More...</a><br /></td></tr>
+<tr class="memitem:S_5FFan_5FUpdateTypeDef" id="r_S_5FFan_5FUpdateTypeDef"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_s___fan___update_type_def.html">S_Fan_UpdateTypeDef</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fan update control structure.  <a href="struct_s___fan___update_type_def.html#details">More...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga8abb85394abb52683a88a5c813a1dbb5" id="r_ga8abb85394abb52683a88a5c813a1dbb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga8abb85394abb52683a88a5c813a1dbb5">DUTY_FAN_LOW_POWER</a>&#160;&#160;&#160;20</td></tr>
+<tr class="memdesc:ga8abb85394abb52683a88a5c813a1dbb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include required header files.  <br /></td></tr>
+<tr class="memitem:ga08472d44e87b231eec74b2083c2c0b4a" id="r_ga08472d44e87b231eec74b2083c2c0b4a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga08472d44e87b231eec74b2083c2c0b4a">DUTY_FAN_HIGH_POWER</a>&#160;&#160;&#160;80</td></tr>
+<tr class="memitem:gae7237291e5dd904b9eeeb466dd59fb19" id="r_gae7237291e5dd904b9eeeb466dd59fb19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae7237291e5dd904b9eeeb466dd59fb19">TEMP_THRESHOLD_HIGH</a>&#160;&#160;&#160;65</td></tr>
+<tr class="memitem:ga37aea109a37b3e252e89be6ef84df8a6" id="r_ga37aea109a37b3e252e89be6ef84df8a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga37aea109a37b3e252e89be6ef84df8a6">TEMP_THRESHOLD_LOW</a>&#160;&#160;&#160;40</td></tr>
+<tr class="memitem:gab9ca9a982130be9d54fb6d136e770965" id="r_gab9ca9a982130be9d54fb6d136e770965"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gab9ca9a982130be9d54fb6d136e770965">VAC_THRESHOLD_LOW</a>&#160;&#160;&#160;120</td></tr>
+<tr class="memitem:ga4e9ba87c356963e57006b8f3e5a6e812" id="r_ga4e9ba87c356963e57006b8f3e5a6e812"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga4e9ba87c356963e57006b8f3e5a6e812">VAC_THRESHOLD_HIGH</a>&#160;&#160;&#160;140</td></tr>
+<tr class="memitem:gab0b92606465c691bee11d63d3c5f0982" id="r_gab0b92606465c691bee11d63d3c5f0982"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gab0b92606465c691bee11d63d3c5f0982">FAN_UPDATE_PERIOD_TICKS</a>&#160;&#160;&#160;100000</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr id="func-members-0" class="groupHeader"><td colspan="2"><div class="groupHeader">LLC Relay Control Functions</div></td></tr>
-<tr class="memitem:ga2ab40e496ed47c23875cbb65b689e9a4" id="r_ga2ab40e496ed47c23875cbb65b689e9a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga2ab40e496ed47c23875cbb65b689e9a4">peripheral_on_llc_relay_</a> (void)</td></tr>
-<tr class="memdesc:ga2ab40e496ed47c23875cbb65b689e9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable LLC stage relay.  <br /></td></tr>
-<tr class="memitem:ga3964b50e6ae1e0fffa533ee5ce56211d" id="r_ga3964b50e6ae1e0fffa533ee5ce56211d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga3964b50e6ae1e0fffa533ee5ce56211d">peripheral_off_llc_relay_</a> (void)</td></tr>
-<tr class="memdesc:ga3964b50e6ae1e0fffa533ee5ce56211d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable LLC stage relay.  <br /></td></tr>
-<tr id="func-members-1" class="groupHeader"><td colspan="2"><div class="groupHeader">PFC Relay Control Functions</div></td></tr>
-<tr class="memitem:gae09a4fb82f031ec0de625ec8271496f4" id="r_gae09a4fb82f031ec0de625ec8271496f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#gae09a4fb82f031ec0de625ec8271496f4">peripheral_on_pfc_relay_</a> (void)</td></tr>
-<tr class="memdesc:gae09a4fb82f031ec0de625ec8271496f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable PFC stage relay.  <br /></td></tr>
-<tr class="memitem:ga5ab6542999b127993cd599854a65f2fb" id="r_ga5ab6542999b127993cd599854a65f2fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l___h_a_n_d_l_e_r.html#ga5ab6542999b127993cd599854a65f2fb">peripheral_off_pfc_relay_</a> (void)</td></tr>
-<tr class="memdesc:ga5ab6542999b127993cd599854a65f2fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable PFC stage relay.  <br /></td></tr>
+<tr class="memitem:ga2ab40e496ed47c23875cbb65b689e9a4" id="r_ga2ab40e496ed47c23875cbb65b689e9a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga2ab40e496ed47c23875cbb65b689e9a4">peripheral_on_llc_relay_</a> (void)</td></tr>
+<tr class="memdesc:ga2ab40e496ed47c23875cbb65b689e9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peripheral module function implementations.  <br /></td></tr>
+<tr class="memitem:ga3964b50e6ae1e0fffa533ee5ce56211d" id="r_ga3964b50e6ae1e0fffa533ee5ce56211d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga3964b50e6ae1e0fffa533ee5ce56211d">peripheral_off_llc_relay_</a> (void)</td></tr>
+<tr class="memdesc:ga3964b50e6ae1e0fffa533ee5ce56211d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable LLC relay.  <br /></td></tr>
+<tr class="memitem:gae09a4fb82f031ec0de625ec8271496f4" id="r_gae09a4fb82f031ec0de625ec8271496f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae09a4fb82f031ec0de625ec8271496f4">peripheral_on_pfc_relay_</a> (void)</td></tr>
+<tr class="memdesc:gae09a4fb82f031ec0de625ec8271496f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable PFC relay.  <br /></td></tr>
+<tr class="memitem:ga5ab6542999b127993cd599854a65f2fb" id="r_ga5ab6542999b127993cd599854a65f2fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga5ab6542999b127993cd599854a65f2fb">peripheral_off_pfc_relay_</a> (void)</td></tr>
+<tr class="memdesc:ga5ab6542999b127993cd599854a65f2fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable PFC relay.  <br /></td></tr>
+<tr class="memitem:gae12639ea85a4757563a55dac9b1fc54c" id="r_gae12639ea85a4757563a55dac9b1fc54c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae12639ea85a4757563a55dac9b1fc54c">peripheral_on_pfc_vcomp_</a> (void)</td></tr>
+<tr class="memdesc:gae12639ea85a4757563a55dac9b1fc54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable PFC voltage compensation signal.  <br /></td></tr>
+<tr class="memitem:gadec52c1bfc71292a44e1e8c248ad8344" id="r_gadec52c1bfc71292a44e1e8c248ad8344"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gadec52c1bfc71292a44e1e8c248ad8344">peripheral_off_pfc_vcomp_</a> (void)</td></tr>
+<tr class="memdesc:gadec52c1bfc71292a44e1e8c248ad8344"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable PFC voltage compensation signal.  <br /></td></tr>
+<tr class="memitem:gae389a4ec8879fd13922b8c01b691c7c3" id="r_gae389a4ec8879fd13922b8c01b691c7c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae389a4ec8879fd13922b8c01b691c7c3">peripheral_control_fan_</a> ()</td></tr>
+<tr class="memdesc:gae389a4ec8879fd13922b8c01b691c7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Control fan speed with rule-based system.  <br /></td></tr>
+<tr class="memitem:gab84b9c81bef5d760800ce5dff4ef70e0" id="r_gab84b9c81bef5d760800ce5dff4ef70e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gab84b9c81bef5d760800ce5dff4ef70e0">peripheral_enable_fan_</a> (void)</td></tr>
+<tr class="memdesc:gab84b9c81bef5d760800ce5dff4ef70e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable fan operation.  <br /></td></tr>
+<tr class="memitem:gac5a6e14268bd3d31e4ca078bfc23389d" id="r_gac5a6e14268bd3d31e4ca078bfc23389d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gac5a6e14268bd3d31e4ca078bfc23389d">peripheral_disable_fan_</a> (void)</td></tr>
+<tr class="memdesc:gac5a6e14268bd3d31e4ca078bfc23389d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable fan operation.  <br /></td></tr>
+<tr class="memitem:gadb8df55b1530025ce335441cda79041b" id="r_gadb8df55b1530025ce335441cda79041b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gadb8df55b1530025ce335441cda79041b">peripheral_tick_</a> (<a class="el" href="struct_s___fan___update_type_def.html">S_Fan_UpdateTypeDef</a> *fan_ctrl)</td></tr>
+<tr class="memdesc:gadb8df55b1530025ce335441cda79041b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tick function for fan control update.  <br /></td></tr>
+<tr class="memitem:ga0d941d936181024d0a591cbf438f35cd" id="r_ga0d941d936181024d0a591cbf438f35cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga0d941d936181024d0a591cbf438f35cd">peripheral_process_update_</a> (<a class="el" href="struct_s___fan___update_type_def.html">S_Fan_UpdateTypeDef</a> *fan_ctrl)</td></tr>
+<tr class="memdesc:ga0d941d936181024d0a591cbf438f35cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process fan control update if flag set.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gad6f773814f8d2292f2b6db7edced4e17" id="r_gad6f773814f8d2292f2b6db7edced4e17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___f_a_n.html">S_FAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gad6f773814f8d2292f2b6db7edced4e17">g_fan_control</a></td></tr>
+<tr class="memdesc:gad6f773814f8d2292f2b6db7edced4e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global variables exported by Peripheral module.  <br /></td></tr>
+<tr class="memitem:ga1267db926f876e7725598ea9ee6bb954" id="r_ga1267db926f876e7725598ea9ee6bb954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___fan___update_type_def.html">S_Fan_UpdateTypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga1267db926f876e7725598ea9ee6bb954">g_fan_ctrl</a></td></tr>
+<tr class="memdesc:ga1267db926f876e7725598ea9ee6bb954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include required header files.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Peripheral control and relay management middleware. </p>
+<div class="textblock"><p>Header file for Peripheral Middleware module. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
@@ -152,7 +201,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="mid__peripheral__handler_8h.html">mid_peripheral_handler.h</a></li>
+    <li class="navelem"><a href="dir_09b89239bb517dd22b84127916aa0cd2.html">Source code</a></li><li class="navelem"><a href="dir_851f7514f5bd6dec6a6845ba932ee371.html">_MiddlewareLayer</a></li><li class="navelem"><a href="dir_360533581529c8172ac940888d138517.html">Peripheral</a></li><li class="navelem"><a href="mid__peripheral__handler_8h.html">mid_peripheral_handler.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

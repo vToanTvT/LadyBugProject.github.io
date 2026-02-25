@@ -1,0 +1,9 @@
+<map id="indicator_set_mode" name="indicator_set_mode">
+<area shape="rect" id="Node000001" title="Set LED mode for system status indication." alt="" coords="514,5,649,32"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___i_n_d_i_c_a_t_o_r.html#ga0ca4c4effaff4ed4cc435d9ca0dccd8b" title="Process LED update when flag is set." alt="" coords="290,5,466,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="499,21,467,21,467,16,499,16"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___l_a_d_y_b_u_g.html#gaa975937fac78c9e28b50ff05c8325e2f" title="Infinite loop processing for background tasks." alt="" coords="103,5,242,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="274,21,243,21,243,16,274,16"/>
+<area shape="rect" id="Node000004" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="The application entry point." alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

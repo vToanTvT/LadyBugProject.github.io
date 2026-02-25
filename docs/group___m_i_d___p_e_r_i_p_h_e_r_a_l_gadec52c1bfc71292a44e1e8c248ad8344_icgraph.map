@@ -1,0 +1,13 @@
+<map id="peripheral_off_pfc_vcomp_" name="peripheral_off_pfc_vcomp_">
+<area shape="rect" id="Node000001" title="Disable PFC voltage compensation signal." alt="" coords="934,5,1057,48"/>
+<area shape="rect" id="Node000002" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gac044c2a9b23a166045e549e87cf16015" title="Handle PFC_START state operations." alt="" coords="737,13,886,40"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="918,29,886,29,886,24,918,24"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state machine." alt="" coords="592,13,689,40"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="721,29,689,29,689,24,721,24"/>
+<area shape="rect" id="Node000004" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga8a7c85b9c345204d44030fb96316a5eb" title="EVSE application processing handler." alt="" coords="365,13,544,40"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="577,29,545,29,545,24,577,24"/>
+<area shape="rect" id="Node000005" href="$group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd" title="Main interrupt service routine for real&#45;time control." alt="" coords="142,13,317,40"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="350,29,318,29,318,24,350,24"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a4665d4e1d5fea2d34089d4e50a763751" title=" " alt="" coords="5,13,94,40"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="126,29,94,29,94,24,126,24"/>
+</map>

@@ -1,12 +1,14 @@
-<map id="mid_global_define_handler.c" name="mid_global_define_handler.c">
-<area shape="rect" id="Node000001" title="Implementation of fixed&#45;point ramping and transition functions." alt="" coords="5,5,191,32"/>
-<area shape="rect" id="Node000002" href="$mid__global__define__handler_8h.html" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="5,80,191,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,33,101,64,95,64,95,33"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="20,229,85,256"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="93,108,70,156,58,214,53,213,65,154,88,106"/>
-<area shape="rect" id="Node000004" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="80,155,228,181"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="110,106,137,141,133,144,106,109"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="138,184,84,222,81,218,135,180"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="120,229,188,256"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="157,182,157,214,151,214,151,182"/>
+<map id="Source code/_MiddlewareLayer/GlobalDefine/mid_global_define_handler.c" name="Source code/_MiddlewareLayer/GlobalDefine/mid_global_define_handler.c">
+<area shape="rect" id="Node000001" title="Implementation file for Global Definitions Middleware module." alt="" coords="5,5,209,64"/>
+<area shape="rect" id="Node000002" href="$mid__global__define__handler_8h.html" title="Header file for Global Definitions Middleware module." alt="" coords="14,112,200,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,64,110,96,104,96,104,64"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="74,277,138,304"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="84,141,58,161,37,188,32,208,37,228,52,249,71,266,68,270,48,253,33,230,26,208,33,185,54,157,81,137"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="47,195,167,221"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="110,139,110,179,104,179,104,139"/>
+<area shape="rect" id="Node000005" href="$mid__iqmath__handler_8h.html" title="Header file for IQ Math Middleware module." alt="" coords="191,187,391,229"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="137,137,231,178,229,183,135,142"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="244,232,150,273,148,268,242,227"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="257,277,325,304"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="294,230,294,261,288,261,288,230"/>
 </map>

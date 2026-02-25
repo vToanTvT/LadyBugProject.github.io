@@ -1,0 +1,29 @@
+<map id="state_fullychargedHandle" name="state_fullychargedHandle">
+<area shape="rect" id="Node000001" title="Handle FULLYCHARGED state operations (LLC relay off, PFC comp on, PFC relay off, LLC standby)" alt="" coords="5,276,174,303"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___l_l_c.html#gafb7ab15ea874ceb8eed0112157a2e5b9" title="Set LLC to standby state." alt="" coords="263,157,357,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,273,268,190,271,194,118,278"/>
+<area shape="rect" id="Node000009" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga3964b50e6ae1e0fffa533ee5ce56211d" title="Disable LLC relay." alt="" coords="251,235,369,277"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="173,274,235,265,236,270,174,279"/>
+<area shape="rect" id="Node000011" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#ga5ab6542999b127993cd599854a65f2fb" title="Disable PFC relay." alt="" coords="248,301,372,344"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="174,299,233,308,232,314,173,305"/>
+<area shape="rect" id="Node000012" href="$group___m_i_d___p_e_r_i_p_h_e_r_a_l.html#gae12639ea85a4757563a55dac9b1fc54c" title="Enable PFC voltage compensation signal." alt="" coords="222,368,398,395"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="116,301,165,327,223,354,241,360,240,365,221,358,162,332,114,306"/>
+<area shape="rect" id="Node000003" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#ga2d517a90930117bcda9492ca3f4a775e" title="Process PI controller computation." alt="" coords="450,5,602,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,155,370,101,406,69,445,42,455,36,458,41,447,46,409,73,374,104,324,159"/>
+<area shape="rect" id="Node000004" href="$group___m_i_d___c_o_n_t_r_o_l_l_e_r.html#gae9a4b1f0f417f77a1db32a7dc4ca1253" title="Process Multi&#45;Resonant controller computation." alt="" coords="446,56,606,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="331,155,382,124,445,92,461,86,463,91,447,97,385,129,334,159"/>
+<area shape="rect" id="Node000005" href="$group___d_r_v___p_w_m.html#ga458d338428ee338f681aea91905b4f26" title="Disable PWM output." alt="" coords="452,107,600,133"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="357,157,450,135,452,140,358,162"/>
+<area shape="rect" id="Node000006" href="$group___d_r_v___p_w_m.html#gad39744fcb0ef85f0b63c4dec1a62ca63" title="Set PWM dead&#45;time." alt="" coords="456,157,597,184"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="358,168,440,168,440,173,358,173"/>
+<area shape="rect" id="Node000007" href="$group___d_r_v___p_w_m.html#ga116567f2c1c3d8f8419bc896bf1fd293" title="Set PWM duty cycle." alt="" coords="654,233,768,260"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="358,177,639,231,638,236,357,182"/>
+<area shape="rect" id="Node000008" href="$group___d_r_v___p_w_m.html#gaaad481cc551cace115ec60a74249a1da" title="Set PWM frequency." alt="" coords="454,259,599,285"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="338,182,447,238,475,250,473,255,445,242,335,187"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="599,259,639,254,639,259,600,265"/>
+<area shape="rect" id="Node000010" href="$group___d_r_v___g_p_i_o.html#gae3496ae9fc231061c5da379a05932c31" title="Clear GPIO pin to LOW." alt="" coords="470,309,582,336"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="370,272,466,302,465,307,369,277"/>
+<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="372,320,455,320,455,325,372,325"/>
+<area shape="rect" id="Node000013" href="$group___d_r_v___g_p_i_o.html#ga4271fb2a50347e4f4489da04a31bf6f4" title="Include public and private headers." alt="" coords="476,368,577,395"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="398,379,460,379,460,384,398,384"/>
+</map>

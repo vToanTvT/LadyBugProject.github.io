@@ -1,0 +1,19 @@
+<map id="peripheral_off_pfc_relay_" name="peripheral_off_pfc_relay_">
+<area shape="rect" id="Node000001" title="Disable PFC relay." alt="" coords="953,48,1076,91"/>
+<area shape="rect" id="Node000002" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga55640c3a709e22874c844ffee4440939" title="Handle FAULT state operations." alt="" coords="759,5,882,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="938,52,874,35,875,30,939,47"/>
+<area shape="rect" id="Node000007" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gaa609d54e2438e5450f96fd281720c5cf" title="Handle FULLYCHARGED state operations." alt="" coords="737,56,905,83"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="938,72,905,72,905,67,938,67"/>
+<area shape="rect" id="Node000008" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga25f2b5c68a1ec0310d97a37e6309f183" title="Handle IDLE state operations." alt="" coords="762,107,880,133"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="939,92,875,109,874,104,938,87"/>
+<area shape="rect" id="Node000003" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#gafc5058be8e5904fe82c000699ae798d8" title="Update EVSE state machine." alt="" coords="592,56,689,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="757,39,690,58,688,53,756,34"/>
+<area shape="rect" id="Node000004" href="$group___a_p_p___s_t_a_t_e___m_a_n_a_g_e_m_e_n_t.html#ga8a7c85b9c345204d44030fb96316a5eb" title="EVSE application processing handler." alt="" coords="365,56,544,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="577,72,545,72,545,67,577,67"/>
+<area shape="rect" id="Node000005" href="$group___a_p_p___l_a_d_y_b_u_g.html#ga45b2b0ff3f21c7abe00874a5057a0efd" title="Main interrupt service routine for real&#45;time control." alt="" coords="142,56,317,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="350,72,318,72,318,67,350,67"/>
+<area shape="rect" id="Node000006" href="$main_8c.html#a4665d4e1d5fea2d34089d4e50a763751" title=" " alt="" coords="5,56,94,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="126,72,94,72,94,67,126,67"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="721,72,689,72,689,67,721,67"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="756,105,688,85,690,80,757,99"/>
+</map>

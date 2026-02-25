@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.14.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LadyBug: drv_comp_core.c File Reference</title>
+<title>LadyBug Firmware Documentation: Source code/_DriverLayer/comp/drv_comp_core.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,6 +17,13 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -26,9 +33,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LadyBug<span id="projectnumber">&#160;v1.0</span>
+   <div id="projectname">LadyBug Firmware Documentation<span id="projectnumber">&#160;v2.1</span>
    </div>
-   <div id="projectbrief">This is the first version</div>
+   <div id="projectbrief">Update data according main board hardware ver2.1</div>
   </td>
  </tr>
  </tbody>
@@ -93,52 +100,45 @@ $(function(){initNavTree('drv__comp__core_8c.html','',''); });
 </div><!--header-->
 <div class="contents">
 
-<p>Source file for comparator driver module.  
+<p>Implementation of Comparator Driver module.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="drv__comp__core_8h_source.html">drv_comp_core.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for drv_comp_core.c:</div>
 <div class="dyncontent">
-<div class="center"><img src="drv__comp__core_8c__incl.png" border="0" usemap="#adrv__comp__core_8c" loading="lazy" alt=""/></div>
-<map name="adrv__comp__core_8c" id="adrv__comp__core_8c">
-<area shape="rect" title="Source file for comparator driver module." alt="" coords="5,5,127,32"/>
-<area shape="rect" href="drv__comp__core_8h.html" title="Header file for comparator driver module." alt="" coords="5,80,127,107"/>
-<area shape="poly" title=" " alt="" coords="69,33,69,64,63,64,63,33"/>
-<area shape="rect" title=" " alt="" coords="34,155,98,181"/>
-<area shape="poly" title=" " alt="" coords="69,107,69,139,63,139,63,107"/>
+<div class="center"><img src="drv__comp__core_8c__incl.png" border="0" usemap="#a_source_01code_2___driver_layer_2comp_2drv__comp__core_8c" loading="lazy" alt=""/></div>
+<map name="a_source_01code_2___driver_layer_2comp_2drv__comp__core_8c" id="a_source_01code_2___driver_layer_2comp_2drv__comp__core_8c">
+<area shape="rect" title="Implementation of Comparator Driver module." alt="" coords="19,5,192,48"/>
+<area shape="rect" href="drv__comp__core_8h.html" title="Header file for Comparator Driver module." alt="" coords="45,96,166,123"/>
+<area shape="poly" title=" " alt="" coords="108,49,108,80,103,80,103,49"/>
+<area shape="rect" title=" " alt="" coords="5,171,102,197"/>
+<area shape="poly" title=" " alt="" coords="99,125,73,160,69,157,94,122"/>
+<area shape="rect" title=" " alt="" coords="125,171,190,197"/>
+<area shape="poly" title=" " alt="" coords="117,122,142,157,138,160,112,125"/>
 </map>
 </div>
-</div><div class="textblock"><div class="dynheader">
-This graph shows which files directly or indirectly include this file:</div>
-<div class="dyncontent">
-<div class="center"><img src="drv__comp__core_8c__dep__incl.png" border="0" usemap="#adrv__comp__core_8cdep" loading="lazy" alt=""/></div>
-<map name="adrv__comp__core_8cdep" id="adrv__comp__core_8cdep">
-<area shape="rect" title="Source file for comparator driver module." alt="" coords="5,5,127,32"/>
-<area shape="rect" href="main_8c.html" title=" " alt="" coords="36,80,96,107"/>
-<area shape="poly" title=" " alt="" coords="69,48,69,80,63,80,63,48"/>
-</map>
-</div>
-</div>
-<p><a href="drv__comp__core_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad782d128a4f5dedfff981ab3452de59d" id="r_gad782d128a4f5dedfff981ab3452de59d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#gad782d128a4f5dedfff981ab3452de59d">comp_init_</a> (<a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> *pcomp)</td></tr>
-<tr class="memdesc:gad782d128a4f5dedfff981ab3452de59d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize comparator module.  <br /></td></tr>
+<tr class="memitem:ga4553469f3dfae5c9c1cb1d96f8fc5c97" id="r_ga4553469f3dfae5c9c1cb1d96f8fc5c97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga4553469f3dfae5c9c1cb1d96f8fc5c97">comp_init_</a> ()</td></tr>
+<tr class="memdesc:ga4553469f3dfae5c9c1cb1d96f8fc5c97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize Comparator module.  <br /></td></tr>
 <tr class="memitem:ga79780eab52f33a6dcb63d5e0a9703ec9" id="r_ga79780eab52f33a6dcb63d5e0a9703ec9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga79780eab52f33a6dcb63d5e0a9703ec9">comp_set_threshold_</a> (<a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> *pcomp)</td></tr>
-<tr class="memdesc:ga79780eab52f33a6dcb63d5e0a9703ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update comparator threshold.  <br /></td></tr>
+<tr class="memdesc:ga79780eab52f33a6dcb63d5e0a9703ec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set comparator threshold value.  <br /></td></tr>
 <tr class="memitem:ga416d150f7c79ea1d9136122110b6334e" id="r_ga416d150f7c79ea1d9136122110b6334e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga416d150f7c79ea1d9136122110b6334e">comp_set_state_</a> (<a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> *pcomp)</td></tr>
-<tr class="memdesc:ga416d150f7c79ea1d9136122110b6334e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set protection triggered state.  <br /></td></tr>
+<tr class="memdesc:ga416d150f7c79ea1d9136122110b6334e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set comparator state flag to SET.  <br /></td></tr>
+<tr class="memitem:ga65ec317dc45cf4d3e5c89735a6ae94ee" id="r_ga65ec317dc45cf4d3e5c89735a6ae94ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga65ec317dc45cf4d3e5c89735a6ae94ee">comp_get_state_</a> (<a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> *pcomp)</td></tr>
+<tr class="memdesc:ga65ec317dc45cf4d3e5c89735a6ae94ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read and update comparator state from hardware.  <br /></td></tr>
 <tr class="memitem:ga127eaaf52bcbe81e23c9e2c1a3a2c20e" id="r_ga127eaaf52bcbe81e23c9e2c1a3a2c20e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga127eaaf52bcbe81e23c9e2c1a3a2c20e">comp_reset_protection</a> (<a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a> *pcomp)</td></tr>
-<tr class="memdesc:ga127eaaf52bcbe81e23c9e2c1a3a2c20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset protection system.  <br /></td></tr>
+<tr class="memdesc:ga127eaaf52bcbe81e23c9e2c1a3a2c20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset and reinitialize comparator protection system.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ga77641fe5a1618bd61cd1ef18df22db3b" id="r_ga77641fe5a1618bd61cd1ef18df22db3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga77641fe5a1618bd61cd1ef18df22db3b">g_thisComp_</a></td></tr>
-<tr class="memdesc:ga77641fe5a1618bd61cd1ef18df22db3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Include public and private headers.  <br /></td></tr>
+<tr class="memitem:ga0d289d33fd0727716659d14b126c27fc" id="r_ga0d289d33fd0727716659d14b126c27fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga0d289d33fd0727716659d14b126c27fc">g_thisComp_ipri</a></td></tr>
+<tr class="memdesc:ga0d289d33fd0727716659d14b126c27fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module-scope variables.  <br /></td></tr>
+<tr class="memitem:ga418305d1d14a3670de61398f6be368fb" id="r_ga418305d1d14a3670de61398f6be368fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_s___comp___type_def.html">S_Comp_TypeDef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___d_r_v___c_o_m_p.html#ga418305d1d14a3670de61398f6be368fb">g_thisComp_ibat</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Source file for comparator driver module. </p>
+<div class="textblock"><p>Implementation of Comparator Driver module. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">
@@ -152,7 +152,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="drv__comp__core_8c.html">drv_comp_core.c</a></li>
+    <li class="navelem"><a href="dir_09b89239bb517dd22b84127916aa0cd2.html">Source code</a></li><li class="navelem"><a href="dir_00405e03c9c1104e215d41da878a945c.html">_DriverLayer</a></li><li class="navelem"><a href="dir_397e66c98b5e20516e47b91c2fd3d53c.html">comp</a></li><li class="navelem"><a href="drv__comp__core_8c.html">drv_comp_core.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
   </ul>
 </div>

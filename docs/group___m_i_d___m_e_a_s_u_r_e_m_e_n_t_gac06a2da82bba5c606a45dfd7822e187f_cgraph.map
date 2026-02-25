@@ -1,0 +1,13 @@
+<map id="meas_process_update_" name="meas_process_update_">
+<area shape="rect" id="Node000001" title="Process measurement averaging update if flag set." alt="" coords="5,31,165,57"/>
+<area shape="rect" id="Node000002" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gab8a9c3244586ea0d412e3e391157fa5e" title="Update measurements to float format." alt="" coords="217,5,375,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,32,201,27,201,33,165,37"/>
+<area shape="rect" id="Node000004" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gac11d0b2fe43fdbaf29be8a7885271706" title="Update average values for all critical measurements." alt="" coords="213,56,379,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="165,51,197,55,197,60,165,56"/>
+<area shape="rect" id="Node000003" href="$mid__measurement__handler_8c.html#a60b8a41f4a3ae79e98e3bf64b24b4779" title="Convert to human&#45;readable float format." alt="" coords="427,5,580,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="375,16,411,16,411,21,375,21"/>
+<area shape="rect" id="Node000005" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#ga4ae0c65f66d88cf871a9e9ea9292d4dc" title="Measurement module function implementations." alt="" coords="432,56,576,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="379,67,416,67,416,72,379,72"/>
+<area shape="rect" id="Node000006" href="$group___m_i_d___m_e_a_s_u_r_e_m_e_n_t.html#gad3f25e3fa1c46f5b1f3207743b9848dc" title="Update circular buffer with new value." alt="" coords="431,107,576,133"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="354,81,432,100,431,105,353,86"/>
+</map>

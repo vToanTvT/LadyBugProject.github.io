@@ -1,10 +1,12 @@
-<map id="mid_global_define_handler.h" name="mid_global_define_handler.h">
-<area shape="rect" id="Node000001" title="Global definitions and ramp functions for fixed&#45;point operations." alt="" coords="5,5,191,32"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="20,155,85,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,34,70,81,58,139,53,138,65,79,88,31"/>
-<area shape="rect" id="Node000003" href="$mid__iqmath__handler_8h.html" title="Header file for MID_IQMath_Handler module." alt="" coords="80,80,228,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,31,137,66,133,69,106,34"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="138,109,84,147,81,143,135,105"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="120,155,188,181"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="157,107,157,139,151,139,151,107"/>
+<map id="Source code/_MiddlewareLayer/GlobalDefine/mid_global_define_handler.h" name="Source code/_MiddlewareLayer/GlobalDefine/mid_global_define_handler.h">
+<area shape="rect" id="Node000001" title="Header file for Global Definitions Middleware module." alt="" coords="5,5,209,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="74,203,138,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,66,52,88,37,113,32,133,37,154,52,175,71,192,68,196,48,178,33,156,27,133,33,111,48,85,68,63"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="47,120,167,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="110,64,110,104,104,104,104,64"/>
+<area shape="rect" id="Node000004" href="$mid__iqmath__handler_8h.html" title="Header file for IQ Math Middleware module." alt="" coords="191,112,391,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,62,239,102,237,107,160,67"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="244,158,150,199,148,194,242,153"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="257,203,325,229"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="294,155,294,187,288,187,288,155"/>
 </map>
